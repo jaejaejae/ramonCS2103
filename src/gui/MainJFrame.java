@@ -7,14 +7,22 @@ package gui;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.SwingConstants;
+import javax.swing.SwingUtilities;
+import javax.swing.Timer;
 import javax.swing.UIManager;
 
+import java.awt.BorderLayout;
+import java.awt.Component;
+import java.awt.Container;
+import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
+import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseAdapter;
@@ -22,6 +30,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionAdapter;
 import javax.swing.plaf.basic.BasicComboBoxEditor;
+import javax.swing.text.JTextComponent;
 
 import javax.swing.JTextField;
 
@@ -33,12 +42,13 @@ public class MainJFrame extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify
-	
     private javax.swing.JComboBox jComboBox1;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel jLabel2;
-    //private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JPanel jPanel1;
+    private ExpandJPanel expandJPanel = new ExpandJPanel();
+    // End of variables declaration
 	
     
     private static Point point = new Point();
@@ -77,7 +87,7 @@ public class MainJFrame extends javax.swing.JFrame {
         initComponents();
         setAction();
         this.setFocusable(true);
-        this.setDefaultCloseOperation(HIDE_ON_CLOSE);
+        this.setDefaultCloseOperation(this.DO_NOTHING_ON_CLOSE);
 
         /*
          * Create and display the form
@@ -101,16 +111,19 @@ public class MainJFrame extends javax.swing.JFrame {
         
         jLabel1 = new javax.swing.JLabel("", res.bigLogo , SwingConstants.CENTER);
         jLabel2 = new javax.swing.JLabel("", res.exitImg, SwingConstants.CENTER);
+        jLabel3 = new javax.swing.JLabel("", res.down, SwingConstants.CENTER);
+        
+
         
         jPanel1 = new javax.swing.JPanel();
         jComboBox1 = new javax.swing.JComboBox();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(378, 300));
 
         jComboBox1.setEditable(true);
-        jComboBox1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "add", "madd", "mad", "Item 4" }));
+        jComboBox1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "add", "modify", "delete", "search" }));
+
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -119,10 +132,15 @@ public class MainJFrame extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 316, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel2))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 291, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -131,8 +149,11 @@ public class MainJFrame extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox1, javax.swing.GroupLayout.DEFAULT_SIZE, 52, Short.MAX_VALUE))
+                        .addGap(18, 18, 18)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(0, 11, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
@@ -150,56 +171,15 @@ public class MainJFrame extends javax.swing.JFrame {
             .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        
+        
         setIconImage(((ImageIcon) res.bigLogo).getImage());
         setUndecorated(true);
         setSize(400,100);
         //pack();
     }// </editor-fold>
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String args[]) {
-        /*
-         * Set the Nimbus look and feel
-         */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /*
-         * If Nimbus (introduced in Java SE 6) is not available, stay with the
-         * default look and feel. For details see
-         * http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
-         */
-        try {
-            UIManager.setLookAndFeel(
-                UIManager.getSystemLookAndFeelClassName());
-            /*for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }*/
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(MainJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(MainJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(MainJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(MainJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
 
-        /*
-         * Create and display the form
-         */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-
-            public void run() {
-                MainJFrame app = new MainJFrame();
-                app.setVisible(true);
-            }
-        });
-    }
     
     /** setting drag option
      * 
@@ -210,13 +190,76 @@ public class MainJFrame extends javax.swing.JFrame {
     	setJComboBox1Action();
     	setJLabel1Action();
     	setJLabel2Action();
+    	setJLabel3Action();
     }
     
-    private void setJLabel2Action() {
+    private void setJLabel3Action() {
+		// TODO Auto-generated method stub
+		jLabel3.setToolTipText("Expand");
+		
+		jLabel3.addMouseListener(new MouseListener() {
+
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				jLabel3.setIcon(res.downPress);
+				Timer timer = new Timer(100, new ActionListener() {
+
+					@Override
+					public void actionPerformed(ActionEvent arg0) {
+						// TODO Auto-generated method stub
+						jLabel3.setIcon(res.down);
+						if(MainJFrame.this.getSize().equals(new Dimension(400, 400))) {
+							MainJFrame.this.remove(expandJPanel);
+							MainJFrame.this.setSize(400, 100);
+						}
+						else {
+							MainJFrame.this.setLayout(new BorderLayout());
+							MainJFrame.this.add(expandJPanel, BorderLayout.SOUTH);
+							MainJFrame.this.setSize(400,400);
+							
+						}
+					}
+					
+				});
+				timer.setRepeats(false);
+				timer.start();
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+				jLabel3.setIcon(res.downOn);
+			}
+
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+				jLabel3.setIcon(res.down);
+			}
+
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+				jLabel3.setIcon(res.downPress);
+			}
+
+			@Override
+			public void mouseReleased(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+				jLabel3.setIcon(res.down);
+			}});
+	}
+
+	private void setJLabel2Action() {
 		// TODO Auto-generated method stub
     	jLabel2.setToolTipText("Close");
     	
-		jLabel2.addMouseListener(new MouseListener() {
+		jLabel2.addMouseListener(new MouseAdapter() {
 
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
@@ -240,17 +283,6 @@ public class MainJFrame extends javax.swing.JFrame {
 		        MainJFrame.this.revalidate();
 			}
 
-			@Override
-			public void mousePressed(MouseEvent arg0) {
-				// TODO Auto-generated method stub
-				
-			}
-
-			@Override
-			public void mouseReleased(MouseEvent arg0) {
-				// TODO Auto-generated method stub
-				
-			}
 		});
 		
 		
@@ -263,6 +295,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
 	private void setJComboBox1Action() {
 		// TODO Auto-generated method stub
+		this.getButtonSubComponent(jComboBox1).setVisible(false);
 		new AutoCompletion(jComboBox1);
 		
     	final JTextField editorcomp = (JTextField)jComboBox1.getEditor().getEditorComponent();
@@ -284,21 +317,24 @@ public class MainJFrame extends javax.swing.JFrame {
     	});
     	
     	editorcomp.addKeyListener(new KeyListener() {
-
 			@Override
 			public void keyPressed(KeyEvent arg0) {
 				// TODO Auto-generated method stub
-				if(arg0.getKeyCode() == KeyEvent.VK_ENTER) {
-					showPopup(editorcomp.getText());
-					System.out.println("Submit");
-				}
-				else if(arg0.getKeyCode() == KeyEvent.VK_RIGHT) {
-					editorcomp.setText(jComboBox1.getSelectedItem().toString());
-					jComboBox1.setPopupVisible(false);
+				final KeyEvent e = arg0;
+				 SwingUtilities.invokeLater(
+				      new Runnable() {
+							@Override
+							public void run() {
+								if(e.getKeyCode() == KeyEvent.VK_ENTER) {
+									showPopup(editorcomp.getText());
+									System.out.println("Submit");
+								}
+							} 
+						         
+				      } );
 				}
 				
-			}
-
+			
 			@Override
 			public void keyReleased(KeyEvent arg0) {
 				// TODO Auto-generated method stub
@@ -318,7 +354,7 @@ public class MainJFrame extends javax.swing.JFrame {
     		
     	});
     	
-    	editorcomp.addMouseListener( new MouseListener() {
+    	editorcomp.addMouseListener( new MouseAdapter() {
 
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
@@ -326,47 +362,10 @@ public class MainJFrame extends javax.swing.JFrame {
 				editorcomp.selectAll();
 			}
 
-			@Override
-			public void mouseEntered(MouseEvent arg0) {
-				// TODO Auto-generated method stub
-				
-			}
-
-			@Override
-			public void mouseExited(MouseEvent arg0) {
-				// TODO Auto-generated method stub
-				
-			}
-
-			@Override
-			public void mousePressed(MouseEvent arg0) {
-				// TODO Auto-generated method stub
-				
-			}
-
-			@Override
-			public void mouseReleased(MouseEvent arg0) {
-				// TODO Auto-generated method stub
-				
-			}
-    		
     	});
     	
 	}
 
-    /*
-	private void setButtonAction() {
-		// TODO Auto-generated method stub
-		jButton1.addActionListener(new ActionListener() {
-
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				MainJFrame.this.setVisible(false);
-				popup.hideBox();
-			}
-			
-		});
-	}*/
 
 	private void setJFrameAction() {
 		addMouseListener(new MouseAdapter() {
@@ -390,22 +389,7 @@ public class MainJFrame extends javax.swing.JFrame {
 		 
 		
 		 
-		 this.addKeyListener(new KeyListener() {
-
-			@Override
-			public void keyPressed(KeyEvent e) {
-				// TODO Auto-generated method stub
-				if(TEST)
-					if( e.getKeyChar() == 'a') {
-						System.out.println("A");
-					}
-			}
-
-			@Override
-			public void keyReleased(KeyEvent e) {
-				// TODO Auto-generated method stub
-				
-			}
+		 this.addKeyListener(new KeyAdapter() {
 
 			@Override
 			public void keyTyped(KeyEvent e) {
@@ -429,7 +413,66 @@ public class MainJFrame extends javax.swing.JFrame {
 	}
 	
 	public void showFrame() {
-		setVisible(true);
+		 SwingUtilities.invokeLater(
+			       new Runnable() {
+
+					@Override
+					public void run() {
+						// TODO Auto-generated method stub
+
+						MainJFrame.this.setVisible(true);
+					} 
+			         
+			       }
+			    );
+	}
+
+	public void hideFrame() {
+		 SwingUtilities.invokeLater(
+			       new Runnable() {
+
+					@Override
+					public void run() {
+						// TODO Auto-generated method stub
+
+						MainJFrame.this.setVisible(false);
+					} 
+			         
+			       }
+			    );
+	}
+	
+	public void setInputText(final String string) {
+		// TODO Auto-generated method stub
+		
+		 SwingUtilities.invokeLater(
+			       new Runnable() {
+
+					@Override
+					public void run() {
+						// TODO Auto-generated method stub
+
+						jComboBox1.setSelectedItem(string);
+						jComboBox1.getEditor().getEditorComponent().requestFocusInWindow();
+					} 
+			         
+			       }
+			    );
 	}
     
+	
+
+	   private static JButton getButtonSubComponent(Container container) {
+	      if (container instanceof JButton) {
+	         return (JButton) container;
+	      } else {
+	         Component[] components = container.getComponents();
+	         for (Component component : components) {
+	            if (component instanceof Container) {
+	               return getButtonSubComponent((Container)component);
+	            }
+	         }
+	      }
+	      return null;
+	   }
 }

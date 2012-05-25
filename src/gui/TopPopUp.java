@@ -106,7 +106,7 @@ public class TopPopUp extends JFrame {
     private javax.swing.JButton jButton1;
     private boolean SHOW = true;
     private Timer timer;
-    private final int VISIBLE_TIME = 3;
+    private final int VISIBLE_TIME = 5;
     //private Timer timer;
     // End of variables declaration
     
@@ -124,19 +124,21 @@ public class TopPopUp extends JFrame {
     	SHOW = true;
     	setVisible(SHOW);
     	
+    	if(timer != null){
+    		timer.stop();
+    	}
     	timer = new Timer(VISIBLE_TIME * 1000, new ActionListener(){
-
+	
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				// TODO Auto-generated method stub
 				hideBox();
 			}
-    		
-    	});
-    	
-    	timer.setRepeats(false);
-    	timer.start();
-    	
+	    	
+	    });
+	    timer.setRepeats(false);
+	    timer.start(); 
+
     }
     
     public void hideBox() {

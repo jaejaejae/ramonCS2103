@@ -7,24 +7,32 @@ import java.awt.PopupMenu;
 import java.awt.SystemTray;
 import java.awt.Toolkit;
 import java.awt.TrayIcon;
+import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.DataFlavor;
+import java.awt.datatransfer.Transferable;
+import java.awt.datatransfer.UnsupportedFlavorException;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
+import java.io.IOException;
 
+import javax.swing.JDialog;
+import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
+import javax.swing.Timer;
 
 public class Main {
-	static MainJFrame mainJFrame;
+	static MainJFrame mainJFrame = new MainJFrame();
 	Reminder reminder;
 	static SystemTray tray = SystemTray.getSystemTray();
 	
 	
 	public static void main(String[] args) {
+		//MainJFrame mainJFrame = new MainJFrame();
 		initializeTray();
-		MainJFrame mainJFrame = new MainJFrame();
 		Reminder reminder = new Reminder(tray);
 	}
 
@@ -32,8 +40,8 @@ public class Main {
 	private static void initializeTray() {
 		// TODO Auto-generated method stub
 		tray = SystemTray.getSystemTray();
-		
-		Image img = Toolkit.getDefaultToolkit().getImage( "D:\\JAVAworkspace2\\GUITemp\\bin\\gui\\trayLogo.png");
+		Image img = new Resource().trayImage;
+		//Image img = Toolkit.getDefaultToolkit().getImage( "D:\\JAVAworkspace2\\GUITemp\\bin\\gui\\trayLogo.png");
 		
 		
 		PopupMenu popup = new PopupMenu();
@@ -52,8 +60,11 @@ public class Main {
 		mItem2.addActionListener( new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				// TODO Auto-generated method stub
-				
+				// TODO Auto-generated method stub]
+				String input = getClipboard();
+				if(!mainJFrame.isVisible())
+					mainJFrame.showFrame();
+				mainJFrame.setInputText("add "+input);
 			}
 		});
 		
@@ -72,19 +83,32 @@ public class Main {
 
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-				// TODO Auto-generated method stub
+				//mainJFrame.setVisible(true);
 			    SwingUtilities.invokeLater(
 	    	       new Runnable() {
 					@Override
 					public void run() {
-		   				if(mainJFrame!= null)
-		   					mainJFrame.showFrame();
-		   				else
-		   					mainJFrame = new MainJFrame(); }
-						}   	   	
-	    	    );
+						if(!mainJFrame.isVisible()) {
+							mainJFrame.showFrame();
+						}
+		   			}
+	    	       });
 			}
 		});
+	}
+	
+	public static String getClipboard() {
+	    Transferable t = Toolkit.getDefaultToolkit().getSystemClipboard().getContents(null);
+
+	    try {
+	        if (t != null && t.isDataFlavorSupported(DataFlavor.stringFlavor)) {
+	            String text = (String)t.getTransferData(DataFlavor.stringFlavor);
+	            return text;
+	        }
+	    } catch (UnsupportedFlavorException e) {
+	    } catch (IOException e) {
+	    }
+	    return null;
 	}
 	
 }

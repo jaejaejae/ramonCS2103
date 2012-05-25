@@ -1,1 +1,1 @@
-06: add timer to topPopUp
+10: change dir of trayLogo and add extended JPanel

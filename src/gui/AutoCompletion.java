@@ -26,6 +26,7 @@ public class AutoCompletion extends PlainDocument {
     FocusListener editorFocusListener;
     
     public AutoCompletion(final JComboBox comboBox) {
+    
         this.comboBox = comboBox;
         model = comboBox.getModel();
         comboBox.addActionListener(new ActionListener() {
@@ -41,7 +42,16 @@ public class AutoCompletion extends PlainDocument {
         });
         editorKeyListener = new KeyAdapter() {
             public void keyPressed(KeyEvent e) {
-                if (comboBox.isDisplayable()) comboBox.setPopupVisible(true);
+            	if(e.getKeyChar() == KeyEvent.VK_BACK_SPACE)
+            		comboBox.setPopupVisible(false);
+				else if(e.getKeyCode() == KeyEvent.VK_RIGHT) {
+					editor.setText(comboBox.getSelectedItem().toString());
+					comboBox.setPopupVisible(false);
+					editor.setCaretPosition(getLength());
+				}
+	            else if (comboBox.isDisplayable()) 
+	            		comboBox.setPopupVisible(true);
+				
                 /*hitBackspace=false;
                 switch (e.getKeyCode()) {
                     // determine if the pressed key is backspace (needed by the remove method)
