@@ -21,14 +21,17 @@ public class AutoCompletion extends PlainDocument {
     boolean hitBackspace=false;
     boolean hitBackspaceOnSelection;
     int index;
+    String[] standardCommand = new String[] {"add", "modify", "delete", "search"};
     
     KeyListener editorKeyListener;
     FocusListener editorFocusListener;
     
     public AutoCompletion(final JComboBox comboBox) {
-    
+    	
         this.comboBox = comboBox;
-        model = comboBox.getModel();
+        setStandardModel();
+        
+        
         comboBox.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 if (!selecting) highlightCompletedText(0);
@@ -85,7 +88,14 @@ public class AutoCompletion extends PlainDocument {
         highlightCompletedText(0);
     }
     
-    public static void enable(JComboBox comboBox) {
+    private void setStandardModel() {
+		// TODO Auto-generated method stub
+
+        comboBox.setModel(new DefaultComboBoxModel(standardCommand));
+        model = comboBox.getModel();
+	}
+
+	public static void enable(JComboBox comboBox) {
         // has to be editable
         comboBox.setEditable(true);
         // change the editor's document

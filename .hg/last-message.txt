@@ -1,1 +1,1 @@
-10: change dir of trayLogo and add extended JPanel
+12: complete display for jtable
