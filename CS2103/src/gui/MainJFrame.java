@@ -46,7 +46,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
 	private JIDLogic jLogic= new JIDLogic();
 
-  	enum STATE {ADD, DELETE, NULL};
+  	enum STATE {ADD, DELETE, EDIT, SEARCH, COMPLETED, ARCHIVE, OVERDUE, NULL};
 	
     // Variables declaration - do not modify
     private javax.swing.JComboBox jComboBox1;
@@ -301,7 +301,7 @@ public class MainJFrame extends javax.swing.JFrame {
 	private void setJComboBox1Action() {
 		// TODO Auto-generated method stub
 		this.getButtonSubComponent(jComboBox1).setVisible(false);
-		new AutoCompletion(jComboBox1);
+		final AutoCompletion jBoxCompletion = new AutoCompletion(jComboBox1);
 		
     	final JTextField editorcomp = (JTextField)jComboBox1.getEditor().getEditorComponent();
     	editorcomp.setText("");
@@ -328,33 +328,100 @@ public class MainJFrame extends javax.swing.JFrame {
 				final KeyEvent e = arg0;
 				 SwingUtilities.invokeLater(
 				      new Runnable() {
-
+				    	   STATE curState;
+				    	   STATE prevState = STATE.NULL;
 							@Override
 							public void run() {
 								String curText = editorcomp.getText();
-								STATE curState = checkCommand(curText);
-								switch(curState) {
-								case ADD: break;
-								case NULL: break;
+								curState = checkCommand(curText);
+								
+								if(curState == STATE.NULL && curState!=prevState) {
+									jBoxCompletion.startWorking();
+									//jBoxCompletion.setStandardModel();
 								}
+								else {	
+									if(curState == STATE.DELETE 
+										|| curState == STATE.EDIT
+										|| curState == STATE.SEARCH
+										|| curState == STATE.COMPLETED) {
+										jBoxCompletion.stopWorking();
+										//toggle autocompletion off
+										//toggle implemental search on
+										//update model
+									}
+									
+								}
+								
 								if(e.getKeyCode() == KeyEvent.VK_ENTER) {
 									showPopup(editorcomp.getText());
 									jLogic.setCommand(curState.toString());
 									Task[] tasks= jLogic.executeCommand(curText);
 									if(tasks == null)
-										showPopup("error input!");
+										showPopup("error!");
 									else
-										showPopup(tasks[0].getName() + " " + "successfully added!");
+									{
+										switch(curState) {
+											case ADD: 
+												showPopup(tasks[0].getName() + " " + "successfully added!");
+												break;
+											case DELETE:
+												showPopup(tasks[0].getName() + " " + "successfully deleted!");
+												break;
+											case EDIT:
+												showPopup(tasks[0].getName() + " " + "successfully edited!");
+												break;
+											case SEARCH:
+												//update table below
+												break;
+											case COMPLETED:
+												showPopup(tasks[0].getName() + " " + "is completed!");
+												break;
+											case ARCHIVE:
+												showPopup("Archive is loaded!");
+												break;
+											case OVERDUE:
+												showPopup("OVERDUE COMMAND");
+												break;
+											
+										}
+										if(curState!=STATE.SEARCH) {
+											//update table
+										}
+									}
+									
 									System.out.println("Submit");
 								}
+								else {
+									//key pressed is not enter
+									
+								}
+								prevState = curState;
 							}
 
 							private STATE checkCommand(String curText) {
-								// TODO Auto-generated method stub
-								if(curText.substring(0,3).equalsIgnoreCase("add"))
+								String delims = "[ ]+";
+								String firstWord = curText.split(delims)[0];
+								if(firstWord.equalsIgnoreCase("add") 
+										|| firstWord.equalsIgnoreCase("insert"))
 									return STATE.ADD;
-								else
-									return STATE.NULL;
+								if(firstWord.equalsIgnoreCase("delete")
+										|| firstWord.equalsIgnoreCase("remove"))
+									return STATE.DELETE;
+								if(firstWord.equalsIgnoreCase("modify")
+										|| firstWord.equalsIgnoreCase("edit")
+										|| firstWord.equalsIgnoreCase("update"))
+									return STATE.EDIT;
+								if(firstWord.equalsIgnoreCase("search")
+										|| firstWord.equalsIgnoreCase("find"))
+									return STATE.SEARCH;
+								if(firstWord.equalsIgnoreCase("completed")
+										|| firstWord.equalsIgnoreCase("done"))
+									return STATE.COMPLETED;
+								if(firstWord.equalsIgnoreCase("archive"))
+									return STATE.ARCHIVE;
+								if(firstWord.equalsIgnoreCase("overdue"))
+									return STATE.OVERDUE;
+								return STATE.NULL;
 							} 
 						         
 				      } );

@@ -6,6 +6,9 @@ import java.io.BufferedOutputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+
+import data.Task;
+import data.TaskHashMap;
 public class FileHandler 
 {
 	private static String fileName;

@@ -3,6 +3,9 @@ package Storage;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
+import data.Task;
+import data.TaskHashMap;
+
 public class StorageManager 
 {
 	private TaskHashMap liveStorage;
