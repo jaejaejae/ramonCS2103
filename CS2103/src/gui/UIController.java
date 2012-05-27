@@ -47,7 +47,7 @@ public class UIController {
 	private static void initializeTray() {
 		// TODO Auto-generated method stub
 		tray = SystemTray.getSystemTray();
-		Image img = new Resource().trayImage;
+		Image img = Resource.trayImage;
 		//Image img = Toolkit.getDefaultToolkit().getImage( "D:\\JAVAworkspace2\\GUITemp\\bin\\gui\\trayLogo.png");
 		
 		

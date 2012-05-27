@@ -66,7 +66,7 @@ public class TopPopUp extends JFrame {
 
         
         jButton1.setText("");
-        jButton1.setIcon( new Resource().exitImg);
+        jButton1.setIcon( Resource.exitImg);
         jButton1.addActionListener( new 
         	ActionListener() {
 
@@ -82,7 +82,7 @@ public class TopPopUp extends JFrame {
         });
         
 
-        setIconImage(((ImageIcon) new Resource().bigLogo).getImage());
+        setIconImage((Resource.bigLogo).getImage());
         pack();
     }// </editor-fold>
 

@@ -55,7 +55,6 @@ public class MainJFrame extends javax.swing.JFrame {
     private final boolean TEST = true;
     private TopPopUp popup;
 
-    private Resource res = new Resource();
     // End of variables declaration
 	
     /**
@@ -109,9 +108,9 @@ public class MainJFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">
     private void initComponents() {
         
-        jLabel1 = new javax.swing.JLabel("", res.bigLogo , SwingConstants.CENTER);
-        jLabel2 = new javax.swing.JLabel("", res.exitImg, SwingConstants.CENTER);
-        jLabel3 = new javax.swing.JLabel("", res.down, SwingConstants.CENTER);
+        jLabel1 = new javax.swing.JLabel("", Resource.bigLogo , SwingConstants.CENTER);
+        jLabel2 = new javax.swing.JLabel("", Resource.exitImg, SwingConstants.CENTER);
+        jLabel3 = new javax.swing.JLabel("", Resource.down, SwingConstants.CENTER);
         
 
         
@@ -172,7 +171,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
         
         
-        setIconImage(((ImageIcon) res.bigLogo).getImage());
+        setIconImage((Resource.bigLogo).getImage());
         setUndecorated(true);
         setSize(400,100);
         //pack();
@@ -201,13 +200,13 @@ public class MainJFrame extends javax.swing.JFrame {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
 				// TODO Auto-generated method stub
-				jLabel3.setIcon(res.downPress);
+				jLabel3.setIcon(Resource.downPress);
 				Timer timer = new Timer(100, new ActionListener() {
 
 					@Override
 					public void actionPerformed(ActionEvent arg0) {
 						// TODO Auto-generated method stub
-						jLabel3.setIcon(res.down);
+						jLabel3.setIcon(Resource.down);
 						if(MainJFrame.this.getSize().equals(new Dimension(400, 400))) {
 							MainJFrame.this.remove(expandJPanel);
 							MainJFrame.this.setSize(400, 100);
@@ -229,28 +228,28 @@ public class MainJFrame extends javax.swing.JFrame {
 			public void mouseEntered(MouseEvent arg0) {
 				// TODO Auto-generated method stub
 
-				jLabel3.setIcon(res.downOn);
+				jLabel3.setIcon(Resource.downOn);
 			}
 
 			@Override
 			public void mouseExited(MouseEvent arg0) {
 				// TODO Auto-generated method stub
 
-				jLabel3.setIcon(res.down);
+				jLabel3.setIcon(Resource.down);
 			}
 
 			@Override
 			public void mousePressed(MouseEvent arg0) {
 				// TODO Auto-generated method stub
 
-				jLabel3.setIcon(res.downPress);
+				jLabel3.setIcon(Resource.downPress);
 			}
 
 			@Override
 			public void mouseReleased(MouseEvent arg0) {
 				// TODO Auto-generated method stub
 
-				jLabel3.setIcon(res.down);
+				jLabel3.setIcon(Resource.down);
 			}});
 	}
 
@@ -271,14 +270,14 @@ public class MainJFrame extends javax.swing.JFrame {
 			@Override
 			public void mouseEntered(MouseEvent arg0) {
 				// TODO Auto-generated method stub
-		        jLabel2.setIcon( res.exitOn );
+		        jLabel2.setIcon( Resource.exitOn );
 		        MainJFrame.this.revalidate();
 			}
 
 			@Override
 			public void mouseExited(MouseEvent arg0) {
 				// TODO Auto-generated method stub
-				jLabel2.setIcon( res.exitImg );
+				jLabel2.setIcon( Resource.exitImg );
 		        MainJFrame.this.revalidate();
 			}
 
