@@ -30,6 +30,8 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionAdapter;
+import java.util.Vector;
+
 import javax.swing.plaf.basic.BasicComboBoxEditor;
 import javax.swing.text.JTextComponent;
 
@@ -328,6 +330,7 @@ public class MainJFrame extends javax.swing.JFrame {
 				final KeyEvent e = arg0;
 				 SwingUtilities.invokeLater(
 				      new Runnable() {
+				    	  int curIndex;
 				    	   STATE curState;
 				    	   STATE prevState = STATE.NULL;
 							@Override
@@ -337,19 +340,21 @@ public class MainJFrame extends javax.swing.JFrame {
 								
 								if(curState == STATE.NULL && curState!=prevState) {
 									jBoxCompletion.startWorking();
-									//jBoxCompletion.setStandardModel();
+									jBoxCompletion.setStandardModel();
 								}
-								else {	
+								else {
 									if(curState == STATE.DELETE 
 										|| curState == STATE.EDIT
 										|| curState == STATE.SEARCH
 										|| curState == STATE.COMPLETED) {
 										jBoxCompletion.stopWorking();
-										//toggle autocompletion off
-										//toggle implemental search on
-										//update model
+										jLogic.setCommand(curState.toString());
+										Task[] tasks = jLogic.executeCommand(curText);
+										jBoxCompletion.setNewModel(TaskArrayToString( tasks ));
+										jComboBox1.setPopupVisible(true);
+										curIndex = jComboBox1.getSelectedIndex();
 									}
-									
+			
 								}
 								
 								if(e.getKeyCode() == KeyEvent.VK_ENTER) {
@@ -398,6 +403,23 @@ public class MainJFrame extends javax.swing.JFrame {
 								prevState = curState;
 							}
 
+							private String[] TaskArrayToString (Task[] tasks) {
+								Vector<String> strings = new Vector<String>();
+								for(int i=0; i<tasks.length; i++)
+									strings.add(TaskToString(tasks[i]));
+								return (String[]) strings.toArray();
+							}
+							
+							private String TaskToString(Task task) {
+								String str = new String();
+								str = task.getName() ;
+								if(task.getStartDateTime() != null)
+									str += " start:" + task.getStartDateTime().formattedToString();
+								if(task.getEndDateTime() != null)
+									str += " end:" + task.getEndDateTime().formattedToString();
+								return str;
+							}
+							
 							private STATE checkCommand(String curText) {
 								String delims = "[ ]+";
 								String firstWord = curText.split(delims)[0];

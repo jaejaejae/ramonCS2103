@@ -24,7 +24,6 @@ public class AutoCompletion extends PlainDocument {
     int index;
     String[] standardCommand = new String[] {"add", "modify", "delete", "search"
     										, "completed", "achive", "overdue"};
-    
     KeyListener editorKeyListener;
     FocusListener editorFocusListener;
     
@@ -101,6 +100,14 @@ public class AutoCompletion extends PlainDocument {
         comboBox.setModel(new DefaultComboBoxModel(standardCommand));
         model = comboBox.getModel();
 	}
+    
+    public void setNewModel(String[] strings) {
+    	if(strings == null)
+    		strings = new String[]{""};
+    	comboBox.setMaximumRowCount(0);
+    	comboBox.setModel(new DefaultComboBoxModel(strings));
+    	model = comboBox.getModel();
+    }
 
 	public static void enable(JComboBox comboBox) {
         // has to be editable
