@@ -1,6 +1,4 @@
-package storagecontroller;
-import data.Task;
-import data.TaskHashMap;
+package Storage;
 import java.beans.XMLDecoder;
 import java.beans.XMLEncoder;
 import java.io.BufferedInputStream;
@@ -15,7 +13,7 @@ public class FileHandler
 	{
 		fileName=name;
 	}
-	public boolean writeToFile(TaskHashMap instance) 
+	public boolean writeToFile(TaskHashMap instance) throws FileNotFoundException
 	{
 		try
 		{
@@ -34,13 +32,12 @@ public class FileHandler
 			return false;
 		}
 	}
-	public boolean readFromFile(TaskHashMap instance) 
+	public void readFromFile(TaskHashMap instance) throws FileNotFoundException, ArrayIndexOutOfBoundsException
 	{
-		try
-		{
 		BufferedInputStream xmlIn=new BufferedInputStream(new FileInputStream(fileName));
 		XMLDecoder readFromXml=new XMLDecoder(xmlIn);
-		
+		try
+		{
 			Task obj;
 			while((obj=(Task)readFromXml.readObject())!=null)
 			{
@@ -48,19 +45,13 @@ public class FileHandler
 			}
 			readFromXml.close();
 		}
-		catch(FileNotFoundException e)
-		{
-			System.out.println("File Not Found!");
-			return false;
-		}
 		catch(ArrayIndexOutOfBoundsException e)
 		{
-			return false;
+			
 		}
 		catch(NullPointerException e)
 		{
-			return false;
+			
 		}
-		return true;
 	}
 }

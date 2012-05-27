@@ -4,6 +4,7 @@
  */
 package gui;
 
+import logic.JIDLogic;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -34,13 +35,19 @@ import javax.swing.text.JTextComponent;
 
 import javax.swing.JTextField;
 
+import data.Task;
+import data.TaskArrayList;
+
 /**
  *
  * @author Ramon
  */
 public class MainJFrame extends javax.swing.JFrame {
 
+	private JIDLogic jLogic= new JIDLogic();
 
+  	enum STATE {ADD, DELETE, NULL};
+	
     // Variables declaration - do not modify
     private javax.swing.JComboBox jComboBox1;
     private javax.swing.JLabel jLabel1;
@@ -321,12 +328,33 @@ public class MainJFrame extends javax.swing.JFrame {
 				final KeyEvent e = arg0;
 				 SwingUtilities.invokeLater(
 				      new Runnable() {
+
 							@Override
 							public void run() {
+								String curText = editorcomp.getText();
+								STATE curState = checkCommand(curText);
+								switch(curState) {
+								case ADD: break;
+								case NULL: break;
+								}
 								if(e.getKeyCode() == KeyEvent.VK_ENTER) {
 									showPopup(editorcomp.getText());
+									jLogic.setCommand(curState.toString());
+									Task[] tasks= jLogic.executeCommand(curText);
+									if(tasks == null)
+										showPopup("error input!");
+									else
+										showPopup(tasks[0].getName() + " " + "successfully added!");
 									System.out.println("Submit");
 								}
+							}
+
+							private STATE checkCommand(String curText) {
+								// TODO Auto-generated method stub
+								if(curText.substring(0,3).equalsIgnoreCase("add"))
+									return STATE.ADD;
+								else
+									return STATE.NULL;
 							} 
 						         
 				      } );
