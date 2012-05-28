@@ -51,13 +51,13 @@ public class AutoCompletion extends PlainDocument {
             	if(working) {
 	            	if(e.getKeyChar() == KeyEvent.VK_BACK_SPACE)
 	            		comboBox.setPopupVisible(false);
-					else if(e.getKeyCode() == KeyEvent.VK_RIGHT) {
+					/*else if(e.getKeyCode() == KeyEvent.VK_RIGHT) {
 						if(comboBox.getSelectedIndex()!=-1) {
 							editor.setText(comboBox.getSelectedItem().toString());
 							comboBox.setPopupVisible(false);
 							editor.setCaretPosition(getLength());
 						}
-					}
+					}*/
 		            else if (comboBox.isDisplayable()) 
 		            		comboBox.setPopupVisible(true);
 					

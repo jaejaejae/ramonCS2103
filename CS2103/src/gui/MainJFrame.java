@@ -331,76 +331,92 @@ public class MainJFrame extends javax.swing.JFrame {
 				 SwingUtilities.invokeLater(
 				      new Runnable() {
 				    	  int curIndex;
+				    	  String curText;
+				    	  String command;
 				    	   STATE curState;
 				    	   STATE prevState = STATE.NULL;
+				    	   boolean edit = false;
+				    	   Task[] tasks;
+				    	   
 							@Override
 							public void run() {
-								String curText = editorcomp.getText();
+								curText = editorcomp.getText();
 								curState = checkCommand(curText);
+								curIndex = getIndex();
+								System.out.println(curText);
+								System.out.println(command);
+								System.out.println(curState);
+								System.out.println(prevState);
+								System.out.println(curIndex);
+								
+								if(prevState == STATE.NULL && curState!=prevState) {
+									command = new String(curText);
+								}
 								
 								if(curState == STATE.NULL && curState!=prevState) {
-									jBoxCompletion.startWorking();
 									jBoxCompletion.setStandardModel();
+									jBoxCompletion.startWorking();
 								}
-								else {
-									if(curState == STATE.DELETE 
-										|| curState == STATE.EDIT
-										|| curState == STATE.SEARCH
-										|| curState == STATE.COMPLETED) {
-										jBoxCompletion.stopWorking();
-										jLogic.setCommand(curState.toString());
-										Task[] tasks = jLogic.executeCommand(curText);
-										jBoxCompletion.setNewModel(TaskArrayToString( tasks ));
-										jComboBox1.setPopupVisible(true);
-										curIndex = jComboBox1.getSelectedIndex();
-									}
-			
+								
+								if(curState == STATE.EDIT
+									|| curState == STATE.DELETE
+									|| curState == STATE.SEARCH
+									|| curState == STATE.COMPLETED) {
+
+									//execute command
+									//update combobox
 								}
 								
 								if(e.getKeyCode() == KeyEvent.VK_ENTER) {
-									showPopup(editorcomp.getText());
-									jLogic.setCommand(curState.toString());
-									Task[] tasks= jLogic.executeCommand(curText);
-									if(tasks == null)
-										showPopup("error!");
-									else
-									{
-										switch(curState) {
-											case ADD: 
-												showPopup(tasks[0].getName() + " " + "successfully added!");
-												break;
-											case DELETE:
-												showPopup(tasks[0].getName() + " " + "successfully deleted!");
-												break;
-											case EDIT:
-												showPopup(tasks[0].getName() + " " + "successfully edited!");
-												break;
-											case SEARCH:
-												//update table below
-												break;
-											case COMPLETED:
-												showPopup(tasks[0].getName() + " " + "is completed!");
-												break;
-											case ARCHIVE:
-												showPopup("Archive is loaded!");
-												break;
-											case OVERDUE:
-												showPopup("OVERDUE COMMAND");
-												break;
-											
+									String exeCmd = new String();
+									switch (curState ){
+									case DELETE:
+									case COMPLETED:
+										
+										exeCmd = curState.toString() + " "
+												+ tasks[curIndex].getTaskId() + " ";
+										break;
+									case EDIT:
+										if(!edit) {
+											exeCmd = curState.toString() + " "
+													+ tasks[curIndex].getTaskId();
+											edit = true;
 										}
-										if(curState!=STATE.SEARCH) {
-											//update table
+										else {
+											exeCmd = curText;
+											edit = false;
 										}
+										break;
+									case ADD:
+										exeCmd = curText;
+										break;
+									case SEARCH:
+										//update table below
+										break;
 									}
-									
-									System.out.println("Submit");
+									System.out.println("exeCmd: " + exeCmd);
+									tasks = jLogic.executeCommand(exeCmd);
+									if(tasks==null)
+										System.out.println("error");
+									else
+										System.out.println(tasks[0].toString());
 								}
-								else {
-									//key pressed is not enter
-									
-								}
+								
 								prevState = curState;
+							}
+							
+							private int getIndex() {
+								int idx = jComboBox1.getSelectedIndex();
+								
+								if(idx <0 ) return idx;
+								
+								String selected = (String)jComboBox1.getItemAt(idx);
+								
+								if(curText.length() <= selected.length() 
+										&& selected.substring(0, curText.length()).equalsIgnoreCase(curText))
+									return idx;
+								
+								return -1;
 							}
 
 							private String[] TaskArrayToString (Task[] tasks) {
