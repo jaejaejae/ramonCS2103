@@ -55,18 +55,18 @@ public class AutoUpdateJTable {
 		};
 		*/
 
+		/*
 		Timer timer = new Timer(2000, new ActionListener(){
-
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				// TODO Auto-generated method stub
 				//updateJTable();
 				//System.out.println(listLabel.get(0).toString());
 			}
-			
 		});
 		timer.start();
 		timer.setRepeats(true);
+		*/
 		
 	}
 	
@@ -78,7 +78,6 @@ public class AutoUpdateJTable {
 		for(int i=0; i<listLabel.size(); i++) {
 			model.addRow(new Object[]{listLabel.get(i)});
 		}
-		System.out.println(listLabel.toString());
 	}
 	
 
@@ -86,21 +85,22 @@ public class AutoUpdateJTable {
     	String str;
     	
     	str = "<HTML><b>";
-    	System.out.println(task.getName());
+    	if(task.getImportant()) {
+    		str += "<font color=\"red\">";
+    	}
     	str += task.getName();
-    	str += "</br></b>";
+    	str += "<br/></b>";
     	if(task.getDescription()!= null)
     		str+=task.getDescription();
     	if(task.getStartDateTime()!= null) {
-    		str+="<i>start</i>"+task.getStartDateTime().formattedToString();
+    		str+="<br/><i>start: </i>"+task.getStartDateTime().presentableToString();
     	}
     	if(task.getEndDateTime()!=null) {
-    		str+="<i>end</i>"+task.getEndDateTime().formattedToString();
+    		str+="<i> end: </i>"+task.getEndDateTime().presentableToString();
     	}
     	str += "</HTML>";
     	
     	listLabel.add(str);
-    	System.out.println(listLabel.toString());
     }
     
     private void makeAllJLabel(Task[] tasks) {
@@ -121,9 +121,6 @@ public class AutoUpdateJTable {
 		    	listLabel = new Vector<String>();
 		    	JIDLogic.setCommand("find");
 		    	Task[] tasks = JIDLogic.executeCommand("find *.*");
-		    	System.out.println("updateJTable: "+ tasks.length + " "+ tasks.toString());
-		    	System.out.println("updateJTable0: "+ tasks[0].toString() + tasks[0].getName());
-		    	System.out.println("updateJTable1: "+ tasks[1].toString());
 		    	makeAllJLabel(tasks);
 		    	setAppearance();
 		    	}
@@ -154,7 +151,6 @@ public class AutoUpdateJTable {
     }
     
     class MyRenderer extends DefaultTableCellRenderer {
-
     	  /*
     	   * @see TableCellRenderer#getTableCellRendererComponent(JTable, Object, boolean, boolean, int, int)
     	   */
@@ -165,5 +161,4 @@ public class AutoUpdateJTable {
     		return label;   
     	  }
     }
-
 }

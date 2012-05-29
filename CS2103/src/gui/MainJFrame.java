@@ -356,16 +356,17 @@ public class MainJFrame extends javax.swing.JFrame {
 									jBoxCompletion.startWorking();
 								}
 								
-								if(curState == STATE.EDIT
+								if((curState == STATE.EDIT
 									|| curState == STATE.DELETE
 									|| curState == STATE.SEARCH
-									|| curState == STATE.COMPLETED) {
+									|| curState == STATE.COMPLETED)
+									&& curText.length() >= curState.toString().length()) {
 									jBoxCompletion.stopWorking();
 									tasks = JIDLogic.executeCommand(curText);
 									jBoxCompletion.setNewModel(taskArrayToString(tasks));
 								}
 								
-								if(e.getKeyCode() == KeyEvent.VK_ENTER) {
+								if(e.getKeyCode() == KeyEvent.VK_ENTER && curState!=STATE.NULL) {
 									String exeCmd = new String();
 									switch (curState ){
 									case DELETE:
@@ -404,9 +405,10 @@ public class MainJFrame extends javax.swing.JFrame {
 									case ADD:
 									case EDIT:
 										if(!edit) {
-											if(tasks!=null)
+											if(tasks!=null) {
 												showPopup(taskToString(tasks[0]) + " " +  curState.toString());
-											else
+												expandJPanel.updateJTable();
+											}else
 												showPopup("invalid input");
 										}
 									break;									
@@ -460,9 +462,9 @@ public class MainJFrame extends javax.swing.JFrame {
 								String str = new String();
 								str = task.getName() ;
 								if(task.getStartDateTime() != null)
-									str += " start:" + task.getStartDateTime().formattedToString();
+									str += " start:" + task.getStartDateTime().presentableToString();
 								if(task.getEndDateTime() != null)
-									str += " end:" + task.getEndDateTime().formattedToString();
+									str += " end:" + task.getEndDateTime().presentableToString();
 								return str;
 							}
 							

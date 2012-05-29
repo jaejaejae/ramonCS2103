@@ -159,6 +159,9 @@ public class AutoCompletion extends PlainDocument {
             setSelectedItem(item);
             if(index==0)
             	setText(item.toString());
+
+            // select the completed part
+            highlightCompletedText(offs+str.length());
         } /*else {
             // keep old item selected if there is no match
             item = comboBox.getSelectedItem();
@@ -172,8 +175,6 @@ public class AutoCompletion extends PlainDocument {
         	//hide popup
         	comboBox.setPopupVisible(false);
         }
-        // select the completed part
-        highlightCompletedText(offs+str.length());
     }
     
     private void setText(String text) {
