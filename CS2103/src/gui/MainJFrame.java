@@ -46,8 +46,6 @@ import data.TaskArrayList;
  */
 public class MainJFrame extends javax.swing.JFrame {
 
-	private JIDLogic jLogic= new JIDLogic();
-
   	enum STATE {ADD, DELETE, EDIT, SEARCH, COMPLETED, ARCHIVE, OVERDUE, NULL};
 	
     // Variables declaration - do not modify
@@ -364,7 +362,7 @@ public class MainJFrame extends javax.swing.JFrame {
 									|| curState == STATE.COMPLETED) {
 									
 									jBoxCompletion.stopWorking();
-									tasks = jLogic.executeCommand(curText);
+									tasks = JIDLogic.executeCommand(curText);
 									jBoxCompletion.setNewModel(taskArrayToString(tasks));
 								}
 								
@@ -398,8 +396,8 @@ public class MainJFrame extends javax.swing.JFrame {
 									}
 									
 									System.out.println("exeCmd: " + exeCmd);
-									jLogic.setCommand(curState.toString());
-									tasks = jLogic.executeCommand(exeCmd);
+									JIDLogic.setCommand(curState.toString());
+									tasks = JIDLogic.executeCommand(exeCmd);
 									
 									switch(curState) {
 									case DELETE:
