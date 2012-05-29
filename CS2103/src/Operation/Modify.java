@@ -1,5 +1,5 @@
 package operation;
-
+import org.apache.log4j.Logger;
 import parser.Parser;
 import data.Task;
 import storagecontroller.StorageManager;
@@ -8,7 +8,7 @@ public class Modify extends BaseSearch{
 	private Task oldTask;
 	private Task newTask;
 	private static Task taskBeingEdited=null;
-
+	private static Logger logger=Logger.getLogger(Modify.class);
 
 	public Modify(){
 		commandName="modify";
@@ -25,6 +25,7 @@ public class Modify extends BaseSearch{
 		if(taskBeingEdited==null)
 		{
 			taskBeingEdited=StorageManager.getTaskById(taskToBeEdited.getTaskId());
+			logger.debug("taskBeingEdited"+taskBeingEdited.getName());
 			return new Task[]{taskBeingEdited};
 		}
 		else{
@@ -36,6 +37,7 @@ public class Modify extends BaseSearch{
 				oldTask=taskBeingEdited;
 				newTask=taskToBeEdited;
 				taskBeingEdited=null;
+				logger.debug("Editing succesful");
 				return new Task[]{taskToBeEdited};
 				
 			}
@@ -94,9 +96,9 @@ public class Modify extends BaseSearch{
 		
 		else
 		{
-			String params = userCommand.toLowerCase().replaceFirst(commandName+" ",	"");
-			
+			String params = userCommand.toLowerCase().replaceFirst(commandName+" ","");
 			Task taskToBeEdited=parseTask(params);
+			logger.debug("Task To be edited"+taskToBeEdited.getName());
 			return execute(taskToBeEdited);
 			
 		}

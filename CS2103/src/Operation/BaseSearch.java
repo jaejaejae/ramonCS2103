@@ -15,12 +15,11 @@ public class BaseSearch extends Operation{
 	public Task[] execute(String userCommand)
 	{
 		String params = userCommand.toLowerCase().replaceFirst(this.commandName+" ","");
-		logger.debug(params);
+		logger.debug(commandName);
 		logger.debug("inside basesearch");
 		ArrayList<Task> foundTasks=new ArrayList<Task>();
 				
 		String[] extractedTaskIds=extractTaskIds(params);
-		
 		
 		if(extractedTaskIds!=null)
 		{
@@ -37,6 +36,7 @@ public class BaseSearch extends Operation{
 				if (result!=null)
 				{
 					Collections.addAll(foundTasks, result);
+					logger.debug("Result Added");
 				}
 				
 				

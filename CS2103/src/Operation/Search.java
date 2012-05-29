@@ -166,7 +166,6 @@ public class Search extends Operation {
 		{
 			if (taskToSearch.getLabels().get(0)==null)
 			{
-				logger.debug("it mTCHES");
 				return true;
 			}
 			else if (existingTask.getLabels() != null) {
@@ -185,7 +184,6 @@ public class Search extends Operation {
 							}
 						}
 						if (flag) {
-							logger.debug("it matches");
 							return true;
 						}
 					
