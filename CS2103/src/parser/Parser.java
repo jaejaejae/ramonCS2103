@@ -239,6 +239,7 @@ public class Parser {
 		Task t = new Task(taskDetails,null,startDateTime,endDateTime,labelList,recurring);
 		t.setDeadline(deadline);
 		t.setImportant(important);
+		
 		System.out.println(t.getTaskId());
 		return t;
 	}

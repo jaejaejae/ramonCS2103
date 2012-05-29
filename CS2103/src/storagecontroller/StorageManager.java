@@ -25,8 +25,6 @@ public class StorageManager
 	}
 	public static Task[] getAllTasks()
 	{
-
-		
 		ArrayList<Task> tasks=new ArrayList<Task>();
 		for(String key: liveStorage.getKeySet())
 		tasks.add(liveStorage.getTaskById(key));

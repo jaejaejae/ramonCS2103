@@ -32,6 +32,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionAdapter;
+import java.util.ArrayList;
 import java.util.Vector;
 
 import javax.swing.plaf.basic.BasicComboBoxEditor;
@@ -49,8 +50,10 @@ import data.TaskArrayList;
 public class MainJFrame extends javax.swing.JFrame {
 
   	enum STATE {ADD, DELETE, EDIT, SEARCH, COMPLETED, ARCHIVE, OVERDUE, NULL, LIST};
-	
-    // Variables declaration - do not modify
+   STATE curState;
+   STATE prevState = STATE.NULL;
+
+   // Variables declaration - do not modify
     private javax.swing.JComboBox jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -184,6 +187,8 @@ public class MainJFrame extends javax.swing.JFrame {
         setUndecorated(true);
         setSize(400,100);
         //pack();
+
+        
     }// </editor-fold>
 
 
@@ -324,50 +329,79 @@ public class MainJFrame extends javax.swing.JFrame {
     	});
     	
     	editorcomp.addKeyListener(new KeyListener() {
+
+
+
+			
 			@Override
 			public void keyPressed(KeyEvent arg0) {
 				// TODO Auto-generated method stub
 				final KeyEvent e = arg0;
 				 SwingUtilities.invokeLater(
 				      new Runnable() {
-				    	  int curIndex;
-				    	  String curText;
-				    	  String command;
-				    	   STATE curState;
-				    	   STATE prevState = STATE.NULL;
+					    	int curIndex;
+					    	String command;
+					    	String curText;
 				    	   boolean edit = false;
 				    	   Task[] tasks;
-				    	   
 							@Override
 							public void run() {
-								curText = editorcomp.getText();
-								curState = checkCommand(curText);
-								curIndex = getIndex();
-								System.out.println(curText);
-								System.out.println(command);
-								System.out.println(curState);
-								System.out.println(prevState);
-								System.out.println(curIndex);
-								
+
+						    	curText = editorcomp.getText();
+								jBoxCompletion.stopWorking();
+								//curText= editorcomp.getText();
+								curState= checkCommand(curText);curIndex= getIndex();
+								System.out.println("curText:" + curText);
+								System.out.println("cmd: " + command);
+								System.out.println("state: " +curState);
+								System.out.println("prev: " +prevState);
+								System.out.println("index: "+ curIndex);
+
 								if(prevState == STATE.NULL && curState!=prevState) {
 									command = new String(curText);
 								}
 								
 								if(curState == STATE.NULL && curState!=prevState) {
 									jBoxCompletion.setStandardModel();
-									jBoxCompletion.startWorking();
+									//jBoxCompletion.startWorking();
+									jComboBox1.setSelectedIndex(-1);
 								}
 								
 								if((curState == STATE.EDIT
 									|| curState == STATE.DELETE
 									|| curState == STATE.SEARCH
 									|| curState == STATE.COMPLETED)
-									&& curText.length() >= curState.toString().length()) {
-									jBoxCompletion.stopWorking();
-									tasks = JIDLogic.executeCommand(curText);
-									jBoxCompletion.setNewModel(taskArrayToString(tasks));
+									&& curText.length() > curState.toString().length() +1
+									&& (e.getKeyCode() == KeyEvent.VK_BACK_SPACE || !e.isActionKey())) {
+									 SwingUtilities.invokeLater(
+										       new Runnable() {
+
+												@Override
+												public void run() {
+													// TODO Auto-generated method stub
+													
+													int curLocation = editorcomp.getText().length();
+
+													System.out.println("***enter interstate: ");
+													
+													JIDLogic.setCommand(curState.toString());
+													
+													tasks = JIDLogic.executeCommand(curText);
+
+													jBoxCompletion.stopWorking();													
+													jBoxCompletion.setNewModel(taskArrayToString(tasks));
+
+													System.out.println("alltasks" + taskArrayToString(tasks).toString() +"endtasks");
+													jComboBox1.setPopupVisible(true);
+													
+													jComboBox1.setSelectedIndex(-1);
+													editorcomp.setText(curText);
+												} 
+										         
+										       }
+										    );
 								}
-								
+
 								if(e.getKeyCode() == KeyEvent.VK_ENTER && curState!=STATE.NULL) {
 									String exeCmd = new String();
 									switch (curState ){
@@ -393,8 +427,9 @@ public class MainJFrame extends javax.swing.JFrame {
 										break;
 									case SEARCH:
 										exeCmd = curText;
-										
 										break;
+									case LIST:
+										exeCmd = curText;
 									}
 									
 									System.out.println("exeCmd: " + exeCmd);
@@ -417,6 +452,7 @@ public class MainJFrame extends javax.swing.JFrame {
 									case SEARCH:
 										expandJPanel.updateJTable(tasks);
 										if(MainJFrame.this.getSize().equals(new Dimension(400, 100))) {
+											MainJFrame.this.setLayout(new BorderLayout());
 											MainJFrame.this.add(expandJPanel, BorderLayout.SOUTH);
 											MainJFrame.this.setSize(400,400);
 										}
@@ -424,6 +460,7 @@ public class MainJFrame extends javax.swing.JFrame {
 									case LIST:
 										expandJPanel.updateJTable();
 										if(MainJFrame.this.getSize().equals(new Dimension(400, 100))) {
+											MainJFrame.this.setLayout(new BorderLayout());
 											MainJFrame.this.add(expandJPanel, BorderLayout.SOUTH);
 											MainJFrame.this.setSize(400,400);
 										}
@@ -446,18 +483,20 @@ public class MainJFrame extends javax.swing.JFrame {
 								
 								String selected = (String)jComboBox1.getItemAt(idx);
 								
-								if(curText.length() <= selected.length() 
-										&& selected.substring(0, curText.length()).equalsIgnoreCase(curText))
+						//		if(curText.length() <= selected.length() 
+							//			&& selected.substring(0, curText.length()).equalsIgnoreCase(curText))
 									return idx;
 								
-								return -1;
+							//	return -1;
 							}
 
 							private String[] taskArrayToString (Task[] tasks) {
-								Vector<String> strings = new Vector<String>();
+								String[] strings = new String[tasks.length];
 								for(int i=0; i<tasks.length; i++)
-									strings.add(taskToString(tasks[i]));
-								return (String[]) strings.toArray();
+									strings[i]= curState.toString() + " " + taskToString(tasks[i]);
+								
+								System.out.println("str[0]: "+strings[0]);
+								return strings;
 							}
 							
 							private String taskToString(Task task) {
@@ -497,7 +536,7 @@ public class MainJFrame extends javax.swing.JFrame {
 									return STATE.LIST;
 								return STATE.NULL;
 							} 
-						         
+
 				      } );
 				}
 				
