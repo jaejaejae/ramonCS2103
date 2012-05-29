@@ -234,7 +234,7 @@ public class Parser {
 		
 		List<String> labelList = Arrays.asList(labelArr);
 		
-		taskDetails = timeParser.getinputCommand();
+		taskDetails = inputS;
 		
 		Task t = new Task(taskDetails,null,startDateTime,endDateTime,labelList,recurring);
 		t.setDeadline(deadline);

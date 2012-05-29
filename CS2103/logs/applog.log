@@ -334,3 +334,102 @@
 2555-05-29 13:58:13,851 - logic.JIDLogic - DEBUG - inside first cond
 2555-05-29 13:58:14,410 - logic.JIDLogic - DEBUG - inside execute command
 2555-05-29 13:58:14,411 - logic.JIDLogic - DEBUG - inside first cond
+2555-05-29 14:26:18,536 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:26:18,686 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:26:18,697 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:32:09,730 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:32:09,738 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:32:09,760 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:33:29,187 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:33:29,197 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:33:29,215 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:33:33,541 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:33:33,542 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:33:33,542 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:33:33,644 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:33:33,645 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:33:33,645 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:33:34,830 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:33:34,831 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:33:34,831 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:33:34,933 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:33:34,934 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:33:34,934 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:33:36,916 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:33:36,922 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:33:36,922 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:33:37,024 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:33:37,025 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:33:37,025 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:33:37,758 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:33:37,759 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:33:37,759 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:33:37,861 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:33:37,862 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:33:37,862 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:33:40,836 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:33:40,836 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:33:40,837 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:33:40,938 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:33:40,939 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:33:40,939 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:34:22,592 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:34:22,593 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:34:22,593 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:34:22,695 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:34:22,695 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:34:22,696 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:37:19,340 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:37:19,348 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:37:19,364 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:37:58,686 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:37:58,696 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:37:58,726 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:39:18,273 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:39:18,282 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:39:18,299 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:42:18,915 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:42:18,923 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:42:18,941 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:42:47,251 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:42:47,260 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:42:47,278 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:43:26,880 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:43:26,889 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:43:26,908 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:44:18,486 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:44:18,496 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:44:18,517 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:46:02,281 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:46:02,289 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:46:02,307 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:46:48,700 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:46:48,708 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:46:48,727 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:47:46,204 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:47:46,213 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:47:46,230 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:48:18,318 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:48:18,327 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:48:18,347 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:49:26,838 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:49:26,839 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:49:26,840 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:49:41,411 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:49:41,411 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:49:41,412 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:49:41,513 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:49:41,513 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:49:41,514 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:52:42,468 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:52:42,477 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:52:42,498 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:53:05,094 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:53:05,095 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:53:05,096 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:53:08,693 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:53:08,694 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:53:08,694 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 14:53:08,796 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 14:53:08,797 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 14:53:08,797 - logic.JIDLogic - FATAL - Inside the actual execution

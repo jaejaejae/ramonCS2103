@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_03" class="java.beans.XMLDecoder">
+ <object class="data.Task">
+  <void property="description">
+   <string>for buying a nb</string>
+  </void>
+  <void property="endDateTime">
+   <object class="data.DateTime">
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1338373800000</long>
+    </void>
+   </object>
+  </void>
+  <void property="name">
+   <string>Go to school</string>
+  </void>
+  <void property="recurring">
+   <string>monthly</string>
+  </void>
+  <void property="startDateTime">
+   <object class="data.DateTime">
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1338372000000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__30-05-2555183000U__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="description">
+   <string>in R3</string>
+  </void>
+  <void property="endDateTime">
+   <object class="data.DateTime">
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1338379200000</long>
+    </void>
+   </object>
+  </void>
+  <void property="name">
+   <string>Wash Clothes</string>
+  </void>
+  <void property="recurring">
+   <string>weekly</string>
+  </void>
+  <void property="startDateTime">
+   <object class="data.DateTime">
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1338375600000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__30-05-2555200000R__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="description">
+   <string>in R3</string>
+  </void>
+  <void property="endDateTime">
+   <object class="data.DateTime">
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1338379200000</long>
+    </void>
+   </object>
+  </void>
+  <void property="name">
+   <string>Wash Clothes</string>
+  </void>
+  <void property="recurring">
+   <string>weekly</string>
+  </void>
+  <void property="startDateTime">
+   <object class="data.DateTime">
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1338375600000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__30-05-2555200000G__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="description">
+   <string>in R3</string>
+  </void>
+  <void property="endDateTime">
+   <object class="data.DateTime">
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1338379200000</long>
+    </void>
+   </object>
+  </void>
+  <void property="name">
+   <string>Wash Clothes</string>
+  </void>
+  <void property="recurring">
+   <string>weekly</string>
+  </void>
+  <void property="startDateTime">
+   <object class="data.DateTime">
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1338375600000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__30-05-2555200000V__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="description">
+   <string>for buying a nb</string>
+  </void>
+  <void property="endDateTime">
+   <object class="data.DateTime">
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1338373800000</long>
+    </void>
+   </object>
+  </void>
+  <void property="name">
+   <string>Go to school</string>
+  </void>
+  <void property="recurring">
+   <string>monthly</string>
+  </void>
+  <void property="startDateTime">
+   <object class="data.DateTime">
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1338372000000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__30-05-2555183000Y__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="description">
+   <string>for buying a nb</string>
+  </void>
+  <void property="endDateTime">
+   <object class="data.DateTime">
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1338373800000</long>
+    </void>
+   </object>
+  </void>
+  <void property="name">
+   <string>Go to school</string>
+  </void>
+  <void property="recurring">
+   <string>monthly</string>
+  </void>
+  <void property="startDateTime">
+   <object class="data.DateTime">
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1338372000000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__30-05-2555183000Z__$$</string>
+  </void>
+ </object>
+</java>

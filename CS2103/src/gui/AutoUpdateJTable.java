@@ -28,7 +28,7 @@ public class AutoUpdateJTable {
 	AutoUpdateJTable(final JTable jTable){
 		this.jTable = jTable;
 		model = (DefaultTableModel) this.jTable.getModel();
-		setAppearance();
+		updateJTable();
 		/*
 		SwingWorker<JTable, Void> worker = new SwingWorker<JTable, Void>() {
 
@@ -83,13 +83,10 @@ public class AutoUpdateJTable {
 	
 
     private void makeJLabel(Task task) {
-    	task = new Task("test");
-    	
     	String str;
     	
     	str = "<HTML><b>";
-    	if(task.getImportant())
-    		str+= "<color = \"red\">";
+    	System.out.println(task.getName());
     	str += task.getName();
     	str += "</br></b>";
     	if(task.getDescription()!= null)
@@ -101,13 +98,15 @@ public class AutoUpdateJTable {
     		str+="<i>end</i>"+task.getEndDateTime().formattedToString();
     	}
     	str += "</HTML>";
+    	
     	listLabel.add(str);
+    	System.out.println(listLabel.toString());
     }
     
     private void makeAllJLabel(Task[] tasks) {
-    	int length = 0;
+    	
     	for(int i=0; i<tasks.length; i++) {
-    		makeJLabel(new Task());
+    		makeJLabel(tasks[i]);
     	}
     }
     
@@ -120,7 +119,11 @@ public class AutoUpdateJTable {
 			public void actionPerformed(ActionEvent arg0) {
 				// TODO Auto-generated method stub
 		    	listLabel = new Vector<String>();
+		    	JIDLogic.setCommand("find");
 		    	Task[] tasks = JIDLogic.executeCommand("find *.*");
+		    	System.out.println("updateJTable: "+ tasks.length + " "+ tasks.toString());
+		    	System.out.println("updateJTable0: "+ tasks[0].toString() + tasks[0].getName());
+		    	System.out.println("updateJTable1: "+ tasks[1].toString());
 		    	makeAllJLabel(tasks);
 		    	setAppearance();
 		    	}
