@@ -1,7 +1,5 @@
 package parser;
 
-import data.DateTime;
-import data.Task;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -10,7 +8,8 @@ import java.util.List;
 import java.util.Vector;
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
-
+import data.DateTime;
+import data.Task;
 public class Parser {
 	/*
 	public Task[] getTasks(String command) {
@@ -20,7 +19,7 @@ public class Parser {
 	
 	private final  String RECUR_REGEX = "(?i)(weekly|monthly|yearly)";
 	private final  String LABEL_REGEX = "@(\\w+)";
-	private final String ID_REGEX = "($$__)(\\d+)(__$$)"; //do u wanna check if its a valid YYYYMMDD thing between the crazy signs?
+	private final String ID_REGEX = "(\\$\\$__)(\\d{2}-\\d{2}-\\d{10}[A-Z])(__\\$\\$)";//(\\d+[A-Z])"; //do u wanna check if its a valid YYYYMMDD thing between the crazy signs?
 	
 	boolean important;
 	boolean deadline;
@@ -43,12 +42,6 @@ public class Parser {
 		return false;
 	}
 	
-	
-	public Task parseForSearch(String commad)
-	{
-		
-		return null;
-	}
 	public String getRecurString (String s) {
 		Pattern p = Pattern.compile(RECUR_REGEX);
 		Matcher m = p.matcher(s);
@@ -85,25 +78,36 @@ public class Parser {
 	public void setDateTimeAttributes () {
 		TimeParser t = new TimeParser();
 		DateParser d = new DateParser();
-		boolean startDateTimeExists, endDateTimeExists;
+		boolean startDateExists, endDateExists, startTimeExists, endTimeExists;
 		
 		int[] startTimeArr = t.getStartTime();
 		int[] endTimeArr = t.getEndTime();
 		int[] startDateArr = d.getStartDate();
 		int[] endDateArr = d.getEndDate();
 		
-		startDateTimeExists = ((startTimeArr[0]>=0) && (startTimeArr[1]>=0) && (startDateArr[0]>0) && (startDateArr[1]>0) && (startDateArr[2]>0));
 		
-		if (startDateTimeExists) {
-			startDateTime = new DateTime(startDateArr[2],startDateArr[1],startDateArr[0],startTimeArr[0],startTimeArr[1]);
+		/*
+		 * now it can construct DateTime objects with just dates too!
+		 */
+		
+		startDateExists = ((startDateArr[0]>0) && (startDateArr[1]>0) && (startDateArr[2]>0));
+		endDateExists = ((endDateArr[0]>0) && (endDateArr[1]>0) && (endDateArr[2]>0));
+		startTimeExists = ((startTimeArr[0]>=0) && (startTimeArr[1]>=0));
+		endTimeExists = ((endTimeArr[0]>=0) && (endTimeArr[1]>=0));
+		
+		if (startDateExists) {
+			if (startTimeExists)
+				startDateTime = new DateTime(startDateArr[2],startDateArr[1],startDateArr[0],startTimeArr[0],startTimeArr[1]);
+			else
+				startDateTime = new DateTime(startDateArr[2],startDateArr[1],startDateArr[0]);
 		}
 		
-		endDateTimeExists = ((endTimeArr[0]>=0) && (endTimeArr[1]>=0) && (endDateArr[0]>0) && (endDateArr[1]>0) && (endDateArr[2]>0));
-		
-		if (endDateTimeExists) {
-			endDateTime = new DateTime(endDateArr[2],endDateArr[1],endDateArr[0],endTimeArr[0],endTimeArr[1]);
+		if (endDateExists) {
+			if (endTimeExists)
+				endDateTime = new DateTime(endDateArr[2],endDateArr[1],endDateArr[0],endTimeArr[0],endTimeArr[1]);
+			else
+				endDateTime = new DateTime(endDateArr[2],endDateArr[1],endDateArr[0]);
 		}
-		
 		/*
 		 * tester print functions
 		 */
@@ -125,31 +129,31 @@ public class Parser {
 	 * NOT TESTED!
 	 */
 	public String fetchTaskId (String inputS) {
-		String Id = null;
+		String id = null;
 		Pattern p = Pattern.compile(ID_REGEX);
 		Matcher m = p.matcher(inputS);
 		
 		if(m.matches())
-			Id = m.group();
+			id = m.group();
 		
-		return Id;
+		return id;
 	}
 	
 	/*
 	 * NOT TESTED!
 	 */
 	public String[] fetchTaskIds (String inputS) {
-		String[] Ids = null;
+		String[] ids = null;
 		int i=0;
 		Pattern p = Pattern.compile(ID_REGEX);
 		Matcher m = p.matcher(inputS);
 		
 		while (m.find()) {
-			Ids[i] = m.group();
+			ids[i] = m.group();
 			i++;
 		}
 			
-		return Ids;
+		return ids;
 	}
 	
 	public Task parse (String inputS) {
@@ -236,14 +240,19 @@ public class Parser {
 		
 		taskDetails = timeParser.getinputCommand();
 		
-		Task t = new Task(taskDetails,null,startDateTime,endDateTime,labelList,recurring);
-		t.setDeadline(deadline);
-		t.setImportant(important);
+		Task t = new Task(taskDetails,null,startDateTime,endDateTime,labelList,recurring,deadline,important);	
 		
-		System.out.println(t.getTaskId());
 		return t;
 	}
 	
-	
+	public void dummyFunction() {
+		String id = "$$__04-05-2012070000D__$$";
+		
+		if(id.matches(ID_REGEX))
+			System.out.println("it matches!");
+		else
+			System.out.println("nope!");
+	}
 
 }
+
