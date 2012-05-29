@@ -721,3 +721,27 @@
 2555-05-29 15:48:36,145 - logic.JIDLogic - DEBUG - inside execute command
 2555-05-29 15:48:36,146 - logic.JIDLogic - DEBUG - inside fourth cond
 2555-05-29 15:48:36,147 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 16:41:01,557 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 16:41:01,573 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 16:41:01,608 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 17:00:24,227 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 17:00:24,269 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 17:00:24,296 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 17:02:52,080 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 17:02:52,092 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 17:02:52,111 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 17:04:06,672 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 17:04:06,699 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 17:04:06,737 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 17:05:38,547 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 17:05:38,558 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 17:05:38,580 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 17:09:00,469 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 17:09:00,483 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 17:09:00,501 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 17:12:01,287 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 17:12:01,295 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 17:12:01,314 - logic.JIDLogic - FATAL - Inside the actual execution
+2555-05-29 17:14:18,186 - logic.JIDLogic - DEBUG - inside execute command
+2555-05-29 17:14:18,194 - logic.JIDLogic - DEBUG - inside fourth cond
+2555-05-29 17:14:18,211 - logic.JIDLogic - FATAL - Inside the actual execution

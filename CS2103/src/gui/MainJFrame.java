@@ -6,6 +6,8 @@ package gui;
 
 import logic.JIDLogic;
 
+import com.seaglasslookandfeel.*;
+
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -69,11 +71,11 @@ public class MainJFrame extends javax.swing.JFrame {
      */
     public MainJFrame() {
     	 try {
-             UIManager.setLookAndFeel(
-                 UIManager.getSystemLookAndFeelClassName());
+    		UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
              /*for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                  if ("Nimbus".equals(info.getName())) {
                      javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                     UIManager.
                      break;
                  }
              }*/
@@ -605,7 +607,7 @@ public class MainJFrame extends javax.swing.JFrame {
 						MainJFrame.this.setVisible(false);
 					} 
 			         
-			       }
+			     }
 			    );
 	}
 	
