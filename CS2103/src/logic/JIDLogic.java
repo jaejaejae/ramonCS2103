@@ -58,7 +58,7 @@ public class JIDLogic {
 	    
 	    	*/
 	    	command="delete";
-	    	Task[] xyz=executeCommand("completed meet");
+	    	Task[] xyz=executeCommand("edit meet");
 	    	if (xyz!=null)
 	    	logger.debug("printing search"+ xyz.length);
 	    	else
@@ -72,18 +72,20 @@ public class JIDLogic {
 	    	}
 	    	
 	    	//logger.debug(StorageManager.saveFile());
-	    	Task efg[]=executeCommand("completed $$__03-05-2013154500W__$$" );
+	    	Task efg[]=executeCommand("edit "+xyz[0].getTaskId() );
 	    	
-	    	//Task efg[]=executeCommand("edit go to meet me weekly by 3.45pm 3/5/2013  @work @home");
+	    	efg=executeCommand("edit go to shubhendra weekly by 3.45pm 3/5/2013  @work @home");
 	    	
 	    	
 	    	if (efg!=null)
 	    	{
 	    		for (int i=0;i<efg.length;i++)
 	    		{
-	    			logger.debug(efg[i].getCompleted());
+	    			logger.debug(efg[i].getName());
 	    		}
 	    	}
+	    	
+	    	
 	    	def=executeCommand("find *.*");
 	    	if (def!=null)
 	    	{
@@ -104,6 +106,15 @@ public class JIDLogic {
 	    			logger.debug(def[i].getCompleted());
 	    		}
 	    	}
+	    	def=executeCommand("find *.*");
+	    	if (def!=null)
+	    	{
+	    		for (int i=0;i<def.length;i++)
+	    		{
+	    			logger.debug(def[i].getName());
+	    		}
+	    	}
+	    	
 	    	//logger.debug(StorageManager.saveFile());
 			
 			//JIDLogic_init();
@@ -128,6 +139,7 @@ public class JIDLogic {
 	public static Task[] executeCommand (String commandFromUser) {
 		Operation op = null;
 		logger.debug("inside execute command");
+		logger.debug(commandFromUser);
 		if (command == null || command.equals("")) {
 			logger.debug("inside first cond");
 			return null;
@@ -145,11 +157,17 @@ public class JIDLogic {
 			logger.debug("inside fourth cond");
 			op = Operation.getOperationObj(commandFromUser);
 			logger.fatal("Inside the actual execution");
+			logger.debug("THE OPERATION IS UNDOABLE:"+op.isUndoAble());
+			
+			
+			Task[] result=  op.execute(commandFromUser);
+			
+			logger.debug("THE OPERATION IS UNDOABLE:"+op.isUndoAble());
 			if (op.isUndoAble()) {
 				undoStack.push(op);
+				logger.debug("isundoable");
 			}
-			
-			return  op.execute(commandFromUser);
+			return result;
 			
 			
 		}

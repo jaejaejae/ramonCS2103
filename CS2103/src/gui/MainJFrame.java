@@ -527,6 +527,7 @@ public class MainJFrame extends javax.swing.JFrame {
 										exeCmd = curText;
 										break;
 									case LIST:
+									case UNDO:
 										exeCmd = curText;
 									}
 									
@@ -541,7 +542,7 @@ public class MainJFrame extends javax.swing.JFrame {
 									case EDIT:
 										if(!edit) {
 											if(tasks!=null) {
-												showPopup(taskToString(tasks[0]) + " " +  curState.toString());
+												showPopup( curState.toString() + taskToString(tasks[0]));
 												expandJPanel.updateJTable();
 											}else
 												showPopup("invalid input");
@@ -555,7 +556,7 @@ public class MainJFrame extends javax.swing.JFrame {
 									case UNDO:
 										expandJPanel.updateJTable();
 										expandFrame();
-										showPopup(tasks[0].getName());
+										showPopup("UNDO: " + tasks[0].getName());
 										break;
 									}
 									

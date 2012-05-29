@@ -34,6 +34,7 @@ public class UIController {
 	
 	public UIController() {
 		new MainJFrame();
+		
 		initializeTray();
 		Reminder reminder = new Reminder(tray);
 	}
@@ -63,8 +64,8 @@ public class UIController {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				// TODO Auto-generated method stub
-				System.exit(0);
 				
+				JIDLogic.JIDLogic_close();
 			}
 		});	
 		

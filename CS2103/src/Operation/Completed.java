@@ -54,7 +54,7 @@ public class Completed extends BaseSearch{
 		Task completeTask=StorageManager.getTaskById(taskCompleted.getTaskId());
 		if (completeTask!=null){
 			completeTask.toggleCompleted();
-		
+			logger.debug("Can undo");
 			return new Task[]{completeTask};
 		}
 		else {
