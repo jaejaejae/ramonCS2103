@@ -1,8 +1,21 @@
 package Operation;
 
+
 import data.Task;
 
 public class Overdue extends Operation {
+	
+	private String commandName;
+	
+	public Overdue(){
+		commandName="overdue";
+	}
+	
+	public Overdue(String intendedOperation) {
+		// TODO Auto-generated constructor stub
+		commandName=intendedOperation;
+	}
+
 	public Task[] execute(){
 		return null;
 	}

@@ -398,6 +398,7 @@ public class MainJFrame extends javax.swing.JFrame {
 									}
 									
 									System.out.println("exeCmd: " + exeCmd);
+									jLogic.setCommand(curState.toString());
 									tasks = jLogic.executeCommand(exeCmd);
 									
 									switch(curState) {

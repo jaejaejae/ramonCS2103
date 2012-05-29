@@ -4,6 +4,16 @@ import data.Task;
 
 public class Search extends Operation {
 	
+	private String commandName;
+	public Search(String intendedOperation) {
+		// TODO Auto-generated constructor stub
+		commandName=intendedOperation;
+	}
+	
+	public Search(){
+		commandName="search";
+	}
+
 	public Task[] execute(){
 		
 		
@@ -42,6 +52,11 @@ public class Search extends Operation {
 
 	@Override
 	public Task[] execute(String userCommand) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Task[] search(Task findTask) {
 		// TODO Auto-generated method stub
 		return null;
 	}

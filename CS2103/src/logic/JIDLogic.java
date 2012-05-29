@@ -2,19 +2,32 @@ package logic;
 
 //import java.io.FileNotFoundException;
 import java.util.Stack;
+
+import Operation.*;
 //import org.apache.log4j.Logger;
 import data.Task;
 //import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
 
-
-import Operation.*;
 import storagecontroller.StorageManager;
 
 public class JIDLogic {
 	
-	private Stack<Operation> undoStack;
+		private static Logger logger=Logger.getLogger(JIDLogic.class);
+		public static void main(String[] args) {
+	        //logger.info("hi");
+	    	
+	    	
+	    	Task[] abc=executeCommand("add *go to meet bhairav weekly by 3.45pm 3/8/2012  @work @home");
+	    	
+	    	logger.debug("inside JIDLogic");
+	    	if (abc[0]!=null)
+	    	System.out.println(abc[0].getName());
+		
+	}
+	private static Stack<Operation> undoStack;
 	
-	private String command;
+	private static String command;
 	//private Logger logger = Logger.getLogger(JIDLogic.class.getName());
 	/**
 	 * controller constructor. Builds the controller object
@@ -25,19 +38,25 @@ public class JIDLogic {
 		
 		undoStack = new Stack<Operation>();
 	}
-	public Task[] executeCommand (String commandFromUser) {
+	public static Task[] executeCommand (String commandFromUser) {
 		Operation op = null;
+		logger.debug("inside execute command");
 		if (command == null || command.equals("")) {
+			logger.debug("inside first cond");
 			return null;
 		} else if (command.trim().equals("exit")) {
+			logger.debug("inside second cond");
 			exit();
 			return null;
 		} else if (commandFromUser.trim().equals("undo") && !undoStack.empty()) {
+			logger.debug("inside third cond");
 			Operation undoAction = undoStack.pop();
 			return undoAction.undo();
 			
 		} else {
+			logger.debug("inside fourth cond");
 			op = Operation.getOperationObj(commandFromUser);
+			logger.fatal("Inside the actual execution");
 			if (op.isUndoAble()) {
 				undoStack.push(op);
 			}
@@ -62,8 +81,8 @@ public class JIDLogic {
 	 * 
 	 * @param command
 	 */
-	public void setCommand(String command) {
-		this.command = command;
+	public static void setCommand(String _command) {
+		command = _command;
 	}
 
 	/**
@@ -75,7 +94,7 @@ public class JIDLogic {
 	/**
 	 * exits the code and closes the UI window
 	 */
-	public void exit() {
+	public static void exit() {
 	
 	}
 
