@@ -52,7 +52,7 @@ import data.TaskArrayList;
 public class MainJFrame extends javax.swing.JFrame {
 
 	enum STATE {
-		ADD, DELETE, EDIT, SEARCH, COMPLETED, ARCHIVE, OVERDUE, NULL, LIST
+		ADD, DELETE, EDIT, SEARCH, COMPLETED, ARCHIVE, OVERDUE, NULL, LIST, UNDO
 	};
 	boolean edit = false;
 	STATE curState;
@@ -549,21 +549,16 @@ public class MainJFrame extends javax.swing.JFrame {
 									break;									
 									case SEARCH:
 										expandJPanel.updateJTable(tasks);
-										if(MainJFrame.this.getSize().equals(new Dimension(400, 100))) {
-											MainJFrame.this.setLayout(new BorderLayout());
-											MainJFrame.this.add(expandJPanel, BorderLayout.SOUTH);
-											MainJFrame.this.setSize(400,400);
-										}
+										expandFrame();
 									break;
 									case LIST:
+									case UNDO:
 										expandJPanel.updateJTable();
-										if(MainJFrame.this.getSize().equals(new Dimension(400, 100))) {
-											MainJFrame.this.setLayout(new BorderLayout());
-											MainJFrame.this.add(expandJPanel, BorderLayout.SOUTH);
-											MainJFrame.this.setSize(400,400);
-										}
+										expandFrame();
+										showPopup(tasks[0].getName());
 										break;
 									}
+									
 									
 									if(tasks==null)
 										System.out.println("error");
@@ -635,6 +630,8 @@ public class MainJFrame extends javax.swing.JFrame {
 									return STATE.OVERDUE;
 								if(firstWord.equalsIgnoreCase("list"))
 									return STATE.LIST;
+								if(firstWord.equalsIgnoreCase("undo"))
+									return STATE.UNDO;
 								return STATE.NULL;
 							} 
 
@@ -775,4 +772,11 @@ public class MainJFrame extends javax.swing.JFrame {
 		return null;
 	}
 	
+	private void expandFrame() {
+		if(MainJFrame.this.getSize().equals(new Dimension(400, 100))) {
+			MainJFrame.this.setLayout(new BorderLayout());
+			MainJFrame.this.add(expandJPanel, BorderLayout.SOUTH);
+			MainJFrame.this.setSize(400,400);
+		}
+	}
 }
