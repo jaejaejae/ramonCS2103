@@ -362,9 +362,10 @@ public class MainJFrame extends javax.swing.JFrame {
 									|| curState == STATE.DELETE
 									|| curState == STATE.SEARCH
 									|| curState == STATE.COMPLETED) {
-
-									//execute command
-									//update combobox
+									
+									jBoxCompletion.stopWorking();
+									tasks = jLogic.executeCommand(curText);
+									jBoxCompletion.setNewModel(taskArrayToString(tasks));
 								}
 								
 								if(e.getKeyCode() == KeyEvent.VK_ENTER) {
@@ -392,10 +393,26 @@ public class MainJFrame extends javax.swing.JFrame {
 										break;
 									case SEARCH:
 										//update table below
+										//show the table
 										break;
 									}
+									
 									System.out.println("exeCmd: " + exeCmd);
 									tasks = jLogic.executeCommand(exeCmd);
+									
+									switch(curState) {
+									case DELETE:
+									case COMPLETED:
+									case ADD:
+									case EDIT:
+										if(!edit) {
+											if(tasks!=null)
+												showPopup(taskToString(tasks[0]) + " successfully " + curState.toString());
+											else
+												showPopup("invalid input");
+										}
+									break;									
+									}
 									if(tasks==null)
 										System.out.println("error");
 									else
@@ -419,14 +436,14 @@ public class MainJFrame extends javax.swing.JFrame {
 								return -1;
 							}
 
-							private String[] TaskArrayToString (Task[] tasks) {
+							private String[] taskArrayToString (Task[] tasks) {
 								Vector<String> strings = new Vector<String>();
 								for(int i=0; i<tasks.length; i++)
-									strings.add(TaskToString(tasks[i]));
+									strings.add(taskToString(tasks[i]));
 								return (String[]) strings.toArray();
 							}
 							
-							private String TaskToString(Task task) {
+							private String taskToString(Task task) {
 								String str = new String();
 								str = task.getName() ;
 								if(task.getStartDateTime() != null)
