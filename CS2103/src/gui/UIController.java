@@ -33,10 +33,21 @@ public class UIController {
 	
 	
 	public UIController() {
-		new MainJFrame();
+		mainJFrame = new MainJFrame();
 		
-		initializeTray();
-		Reminder reminder = new Reminder(tray);
+		Timer timer = new Timer(100, new ActionListener(){
+
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				// TODO Auto-generated method stub
+
+				initializeTray();
+				Reminder reminder = new Reminder(tray);
+			}
+			
+		});
+		timer.setRepeats(false);
+		timer.start();
 	}
 	
 	
@@ -66,6 +77,7 @@ public class UIController {
 				// TODO Auto-generated method stub
 				
 				JIDLogic.JIDLogic_close();
+				System.exit(0);
 			}
 		});	
 		

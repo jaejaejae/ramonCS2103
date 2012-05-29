@@ -556,7 +556,10 @@ public class MainJFrame extends javax.swing.JFrame {
 									case UNDO:
 										expandJPanel.updateJTable();
 										expandFrame();
-										showPopup("UNDO: " + tasks[0].getName());
+										if(tasks!=null)
+											showPopup("UNDO: " + tasks[0].getName());
+										else
+											showPopup("error!!!");
 										break;
 									}
 									
