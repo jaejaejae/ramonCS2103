@@ -4,6 +4,8 @@
  */
 package gui;
 
+
+import data.Task;
 import logic.JIDLogic;
 
 import com.seaglasslookandfeel.*;
@@ -52,7 +54,7 @@ public class MainJFrame extends javax.swing.JFrame {
 	enum STATE {
 		ADD, DELETE, EDIT, SEARCH, COMPLETED, ARCHIVE, OVERDUE, NULL, LIST
 	};
-
+	boolean edit = false;
 	STATE curState;
 	STATE prevState = STATE.NULL;
 	Task[] prevTasks;
@@ -352,7 +354,7 @@ public class MainJFrame extends javax.swing.JFrame {
 				if (popup != null && popup.isShow())
 					popup.hideBox();
 				MainJFrame.this.setVisible(false);
-				JIDLogic.JIDLogic_close();
+				//JIDLogic.JIDLogic_close();
 			}
 
 			@Override
@@ -411,7 +413,6 @@ public class MainJFrame extends javax.swing.JFrame {
 					    	int curIndex;
 					    	String command;
 					    	String curText;
-				    	   boolean edit = false;
 							@Override
 							public void run() {
 
@@ -436,7 +437,7 @@ public class MainJFrame extends javax.swing.JFrame {
 									jComboBox1.setSelectedIndex(-1);
 								}
 								
-								if((curState == STATE.EDIT
+								if(((curState == STATE.EDIT && !edit)
 									|| curState == STATE.DELETE
 									|| curState == STATE.SEARCH
 									|| curState == STATE.COMPLETED)
@@ -445,36 +446,46 @@ public class MainJFrame extends javax.swing.JFrame {
 									&& e.getKeyCode() != KeyEvent.VK_ENTER
 									&& e.getKeyCode() != KeyEvent.VK_UP
 									&& e.getKeyCode() != KeyEvent.VK_DOWN){
+										
 									 SwingUtilities.invokeLater(
-										       new Runnable() {
+									new Runnable() {
+	
+										@Override
+										public void run() {
+											// TODO Auto-generated method stub
+											System.out
+													.println("***enter interstate: ");
+	
+											JIDLogic.setCommand(curState.toString().toLowerCase());
+	
+											System.out.println("********exeCmd: "
+													+ curText);
+											tasks = JIDLogic
+													.executeCommand(curText);
+	
+											System.out.println(tasks[0].getName());
+	
+											jBoxCompletion.stopWorking();
+											jBoxCompletion
+													.setNewModel(taskArrayToString(tasks));
+	
+											jComboBox1.setPopupVisible(true);
+	
+											jComboBox1.setSelectedIndex(-1);
+											editorcomp.setText(curText);
+											//editorcomp.setText(curState.toString() + tasks[0]);
+	
+											if (tasks != null)
+												id = tasks[0].getTaskId();
+											else
+												id = "dummyString!@#$";
+										}
+	
+									});
+								}
 
-												@Override
-												public void run() {
-													// TODO Auto-generated method stub
-													System.out.println("***enter interstate: ");
-													
-													JIDLogic.setCommand(curState.toString());
-													tasks = JIDLogic.executeCommand(curText);
-
-													System.out.println(tasks[0].getName());
-													
-													jBoxCompletion.stopWorking();													
-													jBoxCompletion.setNewModel(taskArrayToString(tasks));
-													
-													jComboBox1.setPopupVisible(true);
-													
-													jComboBox1.setSelectedIndex(-1);
-													editorcomp.setText(curText);
-													
-													id = tasks[0].getTaskId();
-												} 
-										         
-										       }
-										    );
-									}
-									
-									if(curState != STATE.NULL &&
-											(e.getKeyCode()==KeyEvent.VK_UP || e.getKeyCode()==KeyEvent.VK_DOWN)) {
+								if(curState != STATE.NULL &&
+										(e.getKeyCode()==KeyEvent.VK_UP || e.getKeyCode()==KeyEvent.VK_DOWN)) {
 										curText = prevText;
 										tasks = JIDLogic.executeCommand(curText);
 										id = tasks[jComboBox1.getSelectedIndex()].getTaskId();
@@ -493,13 +504,15 @@ public class MainJFrame extends javax.swing.JFrame {
 									case DELETE:
 									case COMPLETED:
 										
-										exeCmd = curState.toString() + " "
+										exeCmd = curState.toString().toLowerCase() + " "
 												+ id + " ";
 										break;
 									case EDIT:
 										if(!edit) {
-											exeCmd = curState.toString() + " "
-													+ tasks[curIndex].getTaskId();
+											exeCmd = curState.toString().toLowerCase() + " "
+													+ id;
+											editorcomp.setText(
+													curState.toString().toLowerCase() + " " + taskToString(storagecontroller.StorageManager.getTaskById(id)));
 											edit = true;
 										}
 										else {

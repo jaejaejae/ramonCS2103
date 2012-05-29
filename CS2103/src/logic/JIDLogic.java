@@ -21,7 +21,7 @@ public class JIDLogic {
 	        //logger.info("hi");
 			JIDLogic_init();
 			UIController ui=new UIController();
-			
+			JIDLogic_close();
 			
 		
 	}
@@ -41,6 +41,7 @@ public class JIDLogic {
 	public static Task[] executeCommand (String commandFromUser) {
 		Operation op = null;
 		logger.debug("inside execute command");
+		logger.debug(command);
 		if (command == null || command.equals("")) {
 			logger.debug("inside first cond");
 			return null;

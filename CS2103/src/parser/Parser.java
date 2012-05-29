@@ -131,9 +131,9 @@ public class Parser {
 	public String fetchTaskId (String inputS) {
 		String id = null;
 		Pattern p = Pattern.compile(ID_REGEX);
-		Matcher m = p.matcher(inputS);
+		Matcher m = p.matcher(inputS.toUpperCase());
 		
-		if(m.matches())
+		if(m.find())
 			id = m.group();
 		
 		return id;
