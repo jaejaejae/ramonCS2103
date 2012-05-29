@@ -19,7 +19,7 @@ public class Parser {
 	
 	private final  String RECUR_REGEX = "(?i)(weekly|monthly|yearly)";
 	private final  String LABEL_REGEX = "@(\\w+)";
-	private final String ID_REGEX = "(\\$\\$__)(\\d{2}-\\d{2}-\\d{10}[A-Z])(__\\$\\$)";//(\\d+[A-Z])"; //do u wanna check if its a valid YYYYMMDD thing between the crazy signs?
+	private final String ID_REGEX = "(\\$\\$__)(\\d{2}-\\d{2}-\\d+[A-Z])(__\\$\\$)";//(\\d+[A-Z])"; //do u wanna check if its a valid YYYYMMDD thing between the crazy signs?
 	
 	boolean important;
 	boolean deadline;

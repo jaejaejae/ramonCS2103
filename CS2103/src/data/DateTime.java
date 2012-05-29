@@ -13,7 +13,7 @@ public class DateTime {
 			"dd-MM-yyyy");
 	private static final SimpleDateFormat DAY_MONTH_YEAR_HOUR_MIN = new SimpleDateFormat(
 			"dd-MM-yyyy HH:mm");
-	private static final SimpleDateFormat DAY_MONTH_YEAR_PRESENTABLE  =new SimpleDateFormat("dd MMM ''yy");
+	private static final SimpleDateFormat DAY_MONTH_YEAR_PRESENTABLE  =new SimpleDateFormat("dd MMM ''yy K:mm a");
 	private static final SimpleDateFormat HOUR_MIN=new SimpleDateFormat("HH:mm");
 	private boolean hasTime;
 	private boolean hasDate;

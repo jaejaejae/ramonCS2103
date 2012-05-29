@@ -24,13 +24,16 @@ import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 import javax.swing.Timer;
 
+import logic.JIDLogic;
+
 public class UIController {
-	static MainJFrame mainJFrame = new MainJFrame();
+	static MainJFrame mainJFrame;
 	Reminder reminder;
 	static SystemTray tray = SystemTray.getSystemTray();
 	
 	
 	public UIController() {
+		new MainJFrame();
 		initializeTray();
 		Reminder reminder = new Reminder(tray);
 	}
@@ -38,6 +41,8 @@ public class UIController {
 	
 	public static void main(String[] args) {
 		//MainJFrame mainJFrame = new MainJFrame();
+		JIDLogic.JIDLogic_init();
+		
 		new UIController();
 		//initializeTray();
 		//Reminder reminder = new Reminder(tray);
