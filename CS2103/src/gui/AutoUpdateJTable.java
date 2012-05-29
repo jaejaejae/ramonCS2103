@@ -14,6 +14,8 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 
+import logic.JIDLogic;
+
 import data.DateTime;
 import data.Task;
 import data.TaskHashMap;
@@ -26,6 +28,7 @@ public class AutoUpdateJTable {
 	AutoUpdateJTable(final JTable jTable){
 		this.jTable = jTable;
 		model = (DefaultTableModel) this.jTable.getModel();
+		setAppearance();
 		/*
 		SwingWorker<JTable, Void> worker = new SwingWorker<JTable, Void>() {
 
@@ -57,7 +60,7 @@ public class AutoUpdateJTable {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				// TODO Auto-generated method stub
-				updateJTable();
+				//updateJTable();
 				//System.out.println(listLabel.get(0).toString());
 			}
 			
@@ -101,19 +104,50 @@ public class AutoUpdateJTable {
     	listLabel.add(str);
     }
     
-    private void makeAllJLabel(TaskHashMap taskHashMap) {
+    private void makeAllJLabel(Task[] tasks) {
     	int length = 0;
-    	for(int i=0; i<length; i++) {
+    	for(int i=0; i<tasks.length; i++) {
     		makeJLabel(new Task());
     	}
     }
     
-    private void updateJTable() {
-    	//retrieve TaskHashMap
-    	listLabel = new Vector<String>();
-    	TaskHashMap taskHashMap = new TaskHashMap();
-    	makeAllJLabel(taskHashMap);
-    	setAppearance();
+    
+    public void updateJTable() {
+
+    	Timer timer = new Timer(100, new ActionListener(){
+
+    	  		@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+		    	listLabel = new Vector<String>();
+		    	Task[] tasks = JIDLogic.executeCommand("find *.*");
+		    	makeAllJLabel(tasks);
+		    	setAppearance();
+		    	}
+			});
+    	timer.setRepeats(false);
+    	timer.start();
+    	
+    }
+    
+    public void updateJTable(final Task[] tasks) {
+    	Timer timer = new Timer(100, new ActionListener(){
+
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+
+		    	if(tasks==null)
+		    		while(model.getRowCount()>0)
+		    			model.removeRow(0);
+		    	else {
+			    	listLabel = new Vector<String>();
+			    	makeAllJLabel(tasks);
+			    	setAppearance();
+		    	}
+			}});
+    	timer.setRepeats(false);
+    	timer.start();
     }
     
     class MyRenderer extends DefaultTableCellRenderer {

@@ -46,7 +46,7 @@ import data.TaskArrayList;
  */
 public class MainJFrame extends javax.swing.JFrame {
 
-  	enum STATE {ADD, DELETE, EDIT, SEARCH, COMPLETED, ARCHIVE, OVERDUE, NULL};
+  	enum STATE {ADD, DELETE, EDIT, SEARCH, COMPLETED, ARCHIVE, OVERDUE, NULL, LIST};
 	
     // Variables declaration - do not modify
     private javax.swing.JComboBox jComboBox1;
@@ -360,7 +360,6 @@ public class MainJFrame extends javax.swing.JFrame {
 									|| curState == STATE.DELETE
 									|| curState == STATE.SEARCH
 									|| curState == STATE.COMPLETED) {
-									
 									jBoxCompletion.stopWorking();
 									tasks = JIDLogic.executeCommand(curText);
 									jBoxCompletion.setNewModel(taskArrayToString(tasks));
@@ -390,8 +389,8 @@ public class MainJFrame extends javax.swing.JFrame {
 										exeCmd = curText;
 										break;
 									case SEARCH:
-										//update table below
-										//show the table
+										exeCmd = curText;
+										
 										break;
 									}
 									
@@ -406,12 +405,27 @@ public class MainJFrame extends javax.swing.JFrame {
 									case EDIT:
 										if(!edit) {
 											if(tasks!=null)
-												showPopup(taskToString(tasks[0]) + " successfully " + curState.toString());
+												showPopup(taskToString(tasks[0]) + " " +  curState.toString());
 											else
 												showPopup("invalid input");
 										}
 									break;									
+									case SEARCH:
+										expandJPanel.updateJTable(tasks);
+										if(MainJFrame.this.getSize().equals(new Dimension(400, 100))) {
+											MainJFrame.this.add(expandJPanel, BorderLayout.SOUTH);
+											MainJFrame.this.setSize(400,400);
+										}
+									break;
+									case LIST:
+										expandJPanel.updateJTable();
+										if(MainJFrame.this.getSize().equals(new Dimension(400, 100))) {
+											MainJFrame.this.add(expandJPanel, BorderLayout.SOUTH);
+											MainJFrame.this.setSize(400,400);
+										}
+										break;
 									}
+									
 									if(tasks==null)
 										System.out.println("error");
 									else
@@ -475,6 +489,8 @@ public class MainJFrame extends javax.swing.JFrame {
 									return STATE.ARCHIVE;
 								if(firstWord.equalsIgnoreCase("overdue"))
 									return STATE.OVERDUE;
+								if(firstWord.equalsIgnoreCase("list"))
+									return STATE.LIST;
 								return STATE.NULL;
 							} 
 						         
@@ -553,10 +569,12 @@ public class MainJFrame extends javax.swing.JFrame {
 	private void showPopup(String str) {
 		if(popup == null) {
 			popup = new TopPopUp();
-			popup.setLocation(this.getLocation().x , this.getLocation().y - 30);
 		}
+
 			popup.setText(str);
+			popup.setPosition(this.getLocation().x , this.getLocation().y -30 );
 			popup.showBox();
+			
 	}
 	
 	public void showFrame() {
