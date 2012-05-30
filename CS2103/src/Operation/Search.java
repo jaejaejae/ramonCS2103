@@ -59,7 +59,7 @@ public class Search extends Operation {
 	@Override
 	public Task[] execute(String userCommand) {
 		// TODO Auto-generated method stub
-
+		
 		String params = "";
 		if (userCommand.startsWith("search ")) {
 			params = userCommand.replace("search ", "");
@@ -98,7 +98,9 @@ public class Search extends Operation {
 			return new Task[]{StorageManager.getTaskById(taskToSearch.getTaskId())};
 		}
 		else {
+			
 			return search(taskToSearch, StorageManager.getAllTasks());
+			
 		}
 		
 		
@@ -107,6 +109,12 @@ public class Search extends Operation {
 	@SuppressWarnings("null")
 	private Task[] search(Task findTask, Task[] allTasks) {
 		// TODO Auto-generated method stub
+		Task def[]= StorageManager.getAllTasks();
+		for (int i=0;i<def.length;i++)
+		{
+			System.out.println(def[i].getTaskId());
+		}
+		
 		ArrayList<Task> foundTasks=new ArrayList<Task>();
 		for(int i=0;i<allTasks.length;i++)
 		{
@@ -166,6 +174,7 @@ public class Search extends Operation {
 		{
 			if (taskToSearch.getLabels().get(0)==null)
 			{
+				logger.debug("true.match");
 				return true;
 			}
 			else if (existingTask.getLabels() != null) {
@@ -184,6 +193,7 @@ public class Search extends Operation {
 							}
 						}
 						if (flag) {
+							logger.debug("true.match");
 							return true;
 						}
 					

@@ -500,6 +500,9 @@ public class MainJFrame extends javax.swing.JFrame {
 									System.out.println("*********************enter");
 									//System.out.println(prevTasks[0].getName());
 									
+									if(curState != STATE.EDIT)
+										edit = false;
+									
 									switch (curState ){
 									case DELETE:
 									case COMPLETED:
@@ -553,6 +556,9 @@ public class MainJFrame extends javax.swing.JFrame {
 										expandFrame();
 									break;
 									case LIST:
+										expandJPanel.updateJTable();
+										expandFrame();
+									break;
 									case UNDO:
 										expandJPanel.updateJTable();
 										expandFrame();
@@ -560,14 +566,15 @@ public class MainJFrame extends javax.swing.JFrame {
 											showPopup("UNDO: " + tasks[0].getName());
 										else
 											showPopup("error!!!");
-										break;
+									break;
 									}
 									
-									
+									/*
 									if(tasks==null)
 										System.out.println("error");
 									else
 										System.out.println(tasks[0].toString());
+									*/
 								}
 								
 								prevState = curState;
@@ -718,6 +725,7 @@ public class MainJFrame extends javax.swing.JFrame {
 			popup = new TopPopUp();
 		}
 
+		System.out.println("-----------------POPUP-----------------------");
 		popup.setText(str);
 		popup.setPosition(this.getLocation().x, this.getLocation().y - 30);
 		popup.showBox();
