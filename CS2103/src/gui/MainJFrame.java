@@ -729,7 +729,7 @@ public class MainJFrame extends javax.swing.JFrame {
 		popup.setText(str);
 		popup.setPosition(this.getLocation().x, this.getLocation().y - 30);
 		popup.showBox();
-
+		popup.setFocusable(true);
 	}
 
 	public void showFrame() {

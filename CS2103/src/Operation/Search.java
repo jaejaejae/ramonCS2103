@@ -59,19 +59,21 @@ public class Search extends Operation {
 	@Override
 	public Task[] execute(String userCommand) {
 		// TODO Auto-generated method stub
-		
+
 		String params = "";
+		
 		if (userCommand.startsWith("search ")) {
 			params = userCommand.replace("search ", "");
 		} else if (userCommand.startsWith("find ")) {
 			params = userCommand.replace("find ", "");
 		}
+		
 		if (params.toLowerCase().contains("*.*")) {
 			return returnAllTasks(params);
 		}
 		Task parsedTask=parseCommand(params);
-		if (parsedTask.getStartDateTime()!=null)
-		{
+		
+		if (parsedTask.getStartDateTime()!=null){
 			logger.debug(parsedTask.getStartDateTime().getDate().getTimeMilli());
 		}
 		return search(parsedTask);
@@ -98,9 +100,7 @@ public class Search extends Operation {
 			return new Task[]{StorageManager.getTaskById(taskToSearch.getTaskId())};
 		}
 		else {
-			
 			return search(taskToSearch, StorageManager.getAllTasks());
-			
 		}
 		
 		
@@ -109,26 +109,17 @@ public class Search extends Operation {
 	@SuppressWarnings("null")
 	private Task[] search(Task findTask, Task[] allTasks) {
 		// TODO Auto-generated method stub
-		Task def[]= StorageManager.getAllTasks();
-		for (int i=0;i<def.length;i++)
-		{
-			System.out.println(def[i].getTaskId());
-		}
-		
 		ArrayList<Task> foundTasks=new ArrayList<Task>();
 		for(int i=0;i<allTasks.length;i++)
 		{
 			logger.debug("Matching task"+i);
-			if (matches(findTask,allTasks[i]))
-			{
-				
+			if (matches(findTask,allTasks[i])){
 				Collections.addAll(foundTasks, allTasks[i]);
 			}
 			
 		}
-		if (foundTasks.size()>0)
-		{
-		return foundTasks.toArray(new Task[foundTasks.size()]);
+		if (foundTasks.size()>0){
+			return foundTasks.toArray(new Task[foundTasks.size()]);
 		}
 		return null;
 	}
@@ -174,32 +165,34 @@ public class Search extends Operation {
 		{
 			if (taskToSearch.getLabels().get(0)==null)
 			{
-				logger.debug("true.match");
+				logger.debug("it matches");
 				return true;
 			}
 			else if (existingTask.getLabels() != null) {
-						boolean flag = false;
-						for (String searchlabel : taskToSearch.getLabels()) {
-							searchlabel = searchlabel.toLowerCase();
-							flag = false;
-							for (String existingLabel : existingTask.getLabels()) {
-								if (existingLabel.toLowerCase().contains(searchlabel)) {
-									flag = true;
-									break;
-								}
-							}
-							if (flag) {
-								break;
-							}
+				boolean flag = false;
+				for (String searchlabel : taskToSearch.getLabels()) {
+					searchlabel = searchlabel.toLowerCase();
+					flag = false;
+					for (String existingLabel : existingTask.getLabels()) {
+						if (existingLabel.toLowerCase().contains(searchlabel)) {
+							flag = true;
+							break;
 						}
-						if (flag) {
-							logger.debug("true.match");
-							return true;
-						}
-					
+					}
+				
+					if (flag) {
+						break;
+					}
 				}
-			
+				if (flag) {
+					logger.debug("it matches");
+					return true
+							;
+				}
+					
 			}
+			
+		}
 				
 		
 		return false;
