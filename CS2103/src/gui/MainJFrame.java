@@ -463,12 +463,12 @@ public class MainJFrame extends javax.swing.JFrame {
 											tasks = JIDLogic
 													.executeCommand(curText);
 	
-											System.out.println(tasks[0].getName());
+											//System.out.println(tasks[0].getName());
 	
 											jBoxCompletion.stopWorking();
 											jBoxCompletion
 													.setNewModel(taskArrayToString(tasks));
-	
+											
 											jComboBox1.setPopupVisible(true);
 	
 											jComboBox1.setSelectedIndex(-1);
@@ -542,7 +542,7 @@ public class MainJFrame extends javax.swing.JFrame {
 									case EDIT:
 										if(!edit) {
 											if(tasks!=null) {
-												showPopup( curState.toString() + taskToString(tasks[0]));
+												showPopup( curState.toString()+ " " + taskToString(tasks[0]));
 												expandJPanel.updateJTable();
 											}else
 												showPopup("invalid input");
@@ -591,12 +591,17 @@ public class MainJFrame extends javax.swing.JFrame {
 							}
 
 							private String[] taskArrayToString (Task[] tasks) {
-								String[] strings = new String[tasks.length];
-								for(int i=0; i<tasks.length; i++)
-									strings[i]= curState.toString() + " " + taskToString(tasks[i]);
-								
-								System.out.println("str[0]: "+strings[0]);
-								return strings;
+								if(tasks!=null) {
+									String[] strings = new String[tasks.length];
+									for(int i=0; i<tasks.length; i++)
+										strings[i]= curState.toString() + " " + taskToString(tasks[i]);
+									
+									System.out.println("str[0]: "+strings[0]);
+									return strings;
+								}
+								else {
+									return null;
+								}
 							}
 							
 							private String taskToString(Task task) {
