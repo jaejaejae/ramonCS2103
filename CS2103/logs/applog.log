@@ -1802,3 +1802,10 @@
 2012-06-01 14:08:25,235 - logic.JIDLogic - FATAL - Inside the actual execution
 2012-06-01 14:08:25,235 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
 2012-06-01 14:08:25,235 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-01 14:47:07,203 - Abc - DEBUG - array out of bounds!
+2012-06-01 14:47:07,548 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-01 14:47:07,548 - logic.JIDLogic - DEBUG - find *.*
+2012-06-01 14:47:07,548 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-01 14:47:07,563 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-01 14:47:07,563 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-01 14:47:07,563 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false

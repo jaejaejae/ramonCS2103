@@ -34,6 +34,8 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionAdapter;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 import java.util.ArrayList;
 import java.util.Vector;
 
@@ -58,11 +60,11 @@ public class MainJFrame extends javax.swing.JFrame {
 	STATE curState;
 	STATE prevState = STATE.NULL;
 	Task[] prevTasks;
-
-	   Task[] tasks;
+   Task[] tasks;
 	String prevText;
 	String id;
 	int prevIndex;
+	boolean expand = false;
 	
 	// Variables declaration - do not modify
 	private javax.swing.JComboBox jComboBox1;
@@ -296,14 +298,9 @@ public class MainJFrame extends javax.swing.JFrame {
 						jLabel3.setIcon(Resource.down);
 						if (MainJFrame.this.getSize().equals(
 								new Dimension(400, 400))) {
-							MainJFrame.this.remove(expandJPanel);
-							MainJFrame.this.setSize(400, 100);
+							contractFrame();
 						} else {
-							MainJFrame.this.setLayout(new BorderLayout());
-							MainJFrame.this.add(expandJPanel,
-									BorderLayout.SOUTH);
-							MainJFrame.this.setSize(400, 400);
-
+							expandFrame();
 						}
 					}
 
@@ -790,10 +787,21 @@ public class MainJFrame extends javax.swing.JFrame {
 	}
 	
 	private void expandFrame() {
-		if(MainJFrame.this.getSize().equals(new Dimension(400, 100))) {
+		if(!expand) {
 			MainJFrame.this.setLayout(new BorderLayout());
 			MainJFrame.this.add(expandJPanel, BorderLayout.SOUTH);
 			MainJFrame.this.setSize(400,400);
+			expand = true;
+			jLabel3.setToolTipText("Contract");
+		}
+	}
+	
+	private void contractFrame() {
+		if (expand) {
+			MainJFrame.this.remove(expandJPanel);
+			MainJFrame.this.setSize(400, 100);
+			expand = false;
+			jLabel3.setToolTipText("Expand");
 		}
 	}
 }
