@@ -56,6 +56,7 @@ public class MainJFrame extends javax.swing.JFrame {
 	enum STATE {
 		ADD, DELETE, EDIT, SEARCH, COMPLETED, ARCHIVE, OVERDUE, NULL, LIST, UNDO
 	};
+	
 	boolean edit = false;
 	STATE curState;
 	STATE prevState = STATE.NULL;
@@ -387,19 +388,8 @@ public class MainJFrame extends javax.swing.JFrame {
 		final JTextField editorcomp = (JTextField) jComboBox1.getEditor()
 				.getEditorComponent();
 		editorcomp.setText("");
-		jComboBox1.addItemListener(new ItemListener() {
-
-			@Override
-			public void itemStateChanged(ItemEvent e) {
-				// TODO Auto-generated method stub
-
-			}
-
-		});
-
 		
-		
-		editorcomp.addKeyListener(new KeyListener() {
+		editorcomp.addKeyListener(new KeyAdapter() {
 
 			@Override
 			public void keyPressed(KeyEvent arg0) {
@@ -651,22 +641,6 @@ public class MainJFrame extends javax.swing.JFrame {
 				      } );
 				}
 
-
-			@Override
-			public void keyReleased(KeyEvent arg0) {
-				// TODO Auto-generated method stub
-
-			}
-
-			@Override
-			public void keyTyped(KeyEvent arg0) {
-				// TODO Auto-generated method stub
-
-				/**
-				 * //update state //update combo box
-				 * 
-				 */
-			}
 
 		});
 
