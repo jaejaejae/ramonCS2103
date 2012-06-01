@@ -3,10 +3,10 @@ package parser;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import org.apache.log4j.Logger;
+
 public class ParserEngine {
 	
-	private static Logger logger= Logger.getLogger(ParserEngine.class);
+
 	public static void main (String args[]) {
 		
 		String inputString = null;
@@ -20,21 +20,36 @@ public class ParserEngine {
 		catch(IOException ioe) {
 			System.out.println("An unexpected error occured for your input");
 		}
-		
-		Parser parserObject = new Parser();
-		
-		if(parserObject.fetchTaskIds(inputString)!=null)
-		{
-			for(int i=0;i<parserObject.fetchTaskIds(inputString).length;i++)
-			{
-				System.out.println(parserObject.fetchTaskIds(inputString)[i]);
-			}
-		}
-		else
-		{
-			logger.warn("No task Id returned");
-		}
-	}
-		
-}
+	
 
+		Parser parserObject = new Parser();
+		parserObject.parse(inputString);
+		
+		
+		System.out.print("Input string2:");
+		try {
+			inputString = reader.readLine();
+		}
+		catch(IOException ioe) {
+			System.out.println("An unexpected error occured for your input");
+		}
+	
+		parserObject.parse(inputString);
+		/*
+		AtomicReference<String> inputRef = new AtomicReference(inputString);
+		mutateString(inputRef);
+		System.out.println("the reference now holds: "+inputRef.toString());
+		System.out.println("inputString: "+inputString);
+		*/
+		
+	}
+	/*
+	private static void mutateString (AtomicReference<String> stringRef) {
+		String s="its no longer the same";
+		
+		AtomicReference<String> dummyRef = new AtomicReference<String>(s);
+		stringRef = dummyRef;
+	}
+	*/
+
+}
