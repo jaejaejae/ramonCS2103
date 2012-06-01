@@ -8,6 +8,8 @@ import java.util.ArrayList;
 
 import javax.swing.JLabel;
 import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+
 import data.*;
 /**
  *
@@ -41,23 +43,17 @@ public class ExpandJPanel extends javax.swing.JPanel {
         setPreferredSize(new java.awt.Dimension(378, 300));
         setRequestFocusEnabled(false);
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-            		null
-            },
-            new String [] {
-                "Title 1"
-            }
-        ));
+        jTable1.setModel(new MyTableModel());
         jTable1.setTableHeader(null);
         //jTable1.setCellEditor(jTable1.getCellEditor());
-        jTable1.setColumnSelectionAllowed(false);
+        jTable1.setColumnSelectionAllowed(true);
         jTable1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        jTable1.setEnabled(false);
-        jTable1.setFocusable(false);
+        jTable1.setEnabled(true);
+        jTable1.setFocusable(true);
         jTable1.setMaximumSize(new java.awt.Dimension(370, 30));
         jTable1.setMinimumSize(new java.awt.Dimension(370, 370));
-        jTable1.setRowSelectionAllowed(false);
+        jTable1.setRowSelectionAllowed(true);
+        jTable1.setCellSelectionEnabled(true);
         jTable1.setRowSorter(null);
         
         jScrollPane1.setViewportView(jTable1);
@@ -90,5 +86,18 @@ public class ExpandJPanel extends javax.swing.JPanel {
     
     public void updateJTable() {
     	autoJTable.updateJTable();
+    }
+    
+    class MyTableModel extends DefaultTableModel{
+    	MyTableModel() {
+    		super(
+    			new Object [][] {null},
+    			new String [] {"Title 1"});
+    	}
+    	
+    	@Override
+    	public boolean isCellEditable(int row, int column) {
+			return false;
+    	}
     }
 }

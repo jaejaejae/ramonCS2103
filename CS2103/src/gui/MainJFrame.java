@@ -60,7 +60,7 @@ public class MainJFrame extends javax.swing.JFrame {
 	STATE curState;
 	STATE prevState = STATE.NULL;
 	Task[] prevTasks;
-   Task[] tasks;
+	Task[] tasks;
 	String prevText;
 	String id;
 	int prevIndex;
