@@ -10,9 +10,14 @@ import logic.JIDLogic;
 
 import com.seaglasslookandfeel.*;
 
+import javax.swing.AbstractAction;
+import javax.swing.ActionMap;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import javax.swing.InputMap;
 import javax.swing.JButton;
+import javax.swing.JComponent;
+import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.Timer;
@@ -22,6 +27,7 @@ import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.Container;
 import java.awt.Dimension;
+import java.awt.Event;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -40,6 +46,7 @@ import java.util.ArrayList;
 import java.util.Vector;
 
 import javax.swing.plaf.basic.BasicComboBoxEditor;
+import javax.swing.text.DefaultEditorKit;
 import javax.swing.text.JTextComponent;
 
 import javax.swing.JTextField;
@@ -124,6 +131,8 @@ public class MainJFrame extends javax.swing.JFrame {
 				setVisible(true);
 			}
 		});
+		
+		addBindings();
 	}
 
 	/**
@@ -502,7 +511,8 @@ public class MainJFrame extends javax.swing.JFrame {
 											exeCmd = curState.toString().toLowerCase() + " "
 													+ id;
 											editorcomp.setText(
-													curState.toString().toLowerCase() + " " + taskToString(storagecontroller.StorageManager.getTaskById(id)));
+													curState.toString().toLowerCase() + " " 
+													+ storagecontroller.StorageManager.getTaskById(id));
 											edit = true;
 										}
 										else {
@@ -532,7 +542,8 @@ public class MainJFrame extends javax.swing.JFrame {
 									case EDIT:
 										if(!edit) {
 											if(tasks!=null) {
-												showPopup( curState.toString()+ " " + taskToString(tasks[0]));
+												showPopup( curState.toString()+ " " 
+														+ tasks[0]);
 												expandJPanel.updateJTable();
 											}else
 												showPopup("invalid input");
@@ -588,7 +599,8 @@ public class MainJFrame extends javax.swing.JFrame {
 								if(tasks!=null) {
 									String[] strings = new String[tasks.length];
 									for(int i=0; i<tasks.length; i++)
-										strings[i]= curState.toString() + " " + taskToString(tasks[i]);
+										strings[i]= curState.toString() + " " 
+												+ tasks[i];
 									
 									System.out.println("str[0]: "+strings[0]);
 									return strings;
@@ -598,6 +610,7 @@ public class MainJFrame extends javax.swing.JFrame {
 								}
 							}
 							
+							/*
 							private String taskToString(Task task) {
 								String str = new String();
 								str = task.getName() ;
@@ -607,7 +620,7 @@ public class MainJFrame extends javax.swing.JFrame {
 									str += " end:" + task.getEndDateTime().presentableToString();
 								return str;
 							}
-							
+							*/
 							private STATE checkCommand(String curText) {
 								String delims = "[ ]+";
 								String firstWord = curText.split(delims)[0];
@@ -778,4 +791,30 @@ public class MainJFrame extends javax.swing.JFrame {
 			jLabel3.setToolTipText("Expand");
 		}
 	}
+	
+    protected void addBindings() {
+        InputMap inputMap = this.getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW);
+        ActionMap actionMap = this.getRootPane().getActionMap();
+        
+        //Ctrl-b to go backward one character
+        KeyStroke key = KeyStroke.getKeyStroke(KeyEvent.VK_Z, Event.CTRL_MASK);
+        inputMap.put(key, "undo");
+        actionMap.put("undo", new UndoAction());
+    }
+    
+    class UndoAction extends AbstractAction {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+        	System.out.println("*****EXECMD: UNDO*******");
+        	JIDLogic.setCommand("UNDO");
+        	Task[] task = JIDLogic.executeCommand("UNDO");
+        	if(task == null)
+        		showPopup("UNDO unsuccessfully!");
+        	else {
+        		showPopup("UNDO: "+task[0].getName());
+            	expandJPanel.updateJTable();
+        	}
+        }
+    }
+    
 }
