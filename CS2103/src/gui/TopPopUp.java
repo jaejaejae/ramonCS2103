@@ -123,6 +123,7 @@ public class TopPopUp extends JFrame {
 
     	SHOW = true;
     	setVisible(SHOW);
+    	toFront();
     	
     	if(timer != null){
     		timer.stop();
