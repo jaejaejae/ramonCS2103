@@ -4,11 +4,23 @@
  */
 package gui;
 
+import gui.MainJFrame.UndoAction;
+
+import java.awt.Event;
+import java.awt.event.ActionEvent;
+import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 
+import javax.swing.AbstractAction;
+import javax.swing.ActionMap;
+import javax.swing.InputMap;
+import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JTable;
+import javax.swing.KeyStroke;
 import javax.swing.table.DefaultTableModel;
+
+import logic.JIDLogic;
 
 import data.*;
 /**
@@ -99,5 +111,32 @@ public class ExpandJPanel extends javax.swing.JPanel {
     	public boolean isCellEditable(int row, int column) {
 			return false;
     	}
+    }
+
+    protected void addBindings() {
+        InputMap inputMap = this.getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW);
+        ActionMap actionMap = this.getRootPane().getActionMap();
+        
+        //Ctrl-b to go backward one character
+        KeyStroke key = KeyStroke.getKeyStroke(KeyEvent.VK_D, Event.CTRL_MASK);
+        inputMap.put(key, "delete");
+        actionMap.put("delete", new DeleteAction());
+    }
+    
+    class DeleteAction extends AbstractAction {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+        	System.out.println("*****EXECMD: DELETE*******");
+        	JIDLogic.setCommand("DELETE");
+        	Task[] task = JIDLogic.executeCommand("DELETE" + jTable1.getSelectedRow());
+        	/*
+        	if(task == null)
+        		showPopup("UNDO unsuccessfully!");
+        	else {
+        		showPopup("UNDO: "+task[0].getName());
+            	expandJPanel.updateJTable();
+        	}
+        	*/
+        }
     }
 }

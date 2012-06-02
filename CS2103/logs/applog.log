@@ -5420,3 +5420,109 @@
 2012-06-01 23:31:48,068 - operation.Search - DEBUG - after sorting
 2012-06-01 23:31:48,069 - operation.Search - DEBUG - abc on 02-06-2012
 2012-06-01 23:31:48,069 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-02 15:54:24,049 - Abc - DEBUG - array out of bounds!
+2012-06-02 15:54:24,471 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-02 15:54:24,473 - logic.JIDLogic - DEBUG - find *.*
+2012-06-02 15:54:24,473 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-02 15:54:24,500 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-02 15:54:24,501 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-02 15:54:24,501 - operation.Search - DEBUG - finding objects
+2012-06-02 15:54:24,503 - operation.Search - DEBUG - returning all objects
+2012-06-02 15:54:24,505 - operation.Search - DEBUG - before sorting
+2012-06-02 15:54:24,507 - operation.Search - DEBUG - after sorting
+2012-06-02 15:54:24,507 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-02 15:54:30,296 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-02 15:54:30,296 - logic.JIDLogic - DEBUG - add abc tmr
+2012-06-02 15:54:30,297 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-02 15:54:30,298 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-02 15:54:30,298 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-02 15:54:30,346 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-02 15:54:30,347 - logic.JIDLogic - DEBUG - left over string after checking for recurring: abc tmr
+2012-06-02 15:54:30,348 - logic.JIDLogic - DEBUG - left over string after fetching labels: abc tmr
+2012-06-02 15:54:30,418 - logic.JIDLogic - DEBUG - -----date only format-------
+2012-06-02 15:54:30,419 - logic.JIDLogic - DEBUG - start date string: tmr
+2012-06-02 15:54:30,420 - logic.JIDLogic - DEBUG - Start date is set!
+2012-06-02 15:54:30,420 - logic.JIDLogic - DEBUG - time/date extracted!
+2012-06-02 15:54:30,421 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-02 15:54:30,436 - logic.JIDLogic - DEBUG - start date time: 03-06-2012
+2012-06-02 15:54:30,436 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-02 15:54:30,437 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-02 15:54:30,437 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-02 15:54:30,438 - logic.JIDLogic - DEBUG - task details: abc
+2012-06-02 15:54:30,441 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-06-02 15:54:30,441 - logic.JIDLogic - DEBUG - isundoable
+2012-06-02 15:56:48,742 - Abc - DEBUG - array out of bounds!
+2012-06-02 15:57:14,799 - Abc - DEBUG - array out of bounds!
+2012-06-02 15:57:15,905 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-02 15:57:15,908 - logic.JIDLogic - DEBUG - find *.*
+2012-06-02 15:57:15,908 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-02 15:57:15,932 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-02 15:57:15,933 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-02 15:57:15,933 - operation.Search - DEBUG - finding objects
+2012-06-02 15:57:15,934 - operation.Search - DEBUG - returning all objects
+2012-06-02 15:57:15,937 - operation.Search - DEBUG - before sorting
+2012-06-02 15:57:15,937 - operation.Search - DEBUG - after sorting
+2012-06-02 15:57:15,938 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-02 15:57:19,685 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-02 15:57:19,685 - logic.JIDLogic - DEBUG - add abc tmr
+2012-06-02 15:57:19,686 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-02 15:57:19,687 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-02 15:57:19,687 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-02 15:57:19,699 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-02 15:57:19,700 - logic.JIDLogic - DEBUG - left over string after checking for recurring: abc tmr
+2012-06-02 15:57:19,701 - logic.JIDLogic - DEBUG - left over string after fetching labels: abc tmr
+2012-06-02 15:57:19,758 - logic.JIDLogic - DEBUG - -----date only format-------
+2012-06-02 15:57:19,759 - logic.JIDLogic - DEBUG - start date string: tmr
+2012-06-02 15:57:19,760 - logic.JIDLogic - DEBUG - Start date is set!
+2012-06-02 15:57:19,761 - logic.JIDLogic - DEBUG - time/date extracted!
+2012-06-02 15:57:19,761 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-02 15:57:19,767 - logic.JIDLogic - DEBUG - start date time: 03-06-2012
+2012-06-02 15:57:19,768 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-02 15:57:19,768 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-02 15:57:19,768 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-02 15:57:19,769 - logic.JIDLogic - DEBUG - task details: abc
+2012-06-02 15:57:19,771 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-06-02 15:57:19,772 - logic.JIDLogic - DEBUG - isundoable
+2012-06-02 16:00:02,396 - Abc - DEBUG - array out of bounds!
+2012-06-02 16:00:03,356 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-02 16:00:03,358 - logic.JIDLogic - DEBUG - find *.*
+2012-06-02 16:00:03,358 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-02 16:00:03,383 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-02 16:00:03,384 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-02 16:00:03,384 - operation.Search - DEBUG - finding objects
+2012-06-02 16:00:03,386 - operation.Search - DEBUG - returning all objects
+2012-06-02 16:00:03,388 - operation.Search - DEBUG - before sorting
+2012-06-02 16:00:03,389 - operation.Search - DEBUG - after sorting
+2012-06-02 16:00:03,389 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-02 16:00:06,470 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-02 16:00:06,471 - logic.JIDLogic - DEBUG - add abc tmr
+2012-06-02 16:00:06,471 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-02 16:00:06,472 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-02 16:00:06,473 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-02 16:00:06,485 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-02 16:00:06,486 - logic.JIDLogic - DEBUG - left over string after checking for recurring: abc tmr
+2012-06-02 16:00:06,487 - logic.JIDLogic - DEBUG - left over string after fetching labels: abc tmr
+2012-06-02 16:00:06,546 - logic.JIDLogic - DEBUG - -----date only format-------
+2012-06-02 16:00:06,547 - logic.JIDLogic - DEBUG - start date string: tmr
+2012-06-02 16:00:06,548 - logic.JIDLogic - DEBUG - Start date is set!
+2012-06-02 16:00:06,549 - logic.JIDLogic - DEBUG - time/date extracted!
+2012-06-02 16:00:06,549 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-02 16:00:06,555 - logic.JIDLogic - DEBUG - start date time: 03-06-2012
+2012-06-02 16:00:06,555 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-02 16:00:06,556 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-02 16:00:06,556 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-02 16:00:06,557 - logic.JIDLogic - DEBUG - task details: abc
+2012-06-02 16:00:06,559 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-06-02 16:00:06,560 - logic.JIDLogic - DEBUG - isundoable
+2012-06-02 16:00:06,690 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-02 16:00:06,691 - logic.JIDLogic - DEBUG - find *.*
+2012-06-02 16:00:06,691 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-02 16:00:06,692 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-02 16:00:06,692 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-02 16:00:06,693 - operation.Search - DEBUG - finding objects
+2012-06-02 16:00:06,693 - operation.Search - DEBUG - returning all objects
+2012-06-02 16:00:06,694 - operation.Search - DEBUG - before sorting
+2012-06-02 16:00:06,694 - operation.Search - DEBUG - abc on 03-06-2012
+2012-06-02 16:00:06,695 - operation.Search - DEBUG - after sorting
+2012-06-02 16:00:06,696 - operation.Search - DEBUG - abc on 03-06-2012
+2012-06-02 16:00:06,696 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false

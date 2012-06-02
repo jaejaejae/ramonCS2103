@@ -85,7 +85,6 @@ public class MainJFrame extends javax.swing.JFrame {
 
 	private static Point point = new Point();
 	private final boolean TEST = true;
-	private TopPopUp popup;
 
 	// End of variables declaration
 
@@ -358,8 +357,8 @@ public class MainJFrame extends javax.swing.JFrame {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
 				// TODO Auto-generated method stub
-				if (popup != null && popup.isShow())
-					popup.hideBox();
+				if (TopPopUp.isShow())
+					TopPopUp.hideBox();
 				MainJFrame.this.setVisible(false);
 				//JIDLogic.JIDLogic_close();
 			}
@@ -682,11 +681,10 @@ public class MainJFrame extends javax.swing.JFrame {
 			public void mouseDragged(MouseEvent e) {
 				Point p = getLocation();
 				setLocation(p.x + e.getX() - point.x, p.y + e.getY() - point.y);
-				if (popup != null) {
-					Point popupP = popup.getLocation();
-					popup.setLocation(popupP.x + e.getX() - point.x, popupP.y
+				Point popupP = TopPopUp.jFrame.getLocation();
+				TopPopUp.setPosition(popupP.x + e.getX() - point.x, popupP.y
 							+ e.getY() - point.y);
-				}
+				
 			}
 		});
 
@@ -705,15 +703,11 @@ public class MainJFrame extends javax.swing.JFrame {
 	}
 
 	private void showPopup(String str) {
-		if (popup == null) {
-			popup = new TopPopUp();
-		}
-
 		System.out.println("-----------------POPUP-----------------------");
-		popup.setText(str);
-		popup.setPosition(this.getLocation().x, this.getLocation().y - 30);
-		popup.showBox();
-		popup.setFocusable(true);
+		TopPopUp.setText(str);
+		TopPopUp.setPosition(this.getLocation().x, this.getLocation().y - 30);
+		TopPopUp.showBox();
+		TopPopUp.jFrame.setFocusable(true);
 	}
 
 	public void showFrame() {
