@@ -1,3 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <java version="1.7.0_03" class="java.beans.XMLDecoder">
+ <object class="data.Task">
+  <void property="description">
+   <null/>
+  </void>
+  <void property="name">
+   <string>meeting</string>
+  </void>
+  <void property="startDateTime">
+   <object class="data.DateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1338652800000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__03-06-2012W__$$</string>
+  </void>
+ </object>
 </java>

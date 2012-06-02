@@ -84,6 +84,7 @@ public class MainJFrame extends javax.swing.JFrame {
 	// End of variables declaration
 
 	private static Point point = new Point();
+	private static Point currentLocation = new Point(0,0);
 	private final boolean TEST = true;
 
 	// End of variables declaration
@@ -609,17 +610,6 @@ public class MainJFrame extends javax.swing.JFrame {
 								}
 							}
 							
-							/*
-							private String taskToString(Task task) {
-								String str = new String();
-								str = task.getName() ;
-								if(task.getStartDateTime() != null)
-									str += " start:" + task.getStartDateTime().presentableToString();
-								if(task.getEndDateTime() != null)
-									str += " end:" + task.getEndDateTime().presentableToString();
-								return str;
-							}
-							*/
 							private STATE checkCommand(String curText) {
 								String delims = "[ ]+";
 								String firstWord = curText.split(delims)[0];
@@ -675,6 +665,12 @@ public class MainJFrame extends javax.swing.JFrame {
 				point.y = e.getY();
 
 			}
+
+			@Override
+			public void mouseReleased(MouseEvent e) {
+				// TODO Auto-generated method stub
+				currentLocation = MainJFrame.this.getLocation();
+			}
 		});
 
 		addMouseMotionListener(new MouseMotionAdapter() {
@@ -702,10 +698,10 @@ public class MainJFrame extends javax.swing.JFrame {
 		});
 	}
 
-	private void showPopup(String str) {
+	public static void showPopup(String str) {
 		System.out.println("-----------------POPUP-----------------------");
 		TopPopUp.setText(str);
-		TopPopUp.setPosition(this.getLocation().x, this.getLocation().y - 30);
+		TopPopUp.setPosition(currentLocation.x, currentLocation.y - 30);
 		TopPopUp.showBox();
 		TopPopUp.jFrame.setFocusable(true);
 	}

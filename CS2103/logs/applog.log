@@ -5526,3 +5526,47 @@
 2012-06-02 16:00:06,695 - operation.Search - DEBUG - after sorting
 2012-06-02 16:00:06,696 - operation.Search - DEBUG - abc on 03-06-2012
 2012-06-02 16:00:06,696 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-02 16:08:12,322 - Abc - DEBUG - array out of bounds!
+2012-06-02 16:08:13,303 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-02 16:08:13,305 - logic.JIDLogic - DEBUG - find *.*
+2012-06-02 16:08:13,305 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-02 16:08:13,331 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-02 16:08:13,332 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-02 16:08:13,333 - operation.Search - DEBUG - finding objects
+2012-06-02 16:08:13,334 - operation.Search - DEBUG - returning all objects
+2012-06-02 16:08:13,337 - operation.Search - DEBUG - before sorting
+2012-06-02 16:08:13,338 - operation.Search - DEBUG - after sorting
+2012-06-02 16:08:13,338 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-02 16:08:19,068 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-02 16:08:19,069 - logic.JIDLogic - DEBUG - add meeting tmr
+2012-06-02 16:08:19,069 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-02 16:08:19,070 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-02 16:08:19,071 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-02 16:08:19,083 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-02 16:08:19,084 - logic.JIDLogic - DEBUG - left over string after checking for recurring: meeting tmr
+2012-06-02 16:08:19,085 - logic.JIDLogic - DEBUG - left over string after fetching labels: meeting tmr
+2012-06-02 16:08:19,142 - logic.JIDLogic - DEBUG - -----date only format-------
+2012-06-02 16:08:19,143 - logic.JIDLogic - DEBUG - start date string: tmr
+2012-06-02 16:08:19,144 - logic.JIDLogic - DEBUG - Start date is set!
+2012-06-02 16:08:19,145 - logic.JIDLogic - DEBUG - time/date extracted!
+2012-06-02 16:08:19,145 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-02 16:08:19,150 - logic.JIDLogic - DEBUG - start date time: 03-06-2012
+2012-06-02 16:08:19,151 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-02 16:08:19,151 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-02 16:08:19,152 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-02 16:08:19,152 - logic.JIDLogic - DEBUG - task details: meeting
+2012-06-02 16:08:19,154 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-06-02 16:08:19,155 - logic.JIDLogic - DEBUG - isundoable
+2012-06-02 16:08:19,288 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-02 16:08:19,289 - logic.JIDLogic - DEBUG - find *.*
+2012-06-02 16:08:19,289 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-02 16:08:19,290 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-02 16:08:19,290 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-02 16:08:19,290 - operation.Search - DEBUG - finding objects
+2012-06-02 16:08:19,291 - operation.Search - DEBUG - returning all objects
+2012-06-02 16:08:19,292 - operation.Search - DEBUG - before sorting
+2012-06-02 16:08:19,292 - operation.Search - DEBUG - meeting on 03-06-2012
+2012-06-02 16:08:19,293 - operation.Search - DEBUG - after sorting
+2012-06-02 16:08:19,294 - operation.Search - DEBUG - meeting on 03-06-2012
+2012-06-02 16:08:19,294 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-02 16:08:27,807 - Abc - DEBUG - 1
