@@ -790,6 +790,17 @@ public class MainJFrame extends javax.swing.JFrame {
         KeyStroke key = KeyStroke.getKeyStroke(KeyEvent.VK_Z, Event.CTRL_MASK);
         inputMap.put(key, "undo");
         actionMap.put("undo", new UndoAction());
+
+
+        key = KeyStroke.getKeyStroke(KeyEvent.VK_X, Event.CTRL_MASK);
+        inputMap.put(key, "completed");
+        actionMap.put("completed", new CompletedAction());
+        
+        
+        key = KeyStroke.getKeyStroke(KeyEvent.VK_D, Event.CTRL_MASK);
+        inputMap.put(key, "delete");
+        actionMap.put("delete", new DeleteAction());
+        
     }
     
     class UndoAction extends AbstractAction {
@@ -806,5 +817,42 @@ public class MainJFrame extends javax.swing.JFrame {
         	}
         }
     }
+   
+    class DeleteAction extends AbstractAction {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+        	Task[] taskList = expandJPanel.getTasks();
+        	
+        	JIDLogic.setCommand("DELETE");
+        	Task[] task = JIDLogic.executeCommand("DELETE " 
+        			+ taskList[expandJPanel.jTable1.getSelectedRow()].getTaskId());
+        	
+        	if(task == null)
+        		MainJFrame.showPopup("DELETE unsuccessfully!");
+        	else {
+        		MainJFrame.showPopup("DELETE: "+task[0].getName());
+            	expandJPanel.updateJTable();
+        	}        	
+        }
+    }
     
+    class CompletedAction extends AbstractAction {
+        @Override
+        public void actionPerformed(ActionEvent e) {
+        	Task[] taskList = expandJPanel.getTasks();
+        	
+        	JIDLogic.setCommand("COMPLETED");
+        	System.out.println("COMPLETED "
+        			+ taskList[expandJPanel.jTable1.getSelectedRow()].getTaskId());
+        	Task[] task = JIDLogic.executeCommand("COMPLETED " 
+        			+ taskList[expandJPanel.jTable1.getSelectedRow()].getTaskId());
+        	
+        	if(task == null)
+        		MainJFrame.showPopup("COMPLETED unsuccessfully!");
+        	else {
+        		MainJFrame.showPopup("COMPLETED: "+task[0].getName());
+            	expandJPanel.updateJTable();
+        	}        	
+        }
+    }
 }
