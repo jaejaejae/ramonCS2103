@@ -5,6 +5,8 @@
 package gui;
 
 
+import org.apache.log4j.*;
+
 import data.Task;
 import logic.JIDLogic;
 
@@ -60,6 +62,8 @@ import data.TaskArrayList;
  */
 public class MainJFrame extends javax.swing.JFrame {
 
+	private static Logger logger=Logger.getLogger(JIDLogic.class);
+	
 	enum STATE {
 		ADD, DELETE, EDIT, SEARCH, COMPLETED, ARCHIVE, OVERDUE, NULL, LIST, UNDO
 	};
@@ -416,12 +420,12 @@ public class MainJFrame extends javax.swing.JFrame {
 								jBoxCompletion.stopWorking();
 								//curText= editorcomp.getText();
 								curState= checkCommand(curText);curIndex= getIndex();
-								System.out.println("curText:" + curText);
-								System.out.println("prevText: " + prevText);
-								//System.out.println("cmd: " + command);
-								System.out.println("state: " +curState);
-								System.out.println("prev: " +prevState);
-								System.out.println("index: "+ curIndex);
+								logger.debug("curText:" + curText);
+								logger.debug("prevText: " + prevText);
+								//logger.debug("cmd: " + command);
+								logger.debug("state: " +curState);
+								logger.debug("prev: " +prevState);
+								logger.debug("index: "+ curIndex);
 
 								if(prevState == STATE.NULL && curState!=prevState) {
 									command = new String(curText);
@@ -454,12 +458,12 @@ public class MainJFrame extends javax.swing.JFrame {
 	
 											JIDLogic.setCommand(curState.toString().toLowerCase());
 	
-											System.out.println("********exeCmd: "
+											logger.debug("********exeCmd: "
 													+ curText);
 											tasks = JIDLogic
 													.executeCommand(curText);
 	
-											//System.out.println(tasks[0].getName());
+											//logger.debug(tasks[0].getName());
 	
 											jBoxCompletion.stopWorking();
 											jBoxCompletion
@@ -493,8 +497,8 @@ public class MainJFrame extends javax.swing.JFrame {
 								if(e.getKeyCode() == KeyEvent.VK_ENTER && curState!=STATE.NULL) {
 									String exeCmd = new String();
 									
-									System.out.println("*********************enter");
-									//System.out.println(prevTasks[0].getName());
+									logger.debug("*********************enter");
+									//logger.debug(prevTasks[0].getName());
 									
 									if(curState != STATE.EDIT)
 										edit = false;
@@ -531,7 +535,7 @@ public class MainJFrame extends javax.swing.JFrame {
 										exeCmd = curText;
 									}
 									
-									System.out.println("********exeCmd: " + exeCmd);
+									logger.debug("********exeCmd: " + exeCmd);
 									JIDLogic.setCommand(curState.toString());
 									tasks = JIDLogic.executeCommand(exeCmd);
 									
@@ -569,9 +573,9 @@ public class MainJFrame extends javax.swing.JFrame {
 									
 									/*
 									if(tasks==null)
-										System.out.println("error");
+										logger.debug("error");
 									else
-										System.out.println(tasks[0].toString());
+										logger.debug(tasks[0].toString());
 									*/
 								}
 								
@@ -602,7 +606,7 @@ public class MainJFrame extends javax.swing.JFrame {
 										strings[i]= curState.toString() + " " 
 												+ tasks[i];
 									
-									System.out.println("str[0]: "+strings[0]);
+									logger.debug("str[0]: "+strings[0]);
 									return strings;
 								}
 								else {
@@ -691,7 +695,7 @@ public class MainJFrame extends javax.swing.JFrame {
 				// TODO Auto-generated method stub
 				if (TEST)
 					if (e.getKeyChar() == 'b') {
-						System.out.println("B");
+						logger.debug("B");
 					}
 			}
 
@@ -699,7 +703,7 @@ public class MainJFrame extends javax.swing.JFrame {
 	}
 
 	public static void showPopup(String str) {
-		System.out.println("-----------------POPUP-----------------------");
+		logger.debug("-----------------POPUP-----------------------");
 		TopPopUp.setText(str);
 		TopPopUp.setPosition(currentLocation.x, currentLocation.y - 30);
 		TopPopUp.showBox();
@@ -792,7 +796,7 @@ public class MainJFrame extends javax.swing.JFrame {
         actionMap.put("undo", new UndoAction());
 
 
-        key = KeyStroke.getKeyStroke(KeyEvent.VK_X, Event.CTRL_MASK);
+        key = KeyStroke.getKeyStroke(KeyEvent.VK_M, Event.CTRL_MASK);
         inputMap.put(key, "completed");
         actionMap.put("completed", new CompletedAction());
         
@@ -801,12 +805,15 @@ public class MainJFrame extends javax.swing.JFrame {
         inputMap.put(key, "delete");
         actionMap.put("delete", new DeleteAction());
         
+        key = KeyStroke.getKeyStroke(KeyEvent.VK_I, Event.CTRL_MASK);
+        inputMap.put(key, "important");
+        actionMap.put("important", new ImportantAction());
     }
     
     class UndoAction extends AbstractAction {
         @Override
         public void actionPerformed(ActionEvent e) {
-        	System.out.println("*****EXECMD: UNDO*******");
+        	logger.debug("*****EXECMD: UNDO*******");
         	JIDLogic.setCommand("UNDO");
         	Task[] task = JIDLogic.executeCommand("UNDO");
         	if(task == null)
@@ -842,9 +849,29 @@ public class MainJFrame extends javax.swing.JFrame {
         	Task[] taskList = expandJPanel.getTasks();
         	
         	JIDLogic.setCommand("COMPLETED");
-        	System.out.println("COMPLETED "
+        	logger.debug("COMPLETED "
         			+ taskList[expandJPanel.jTable1.getSelectedRow()].getTaskId());
         	Task[] task = JIDLogic.executeCommand("COMPLETED " 
+        			+ taskList[expandJPanel.jTable1.getSelectedRow()].getTaskId());
+        	
+        	if(task == null)
+        		MainJFrame.showPopup("COMPLETED unsuccessfully!");
+        	else {
+        		MainJFrame.showPopup("COMPLETED: "+task[0].getName());
+            	expandJPanel.updateJTable();
+        	}        	
+        }
+    }
+    
+    class ImportantAction extends AbstractAction {
+    	@Override
+        public void actionPerformed(ActionEvent e) {
+        	Task[] taskList = expandJPanel.getTasks();
+        	
+        	JIDLogic.setCommand("IMPORTANT");
+        	logger.debug("IMPORTANT "
+        			+ taskList[expandJPanel.jTable1.getSelectedRow()].getTaskId());
+        	Task[] task = JIDLogic.executeCommand("IMPORTANT " 
         			+ taskList[expandJPanel.jTable1.getSelectedRow()].getTaskId());
         	
         	if(task == null)
