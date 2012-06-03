@@ -106,3 +106,760 @@
 2012-06-02 18:34:17,571 - logic.JIDLogic - DEBUG - state: ADD
 2012-06-02 18:34:17,571 - logic.JIDLogic - DEBUG - prev: ADD
 2012-06-02 18:34:17,571 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 12:13:56,705 - Abc - DEBUG - array out of bounds!
+2012-06-03 12:13:56,749 - Abc - DEBUG - array out of bounds!
+2012-06-03 12:13:58,240 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 12:13:58,240 - logic.JIDLogic - DEBUG - find *.*
+2012-06-03 12:13:58,240 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 12:13:58,240 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 12:13:58,240 - logic.JIDLogic - DEBUG - find *.*
+2012-06-03 12:13:58,240 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 12:13:58,255 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 12:13:58,255 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:13:58,255 - operation.Search - DEBUG - finding objects
+2012-06-03 12:13:58,255 - operation.Search - DEBUG - returning all objects
+2012-06-03 12:13:58,255 - operation.Search - DEBUG - before sorting
+2012-06-03 12:13:58,255 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 12:13:58,255 - operation.Search - DEBUG - meeting on 03-06-2012
+2012-06-03 12:13:58,255 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:13:58,255 - operation.Search - DEBUG - finding objects
+2012-06-03 12:13:58,255 - operation.Search - DEBUG - after sorting
+2012-06-03 12:13:58,271 - operation.Search - DEBUG - returning all objects
+2012-06-03 12:13:58,255 - operation.Search - DEBUG - meeting on 03-06-2012
+2012-06-03 12:13:58,272 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:13:58,273 - operation.Search - DEBUG - before sorting
+2012-06-03 12:13:58,273 - operation.Search - DEBUG - meeting on 03-06-2012
+2012-06-03 12:13:58,273 - operation.Search - DEBUG - after sorting
+2012-06-03 12:13:58,273 - operation.Search - DEBUG - meeting on 03-06-2012
+2012-06-03 12:13:58,273 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:08,329 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 12:14:08,329 - logic.JIDLogic - DEBUG - DELETE $$__03-06-2012W__$$
+2012-06-03 12:14:08,329 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 12:14:08,329 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 12:14:08,345 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:08,345 - operation.BaseSearch - DEBUG - delete
+2012-06-03 12:14:08,345 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-03 12:14:08,345 - operation.BaseSearch - DEBUG - going to the id part
+2012-06-03 12:14:08,345 - operation.BaseSearch - DEBUG - $$__03-06-2012W__$$
+2012-06-03 12:14:08,345 - operation.Delete - DEBUG - isUndoAble value changed
+2012-06-03 12:14:08,345 - operation.Delete - DEBUG - deleted succesfully
+2012-06-03 12:14:08,345 - operation.BaseSearch - DEBUG - Result Added
+2012-06-03 12:14:08,345 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-06-03 12:14:08,345 - logic.JIDLogic - DEBUG - isundoable
+2012-06-03 12:14:08,345 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 12:14:08,486 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 12:14:08,486 - logic.JIDLogic - DEBUG - find *.*
+2012-06-03 12:14:08,486 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 12:14:08,486 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 12:14:08,486 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:08,486 - operation.Search - DEBUG - finding objects
+2012-06-03 12:14:08,486 - operation.Search - DEBUG - returning all objects
+2012-06-03 12:14:08,486 - operation.Search - DEBUG - before sorting
+2012-06-03 12:14:08,486 - operation.Search - DEBUG - after sorting
+2012-06-03 12:14:08,486 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:09,344 - logic.JIDLogic - DEBUG - *****EXECMD: UNDO*******
+2012-06-03 12:14:09,344 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 12:14:09,344 - logic.JIDLogic - DEBUG - UNDO
+2012-06-03 12:14:09,344 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 12:14:09,344 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 12:14:09,344 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:09,344 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:09,344 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 12:14:11,581 - logic.JIDLogic - DEBUG - curText:u
+2012-06-03 12:14:11,581 - logic.JIDLogic - DEBUG - prevText: null
+2012-06-03 12:14:11,581 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 12:14:11,581 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 12:14:11,581 - logic.JIDLogic - DEBUG - index: 0
+2012-06-03 12:14:11,863 - logic.JIDLogic - DEBUG - curText:un
+2012-06-03 12:14:11,863 - logic.JIDLogic - DEBUG - prevText: u
+2012-06-03 12:14:11,863 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 12:14:11,863 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 12:14:11,863 - logic.JIDLogic - DEBUG - index: 0
+2012-06-03 12:14:11,941 - logic.JIDLogic - DEBUG - curText:und
+2012-06-03 12:14:11,941 - logic.JIDLogic - DEBUG - prevText: un
+2012-06-03 12:14:11,941 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 12:14:11,941 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 12:14:11,941 - logic.JIDLogic - DEBUG - index: 0
+2012-06-03 12:14:12,112 - logic.JIDLogic - DEBUG - curText:undo
+2012-06-03 12:14:12,112 - logic.JIDLogic - DEBUG - prevText: und
+2012-06-03 12:14:12,112 - logic.JIDLogic - DEBUG - state: UNDO
+2012-06-03 12:14:12,112 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 12:14:12,112 - logic.JIDLogic - DEBUG - index: 0
+2012-06-03 12:14:12,424 - logic.JIDLogic - DEBUG - curText:undo
+2012-06-03 12:14:12,424 - logic.JIDLogic - DEBUG - prevText: undo
+2012-06-03 12:14:12,424 - logic.JIDLogic - DEBUG - state: UNDO
+2012-06-03 12:14:12,424 - logic.JIDLogic - DEBUG - prev: UNDO
+2012-06-03 12:14:12,424 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 12:14:12,424 - logic.JIDLogic - DEBUG - *********************enter
+2012-06-03 12:14:12,424 - logic.JIDLogic - DEBUG - ********exeCmd: undo
+2012-06-03 12:14:12,424 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 12:14:12,440 - logic.JIDLogic - DEBUG - undo
+2012-06-03 12:14:12,440 - logic.JIDLogic - DEBUG - inside third cond
+2012-06-03 12:14:12,440 - logic.JIDLogic - DEBUG - popped last action from stack:delete
+2012-06-03 12:14:12,440 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 12:14:12,549 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 12:14:12,549 - logic.JIDLogic - DEBUG - find *.*
+2012-06-03 12:14:12,549 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 12:14:12,549 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 12:14:12,549 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:12,549 - operation.Search - DEBUG - finding objects
+2012-06-03 12:14:12,549 - operation.Search - DEBUG - returning all objects
+2012-06-03 12:14:12,549 - operation.Search - DEBUG - before sorting
+2012-06-03 12:14:12,549 - operation.Search - DEBUG - meeting on 03-06-2012
+2012-06-03 12:14:12,549 - operation.Search - DEBUG - after sorting
+2012-06-03 12:14:12,549 - operation.Search - DEBUG - meeting on 03-06-2012
+2012-06-03 12:14:12,549 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:40,256 - logic.JIDLogic - DEBUG - IMPORTANT $$__03-06-2012J__$$
+2012-06-03 12:14:40,256 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 12:14:40,256 - logic.JIDLogic - DEBUG - IMPORTANT $$__03-06-2012J__$$
+2012-06-03 12:14:40,256 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 12:14:40,256 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 12:14:40,256 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:40,256 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:40,256 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 12:14:44,254 - logic.JIDLogic - DEBUG - IMPORTANT $$__03-06-2012J__$$
+2012-06-03 12:14:44,254 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 12:14:44,254 - logic.JIDLogic - DEBUG - IMPORTANT $$__03-06-2012J__$$
+2012-06-03 12:14:44,254 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 12:14:44,254 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 12:14:44,254 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:44,254 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:44,254 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 12:14:44,839 - logic.JIDLogic - DEBUG - *****EXECMD: UNDO*******
+2012-06-03 12:14:44,840 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 12:14:44,840 - logic.JIDLogic - DEBUG - UNDO
+2012-06-03 12:14:44,841 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 12:14:44,841 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 12:14:44,842 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:44,842 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:44,843 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 12:14:45,823 - logic.JIDLogic - DEBUG - *****EXECMD: UNDO*******
+2012-06-03 12:14:45,823 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 12:14:45,823 - logic.JIDLogic - DEBUG - UNDO
+2012-06-03 12:14:45,823 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 12:14:45,823 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 12:14:45,823 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:45,823 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:45,823 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 12:14:46,176 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 12:14:46,178 - logic.JIDLogic - DEBUG - DELETE $$__03-06-2012J__$$
+2012-06-03 12:14:46,179 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 12:14:46,180 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 12:14:46,180 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:46,181 - operation.BaseSearch - DEBUG - delete
+2012-06-03 12:14:46,182 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-03 12:14:46,184 - operation.BaseSearch - DEBUG - going to the id part
+2012-06-03 12:14:46,184 - operation.BaseSearch - DEBUG - $$__03-06-2012J__$$
+2012-06-03 12:14:46,185 - operation.Delete - DEBUG - isUndoAble value changed
+2012-06-03 12:14:46,186 - operation.Delete - DEBUG - deleted succesfully
+2012-06-03 12:14:46,187 - operation.BaseSearch - DEBUG - Result Added
+2012-06-03 12:14:46,188 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-06-03 12:14:46,188 - logic.JIDLogic - DEBUG - isundoable
+2012-06-03 12:14:46,189 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 12:14:46,298 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 12:14:46,298 - logic.JIDLogic - DEBUG - find *.*
+2012-06-03 12:14:46,299 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 12:14:46,299 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 12:14:46,300 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:46,300 - operation.Search - DEBUG - finding objects
+2012-06-03 12:14:46,300 - operation.Search - DEBUG - returning all objects
+2012-06-03 12:14:46,301 - operation.Search - DEBUG - before sorting
+2012-06-03 12:14:46,301 - operation.Search - DEBUG - after sorting
+2012-06-03 12:14:46,301 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:47,507 - logic.JIDLogic - DEBUG - *****EXECMD: UNDO*******
+2012-06-03 12:14:47,508 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 12:14:47,508 - logic.JIDLogic - DEBUG - UNDO
+2012-06-03 12:14:47,509 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 12:14:47,510 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 12:14:47,510 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:47,511 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:47,511 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 12:14:49,644 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 12:14:49,645 - logic.JIDLogic - DEBUG - prevText: undo
+2012-06-03 12:14:49,645 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 12:14:49,646 - logic.JIDLogic - DEBUG - prev: UNDO
+2012-06-03 12:14:49,646 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 12:14:50,111 - logic.JIDLogic - DEBUG - curText:a
+2012-06-03 12:14:50,112 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 12:14:50,112 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 12:14:50,113 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 12:14:50,113 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 12:14:50,270 - logic.JIDLogic - DEBUG - curText:ad
+2012-06-03 12:14:50,270 - logic.JIDLogic - DEBUG - prevText: a
+2012-06-03 12:14:50,270 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 12:14:50,270 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 12:14:50,270 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 12:14:50,442 - logic.JIDLogic - DEBUG - curText:add
+2012-06-03 12:14:50,442 - logic.JIDLogic - DEBUG - prevText: ad
+2012-06-03 12:14:50,442 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 12:14:50,442 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 12:14:50,442 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 12:14:50,533 - logic.JIDLogic - DEBUG - curText:add 
+2012-06-03 12:14:50,533 - logic.JIDLogic - DEBUG - prevText: add
+2012-06-03 12:14:50,534 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 12:14:50,534 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 12:14:50,535 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 12:14:50,635 - logic.JIDLogic - DEBUG - curText:add a
+2012-06-03 12:14:50,636 - logic.JIDLogic - DEBUG - prevText: add 
+2012-06-03 12:14:50,636 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 12:14:50,637 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 12:14:50,637 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 12:14:50,738 - logic.JIDLogic - DEBUG - curText:add ab
+2012-06-03 12:14:50,738 - logic.JIDLogic - DEBUG - prevText: add a
+2012-06-03 12:14:50,739 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 12:14:50,739 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 12:14:50,739 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 12:14:50,954 - logic.JIDLogic - DEBUG - curText:add abc
+2012-06-03 12:14:50,954 - logic.JIDLogic - DEBUG - prevText: add ab
+2012-06-03 12:14:50,954 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 12:14:50,955 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 12:14:50,955 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 12:14:51,064 - logic.JIDLogic - DEBUG - curText:add abc 
+2012-06-03 12:14:51,064 - logic.JIDLogic - DEBUG - prevText: add abc
+2012-06-03 12:14:51,065 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 12:14:51,065 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 12:14:51,065 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 12:14:51,174 - logic.JIDLogic - DEBUG - curText:add abc t
+2012-06-03 12:14:51,174 - logic.JIDLogic - DEBUG - prevText: add abc 
+2012-06-03 12:14:51,174 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 12:14:51,175 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 12:14:51,175 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 12:14:51,284 - logic.JIDLogic - DEBUG - curText:add abc tm
+2012-06-03 12:14:51,285 - logic.JIDLogic - DEBUG - prevText: add abc t
+2012-06-03 12:14:51,285 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 12:14:51,286 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 12:14:51,286 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 12:14:51,378 - logic.JIDLogic - DEBUG - curText:add abc tm
+2012-06-03 12:14:51,378 - logic.JIDLogic - DEBUG - prevText: add abc tm
+2012-06-03 12:14:51,378 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 12:14:51,379 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 12:14:51,379 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 12:14:51,496 - logic.JIDLogic - DEBUG - curText:add abc tmr
+2012-06-03 12:14:51,496 - logic.JIDLogic - DEBUG - prevText: add abc tm
+2012-06-03 12:14:51,496 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 12:14:51,496 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 12:14:51,496 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 12:14:51,496 - logic.JIDLogic - DEBUG - *********************enter
+2012-06-03 12:14:51,496 - logic.JIDLogic - DEBUG - ********exeCmd: add abc tmr
+2012-06-03 12:14:51,496 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 12:14:51,496 - logic.JIDLogic - DEBUG - add abc tmr
+2012-06-03 12:14:51,496 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 12:14:51,496 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 12:14:51,496 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:51,496 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-03 12:14:51,496 - logic.JIDLogic - DEBUG - left over string after checking for recurring: abc tmr
+2012-06-03 12:14:51,496 - logic.JIDLogic - DEBUG - left over string after fetching labels: abc tmr
+2012-06-03 12:14:51,558 - logic.JIDLogic - DEBUG - -----date only format-------
+2012-06-03 12:14:51,558 - logic.JIDLogic - DEBUG - start date string: tmr
+2012-06-03 12:14:51,558 - logic.JIDLogic - DEBUG - Start date is set!
+2012-06-03 12:14:51,558 - logic.JIDLogic - DEBUG - time/date extracted!
+2012-06-03 12:14:51,558 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-03 12:14:51,558 - logic.JIDLogic - DEBUG - start date time: 04-06-2012
+2012-06-03 12:14:51,558 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-03 12:14:51,558 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-03 12:14:51,558 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-03 12:14:51,558 - logic.JIDLogic - DEBUG - task details: abc
+2012-06-03 12:14:51,558 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-06-03 12:14:51,558 - logic.JIDLogic - DEBUG - isundoable
+2012-06-03 12:14:51,574 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 12:14:51,714 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 12:14:51,714 - logic.JIDLogic - DEBUG - find *.*
+2012-06-03 12:14:51,714 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 12:14:51,714 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 12:14:51,714 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:51,714 - operation.Search - DEBUG - finding objects
+2012-06-03 12:14:51,714 - operation.Search - DEBUG - returning all objects
+2012-06-03 12:14:51,714 - operation.Search - DEBUG - before sorting
+2012-06-03 12:14:51,714 - operation.Search - DEBUG - abc on 04-06-2012
+2012-06-03 12:14:51,714 - operation.Search - DEBUG - after sorting
+2012-06-03 12:14:51,714 - operation.Search - DEBUG - abc on 04-06-2012
+2012-06-03 12:14:51,714 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:52,792 - logic.JIDLogic - DEBUG - IMPORTANT $$__04-06-2012R__$$
+2012-06-03 12:14:52,792 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 12:14:52,793 - logic.JIDLogic - DEBUG - IMPORTANT $$__04-06-2012R__$$
+2012-06-03 12:14:52,793 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 12:14:52,794 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 12:14:52,794 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:52,795 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:52,795 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 12:14:52,959 - logic.JIDLogic - DEBUG - IMPORTANT $$__04-06-2012R__$$
+2012-06-03 12:14:52,960 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 12:14:52,960 - logic.JIDLogic - DEBUG - IMPORTANT $$__04-06-2012R__$$
+2012-06-03 12:14:52,961 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 12:14:52,961 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 12:14:52,962 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:52,962 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:52,963 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 12:14:53,534 - logic.JIDLogic - DEBUG - IMPORTANT $$__04-06-2012R__$$
+2012-06-03 12:14:53,534 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 12:14:53,535 - logic.JIDLogic - DEBUG - IMPORTANT $$__04-06-2012R__$$
+2012-06-03 12:14:53,535 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 12:14:53,536 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 12:14:53,536 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:53,537 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:53,537 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 12:14:53,706 - logic.JIDLogic - DEBUG - IMPORTANT $$__04-06-2012R__$$
+2012-06-03 12:14:53,707 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 12:14:53,707 - logic.JIDLogic - DEBUG - IMPORTANT $$__04-06-2012R__$$
+2012-06-03 12:14:53,708 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 12:14:53,709 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 12:14:53,709 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:53,709 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:14:53,710 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 12:15:00,141 - logic.JIDLogic - DEBUG - COMPLETED $$__04-06-2012R__$$
+2012-06-03 12:15:00,141 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 12:15:00,141 - logic.JIDLogic - DEBUG - COMPLETED $$__04-06-2012R__$$
+2012-06-03 12:15:00,141 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 12:15:00,141 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 12:15:00,141 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:15:00,141 - operation.BaseSearch - DEBUG - completed
+2012-06-03 12:15:00,141 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-03 12:15:00,141 - operation.BaseSearch - DEBUG - going to the id part
+2012-06-03 12:15:00,141 - operation.BaseSearch - DEBUG - $$__04-06-2012R__$$
+2012-06-03 12:15:00,141 - operation.BaseSearch - DEBUG - completed succesfully
+2012-06-03 12:15:00,141 - operation.BaseSearch - DEBUG - Result Added
+2012-06-03 12:15:00,141 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-06-03 12:15:00,141 - logic.JIDLogic - DEBUG - isundoable
+2012-06-03 12:15:00,141 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 12:15:00,267 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 12:15:00,267 - logic.JIDLogic - DEBUG - find *.*
+2012-06-03 12:15:00,267 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 12:15:00,267 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 12:15:00,267 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:15:00,267 - operation.Search - DEBUG - finding objects
+2012-06-03 12:15:00,267 - operation.Search - DEBUG - returning all objects
+2012-06-03 12:15:00,267 - operation.Search - DEBUG - before sorting
+2012-06-03 12:15:00,267 - operation.Search - DEBUG - abc on 04-06-2012
+2012-06-03 12:15:00,267 - operation.Search - DEBUG - after sorting
+2012-06-03 12:15:00,267 - operation.Search - DEBUG - abc on 04-06-2012
+2012-06-03 12:15:00,267 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:15:02,378 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 12:15:02,378 - logic.JIDLogic - DEBUG - DELETE $$__04-06-2012R__$$
+2012-06-03 12:15:02,378 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 12:15:02,378 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 12:15:02,378 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:15:02,378 - operation.BaseSearch - DEBUG - delete
+2012-06-03 12:15:02,378 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-03 12:15:02,378 - operation.BaseSearch - DEBUG - going to the id part
+2012-06-03 12:15:02,378 - operation.BaseSearch - DEBUG - $$__04-06-2012R__$$
+2012-06-03 12:15:02,378 - operation.Delete - DEBUG - isUndoAble value changed
+2012-06-03 12:15:02,378 - operation.Delete - DEBUG - deleted succesfully
+2012-06-03 12:15:02,378 - operation.BaseSearch - DEBUG - Result Added
+2012-06-03 12:15:02,378 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-06-03 12:15:02,378 - logic.JIDLogic - DEBUG - isundoable
+2012-06-03 12:15:02,378 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 12:15:02,491 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 12:15:02,491 - logic.JIDLogic - DEBUG - find *.*
+2012-06-03 12:15:02,492 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 12:15:02,492 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 12:15:02,493 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:15:02,493 - operation.Search - DEBUG - finding objects
+2012-06-03 12:15:02,493 - operation.Search - DEBUG - returning all objects
+2012-06-03 12:15:02,494 - operation.Search - DEBUG - before sorting
+2012-06-03 12:15:02,494 - operation.Search - DEBUG - after sorting
+2012-06-03 12:15:02,494 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:15:03,653 - logic.JIDLogic - DEBUG - *****EXECMD: UNDO*******
+2012-06-03 12:15:03,654 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 12:15:03,654 - logic.JIDLogic - DEBUG - UNDO
+2012-06-03 12:15:03,654 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 12:15:03,655 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 12:15:03,655 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:15:03,656 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 12:15:03,656 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 13:30:07,925 - Abc - DEBUG - array out of bounds!
+2012-06-03 13:31:16,060 - Abc - DEBUG - array out of bounds!
+2012-06-03 13:31:17,171 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 13:31:17,172 - logic.JIDLogic - DEBUG - find *.*
+2012-06-03 13:31:17,173 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 13:31:17,195 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 13:31:17,196 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 13:31:17,196 - operation.Search - DEBUG - finding objects
+2012-06-03 13:31:17,198 - operation.Search - DEBUG - returning all objects
+2012-06-03 13:31:17,200 - operation.Search - DEBUG - before sorting
+2012-06-03 13:31:17,201 - operation.Search - DEBUG - meeting on 03-06-2012
+2012-06-03 13:31:17,202 - operation.Search - DEBUG - after sorting
+2012-06-03 13:31:17,203 - operation.Search - DEBUG - meeting on 03-06-2012
+2012-06-03 13:31:17,203 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 13:31:49,377 - Abc - DEBUG - array out of bounds!
+2012-06-03 13:31:50,674 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 13:31:50,676 - logic.JIDLogic - DEBUG - find *.*
+2012-06-03 13:31:50,677 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 13:31:50,694 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 13:31:50,695 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 13:31:50,696 - operation.Search - DEBUG - finding objects
+2012-06-03 13:31:50,697 - operation.Search - DEBUG - returning all objects
+2012-06-03 13:31:50,699 - operation.Search - DEBUG - before sorting
+2012-06-03 13:31:50,700 - operation.Search - DEBUG - meeting on 03-06-2012
+2012-06-03 13:31:50,701 - operation.Search - DEBUG - after sorting
+2012-06-03 13:31:50,702 - operation.Search - DEBUG - meeting on 03-06-2012
+2012-06-03 13:31:50,702 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 13:53:20,408 - Abc - DEBUG - array out of bounds!
+2012-06-03 13:53:21,699 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 13:53:21,699 - logic.JIDLogic - DEBUG - find *.*
+2012-06-03 13:53:21,699 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 13:53:21,720 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 13:53:21,720 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 13:53:21,720 - operation.Search - DEBUG - finding objects
+2012-06-03 13:53:21,720 - operation.Search - DEBUG - returning all objects
+2012-06-03 13:53:21,720 - operation.Search - DEBUG - before sorting
+2012-06-03 13:53:21,720 - operation.Search - DEBUG - meeting on 03-06-2012
+2012-06-03 13:53:21,720 - operation.Search - DEBUG - after sorting
+2012-06-03 13:53:21,720 - operation.Search - DEBUG - meeting on 03-06-2012
+2012-06-03 13:53:21,720 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 13:53:26,320 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 13:53:26,320 - logic.JIDLogic - DEBUG - DELETE $$__03-06-2012W__$$
+2012-06-03 13:53:26,320 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 13:53:26,330 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 13:53:26,330 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 13:53:26,330 - operation.BaseSearch - DEBUG - delete
+2012-06-03 13:53:26,330 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-03 13:53:26,411 - operation.BaseSearch - DEBUG - going to the id part
+2012-06-03 13:53:26,411 - operation.BaseSearch - DEBUG - $$__03-06-2012W__$$
+2012-06-03 13:53:26,411 - operation.Delete - DEBUG - isUndoAble value changed
+2012-06-03 13:53:26,411 - operation.Delete - DEBUG - deleted succesfully
+2012-06-03 13:53:26,411 - operation.BaseSearch - DEBUG - Result Added
+2012-06-03 13:53:26,411 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-06-03 13:53:26,411 - logic.JIDLogic - DEBUG - isundoable
+2012-06-03 13:53:26,411 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 13:53:26,541 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 13:53:26,541 - logic.JIDLogic - DEBUG - find *.*
+2012-06-03 13:53:26,541 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 13:53:26,541 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 13:53:26,541 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 13:53:26,541 - operation.Search - DEBUG - finding objects
+2012-06-03 13:53:26,541 - operation.Search - DEBUG - returning all objects
+2012-06-03 13:53:26,541 - operation.Search - DEBUG - before sorting
+2012-06-03 13:53:26,541 - operation.Search - DEBUG - after sorting
+2012-06-03 13:53:26,541 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 13:53:30,651 - logic.JIDLogic - DEBUG - *****EXECMD: UNDO*******
+2012-06-03 13:53:30,651 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 13:53:30,651 - logic.JIDLogic - DEBUG - UNDO
+2012-06-03 13:53:30,661 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 13:53:30,661 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 13:53:30,661 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 13:53:30,661 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 13:53:30,661 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 13:53:33,532 - logic.JIDLogic - DEBUG - curText:u
+2012-06-03 13:53:33,532 - logic.JIDLogic - DEBUG - prevText: null
+2012-06-03 13:53:33,532 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 13:53:33,532 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 13:53:33,532 - logic.JIDLogic - DEBUG - index: 0
+2012-06-03 13:53:33,723 - logic.JIDLogic - DEBUG - curText:un
+2012-06-03 13:53:33,723 - logic.JIDLogic - DEBUG - prevText: u
+2012-06-03 13:53:33,723 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 13:53:33,723 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 13:53:33,723 - logic.JIDLogic - DEBUG - index: 0
+2012-06-03 13:53:33,883 - logic.JIDLogic - DEBUG - curText:und
+2012-06-03 13:53:33,883 - logic.JIDLogic - DEBUG - prevText: un
+2012-06-03 13:53:33,883 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 13:53:33,883 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 13:53:33,883 - logic.JIDLogic - DEBUG - index: 0
+2012-06-03 13:53:34,053 - logic.JIDLogic - DEBUG - curText:undo
+2012-06-03 13:53:34,053 - logic.JIDLogic - DEBUG - prevText: und
+2012-06-03 13:53:34,053 - logic.JIDLogic - DEBUG - state: UNDO
+2012-06-03 13:53:34,053 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 13:53:34,053 - logic.JIDLogic - DEBUG - index: 0
+2012-06-03 13:53:34,543 - logic.JIDLogic - DEBUG - curText:undo
+2012-06-03 13:53:34,543 - logic.JIDLogic - DEBUG - prevText: undo
+2012-06-03 13:53:34,543 - logic.JIDLogic - DEBUG - state: UNDO
+2012-06-03 13:53:34,543 - logic.JIDLogic - DEBUG - prev: UNDO
+2012-06-03 13:53:34,543 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 13:53:34,543 - logic.JIDLogic - DEBUG - *********************enter
+2012-06-03 13:53:34,543 - logic.JIDLogic - DEBUG - ********exeCmd: undo
+2012-06-03 13:53:34,543 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 13:53:34,543 - logic.JIDLogic - DEBUG - undo
+2012-06-03 13:53:34,543 - logic.JIDLogic - DEBUG - inside third cond
+2012-06-03 13:53:34,543 - logic.JIDLogic - DEBUG - popped last action from stack:delete
+2012-06-03 13:53:34,543 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 13:53:34,654 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 13:53:34,654 - logic.JIDLogic - DEBUG - find *.*
+2012-06-03 13:53:34,654 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 13:53:34,654 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 13:53:34,654 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 13:53:34,654 - operation.Search - DEBUG - finding objects
+2012-06-03 13:53:34,654 - operation.Search - DEBUG - returning all objects
+2012-06-03 13:53:34,654 - operation.Search - DEBUG - before sorting
+2012-06-03 13:53:34,654 - operation.Search - DEBUG - meeting on 03-06-2012
+2012-06-03 13:53:34,654 - operation.Search - DEBUG - after sorting
+2012-06-03 13:53:34,654 - operation.Search - DEBUG - meeting on 03-06-2012
+2012-06-03 13:53:34,654 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 13:55:24,266 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 13:55:24,266 - logic.JIDLogic - DEBUG - DELETE $$__03-06-2012W__$$
+2012-06-03 13:55:24,276 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 13:55:24,276 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 13:55:24,276 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 13:55:24,276 - operation.BaseSearch - DEBUG - delete
+2012-06-03 13:55:24,276 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-03 13:55:24,276 - operation.BaseSearch - DEBUG - going to the id part
+2012-06-03 13:55:24,276 - operation.BaseSearch - DEBUG - $$__03-06-2012W__$$
+2012-06-03 13:55:24,276 - operation.Delete - DEBUG - isUndoAble value changed
+2012-06-03 13:55:24,276 - operation.Delete - DEBUG - deleted succesfully
+2012-06-03 13:55:24,276 - operation.BaseSearch - DEBUG - Result Added
+2012-06-03 13:55:24,276 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-06-03 13:55:24,276 - logic.JIDLogic - DEBUG - isundoable
+2012-06-03 13:55:24,276 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 13:55:24,397 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 13:55:24,397 - logic.JIDLogic - DEBUG - find *.*
+2012-06-03 13:55:24,397 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 13:55:24,397 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 13:55:24,397 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 13:55:24,397 - operation.Search - DEBUG - finding objects
+2012-06-03 13:55:24,397 - operation.Search - DEBUG - returning all objects
+2012-06-03 13:55:24,397 - operation.Search - DEBUG - before sorting
+2012-06-03 13:55:24,397 - operation.Search - DEBUG - after sorting
+2012-06-03 13:55:24,397 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 13:55:27,017 - logic.JIDLogic - DEBUG - curText:undo
+2012-06-03 13:55:27,017 - logic.JIDLogic - DEBUG - prevText: undo
+2012-06-03 13:55:27,017 - logic.JIDLogic - DEBUG - state: UNDO
+2012-06-03 13:55:27,017 - logic.JIDLogic - DEBUG - prev: UNDO
+2012-06-03 13:55:27,017 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 13:55:27,017 - logic.JIDLogic - DEBUG - *********************enter
+2012-06-03 13:55:27,017 - logic.JIDLogic - DEBUG - ********exeCmd: undo
+2012-06-03 13:55:27,017 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 13:55:27,017 - logic.JIDLogic - DEBUG - undo
+2012-06-03 13:55:27,017 - logic.JIDLogic - DEBUG - inside third cond
+2012-06-03 13:55:27,017 - logic.JIDLogic - DEBUG - popped last action from stack:delete
+2012-06-03 13:55:27,027 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 13:55:27,128 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 13:55:27,128 - logic.JIDLogic - DEBUG - find *.*
+2012-06-03 13:55:27,128 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 13:55:27,128 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 13:55:27,128 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 13:55:27,128 - operation.Search - DEBUG - finding objects
+2012-06-03 13:55:27,128 - operation.Search - DEBUG - returning all objects
+2012-06-03 13:55:27,128 - operation.Search - DEBUG - before sorting
+2012-06-03 13:55:27,128 - operation.Search - DEBUG - meeting on 03-06-2012
+2012-06-03 13:55:27,128 - operation.Search - DEBUG - after sorting
+2012-06-03 13:55:27,128 - operation.Search - DEBUG - meeting on 03-06-2012
+2012-06-03 13:55:27,128 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 13:55:30,608 - logic.JIDLogic - DEBUG - COMPLETED $$__03-06-2012Z__$$
+2012-06-03 13:55:30,608 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 13:55:30,608 - logic.JIDLogic - DEBUG - COMPLETED $$__03-06-2012Z__$$
+2012-06-03 13:55:30,608 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 13:55:30,608 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 13:55:30,608 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 13:55:30,608 - operation.BaseSearch - DEBUG - completed
+2012-06-03 13:55:30,608 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-03 13:55:30,608 - operation.BaseSearch - DEBUG - going to the id part
+2012-06-03 13:55:30,618 - operation.BaseSearch - DEBUG - $$__03-06-2012Z__$$
+2012-06-03 13:55:30,618 - operation.BaseSearch - DEBUG - completed succesfully
+2012-06-03 13:55:30,618 - operation.BaseSearch - DEBUG - Result Added
+2012-06-03 13:55:30,618 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-06-03 13:55:30,618 - logic.JIDLogic - DEBUG - isundoable
+2012-06-03 13:55:30,618 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 13:55:30,739 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 13:55:30,739 - logic.JIDLogic - DEBUG - find *.*
+2012-06-03 13:55:30,739 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 13:55:30,739 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 13:55:30,739 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 13:55:30,739 - operation.Search - DEBUG - finding objects
+2012-06-03 13:55:30,739 - operation.Search - DEBUG - returning all objects
+2012-06-03 13:55:30,739 - operation.Search - DEBUG - before sorting
+2012-06-03 13:55:30,739 - operation.Search - DEBUG - meeting on 03-06-2012
+2012-06-03 13:55:30,739 - operation.Search - DEBUG - after sorting
+2012-06-03 13:55:30,739 - operation.Search - DEBUG - meeting on 03-06-2012
+2012-06-03 13:55:30,739 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 13:55:41,699 - logic.JIDLogic - DEBUG - *****EXECMD: UNDO*******
+2012-06-03 13:55:41,699 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 13:55:41,699 - logic.JIDLogic - DEBUG - UNDO
+2012-06-03 13:55:41,699 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 13:55:41,699 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 13:55:41,699 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 13:55:41,699 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 13:55:41,699 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 13:55:42,320 - logic.JIDLogic - DEBUG - *****EXECMD: UNDO*******
+2012-06-03 13:55:42,320 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 13:55:42,320 - logic.JIDLogic - DEBUG - UNDO
+2012-06-03 13:55:42,320 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 13:55:42,320 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 13:55:42,320 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 13:55:42,320 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 13:55:42,320 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 13:55:45,650 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 13:55:45,650 - logic.JIDLogic - DEBUG - DELETE $$__03-06-2012Z__$$
+2012-06-03 13:55:45,650 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 13:55:45,650 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 13:55:45,650 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 13:55:45,660 - operation.BaseSearch - DEBUG - delete
+2012-06-03 13:55:45,660 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-03 13:55:45,660 - operation.BaseSearch - DEBUG - going to the id part
+2012-06-03 13:55:45,660 - operation.BaseSearch - DEBUG - $$__03-06-2012Z__$$
+2012-06-03 13:55:45,660 - operation.Delete - DEBUG - isUndoAble value changed
+2012-06-03 13:55:45,660 - operation.Delete - DEBUG - deleted succesfully
+2012-06-03 13:55:45,660 - operation.BaseSearch - DEBUG - Result Added
+2012-06-03 13:55:45,660 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-06-03 13:55:45,660 - logic.JIDLogic - DEBUG - isundoable
+2012-06-03 13:55:45,660 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 13:55:45,771 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 13:55:45,771 - logic.JIDLogic - DEBUG - find *.*
+2012-06-03 13:55:45,771 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 13:55:45,771 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 13:55:45,771 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 13:55:45,771 - operation.Search - DEBUG - finding objects
+2012-06-03 13:55:45,771 - operation.Search - DEBUG - returning all objects
+2012-06-03 13:55:45,771 - operation.Search - DEBUG - before sorting
+2012-06-03 13:55:45,771 - operation.Search - DEBUG - after sorting
+2012-06-03 13:55:45,771 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 13:56:46,951 - logic.JIDLogic - DEBUG - curText:a
+2012-06-03 13:56:46,951 - logic.JIDLogic - DEBUG - prevText: undo
+2012-06-03 13:56:46,951 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 13:56:46,951 - logic.JIDLogic - DEBUG - prev: UNDO
+2012-06-03 13:56:46,951 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 13:56:47,342 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 13:56:47,342 - logic.JIDLogic - DEBUG - prevText: a
+2012-06-03 13:56:47,342 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 13:56:47,342 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 13:56:47,342 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 13:56:47,512 - logic.JIDLogic - DEBUG - curText:a
+2012-06-03 13:56:47,512 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 13:56:47,512 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 13:56:47,512 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 13:56:47,512 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 13:56:47,702 - logic.JIDLogic - DEBUG - curText:ad
+2012-06-03 13:56:47,702 - logic.JIDLogic - DEBUG - prevText: a
+2012-06-03 13:56:47,702 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 13:56:47,702 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 13:56:47,702 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 13:56:47,852 - logic.JIDLogic - DEBUG - curText:add
+2012-06-03 13:56:47,852 - logic.JIDLogic - DEBUG - prevText: ad
+2012-06-03 13:56:47,852 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 13:56:47,852 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 13:56:47,852 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 13:56:48,052 - logic.JIDLogic - DEBUG - curText:add
+2012-06-03 13:56:48,052 - logic.JIDLogic - DEBUG - prevText: add
+2012-06-03 13:56:48,052 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 13:56:48,052 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 13:56:48,052 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 13:56:48,183 - logic.JIDLogic - DEBUG - curText:add m
+2012-06-03 13:56:48,183 - logic.JIDLogic - DEBUG - prevText: add
+2012-06-03 13:56:48,183 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 13:56:48,183 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 13:56:48,183 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 13:56:48,243 - logic.JIDLogic - DEBUG - curText:add me
+2012-06-03 13:56:48,253 - logic.JIDLogic - DEBUG - prevText: add m
+2012-06-03 13:56:48,253 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 13:56:48,253 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 13:56:48,253 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 13:56:48,423 - logic.JIDLogic - DEBUG - curText:add mee
+2012-06-03 13:56:48,423 - logic.JIDLogic - DEBUG - prevText: add me
+2012-06-03 13:56:48,433 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 13:56:48,433 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 13:56:48,433 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 13:56:48,523 - logic.JIDLogic - DEBUG - curText:add meet
+2012-06-03 13:56:48,523 - logic.JIDLogic - DEBUG - prevText: add mee
+2012-06-03 13:56:48,533 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 13:56:48,533 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 13:56:48,533 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 13:56:48,623 - logic.JIDLogic - DEBUG - curText:add meeti
+2012-06-03 13:56:48,623 - logic.JIDLogic - DEBUG - prevText: add meet
+2012-06-03 13:56:48,623 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 13:56:48,623 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 13:56:48,623 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 13:56:48,693 - logic.JIDLogic - DEBUG - curText:add meetin
+2012-06-03 13:56:48,693 - logic.JIDLogic - DEBUG - prevText: add meeti
+2012-06-03 13:56:48,693 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 13:56:48,693 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 13:56:48,693 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 13:56:48,803 - logic.JIDLogic - DEBUG - curText:add meeting
+2012-06-03 13:56:48,803 - logic.JIDLogic - DEBUG - prevText: add meetin
+2012-06-03 13:56:48,803 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 13:56:48,803 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 13:56:48,803 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 13:56:48,913 - logic.JIDLogic - DEBUG - curText:add meeting 
+2012-06-03 13:56:48,913 - logic.JIDLogic - DEBUG - prevText: add meeting
+2012-06-03 13:56:48,913 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 13:56:48,913 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 13:56:48,923 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 13:56:49,023 - logic.JIDLogic - DEBUG - curText:add meeting 
+2012-06-03 13:56:49,033 - logic.JIDLogic - DEBUG - prevText: add meeting 
+2012-06-03 13:56:49,033 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 13:56:49,033 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 13:56:49,033 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 13:56:49,113 - logic.JIDLogic - DEBUG - curText:add meeting tm
+2012-06-03 13:56:49,113 - logic.JIDLogic - DEBUG - prevText: add meeting 
+2012-06-03 13:56:49,113 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 13:56:49,113 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 13:56:49,113 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 13:56:49,234 - logic.JIDLogic - DEBUG - curText:add meeting tmr
+2012-06-03 13:56:49,234 - logic.JIDLogic - DEBUG - prevText: add meeting tm
+2012-06-03 13:56:49,234 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 13:56:49,234 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 13:56:49,234 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 13:56:49,324 - logic.JIDLogic - DEBUG - curText:add meeting tmr
+2012-06-03 13:56:49,324 - logic.JIDLogic - DEBUG - prevText: add meeting tmr
+2012-06-03 13:56:49,324 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 13:56:49,324 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 13:56:49,324 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 13:56:49,324 - logic.JIDLogic - DEBUG - *********************enter
+2012-06-03 13:56:49,324 - logic.JIDLogic - DEBUG - ********exeCmd: add meeting tmr
+2012-06-03 13:56:49,324 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 13:56:49,324 - logic.JIDLogic - DEBUG - add meeting tmr
+2012-06-03 13:56:49,324 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 13:56:49,334 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 13:56:49,334 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 13:56:49,334 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-03 13:56:49,334 - logic.JIDLogic - DEBUG - left over string after checking for recurring: meeting tmr
+2012-06-03 13:56:49,334 - logic.JIDLogic - DEBUG - left over string after fetching labels: meeting tmr
+2012-06-03 13:56:49,424 - logic.JIDLogic - DEBUG - -----date only format-------
+2012-06-03 13:56:49,424 - logic.JIDLogic - DEBUG - start date string: tmr
+2012-06-03 13:56:49,424 - logic.JIDLogic - DEBUG - Start date is set!
+2012-06-03 13:56:49,424 - logic.JIDLogic - DEBUG - time/date extracted!
+2012-06-03 13:56:49,424 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-03 13:56:49,424 - logic.JIDLogic - DEBUG - start date time: 04-06-2012
+2012-06-03 13:56:49,424 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-03 13:56:49,424 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-03 13:56:49,424 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-03 13:56:49,424 - logic.JIDLogic - DEBUG - task details: meeting
+2012-06-03 13:56:49,424 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-06-03 13:56:49,424 - logic.JIDLogic - DEBUG - isundoable
+2012-06-03 13:56:49,424 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 13:56:49,554 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 13:56:49,554 - logic.JIDLogic - DEBUG - find *.*
+2012-06-03 13:56:49,554 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 13:56:49,554 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 13:56:49,554 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 13:56:49,554 - operation.Search - DEBUG - finding objects
+2012-06-03 13:56:49,554 - operation.Search - DEBUG - returning all objects
+2012-06-03 13:56:49,554 - operation.Search - DEBUG - before sorting
+2012-06-03 13:56:49,554 - operation.Search - DEBUG - meeting on 04-06-2012
+2012-06-03 13:56:49,554 - operation.Search - DEBUG - after sorting
+2012-06-03 13:56:49,554 - operation.Search - DEBUG - meeting on 04-06-2012
+2012-06-03 13:56:49,554 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 14:09:02,135 - Abc - DEBUG - array out of bounds!
+2012-06-03 14:09:03,315 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 14:09:03,315 - logic.JIDLogic - DEBUG - find *.*
+2012-06-03 14:09:03,315 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 14:09:03,336 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 14:09:03,336 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 14:09:03,336 - operation.Search - DEBUG - finding objects
+2012-06-03 14:09:03,336 - operation.Search - DEBUG - returning all objects
+2012-06-03 14:09:03,336 - operation.Search - DEBUG - before sorting
+2012-06-03 14:09:03,336 - operation.Search - DEBUG - meeting on 03-06-2012
+2012-06-03 14:09:03,336 - operation.Search - DEBUG - after sorting
+2012-06-03 14:09:03,336 - operation.Search - DEBUG - meeting on 03-06-2012
+2012-06-03 14:09:03,336 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 14:09:09,286 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 14:09:09,286 - logic.JIDLogic - DEBUG - DELETE $$__03-06-2012W__$$
+2012-06-03 14:09:09,296 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 14:09:09,296 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 14:09:09,296 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 14:09:09,296 - operation.BaseSearch - DEBUG - delete
+2012-06-03 14:09:09,296 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-03 14:09:09,307 - operation.BaseSearch - DEBUG - going to the id part
+2012-06-03 14:09:09,307 - operation.BaseSearch - DEBUG - $$__03-06-2012W__$$
+2012-06-03 14:09:09,307 - operation.Delete - DEBUG - isUndoAble value changed
+2012-06-03 14:09:09,307 - operation.Delete - DEBUG - deleted succesfully
+2012-06-03 14:09:09,307 - operation.BaseSearch - DEBUG - Result Added
+2012-06-03 14:09:09,307 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-06-03 14:09:09,307 - logic.JIDLogic - DEBUG - isundoable
+2012-06-03 14:09:09,307 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 14:09:09,437 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 14:09:09,437 - logic.JIDLogic - DEBUG - find *.*
+2012-06-03 14:09:09,437 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 14:09:09,437 - logic.JIDLogic - FATAL - Inside the actual execution
+2012-06-03 14:09:09,437 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 14:09:09,437 - operation.Search - DEBUG - finding objects
+2012-06-03 14:09:09,437 - operation.Search - DEBUG - returning all objects
+2012-06-03 14:09:09,437 - operation.Search - DEBUG - before sorting
+2012-06-03 14:09:09,437 - operation.Search - DEBUG - after sorting
+2012-06-03 14:09:09,437 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false

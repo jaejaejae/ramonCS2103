@@ -4,8 +4,6 @@
  */
 package gui;
 
-import gui.MainJFrame.UndoAction;
-
 import java.awt.Event;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
@@ -29,7 +27,7 @@ import data.*;
  */
 public class ExpandJPanel extends javax.swing.JPanel {
 
-	AutoUpdateJTable autoJTable;
+	static AutoUpdateJTable autoJTable;
 	
     /**
      * Creates new form ExpandJPanel
@@ -89,18 +87,18 @@ public class ExpandJPanel extends javax.swing.JPanel {
     }// </editor-fold>
     // Variables declaration - do not modify
     private javax.swing.JScrollPane jScrollPane1;
-    public javax.swing.JTable jTable1;
+    public static javax.swing.JTable jTable1;
     
     // End of variables declaration
     public void updateJTable(Task[] tasks) {
     	autoJTable.updateJTable(tasks);
     }
     
-    public void updateJTable() {
+    public static void updateJTable() {
     	autoJTable.updateJTable();
     }
     
-    public Task[] getTasks() {
+    public static Task[] getTasks() {
     	return autoJTable.getTasks();
     }
     
