@@ -234,7 +234,7 @@ public class Parser {
 		taskDetails = command;
 		logger.debug("task details: "+taskDetails);
 		
-		Task t = new Task(taskDetails.trim(),null,startDateTime,endDateTime,labelList,recurring,deadline,important);	
+		Task t = new Task(taskDetails,null,startDateTime,endDateTime,labelList,recurring,deadline,important);	
 		
 		return t;
 	}
