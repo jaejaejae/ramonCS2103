@@ -136,7 +136,7 @@ public class MainJFrame extends javax.swing.JFrame {
 		java.awt.EventQueue.invokeLater(new Runnable() {
 
 			public void run() {
-				setVisible(true);
+				showFrame();
 			}
 		});
 		
@@ -792,8 +792,11 @@ public class MainJFrame extends javax.swing.JFrame {
 			@Override
 			public void run() {
 				// TODO Auto-generated method stub
-
+				
 				MainJFrame.this.setVisible(true);
+				MainJFrame.this.toFront();
+				
+				jComboBox1.requestFocus();
 			}
 
 		});

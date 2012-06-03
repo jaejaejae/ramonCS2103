@@ -1611,3 +1611,42 @@
 2012-06-03 20:07:10,549 - operation.Search - DEBUG - before sorting
 2012-06-03 20:07:10,550 - operation.Search - DEBUG - after sorting
 2012-06-03 20:07:10,551 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 20:23:57,830 - Abc - DEBUG - array out of bounds!
+2012-06-03 20:23:59,318 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 20:23:59,320 - logic.JIDLogic - DEBUG - find *.*
+2012-06-03 20:23:59,321 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 20:23:59,350 - operation.Search - DEBUG - finding objects
+2012-06-03 20:23:59,351 - operation.Search - DEBUG - returning all objects
+2012-06-03 20:23:59,354 - operation.Search - DEBUG - before sorting
+2012-06-03 20:23:59,355 - operation.Search - DEBUG - after sorting
+2012-06-03 20:23:59,355 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 20:24:02,165 - logic.JIDLogic - DEBUG - curText:a
+2012-06-03 20:24:02,166 - logic.JIDLogic - DEBUG - prevText: null
+2012-06-03 20:24:02,166 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 20:24:02,167 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 20:24:02,170 - logic.JIDLogic - DEBUG - index: 0
+2012-06-03 20:24:03,694 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 20:24:03,694 - logic.JIDLogic - DEBUG - prevText: a
+2012-06-03 20:24:03,700 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 20:24:03,701 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 20:24:03,701 - logic.JIDLogic - DEBUG - index: 0
+2012-06-03 20:24:37,382 - Abc - DEBUG - array out of bounds!
+2012-06-03 20:24:38,868 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 20:24:38,871 - logic.JIDLogic - DEBUG - find *.*
+2012-06-03 20:24:38,872 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 20:24:38,905 - operation.Search - DEBUG - finding objects
+2012-06-03 20:24:38,909 - operation.Search - DEBUG - returning all objects
+2012-06-03 20:24:38,950 - operation.Search - DEBUG - before sorting
+2012-06-03 20:24:38,952 - operation.Search - DEBUG - after sorting
+2012-06-03 20:24:38,953 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 20:24:55,910 - Abc - DEBUG - 1
+2012-06-03 20:26:04,633 - Abc - DEBUG - array out of bounds!
+2012-06-03 20:26:06,120 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 20:26:06,122 - logic.JIDLogic - DEBUG - find *.*
+2012-06-03 20:26:06,123 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 20:26:06,157 - operation.Search - DEBUG - finding objects
+2012-06-03 20:26:06,159 - operation.Search - DEBUG - returning all objects
+2012-06-03 20:26:06,164 - operation.Search - DEBUG - before sorting
+2012-06-03 20:26:06,165 - operation.Search - DEBUG - after sorting
+2012-06-03 20:26:06,165 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 20:26:26,173 - Abc - DEBUG - 1
