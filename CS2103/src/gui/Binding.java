@@ -112,9 +112,9 @@ public class Binding {
         			+ taskList[ExpandJPanel.jTable1.getSelectedRow()].getTaskId());
         		
         	if(task == null)
-        		MainJFrame.showPopup("COMPLETED unsuccessfully!");
+        		MainJFrame.showPopup("IMPORTANT unsuccessfully!");
         	else {
-        		MainJFrame.showPopup("COMPLETED: "+task[0].getName());
+        		MainJFrame.showPopup("IMPORTANT: "+task[0].getName());
             	ExpandJPanel.updateJTable();
         	}        	
         }
