@@ -68,7 +68,7 @@ public class MainJFrame extends javax.swing.JFrame {
 	private static Logger logger=Logger.getLogger(JIDLogic.class);
 	
 	enum STATE {
-		ADD, DELETE, EDIT, SEARCH, COMPLETED, ARCHIVE, OVERDUE, NULL, LIST, UNDO
+		ADD, DELETE, EDIT, SEARCH, COMPLETED, ARCHIVE, OVERDUE, NULL, LIST, UNDO, EXIT
 	};
 	
 	boolean edit = false;
@@ -79,7 +79,7 @@ public class MainJFrame extends javax.swing.JFrame {
 	String prevText;
 	String id;
 	int prevIndex;
-	boolean expand = false;
+	static boolean expand = false;
 	
 	// Variables declaration - do not modify
 	private javax.swing.JComboBox jComboBox1;
@@ -573,6 +573,10 @@ public class MainJFrame extends javax.swing.JFrame {
 										else
 											showPopup("error!!!");
 									break;
+									case EXIT:
+										JIDLogic.JIDLogic_close();
+										System.exit(0);
+									break;
 									}
 									
 									/*
@@ -645,6 +649,8 @@ public class MainJFrame extends javax.swing.JFrame {
 									return STATE.LIST;
 								if(firstWord.equalsIgnoreCase("undo"))
 									return STATE.UNDO;
+								if(firstWord.equalsIgnoreCase("exit"))
+									return STATE.EXIT;
 								return STATE.NULL;
 							} 
 

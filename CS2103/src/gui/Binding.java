@@ -45,6 +45,29 @@ public class Binding {
 	        key = KeyStroke.getKeyStroke(KeyEvent.VK_I, Event.CTRL_MASK);
 	        inputMap.put(key, "important");
 	        actionMap.put("important", new ImportantAction());
+	        
+	        key = KeyStroke.getKeyStroke(KeyEvent.VK_F4, Event.ALT_MASK);
+	        inputMap.put(key, "exit");
+	        actionMap.put("exit", new ExitAction());
+	
+	        key = KeyStroke.getKeyStroke(KeyEvent.VK_E, Event.CTRL_MASK);
+	        inputMap.put(key, "expand");
+	        actionMap.put("expand", new ExpandAction());
+	}
+	
+	class ExpandAction extends AbstractAction {
+		@Override
+		public void actionPerformed(ActionEvent e) {
+		
+		}
+	}
+	
+	class ExitAction extends AbstractAction {
+		@Override
+		public void actionPerformed(ActionEvent e) {
+			JIDLogic.JIDLogic_close();
+			System.exit(0);
+		}
 	}
 	
     class UndoAction extends AbstractAction {
