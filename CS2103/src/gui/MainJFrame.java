@@ -86,6 +86,7 @@ public class MainJFrame extends javax.swing.JFrame {
 	private javax.swing.JLabel jLabel1;
 	private javax.swing.JLabel jLabel2;
 	private javax.swing.JLabel jLabel3;
+	private MouseListener curJLabel3;
 	private javax.swing.JPanel jPanel1;
 	private ExpandJPanel expandJPanel = new ExpandJPanel();
 	// End of variables declaration
@@ -295,19 +296,21 @@ public class MainJFrame extends javax.swing.JFrame {
 		setJComboBox1Action();
 		setJLabel1Action();
 		setJLabel2Action();
-		setJLabel3Action();
+		setJLabel3ActionExpand();
 	}
+	
+	public void setJLabel3ActionContract() {
+		jLabel3.setToolTipText("Contract");
 
-	private void setJLabel3Action() {
-		// TODO Auto-generated method stub
-		jLabel3.setToolTipText("Expand");
-
-		jLabel3.addMouseListener(new MouseListener() {
+		jLabel3.setIcon(Resource.up);
+		
+		jLabel3.removeMouseListener(curJLabel3);
+		jLabel3.addMouseListener(curJLabel3 = new MouseListener() {
 
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
 				// TODO Auto-generated method stub
-				jLabel3.setIcon(Resource.downPress);
+				jLabel3.setIcon(Resource.upPress);
 				Timer timer = new Timer(100, new ActionListener() {
 
 					@Override
@@ -325,6 +328,69 @@ public class MainJFrame extends javax.swing.JFrame {
 				});
 				timer.setRepeats(false);
 				timer.start();
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+				jLabel3.setIcon(Resource.upOn);
+			}
+
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+				jLabel3.setIcon(Resource.up);
+			}
+
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+				jLabel3.setIcon(Resource.upPress);
+			}
+
+			@Override
+			public void mouseReleased(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+
+				jLabel3.setIcon(Resource.down);
+			}
+		});
+	}
+
+	public void setJLabel3ActionExpand() {
+		// TODO Auto-generated method stub
+		jLabel3.setToolTipText("Expand");
+			
+		jLabel3.removeMouseListener(curJLabel3);
+		
+		jLabel3.addMouseListener(curJLabel3 = new MouseListener() {
+
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				// TODO Auto-generated method stub
+				jLabel3.setIcon(Resource.downPress);
+				
+				Timer timer = new Timer(100, new ActionListener() {
+
+					@Override
+					public void actionPerformed(ActionEvent arg0) {
+						// TODO Auto-generated method stub
+						jLabel3.setIcon(Resource.up);
+						if (MainJFrame.this.getSize().equals(
+								new Dimension(400, 400))) {
+							contractFrame();
+						} else {
+							expandFrame();
+						}
+					}
+
+				});
+				timer.setRepeats(false);
+				timer.start();
+				
 			}
 
 			@Override
@@ -352,7 +418,7 @@ public class MainJFrame extends javax.swing.JFrame {
 			public void mouseReleased(MouseEvent arg0) {
 				// TODO Auto-generated method stub
 
-				jLabel3.setIcon(Resource.down);
+				jLabel3.setIcon(Resource.up);
 			}
 		});
 	}
@@ -600,8 +666,8 @@ public class MainJFrame extends javax.swing.JFrame {
 								
 								String selected = (String)jComboBox1.getItemAt(idx);
 								
-						//		if(curText.length() <= selected.length() 
-							//			&& selected.substring(0, curText.length()).equalsIgnoreCase(curText))
+							//	if(curText.length() <= selected.length() 
+							//		&& selected.substring(0, curText.length()).equalsIgnoreCase(curText))
 									return idx;
 								
 							//	return -1;
@@ -783,7 +849,7 @@ public class MainJFrame extends javax.swing.JFrame {
 			MainJFrame.this.add(expandJPanel, BorderLayout.SOUTH);
 			MainJFrame.this.setSize(400,400);
 			expand = true;
-			jLabel3.setToolTipText("Contract");
+			setJLabel3ActionContract();
 		}
 	}
 	
@@ -792,7 +858,7 @@ public class MainJFrame extends javax.swing.JFrame {
 			MainJFrame.this.remove(expandJPanel);
 			MainJFrame.this.setSize(400, 100);
 			expand = false;
-			jLabel3.setToolTipText("Expand");
+			setJLabel3ActionExpand();
 		}
 	}
 	
@@ -800,8 +866,6 @@ public class MainJFrame extends javax.swing.JFrame {
         InputMap inputMap = this.getRootPane().getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW);
         ActionMap actionMap = this.getRootPane().getActionMap();
         
-        new Binding(inputMap, actionMap);
-        
+        new Binding(this, inputMap, actionMap);
     }
-    
 }

@@ -8,6 +8,7 @@ import java.awt.event.KeyEvent;
 import javax.swing.AbstractAction;
 import javax.swing.ActionMap;
 import javax.swing.InputMap;
+import javax.swing.JFrame;
 import javax.swing.KeyStroke;
 
 import logic.JIDLogic;
@@ -21,8 +22,10 @@ public class Binding {
 	
 	InputMap inputMap;
 	ActionMap actionMap;
+	JFrame jFrame;
 	
-	Binding(InputMap inputMap, ActionMap actionMap) {
+	Binding(JFrame jframe, InputMap inputMap, ActionMap actionMap) {
+		this.jFrame = jFrame;
 		this.inputMap = inputMap;
 		this.actionMap = actionMap;
 		addKeyBinding();

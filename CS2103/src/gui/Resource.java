@@ -33,6 +33,10 @@ public class Resource {
 	public final static ImageIcon downOn = createImageIcon("Images/downOn.png","");
     public final static ImageIcon downPress = createImageIcon("Images/downPress.png","");
     
+    public final static ImageIcon up = createImageIcon("Images/up.png", "");
+    public final static ImageIcon upOn = createImageIcon("Images/upOn.png", "");
+    public final static ImageIcon upPress = createImageIcon("Images/upPress.png", "");
+    
 	public final static Image trayImage = iconToImage(trayLogo); 
 	public final static Image backgroundImage = iconToImage(backgroundLogo);
 	
