@@ -1650,3 +1650,1202 @@
 2012-06-03 20:26:06,165 - operation.Search - DEBUG - after sorting
 2012-06-03 20:26:06,165 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
 2012-06-03 20:26:26,173 - Abc - DEBUG - 1
+2012-06-03 21:13:01,228 - Abc - DEBUG - array out of bounds!
+2012-06-03 21:13:02,755 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 21:13:02,757 - logic.JIDLogic - DEBUG - find *.*
+2012-06-03 21:13:02,758 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 21:13:02,789 - operation.Search - DEBUG - finding objects
+2012-06-03 21:13:02,790 - operation.Search - DEBUG - returning all objects
+2012-06-03 21:13:02,795 - operation.Search - DEBUG - before sorting
+2012-06-03 21:13:02,796 - operation.Search - DEBUG - after sorting
+2012-06-03 21:13:02,797 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 21:13:06,099 - logic.JIDLogic - DEBUG - curText:a
+2012-06-03 21:13:06,100 - logic.JIDLogic - DEBUG - prevText: null
+2012-06-03 21:13:06,101 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:06,102 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:06,102 - logic.JIDLogic - DEBUG - index: 0
+2012-06-03 21:13:06,288 - logic.JIDLogic - DEBUG - curText:ad
+2012-06-03 21:13:06,289 - logic.JIDLogic - DEBUG - prevText: a
+2012-06-03 21:13:06,297 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:06,298 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:06,299 - logic.JIDLogic - DEBUG - index: 0
+2012-06-03 21:13:06,464 - logic.JIDLogic - DEBUG - curText:add
+2012-06-03 21:13:06,465 - logic.JIDLogic - DEBUG - prevText: ad
+2012-06-03 21:13:06,466 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:06,467 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:06,467 - logic.JIDLogic - DEBUG - index: 0
+2012-06-03 21:13:06,669 - logic.JIDLogic - DEBUG - curText:add 
+2012-06-03 21:13:06,669 - logic.JIDLogic - DEBUG - prevText: add
+2012-06-03 21:13:06,670 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:06,671 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:06,672 - logic.JIDLogic - DEBUG - index: 0
+2012-06-03 21:13:13,599 - logic.JIDLogic - DEBUG - curText:add
+2012-06-03 21:13:13,600 - logic.JIDLogic - DEBUG - prevText: add 
+2012-06-03 21:13:13,600 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:13,601 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:13,601 - logic.JIDLogic - DEBUG - index: 0
+2012-06-03 21:13:13,750 - logic.JIDLogic - DEBUG - curText:ad
+2012-06-03 21:13:13,751 - logic.JIDLogic - DEBUG - prevText: add
+2012-06-03 21:13:13,751 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:13,752 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:13,753 - logic.JIDLogic - DEBUG - index: 0
+2012-06-03 21:13:13,896 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:13:13,897 - logic.JIDLogic - DEBUG - prevText: ad
+2012-06-03 21:13:13,897 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:13,898 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:13,899 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:14,612 - logic.JIDLogic - DEBUG - curText:a
+2012-06-03 21:13:14,613 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:13:14,614 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:14,615 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:14,615 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:14,696 - logic.JIDLogic - DEBUG - curText:ad
+2012-06-03 21:13:14,697 - logic.JIDLogic - DEBUG - prevText: a
+2012-06-03 21:13:14,697 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:14,698 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:14,698 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:14,888 - logic.JIDLogic - DEBUG - curText:ad
+2012-06-03 21:13:14,889 - logic.JIDLogic - DEBUG - prevText: ad
+2012-06-03 21:13:14,890 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:14,890 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:14,891 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:16,085 - logic.JIDLogic - DEBUG - curText:add 
+2012-06-03 21:13:16,086 - logic.JIDLogic - DEBUG - prevText: ad
+2012-06-03 21:13:16,086 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:16,087 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:16,087 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:16,193 - logic.JIDLogic - DEBUG - curText:add 
+2012-06-03 21:13:16,194 - logic.JIDLogic - DEBUG - prevText: add 
+2012-06-03 21:13:16,194 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:16,195 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:16,196 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:16,251 - logic.JIDLogic - DEBUG - curText:add aj
+2012-06-03 21:13:16,252 - logic.JIDLogic - DEBUG - prevText: add 
+2012-06-03 21:13:16,252 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:16,253 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:16,253 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:16,292 - logic.JIDLogic - DEBUG - curText:add ajs
+2012-06-03 21:13:16,293 - logic.JIDLogic - DEBUG - prevText: add aj
+2012-06-03 21:13:16,293 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:16,294 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:16,295 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:16,309 - logic.JIDLogic - DEBUG - curText:add ajsf
+2012-06-03 21:13:16,310 - logic.JIDLogic - DEBUG - prevText: add ajs
+2012-06-03 21:13:16,311 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:16,311 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:16,312 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:16,329 - logic.JIDLogic - DEBUG - curText:add ajsfi
+2012-06-03 21:13:16,330 - logic.JIDLogic - DEBUG - prevText: add ajsf
+2012-06-03 21:13:16,331 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:16,332 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:16,332 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:16,376 - logic.JIDLogic - DEBUG - curText:add ajsfil
+2012-06-03 21:13:16,377 - logic.JIDLogic - DEBUG - prevText: add ajsfi
+2012-06-03 21:13:16,378 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:16,378 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:16,379 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:16,392 - logic.JIDLogic - DEBUG - curText:add ajsfile
+2012-06-03 21:13:16,392 - logic.JIDLogic - DEBUG - prevText: add ajsfil
+2012-06-03 21:13:16,393 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:16,394 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:16,394 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:16,467 - logic.JIDLogic - DEBUG - curText:add ajsfile;
+2012-06-03 21:13:16,467 - logic.JIDLogic - DEBUG - prevText: add ajsfile
+2012-06-03 21:13:16,468 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:16,468 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:16,469 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:16,535 - logic.JIDLogic - DEBUG - curText:add ajsfile;j
+2012-06-03 21:13:16,535 - logic.JIDLogic - DEBUG - prevText: add ajsfile;
+2012-06-03 21:13:16,536 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:16,537 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:16,537 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:16,577 - logic.JIDLogic - DEBUG - curText:add ajsfile;jf
+2012-06-03 21:13:16,577 - logic.JIDLogic - DEBUG - prevText: add ajsfile;j
+2012-06-03 21:13:16,578 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:16,578 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:16,578 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:16,651 - logic.JIDLogic - DEBUG - curText:add ajsfile;jfs
+2012-06-03 21:13:16,651 - logic.JIDLogic - DEBUG - prevText: add ajsfile;jf
+2012-06-03 21:13:16,652 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:16,652 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:16,652 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:16,664 - logic.JIDLogic - DEBUG - curText:add ajsfile;jfsk
+2012-06-03 21:13:16,664 - logic.JIDLogic - DEBUG - prevText: add ajsfile;jfs
+2012-06-03 21:13:16,665 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:16,665 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:16,665 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:16,676 - logic.JIDLogic - DEBUG - curText:add ajsfile;jfskl
+2012-06-03 21:13:16,676 - logic.JIDLogic - DEBUG - prevText: add ajsfile;jfsk
+2012-06-03 21:13:16,677 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:16,677 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:16,677 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:16,709 - logic.JIDLogic - DEBUG - curText:add ajsfile;jfskla
+2012-06-03 21:13:16,710 - logic.JIDLogic - DEBUG - prevText: add ajsfile;jfskl
+2012-06-03 21:13:16,710 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:16,711 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:16,711 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:16,978 - logic.JIDLogic - DEBUG - curText:add ajsfile;jfskla
+2012-06-03 21:13:16,978 - logic.JIDLogic - DEBUG - prevText: add ajsfile;jfskla
+2012-06-03 21:13:16,979 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:16,979 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:16,980 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:17,127 - logic.JIDLogic - DEBUG - curText:add ajsfile;jfskla
+2012-06-03 21:13:17,128 - logic.JIDLogic - DEBUG - prevText: add ajsfile;jfskla
+2012-06-03 21:13:17,129 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:17,129 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:17,129 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:17,265 - logic.JIDLogic - DEBUG - curText:add ajsfile;jfskla
+2012-06-03 21:13:17,266 - logic.JIDLogic - DEBUG - prevText: add ajsfile;jfskla
+2012-06-03 21:13:17,266 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:17,267 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:17,267 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:17,408 - logic.JIDLogic - DEBUG - curText:add ajsfile;jfskla
+2012-06-03 21:13:17,409 - logic.JIDLogic - DEBUG - prevText: add ajsfile;jfskla
+2012-06-03 21:13:17,409 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:17,410 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:17,410 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:17,437 - logic.JIDLogic - DEBUG - curText:add ajsfile;jfsskla
+2012-06-03 21:13:17,437 - logic.JIDLogic - DEBUG - prevText: add ajsfile;jfskla
+2012-06-03 21:13:17,438 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:17,438 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:17,439 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:17,502 - logic.JIDLogic - DEBUG - curText:add ajsfile;jfsdskla
+2012-06-03 21:13:17,503 - logic.JIDLogic - DEBUG - prevText: add ajsfile;jfsskla
+2012-06-03 21:13:17,504 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:17,504 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:17,505 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:17,957 - logic.JIDLogic - DEBUG - curText:add ajsfile;jfsskla
+2012-06-03 21:13:17,957 - logic.JIDLogic - DEBUG - prevText: add ajsfile;jfsdskla
+2012-06-03 21:13:17,959 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:17,960 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:17,960 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:18,608 - logic.JIDLogic - DEBUG - curText:add ajsfile;jfsskla
+2012-06-03 21:13:18,609 - logic.JIDLogic - DEBUG - prevText: add ajsfile;jfsskla
+2012-06-03 21:13:18,610 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:18,610 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:18,611 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:19,161 - logic.JIDLogic - DEBUG - curText:add ajsfile;jfsskla
+2012-06-03 21:13:19,162 - logic.JIDLogic - DEBUG - prevText: add ajsfile;jfsskla
+2012-06-03 21:13:19,162 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:19,163 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:19,163 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:19,326 - logic.JIDLogic - DEBUG - curText:add ajsfile;jfsskla
+2012-06-03 21:13:19,327 - logic.JIDLogic - DEBUG - prevText: add ajsfile;jfsskla
+2012-06-03 21:13:19,328 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:19,328 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:19,329 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:19,469 - logic.JIDLogic - DEBUG - curText:add ajsfile;jfsskla
+2012-06-03 21:13:19,470 - logic.JIDLogic - DEBUG - prevText: add ajsfile;jfsskla
+2012-06-03 21:13:19,470 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:19,471 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:19,471 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:19,529 - logic.JIDLogic - DEBUG - curText:add ajsfile;jfsdsskla
+2012-06-03 21:13:19,530 - logic.JIDLogic - DEBUG - prevText: add ajsfile;jfsskla
+2012-06-03 21:13:19,530 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:19,531 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:19,531 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:20,240 - logic.JIDLogic - DEBUG - curText:add ajsfile;jfssskla
+2012-06-03 21:13:20,240 - logic.JIDLogic - DEBUG - prevText: add ajsfile;jfsdsskla
+2012-06-03 21:13:20,241 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:20,241 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:20,241 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:20,760 - logic.JIDLogic - DEBUG - curText:add ajsfile;jfsskla
+2012-06-03 21:13:20,761 - logic.JIDLogic - DEBUG - prevText: add ajsfile;jfssskla
+2012-06-03 21:13:20,762 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:20,762 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:20,763 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:20,800 - logic.JIDLogic - DEBUG - curText:add ajsfile;jsskla
+2012-06-03 21:13:20,801 - logic.JIDLogic - DEBUG - prevText: add ajsfile;jfsskla
+2012-06-03 21:13:20,801 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:20,802 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:20,802 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:20,834 - logic.JIDLogic - DEBUG - curText:add ajsfile;sskla
+2012-06-03 21:13:20,834 - logic.JIDLogic - DEBUG - prevText: add ajsfile;jsskla
+2012-06-03 21:13:20,835 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:20,835 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:20,836 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:20,879 - logic.JIDLogic - DEBUG - curText:add ajsfilesskla
+2012-06-03 21:13:20,880 - logic.JIDLogic - DEBUG - prevText: add ajsfile;sskla
+2012-06-03 21:13:20,880 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:20,881 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:20,881 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:20,910 - logic.JIDLogic - DEBUG - curText:add ajsfilsskla
+2012-06-03 21:13:20,911 - logic.JIDLogic - DEBUG - prevText: add ajsfilesskla
+2012-06-03 21:13:20,912 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:20,913 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:20,914 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:20,945 - logic.JIDLogic - DEBUG - curText:add ajsfisskla
+2012-06-03 21:13:20,946 - logic.JIDLogic - DEBUG - prevText: add ajsfilsskla
+2012-06-03 21:13:20,946 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:20,947 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:20,947 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:20,982 - logic.JIDLogic - DEBUG - curText:add ajsfsskla
+2012-06-03 21:13:20,983 - logic.JIDLogic - DEBUG - prevText: add ajsfisskla
+2012-06-03 21:13:20,983 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:20,984 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:20,984 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:21,018 - logic.JIDLogic - DEBUG - curText:add ajssskla
+2012-06-03 21:13:21,019 - logic.JIDLogic - DEBUG - prevText: add ajsfsskla
+2012-06-03 21:13:21,019 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:21,019 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:21,020 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:21,060 - logic.JIDLogic - DEBUG - curText:add ajsskla
+2012-06-03 21:13:21,061 - logic.JIDLogic - DEBUG - prevText: add ajssskla
+2012-06-03 21:13:21,061 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:21,062 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:21,062 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:21,093 - logic.JIDLogic - DEBUG - curText:add asskla
+2012-06-03 21:13:21,094 - logic.JIDLogic - DEBUG - prevText: add ajsskla
+2012-06-03 21:13:21,094 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:21,095 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:21,095 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:21,129 - logic.JIDLogic - DEBUG - curText:add sskla
+2012-06-03 21:13:21,129 - logic.JIDLogic - DEBUG - prevText: add asskla
+2012-06-03 21:13:21,130 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:13:21,130 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:21,130 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:21,165 - logic.JIDLogic - DEBUG - curText:addsskla
+2012-06-03 21:13:21,166 - logic.JIDLogic - DEBUG - prevText: add sskla
+2012-06-03 21:13:21,166 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:21,167 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:13:21,167 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:21,204 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:13:21,204 - logic.JIDLogic - DEBUG - prevText: addsskla
+2012-06-03 21:13:21,205 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:21,205 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:21,206 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:21,240 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:13:21,241 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:13:21,242 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:21,242 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:21,243 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:21,275 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:13:21,276 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:13:21,276 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:21,277 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:21,278 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:21,312 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:13:21,312 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:13:21,313 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:21,313 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:21,314 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:21,359 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:13:21,360 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:13:21,361 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:21,361 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:21,362 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:21,386 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:13:21,386 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:13:21,387 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:21,388 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:21,388 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:21,422 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:13:21,423 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:13:21,423 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:21,423 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:21,424 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:21,463 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:13:21,463 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:13:21,464 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:21,464 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:21,465 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:21,497 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:13:21,498 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:13:21,498 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:21,499 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:21,499 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:26,426 - logic.JIDLogic - DEBUG - curText:a
+2012-06-03 21:13:26,427 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:13:26,428 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:26,428 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:26,429 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:26,506 - logic.JIDLogic - DEBUG - curText:as
+2012-06-03 21:13:26,507 - logic.JIDLogic - DEBUG - prevText: a
+2012-06-03 21:13:26,507 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:26,508 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:26,508 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:26,557 - logic.JIDLogic - DEBUG - curText:asd
+2012-06-03 21:13:26,557 - logic.JIDLogic - DEBUG - prevText: as
+2012-06-03 21:13:26,558 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:26,558 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:26,559 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:26,641 - logic.JIDLogic - DEBUG - curText:asdf
+2012-06-03 21:13:26,642 - logic.JIDLogic - DEBUG - prevText: asd
+2012-06-03 21:13:26,642 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:26,642 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:26,643 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:26,921 - logic.JIDLogic - DEBUG - curText:asdf 
+2012-06-03 21:13:26,922 - logic.JIDLogic - DEBUG - prevText: asdf
+2012-06-03 21:13:26,922 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:26,923 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:26,967 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:27,086 - logic.JIDLogic - DEBUG - curText:asdf a
+2012-06-03 21:13:27,087 - logic.JIDLogic - DEBUG - prevText: asdf 
+2012-06-03 21:13:27,087 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:27,088 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:27,088 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:27,154 - logic.JIDLogic - DEBUG - curText:asdf as
+2012-06-03 21:13:27,155 - logic.JIDLogic - DEBUG - prevText: asdf a
+2012-06-03 21:13:27,155 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:27,156 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:27,156 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:27,175 - logic.JIDLogic - DEBUG - curText:asdf asd
+2012-06-03 21:13:27,176 - logic.JIDLogic - DEBUG - prevText: asdf as
+2012-06-03 21:13:27,176 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:27,177 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:27,177 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:27,233 - logic.JIDLogic - DEBUG - curText:asdf asdf
+2012-06-03 21:13:27,233 - logic.JIDLogic - DEBUG - prevText: asdf asd
+2012-06-03 21:13:27,234 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:27,234 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:27,235 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:27,530 - logic.JIDLogic - DEBUG - curText:asdf asdf
+2012-06-03 21:13:27,530 - logic.JIDLogic - DEBUG - prevText: asdf asdf
+2012-06-03 21:13:27,530 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:27,531 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:27,531 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:28,051 - logic.JIDLogic - DEBUG - curText:asdf asdf
+2012-06-03 21:13:28,052 - logic.JIDLogic - DEBUG - prevText: asdf asdf
+2012-06-03 21:13:28,053 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:28,053 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:28,054 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:28,092 - logic.JIDLogic - DEBUG - curText:asdf asdf
+2012-06-03 21:13:28,092 - logic.JIDLogic - DEBUG - prevText: asdf asdf
+2012-06-03 21:13:28,093 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:28,094 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:28,094 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:28,124 - logic.JIDLogic - DEBUG - curText:asdf asdf
+2012-06-03 21:13:28,125 - logic.JIDLogic - DEBUG - prevText: asdf asdf
+2012-06-03 21:13:28,125 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:28,126 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:28,127 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:28,161 - logic.JIDLogic - DEBUG - curText:asdf asdf
+2012-06-03 21:13:28,162 - logic.JIDLogic - DEBUG - prevText: asdf asdf
+2012-06-03 21:13:28,163 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:28,163 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:28,164 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:28,199 - logic.JIDLogic - DEBUG - curText:asdf asdf
+2012-06-03 21:13:28,199 - logic.JIDLogic - DEBUG - prevText: asdf asdf
+2012-06-03 21:13:28,200 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:28,201 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:28,201 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:28,239 - logic.JIDLogic - DEBUG - curText:asdf asdf
+2012-06-03 21:13:28,240 - logic.JIDLogic - DEBUG - prevText: asdf asdf
+2012-06-03 21:13:28,241 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:28,241 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:28,242 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:28,272 - logic.JIDLogic - DEBUG - curText:asdf asdf
+2012-06-03 21:13:28,272 - logic.JIDLogic - DEBUG - prevText: asdf asdf
+2012-06-03 21:13:28,273 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:28,273 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:28,274 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:28,310 - logic.JIDLogic - DEBUG - curText:asdf asdf
+2012-06-03 21:13:28,310 - logic.JIDLogic - DEBUG - prevText: asdf asdf
+2012-06-03 21:13:28,311 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:28,312 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:28,312 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:28,345 - logic.JIDLogic - DEBUG - curText:asdf asdf
+2012-06-03 21:13:28,346 - logic.JIDLogic - DEBUG - prevText: asdf asdf
+2012-06-03 21:13:28,346 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:28,347 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:28,347 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:28,381 - logic.JIDLogic - DEBUG - curText:asdf asdf
+2012-06-03 21:13:28,382 - logic.JIDLogic - DEBUG - prevText: asdf asdf
+2012-06-03 21:13:28,382 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:28,383 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:28,383 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:28,419 - logic.JIDLogic - DEBUG - curText:asdf asdf
+2012-06-03 21:13:28,420 - logic.JIDLogic - DEBUG - prevText: asdf asdf
+2012-06-03 21:13:28,420 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:28,421 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:28,422 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:28,455 - logic.JIDLogic - DEBUG - curText:asdf asdf
+2012-06-03 21:13:28,456 - logic.JIDLogic - DEBUG - prevText: asdf asdf
+2012-06-03 21:13:28,456 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:28,457 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:28,457 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:28,681 - logic.JIDLogic - DEBUG - curText:asdf asdf
+2012-06-03 21:13:28,682 - logic.JIDLogic - DEBUG - prevText: asdf asdf
+2012-06-03 21:13:28,682 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:28,683 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:28,683 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:28,837 - logic.JIDLogic - DEBUG - curText:assdf asdf
+2012-06-03 21:13:28,837 - logic.JIDLogic - DEBUG - prevText: asdf asdf
+2012-06-03 21:13:28,838 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:28,838 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:28,838 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:29,141 - logic.JIDLogic - DEBUG - curText:asdsdf asdf
+2012-06-03 21:13:29,142 - logic.JIDLogic - DEBUG - prevText: assdf asdf
+2012-06-03 21:13:29,142 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:29,143 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:29,143 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:29,541 - logic.JIDLogic - DEBUG - curText:assdf asdf
+2012-06-03 21:13:29,541 - logic.JIDLogic - DEBUG - prevText: asdsdf asdf
+2012-06-03 21:13:29,542 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:29,542 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:29,542 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:30,790 - logic.JIDLogic - DEBUG - curText:asdf asdf
+2012-06-03 21:13:30,791 - logic.JIDLogic - DEBUG - prevText: assdf asdf
+2012-06-03 21:13:30,792 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:30,792 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:30,793 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:30,980 - logic.JIDLogic - DEBUG - curText:asddf asdf
+2012-06-03 21:13:30,980 - logic.JIDLogic - DEBUG - prevText: asdf asdf
+2012-06-03 21:13:30,981 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:30,982 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:30,982 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:31,374 - logic.JIDLogic - DEBUG - curText:asdf asdf
+2012-06-03 21:13:31,375 - logic.JIDLogic - DEBUG - prevText: asddf asdf
+2012-06-03 21:13:31,376 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:31,376 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:31,377 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:31,896 - logic.JIDLogic - DEBUG - curText:adf asdf
+2012-06-03 21:13:31,897 - logic.JIDLogic - DEBUG - prevText: asdf asdf
+2012-06-03 21:13:31,898 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:31,898 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:31,899 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:31,935 - logic.JIDLogic - DEBUG - curText:df asdf
+2012-06-03 21:13:31,935 - logic.JIDLogic - DEBUG - prevText: adf asdf
+2012-06-03 21:13:31,936 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:31,936 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:31,936 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:31,968 - logic.JIDLogic - DEBUG - curText:df asdf
+2012-06-03 21:13:31,968 - logic.JIDLogic - DEBUG - prevText: df asdf
+2012-06-03 21:13:31,969 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:31,970 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:31,970 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:32,010 - logic.JIDLogic - DEBUG - curText:df asdf
+2012-06-03 21:13:32,011 - logic.JIDLogic - DEBUG - prevText: df asdf
+2012-06-03 21:13:32,011 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:32,013 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:32,015 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:32,041 - logic.JIDLogic - DEBUG - curText:df asdf
+2012-06-03 21:13:32,042 - logic.JIDLogic - DEBUG - prevText: df asdf
+2012-06-03 21:13:32,042 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:32,043 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:32,043 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:32,079 - logic.JIDLogic - DEBUG - curText:df asdf
+2012-06-03 21:13:32,080 - logic.JIDLogic - DEBUG - prevText: df asdf
+2012-06-03 21:13:32,081 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:32,081 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:32,082 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:32,100 - logic.JIDLogic - DEBUG - curText:f asdf
+2012-06-03 21:13:32,101 - logic.JIDLogic - DEBUG - prevText: df asdf
+2012-06-03 21:13:32,101 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:32,102 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:32,102 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:32,621 - logic.JIDLogic - DEBUG - curText: asdf
+2012-06-03 21:13:32,621 - logic.JIDLogic - DEBUG - prevText: f asdf
+2012-06-03 21:13:32,622 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:32,622 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:32,623 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:32,659 - logic.JIDLogic - DEBUG - curText:asdf
+2012-06-03 21:13:32,660 - logic.JIDLogic - DEBUG - prevText:  asdf
+2012-06-03 21:13:32,661 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:32,661 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:32,662 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:32,694 - logic.JIDLogic - DEBUG - curText:sdf
+2012-06-03 21:13:32,695 - logic.JIDLogic - DEBUG - prevText: asdf
+2012-06-03 21:13:32,695 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:32,696 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:32,696 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:32,731 - logic.JIDLogic - DEBUG - curText:df
+2012-06-03 21:13:32,732 - logic.JIDLogic - DEBUG - prevText: sdf
+2012-06-03 21:13:32,732 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:32,733 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:32,733 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:32,775 - logic.JIDLogic - DEBUG - curText:f
+2012-06-03 21:13:32,776 - logic.JIDLogic - DEBUG - prevText: df
+2012-06-03 21:13:32,776 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:32,777 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:32,777 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:32,807 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:13:32,808 - logic.JIDLogic - DEBUG - prevText: f
+2012-06-03 21:13:32,808 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:32,809 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:32,809 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:32,843 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:13:32,843 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:13:32,844 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:32,844 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:32,844 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:32,878 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:13:32,878 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:13:32,879 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:32,879 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:32,880 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:32,915 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:13:32,951 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:13:32,952 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:32,952 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:32,953 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:32,956 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:13:32,957 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:13:32,957 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:32,958 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:32,958 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:32,989 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:13:32,990 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:13:32,990 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:32,991 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:32,991 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:33,025 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:13:33,026 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:13:33,026 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:33,027 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:33,027 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:13:33,063 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:13:33,064 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:13:33,064 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:13:33,065 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:13:33,065 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:23:56,400 - Abc - DEBUG - array out of bounds!
+2012-06-03 21:23:57,937 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 21:23:57,940 - logic.JIDLogic - DEBUG - find *.*
+2012-06-03 21:23:57,941 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 21:23:57,976 - operation.Search - DEBUG - finding objects
+2012-06-03 21:23:57,978 - operation.Search - DEBUG - returning all objects
+2012-06-03 21:23:57,982 - operation.Search - DEBUG - before sorting
+2012-06-03 21:23:57,984 - operation.Search - DEBUG - after sorting
+2012-06-03 21:23:57,985 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 21:24:38,912 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:24:38,913 - logic.JIDLogic - DEBUG - prevText: null
+2012-06-03 21:24:38,914 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:24:38,914 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:24:38,915 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:24:39,038 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:24:39,039 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:24:39,044 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:24:39,045 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:24:39,045 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:24:39,769 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:24:39,770 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:24:39,771 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:24:39,772 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:24:39,772 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:24:40,360 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:24:40,361 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:24:40,361 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:24:40,362 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:24:40,363 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:24:42,060 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:24:42,060 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:24:42,061 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:24:42,061 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:24:42,062 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:24:42,131 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 21:24:42,132 - logic.JIDLogic - DEBUG - DELETE $$__03-06-2012W__$$
+2012-06-03 21:24:42,133 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 21:24:42,135 - operation.BaseSearch - DEBUG - delete
+2012-06-03 21:24:42,136 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-03 21:24:42,146 - operation.BaseSearch - DEBUG - going to the id part
+2012-06-03 21:24:42,147 - operation.BaseSearch - DEBUG - $$__03-06-2012W__$$
+2012-06-03 21:24:42,148 - operation.Delete - DEBUG - isUndoAble value changed
+2012-06-03 21:24:42,149 - operation.Delete - DEBUG - deleted succesfully
+2012-06-03 21:24:42,150 - operation.BaseSearch - DEBUG - Result Added
+2012-06-03 21:24:42,151 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-06-03 21:24:42,152 - logic.JIDLogic - DEBUG - isundoable
+2012-06-03 21:24:42,152 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 21:24:42,198 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:24:42,198 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:24:42,199 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:24:42,200 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:24:42,200 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:24:42,298 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 21:24:42,299 - logic.JIDLogic - DEBUG - find *.*
+2012-06-03 21:24:42,299 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 21:24:42,300 - operation.Search - DEBUG - finding objects
+2012-06-03 21:24:42,301 - operation.Search - DEBUG - returning all objects
+2012-06-03 21:24:42,301 - operation.Search - DEBUG - before sorting
+2012-06-03 21:24:42,302 - operation.Search - DEBUG - after sorting
+2012-06-03 21:24:42,302 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 21:24:43,146 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:24:43,147 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:24:43,147 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:24:43,148 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:24:43,148 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:24:43,242 - logic.JIDLogic - DEBUG - *****EXECMD: UNDO*******
+2012-06-03 21:24:43,242 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 21:24:43,243 - logic.JIDLogic - DEBUG - UNDO
+2012-06-03 21:24:43,244 - logic.JIDLogic - DEBUG - inside third cond
+2012-06-03 21:24:43,244 - logic.JIDLogic - DEBUG - isredoable
+2012-06-03 21:24:43,245 - logic.JIDLogic - DEBUG - popped last action from stack:delete
+2012-06-03 21:24:43,248 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 21:24:43,261 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:24:43,262 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:24:43,262 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:24:43,263 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:24:43,263 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:24:43,362 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 21:24:43,363 - logic.JIDLogic - DEBUG - find *.*
+2012-06-03 21:24:43,363 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 21:24:43,364 - operation.Search - DEBUG - finding objects
+2012-06-03 21:24:43,365 - operation.Search - DEBUG - returning all objects
+2012-06-03 21:24:43,365 - operation.Search - DEBUG - before sorting
+2012-06-03 21:24:43,366 - operation.Search - DEBUG - after sorting
+2012-06-03 21:24:43,366 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 21:24:49,801 - logic.JIDLogic - DEBUG - curText:a
+2012-06-03 21:24:49,802 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:24:49,803 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:24:49,803 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:24:49,804 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:24:50,235 - logic.JIDLogic - DEBUG - curText:ad
+2012-06-03 21:24:50,236 - logic.JIDLogic - DEBUG - prevText: a
+2012-06-03 21:24:50,237 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:24:50,237 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:24:50,237 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:24:50,469 - logic.JIDLogic - DEBUG - curText:add
+2012-06-03 21:24:50,470 - logic.JIDLogic - DEBUG - prevText: ad
+2012-06-03 21:24:50,470 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:24:50,471 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:24:50,471 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:24:51,273 - logic.JIDLogic - DEBUG - curText:add
+2012-06-03 21:24:51,274 - logic.JIDLogic - DEBUG - prevText: add
+2012-06-03 21:24:51,274 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:24:51,275 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:24:51,275 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:24:51,404 - logic.JIDLogic - DEBUG - curText:add
+2012-06-03 21:24:51,405 - logic.JIDLogic - DEBUG - prevText: add
+2012-06-03 21:24:51,405 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:24:51,406 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:24:51,406 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:24:51,728 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:24:51,729 - logic.JIDLogic - DEBUG - prevText: add
+2012-06-03 21:24:51,730 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:24:51,730 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:24:51,731 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:24:54,439 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:24:54,439 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:24:54,440 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:24:54,440 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:24:54,440 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:24:55,887 - logic.JIDLogic - DEBUG - curText:a
+2012-06-03 21:24:55,888 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:24:55,888 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:24:55,889 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:24:55,890 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:24:56,121 - logic.JIDLogic - DEBUG - curText:ad
+2012-06-03 21:24:56,122 - logic.JIDLogic - DEBUG - prevText: a
+2012-06-03 21:24:56,122 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:24:56,123 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:24:56,123 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:24:56,319 - logic.JIDLogic - DEBUG - curText:add
+2012-06-03 21:24:56,319 - logic.JIDLogic - DEBUG - prevText: ad
+2012-06-03 21:24:56,319 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:24:56,320 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:24:56,320 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:24:56,718 - logic.JIDLogic - DEBUG - curText:add\
+2012-06-03 21:24:56,719 - logic.JIDLogic - DEBUG - prevText: add
+2012-06-03 21:24:56,719 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:24:56,720 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:24:56,720 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:24:56,869 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:24:56,871 - logic.JIDLogic - DEBUG - prevText: add\
+2012-06-03 21:24:56,871 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:24:56,872 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:24:56,873 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:24:57,022 - logic.JIDLogic - DEBUG - curText:\\
+2012-06-03 21:24:57,023 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:24:57,023 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:24:57,023 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:24:57,024 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:24:57,682 - logic.JIDLogic - DEBUG - curText:\
+2012-06-03 21:24:57,683 - logic.JIDLogic - DEBUG - prevText: \\
+2012-06-03 21:24:57,683 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:24:57,683 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:24:57,684 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:24:57,830 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:24:57,834 - logic.JIDLogic - DEBUG - prevText: \
+2012-06-03 21:24:57,834 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:24:57,835 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:24:57,835 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:24:58,141 - logic.JIDLogic - DEBUG - curText:a
+2012-06-03 21:24:58,142 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:24:58,142 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:24:58,143 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:24:58,143 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:24:58,290 - logic.JIDLogic - DEBUG - curText:ad
+2012-06-03 21:24:58,291 - logic.JIDLogic - DEBUG - prevText: a
+2012-06-03 21:24:58,291 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:24:58,292 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:24:58,292 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:24:58,473 - logic.JIDLogic - DEBUG - curText:add
+2012-06-03 21:24:58,474 - logic.JIDLogic - DEBUG - prevText: ad
+2012-06-03 21:24:58,475 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:24:58,475 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:24:58,476 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:24:58,684 - logic.JIDLogic - DEBUG - curText:add
+2012-06-03 21:24:58,684 - logic.JIDLogic - DEBUG - prevText: add
+2012-06-03 21:24:58,685 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:24:58,685 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:24:58,686 - logic.JIDLogic - DEBUG - index: 0
+2012-06-03 21:24:58,686 - logic.JIDLogic - DEBUG - *********************enter
+2012-06-03 21:24:58,687 - logic.JIDLogic - DEBUG - ********exeCmd: add
+2012-06-03 21:24:58,687 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 21:24:58,687 - logic.JIDLogic - DEBUG - add
+2012-06-03 21:24:58,688 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 21:24:58,689 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-03 21:24:58,690 - logic.JIDLogic - DEBUG - left over string after checking for recurring: add
+2012-06-03 21:24:58,691 - logic.JIDLogic - DEBUG - left over string after fetching labels: add
+2012-06-03 21:24:58,774 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-03 21:24:58,775 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-03 21:24:58,775 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-03 21:24:58,776 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-03 21:24:58,776 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-03 21:24:58,776 - logic.JIDLogic - DEBUG - task details: add
+2012-06-03 21:24:58,893 - logic.JIDLogic - DEBUG - curText:add
+2012-06-03 21:24:58,894 - logic.JIDLogic - DEBUG - prevText: add
+2012-06-03 21:24:58,894 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:24:58,894 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:24:58,895 - logic.JIDLogic - DEBUG - index: 0
+2012-06-03 21:24:58,895 - logic.JIDLogic - DEBUG - *********************enter
+2012-06-03 21:24:58,895 - logic.JIDLogic - DEBUG - ********exeCmd: add
+2012-06-03 21:24:58,896 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 21:24:58,896 - logic.JIDLogic - DEBUG - add
+2012-06-03 21:24:58,897 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 21:24:58,897 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-03 21:24:58,898 - logic.JIDLogic - DEBUG - left over string after checking for recurring: add
+2012-06-03 21:24:58,899 - logic.JIDLogic - DEBUG - left over string after fetching labels: add
+2012-06-03 21:24:58,942 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-03 21:24:58,942 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-03 21:24:58,943 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-03 21:24:58,943 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-03 21:24:58,944 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-03 21:24:58,944 - logic.JIDLogic - DEBUG - task details: add
+2012-06-03 21:24:59,686 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:24:59,687 - logic.JIDLogic - DEBUG - prevText: add
+2012-06-03 21:24:59,687 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:24:59,688 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:24:59,688 - logic.JIDLogic - DEBUG - index: 0
+2012-06-03 21:25:01,230 - logic.JIDLogic - DEBUG - curText:a
+2012-06-03 21:25:01,231 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:25:01,231 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:01,232 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:01,232 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:01,407 - logic.JIDLogic - DEBUG - curText:ad
+2012-06-03 21:25:01,407 - logic.JIDLogic - DEBUG - prevText: a
+2012-06-03 21:25:01,407 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:01,408 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:01,408 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:01,569 - logic.JIDLogic - DEBUG - curText:add
+2012-06-03 21:25:01,570 - logic.JIDLogic - DEBUG - prevText: ad
+2012-06-03 21:25:01,570 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:25:01,571 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:01,572 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:01,689 - logic.JIDLogic - DEBUG - curText:add
+2012-06-03 21:25:01,689 - logic.JIDLogic - DEBUG - prevText: add
+2012-06-03 21:25:01,690 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:25:01,690 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:25:01,691 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:02,079 - logic.JIDLogic - DEBUG - curText:add\
+2012-06-03 21:25:02,080 - logic.JIDLogic - DEBUG - prevText: add
+2012-06-03 21:25:02,081 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:02,081 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:25:02,082 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:03,482 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:25:03,483 - logic.JIDLogic - DEBUG - prevText: add\
+2012-06-03 21:25:03,484 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:03,484 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:03,485 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:06,348 - logic.JIDLogic - DEBUG - curText:m
+2012-06-03 21:25:06,349 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:25:06,349 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:06,350 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:06,350 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:06,859 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:25:06,859 - logic.JIDLogic - DEBUG - prevText: m
+2012-06-03 21:25:06,860 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:06,860 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:06,861 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:07,311 - logic.JIDLogic - DEBUG - curText:a
+2012-06-03 21:25:07,311 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:25:07,312 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:07,312 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:07,313 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:07,529 - logic.JIDLogic - DEBUG - curText:a
+2012-06-03 21:25:07,530 - logic.JIDLogic - DEBUG - prevText: a
+2012-06-03 21:25:07,530 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:07,531 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:07,531 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:07,697 - logic.JIDLogic - DEBUG - curText:add
+2012-06-03 21:25:07,697 - logic.JIDLogic - DEBUG - prevText: a
+2012-06-03 21:25:07,698 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:25:07,698 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:07,699 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:08,069 - logic.JIDLogic - DEBUG - curText:add
+2012-06-03 21:25:08,070 - logic.JIDLogic - DEBUG - prevText: add
+2012-06-03 21:25:08,071 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:25:08,071 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:25:08,072 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:09,460 - logic.JIDLogic - DEBUG - curText:add r
+2012-06-03 21:25:09,461 - logic.JIDLogic - DEBUG - prevText: add
+2012-06-03 21:25:09,461 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:25:09,462 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:25:09,462 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:09,502 - logic.JIDLogic - DEBUG - curText:add re
+2012-06-03 21:25:09,503 - logic.JIDLogic - DEBUG - prevText: add r
+2012-06-03 21:25:09,504 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:25:09,504 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:25:09,505 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:09,704 - logic.JIDLogic - DEBUG - curText:add re
+2012-06-03 21:25:09,705 - logic.JIDLogic - DEBUG - prevText: add re
+2012-06-03 21:25:09,705 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:25:09,706 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:25:09,706 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:09,836 - logic.JIDLogic - DEBUG - curText:add read
+2012-06-03 21:25:09,836 - logic.JIDLogic - DEBUG - prevText: add re
+2012-06-03 21:25:09,837 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:25:09,837 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:25:09,837 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:09,926 - logic.JIDLogic - DEBUG - curText:add read 
+2012-06-03 21:25:09,927 - logic.JIDLogic - DEBUG - prevText: add read
+2012-06-03 21:25:09,927 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:25:09,928 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:25:09,928 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:10,087 - logic.JIDLogic - DEBUG - curText:add read m
+2012-06-03 21:25:10,088 - logic.JIDLogic - DEBUG - prevText: add read 
+2012-06-03 21:25:10,089 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:25:10,090 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:25:10,090 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:10,192 - logic.JIDLogic - DEBUG - curText:add read ma
+2012-06-03 21:25:10,192 - logic.JIDLogic - DEBUG - prevText: add read m
+2012-06-03 21:25:10,193 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:25:10,193 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:25:10,194 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:10,288 - logic.JIDLogic - DEBUG - curText:add read man
+2012-06-03 21:25:10,288 - logic.JIDLogic - DEBUG - prevText: add read ma
+2012-06-03 21:25:10,289 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:25:10,289 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:25:10,290 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:10,476 - logic.JIDLogic - DEBUG - curText:add read mang
+2012-06-03 21:25:10,476 - logic.JIDLogic - DEBUG - prevText: add read man
+2012-06-03 21:25:10,477 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:25:10,477 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:25:10,478 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:10,595 - logic.JIDLogic - DEBUG - curText:add read manga
+2012-06-03 21:25:10,596 - logic.JIDLogic - DEBUG - prevText: add read mang
+2012-06-03 21:25:10,596 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:25:10,597 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:25:10,597 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:11,130 - logic.JIDLogic - DEBUG - curText:add read manga 
+2012-06-03 21:25:11,130 - logic.JIDLogic - DEBUG - prevText: add read manga
+2012-06-03 21:25:11,131 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:25:11,131 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:25:11,132 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:11,907 - logic.JIDLogic - DEBUG - curText:add read manga t
+2012-06-03 21:25:11,908 - logic.JIDLogic - DEBUG - prevText: add read manga 
+2012-06-03 21:25:11,909 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:25:11,909 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:25:11,909 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:12,048 - logic.JIDLogic - DEBUG - curText:add read manga t
+2012-06-03 21:25:12,048 - logic.JIDLogic - DEBUG - prevText: add read manga t
+2012-06-03 21:25:12,049 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:25:12,049 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:25:12,049 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:12,130 - logic.JIDLogic - DEBUG - curText:add read manga tmr
+2012-06-03 21:25:12,131 - logic.JIDLogic - DEBUG - prevText: add read manga t
+2012-06-03 21:25:12,131 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:25:12,132 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:25:12,132 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:12,305 - logic.JIDLogic - DEBUG - curText:add read manga tmr
+2012-06-03 21:25:12,305 - logic.JIDLogic - DEBUG - prevText: add read manga tmr
+2012-06-03 21:25:12,306 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:25:12,306 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:25:12,307 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:12,307 - logic.JIDLogic - DEBUG - *********************enter
+2012-06-03 21:25:12,308 - logic.JIDLogic - DEBUG - ********exeCmd: add read manga tmr
+2012-06-03 21:25:12,308 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 21:25:12,309 - logic.JIDLogic - DEBUG - add read manga tmr
+2012-06-03 21:25:12,309 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 21:25:12,310 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-03 21:25:12,311 - logic.JIDLogic - DEBUG - left over string after checking for recurring: read manga tmr
+2012-06-03 21:25:12,311 - logic.JIDLogic - DEBUG - left over string after fetching labels: read manga tmr
+2012-06-03 21:25:12,334 - logic.JIDLogic - DEBUG - -----date only format-------
+2012-06-03 21:25:12,334 - logic.JIDLogic - DEBUG - start date string: tmr
+2012-06-03 21:25:12,336 - logic.JIDLogic - DEBUG - Start date is set!
+2012-06-03 21:25:12,336 - logic.JIDLogic - DEBUG - time/date extracted!
+2012-06-03 21:25:12,337 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-03 21:25:12,338 - logic.JIDLogic - DEBUG - start date time: 04-06-2012
+2012-06-03 21:25:12,339 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-03 21:25:12,339 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-03 21:25:12,340 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-03 21:25:12,340 - logic.JIDLogic - DEBUG - task details: read manga
+2012-06-03 21:25:12,341 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-06-03 21:25:12,341 - logic.JIDLogic - DEBUG - isundoable
+2012-06-03 21:25:12,342 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 21:25:12,477 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 21:25:12,477 - logic.JIDLogic - DEBUG - find *.*
+2012-06-03 21:25:12,478 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 21:25:12,478 - operation.Search - DEBUG - finding objects
+2012-06-03 21:25:12,479 - operation.Search - DEBUG - returning all objects
+2012-06-03 21:25:12,479 - operation.Search - DEBUG - before sorting
+2012-06-03 21:25:12,480 - operation.Search - DEBUG - after sorting
+2012-06-03 21:25:12,480 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 21:25:13,771 - logic.JIDLogic - DEBUG - curText:add read manga tmr
+2012-06-03 21:25:13,772 - logic.JIDLogic - DEBUG - prevText: add read manga tmr
+2012-06-03 21:25:13,772 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:25:13,773 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:25:13,773 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:14,725 - logic.JIDLogic - DEBUG - curText:add read manga tmr
+2012-06-03 21:25:14,726 - logic.JIDLogic - DEBUG - prevText: add read manga tmr
+2012-06-03 21:25:14,726 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:25:14,726 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:25:14,727 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:14,999 - logic.JIDLogic - DEBUG - *****EXECMD: UNDO*******
+2012-06-03 21:25:15,000 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 21:25:15,000 - logic.JIDLogic - DEBUG - UNDO
+2012-06-03 21:25:15,001 - logic.JIDLogic - DEBUG - inside third cond
+2012-06-03 21:25:15,001 - logic.JIDLogic - DEBUG - isredoable
+2012-06-03 21:25:15,002 - logic.JIDLogic - DEBUG - popped last action from stack:add
+2012-06-03 21:25:15,002 - operation.Add - DEBUG - task to be deleted name:read manga
+2012-06-03 21:25:15,003 - operation.Add - DEBUG - Task deleted
+2012-06-03 21:25:15,003 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 21:25:15,009 - logic.JIDLogic - DEBUG - curText:add read manga tmr
+2012-06-03 21:25:15,010 - logic.JIDLogic - DEBUG - prevText: add read manga tmr
+2012-06-03 21:25:15,010 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:25:15,010 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:25:15,011 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:15,109 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 21:25:15,109 - logic.JIDLogic - DEBUG - find *.*
+2012-06-03 21:25:15,110 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 21:25:15,110 - operation.Search - DEBUG - finding objects
+2012-06-03 21:25:15,111 - operation.Search - DEBUG - returning all objects
+2012-06-03 21:25:15,111 - operation.Search - DEBUG - before sorting
+2012-06-03 21:25:15,111 - operation.Search - DEBUG - after sorting
+2012-06-03 21:25:15,112 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 21:25:16,347 - logic.JIDLogic - DEBUG - curText:add read manga tmr
+2012-06-03 21:25:16,348 - logic.JIDLogic - DEBUG - prevText: add read manga tmr
+2012-06-03 21:25:16,348 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:25:16,349 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:25:16,349 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:16,500 - logic.JIDLogic - DEBUG - curText:add read manga tmr
+2012-06-03 21:25:16,501 - logic.JIDLogic - DEBUG - prevText: add read manga tmr
+2012-06-03 21:25:16,501 - logic.JIDLogic - DEBUG - state: ADD
+2012-06-03 21:25:16,502 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:25:16,502 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:17,218 - logic.JIDLogic - DEBUG - curText:d
+2012-06-03 21:25:17,219 - logic.JIDLogic - DEBUG - prevText: add read manga tmr
+2012-06-03 21:25:17,219 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:17,219 - logic.JIDLogic - DEBUG - prev: ADD
+2012-06-03 21:25:17,220 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:17,416 - logic.JIDLogic - DEBUG - curText:e
+2012-06-03 21:25:17,417 - logic.JIDLogic - DEBUG - prevText: d
+2012-06-03 21:25:17,417 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:17,417 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:17,418 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:17,541 - logic.JIDLogic - DEBUG - curText:el
+2012-06-03 21:25:17,542 - logic.JIDLogic - DEBUG - prevText: e
+2012-06-03 21:25:17,542 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:17,543 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:17,543 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:17,689 - logic.JIDLogic - DEBUG - curText:el
+2012-06-03 21:25:17,689 - logic.JIDLogic - DEBUG - prevText: el
+2012-06-03 21:25:17,690 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:17,690 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:17,690 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:17,809 - logic.JIDLogic - DEBUG - curText:elet
+2012-06-03 21:25:17,810 - logic.JIDLogic - DEBUG - prevText: el
+2012-06-03 21:25:17,810 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:17,811 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:17,811 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:18,077 - logic.JIDLogic - DEBUG - curText:ele
+2012-06-03 21:25:18,078 - logic.JIDLogic - DEBUG - prevText: elet
+2012-06-03 21:25:18,078 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:18,079 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:18,079 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:18,248 - logic.JIDLogic - DEBUG - curText:el
+2012-06-03 21:25:18,248 - logic.JIDLogic - DEBUG - prevText: ele
+2012-06-03 21:25:18,249 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:18,249 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:18,250 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:18,378 - logic.JIDLogic - DEBUG - curText:e
+2012-06-03 21:25:18,379 - logic.JIDLogic - DEBUG - prevText: el
+2012-06-03 21:25:18,379 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:18,380 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:18,380 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:18,616 - logic.JIDLogic - DEBUG - curText:ed
+2012-06-03 21:25:18,617 - logic.JIDLogic - DEBUG - prevText: e
+2012-06-03 21:25:18,617 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:18,618 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:18,618 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:18,836 - logic.JIDLogic - DEBUG - curText:e
+2012-06-03 21:25:18,837 - logic.JIDLogic - DEBUG - prevText: ed
+2012-06-03 21:25:18,837 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:18,838 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:18,838 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:18,999 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:25:19,000 - logic.JIDLogic - DEBUG - prevText: e
+2012-06-03 21:25:19,000 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:19,001 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:19,001 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:19,193 - logic.JIDLogic - DEBUG - curText:d
+2012-06-03 21:25:19,193 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:25:19,194 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:19,194 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:19,195 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:19,398 - logic.JIDLogic - DEBUG - curText:de
+2012-06-03 21:25:19,399 - logic.JIDLogic - DEBUG - prevText: d
+2012-06-03 21:25:19,399 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:19,399 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:19,400 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:19,489 - logic.JIDLogic - DEBUG - curText:del
+2012-06-03 21:25:19,490 - logic.JIDLogic - DEBUG - prevText: de
+2012-06-03 21:25:19,496 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:19,496 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:19,497 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:19,627 - logic.JIDLogic - DEBUG - curText:del
+2012-06-03 21:25:19,627 - logic.JIDLogic - DEBUG - prevText: del
+2012-06-03 21:25:19,628 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:19,628 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:19,629 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:19,725 - logic.JIDLogic - DEBUG - curText:delte
+2012-06-03 21:25:19,726 - logic.JIDLogic - DEBUG - prevText: del
+2012-06-03 21:25:19,726 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:19,726 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:19,727 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:19,944 - logic.JIDLogic - DEBUG - curText:delte 
+2012-06-03 21:25:19,945 - logic.JIDLogic - DEBUG - prevText: delte
+2012-06-03 21:25:19,946 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:19,946 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:19,946 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:20,159 - logic.JIDLogic - DEBUG - curText:delte m
+2012-06-03 21:25:20,160 - logic.JIDLogic - DEBUG - prevText: delte 
+2012-06-03 21:25:20,160 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:20,161 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:20,161 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:20,466 - logic.JIDLogic - DEBUG - curText:delte 
+2012-06-03 21:25:20,467 - logic.JIDLogic - DEBUG - prevText: delte m
+2012-06-03 21:25:20,467 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:20,468 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:20,468 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:20,620 - logic.JIDLogic - DEBUG - curText:delte
+2012-06-03 21:25:20,621 - logic.JIDLogic - DEBUG - prevText: delte 
+2012-06-03 21:25:20,621 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:20,621 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:20,622 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:20,759 - logic.JIDLogic - DEBUG - curText:delt
+2012-06-03 21:25:20,759 - logic.JIDLogic - DEBUG - prevText: delte
+2012-06-03 21:25:20,760 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:20,760 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:20,760 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:20,887 - logic.JIDLogic - DEBUG - curText:del
+2012-06-03 21:25:20,888 - logic.JIDLogic - DEBUG - prevText: delt
+2012-06-03 21:25:20,888 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:20,888 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:20,889 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:21,101 - logic.JIDLogic - DEBUG - curText:dele
+2012-06-03 21:25:21,101 - logic.JIDLogic - DEBUG - prevText: del
+2012-06-03 21:25:21,102 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:21,102 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:21,102 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:21,248 - logic.JIDLogic - DEBUG - curText:delet
+2012-06-03 21:25:21,249 - logic.JIDLogic - DEBUG - prevText: dele
+2012-06-03 21:25:21,249 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:21,250 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:21,250 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:21,508 - logic.JIDLogic - DEBUG - curText:delet
+2012-06-03 21:25:21,508 - logic.JIDLogic - DEBUG - prevText: delet
+2012-06-03 21:25:21,508 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:21,509 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:21,509 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:21,644 - logic.JIDLogic - DEBUG - curText:delete
+2012-06-03 21:25:21,644 - logic.JIDLogic - DEBUG - prevText: delet
+2012-06-03 21:25:21,644 - logic.JIDLogic - DEBUG - state: DELETE
+2012-06-03 21:25:21,645 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:21,645 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:21,791 - logic.JIDLogic - DEBUG - curText:delete m
+2012-06-03 21:25:21,792 - logic.JIDLogic - DEBUG - prevText: delete
+2012-06-03 21:25:21,792 - logic.JIDLogic - DEBUG - state: DELETE
+2012-06-03 21:25:21,792 - logic.JIDLogic - DEBUG - prev: DELETE
+2012-06-03 21:25:21,793 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:21,799 - logic.JIDLogic - DEBUG - ********exeCmd: delete m
+2012-06-03 21:25:21,800 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 21:25:21,800 - logic.JIDLogic - DEBUG - delete m
+2012-06-03 21:25:21,800 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 21:25:21,801 - operation.BaseSearch - DEBUG - delete
+2012-06-03 21:25:21,801 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-03 21:25:21,802 - operation.BaseSearch - DEBUG - going for new search
+2012-06-03 21:25:21,802 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-03 21:25:21,802 - logic.JIDLogic - DEBUG - left over string after checking for recurring: m
+2012-06-03 21:25:21,803 - logic.JIDLogic - DEBUG - left over string after fetching labels: m
+2012-06-03 21:25:21,823 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-03 21:25:21,824 - logic.JIDLogic - DEBUG - --------post extraction TESTING--------
+2012-06-03 21:25:21,824 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-03 21:25:21,824 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-03 21:25:21,825 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-03 21:25:21,825 - logic.JIDLogic - DEBUG - task details: m
+2012-06-03 21:25:21,825 - operation.BaseSearch - DEBUG - finished searching
+2012-06-03 21:25:21,826 - operation.Search - DEBUG - Matching task0
+2012-06-03 21:25:21,826 - operation.Search - DEBUG - all ok till here
+2012-06-03 21:25:21,827 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 21:25:21,827 - logic.JIDLogic - DEBUG - str[0]: DELETE meetingon 03-06-2012
+2012-06-03 21:25:22,875 - logic.JIDLogic - DEBUG - curText:delete m
+2012-06-03 21:25:22,876 - logic.JIDLogic - DEBUG - prevText: delete m
+2012-06-03 21:25:22,876 - logic.JIDLogic - DEBUG - state: DELETE
+2012-06-03 21:25:22,877 - logic.JIDLogic - DEBUG - prev: DELETE
+2012-06-03 21:25:22,877 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:22,877 - logic.JIDLogic - DEBUG - *********************enter
+2012-06-03 21:25:22,877 - logic.JIDLogic - DEBUG - ********exeCmd: delete $$__03-06-2012Y__$$ 
+2012-06-03 21:25:22,878 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 21:25:22,878 - logic.JIDLogic - DEBUG - delete $$__03-06-2012Y__$$ 
+2012-06-03 21:25:22,878 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 21:25:22,879 - operation.BaseSearch - DEBUG - delete
+2012-06-03 21:25:22,879 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-03 21:25:22,880 - operation.BaseSearch - DEBUG - going to the id part
+2012-06-03 21:25:22,880 - operation.BaseSearch - DEBUG - $$__03-06-2012Y__$$
+2012-06-03 21:25:22,881 - operation.Delete - DEBUG - isUndoAble value changed
+2012-06-03 21:25:22,882 - operation.Delete - DEBUG - deleted succesfully
+2012-06-03 21:25:22,882 - operation.BaseSearch - DEBUG - Result Added
+2012-06-03 21:25:22,882 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-06-03 21:25:22,883 - logic.JIDLogic - DEBUG - isundoable
+2012-06-03 21:25:22,883 - logic.JIDLogic - DEBUG - -----------------POPUP-----------------------
+2012-06-03 21:25:23,003 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 21:25:23,004 - logic.JIDLogic - DEBUG - find *.*
+2012-06-03 21:25:23,004 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 21:25:23,005 - operation.Search - DEBUG - finding objects
+2012-06-03 21:25:23,005 - operation.Search - DEBUG - returning all objects
+2012-06-03 21:25:23,006 - operation.Search - DEBUG - before sorting
+2012-06-03 21:25:23,006 - operation.Search - DEBUG - after sorting
+2012-06-03 21:25:23,006 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 21:25:24,188 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:25:24,188 - logic.JIDLogic - DEBUG - prevText: delete m
+2012-06-03 21:25:24,188 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:24,189 - logic.JIDLogic - DEBUG - prev: DELETE
+2012-06-03 21:25:24,189 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:25:29,056 - logic.JIDLogic - DEBUG - curText:
+2012-06-03 21:25:29,057 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:25:29,057 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:25:29,057 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:25:29,057 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:26:10,286 - logic.JIDLogic - DEBUG - curText:e
+2012-06-03 21:26:10,287 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-03 21:26:10,287 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:26:10,287 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:26:10,287 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:26:10,509 - logic.JIDLogic - DEBUG - curText:ex
+2012-06-03 21:26:10,509 - logic.JIDLogic - DEBUG - prevText: e
+2012-06-03 21:26:10,510 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:26:10,510 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:26:10,510 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:26:10,661 - logic.JIDLogic - DEBUG - curText:ex
+2012-06-03 21:26:10,662 - logic.JIDLogic - DEBUG - prevText: ex
+2012-06-03 21:26:10,662 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-03 21:26:10,663 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:26:10,663 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:26:10,809 - logic.JIDLogic - DEBUG - curText:exit
+2012-06-03 21:26:10,810 - logic.JIDLogic - DEBUG - prevText: ex
+2012-06-03 21:26:10,810 - logic.JIDLogic - DEBUG - state: EXIT
+2012-06-03 21:26:10,810 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-03 21:26:10,811 - logic.JIDLogic - DEBUG - index: -1
+2012-06-03 21:26:10,938 - logic.JIDLogic - DEBUG - curText:exit
+2012-06-03 21:26:10,938 - logic.JIDLogic - DEBUG - prevText: exit
+2012-06-03 21:26:10,939 - logic.JIDLogic - DEBUG - state: EXIT
+2012-06-03 21:26:10,939 - logic.JIDLogic - DEBUG - prev: EXIT
+2012-06-03 21:26:10,939 - logic.JIDLogic - DEBUG - index: 7
+2012-06-03 21:26:10,939 - logic.JIDLogic - DEBUG - *********************enter
+2012-06-03 21:26:10,940 - logic.JIDLogic - DEBUG - ********exeCmd: 
+2012-06-03 21:26:10,940 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-03 21:26:10,940 - logic.JIDLogic - DEBUG - 
+2012-06-03 21:26:10,941 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-03 21:26:10,941 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-03 21:26:10,944 - Abc - DEBUG - 0

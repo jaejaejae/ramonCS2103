@@ -98,7 +98,7 @@ public class UIController {
 		popup.add(mItem2);
 		popup.add(mItem1);
 		
-		TrayIcon trayIcon = new TrayIcon(img, "Tray Demo", popup);
+		TrayIcon trayIcon = new TrayIcon(img, "Jot It Down!", popup);
 		try {
 			tray.add(trayIcon);
 		} catch (AWTException e) {
