@@ -84,4 +84,19 @@ public class UIController {
 		JIDtray.showText(caption, text);
 	}
 	
+	public static void refresh() {
+		ExpandJPanel.updateJTable();
+	}
+	
+	public static boolean isFrameExpand() {
+		return mainJFrame.isExpand();
+	}
+	
+	public static void expandFrame() {
+		mainJFrame.expandFrame();
+	}
+	
+	public static void contractFrame() {
+		mainJFrame.contractFrame();
+	}
 }

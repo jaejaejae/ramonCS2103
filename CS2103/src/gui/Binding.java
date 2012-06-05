@@ -56,6 +56,14 @@ public class Binding {
 	        key = KeyStroke.getKeyStroke(KeyEvent.VK_E, Event.CTRL_MASK);
 	        inputMap.put(key, "expand");
 	        actionMap.put("expand", new Action.ExpandAction());
+	        
+	        key = KeyStroke.getKeyStroke(KeyEvent.VK_Y, Event.CTRL_MASK);
+	        inputMap.put(key, "redo");
+	        actionMap.put("redo", new Action.RedoAction());
+	        
+	        key = KeyStroke.getKeyStroke(KeyEvent.VK_L, Event.CTRL_MASK);
+	        inputMap.put(key, "list");
+	        actionMap.put("list", new Action.ListAction());
 	}
 	
 

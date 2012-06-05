@@ -14,6 +14,8 @@ import java.awt.event.MouseEvent;
 
 import javax.swing.SwingUtilities;
 
+import data.Task;
+
 import logic.JIDLogic;
 
 public class JotItDownTray {
@@ -57,10 +59,7 @@ public class JotItDownTray {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
 				// TODO Auto-generated method stub]
-				String input = UIController.getClipboard();
-				if(!mainJFrame.isVisible())
-					mainJFrame.showFrame();
-				mainJFrame.setInputText("add "+input);
+				addTaskFromTray();
 			}
 		});
 		
@@ -94,6 +93,20 @@ public class JotItDownTray {
 	    	       });
 			}
 		});
+	}
+	
+	private void addTaskFromTray() {
+		String input = UIController.getClipboard();
+		
+		JIDLogic.setCommand("add");
+		Task[] tasks = JIDLogic.executeCommand("add "+ input);
+		
+		if(tasks == null)
+			showText("Error!", "invalid input format");
+		else {
+			showText("Successfully added!", tasks[0].toString());
+			UIController.refresh();
+		}
 	}
 	
 	public SystemTray getTray() {

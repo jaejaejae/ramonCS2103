@@ -72,7 +72,7 @@ public class MainJFrame extends javax.swing.JFrame {
 	
 	enum STATE {
 		ADD, DELETE, EDIT, SEARCH, COMPLETED, ARCHIVE
-		, OVERDUE, NULL, LIST, UNDO, EXIT, HELP
+		, OVERDUE, NULL, LIST, UNDO, EXIT, HELP, REDO
 	};
 	
 	boolean edit = false;
@@ -298,7 +298,8 @@ public class MainJFrame extends javax.swing.JFrame {
 	@Override
 	public void paint(Graphics g){
 		super.paint(g);
-		this.getContentPane().setBackground(new Color(233, 239, 246));
+		
+		//this.getContentPane().setBackground(new Color(233, 239, 246));
 	}
 	
 	private void createBG() {
@@ -309,7 +310,9 @@ public class MainJFrame extends javax.swing.JFrame {
 		bg = new JLabel();
 		bg.setIcon(Resource.backgroundLogo);
 		
+		lp.setSize(400, 400);
 		lp.add(bg, 1);
+		
 	}
 
 	/**
@@ -389,7 +392,8 @@ public class MainJFrame extends javax.swing.JFrame {
 	public void setJLabel3ActionExpand() {
 		// TODO Auto-generated method stub
 		jLabel3.setToolTipText("Expand");
-			
+
+		jLabel3.setIcon(Resource.down);
 		jLabel3.removeMouseListener(curJLabel3);
 		
 		jLabel3.addMouseListener(curJLabel3 = new MouseListener() {
@@ -662,9 +666,14 @@ public class MainJFrame extends javax.swing.JFrame {
 									case UNDO:
 										break;
 									case EXIT:
+										JIDLogic.JIDLogic_close();
+										System.exit(0);
 										break;
 									case OVERDUE:
 										new Action.OverdueAction().actionPerformed(null);
+									break;
+									case REDO:
+										new Action.RedoAction().actionPerformed(null);
 									break;
 									}
 								}
@@ -735,6 +744,8 @@ public class MainJFrame extends javax.swing.JFrame {
 									return STATE.EXIT;
 								if(firstWord.equalsIgnoreCase("help"))
 									return STATE.HELP;
+								if(firstWord.equalsIgnoreCase("redu"))
+									return STATE.REDO;
 								return STATE.NULL;
 							} 
 
@@ -864,7 +875,7 @@ public class MainJFrame extends javax.swing.JFrame {
 		return null;
 	}
 	
-	private void expandFrame() {
+	public void expandFrame() {
 		if(!expand) {
 			MainJFrame.this.setLayout(new BorderLayout());
 			MainJFrame.this.add(expandJPanel, BorderLayout.SOUTH);
@@ -874,13 +885,17 @@ public class MainJFrame extends javax.swing.JFrame {
 		}
 	}
 	
-	private void contractFrame() {
+	public void contractFrame() {
 		if (expand) {
 			MainJFrame.this.remove(expandJPanel);
 			MainJFrame.this.setSize(400, 100);
 			expand = false;
 			setJLabel3ActionExpand();
 		}
+	}
+	
+	public boolean isExpand() {
+		return expand;
 	}
 	
     protected void addBindings() {

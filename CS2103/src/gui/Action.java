@@ -13,12 +13,6 @@ public class Action {
 	
 	private static Logger logger=Logger.getLogger(JIDLogic.class);
 	
-	static class ExpandAction extends AbstractAction {
-		@Override
-		public void actionPerformed(ActionEvent e) {
-		
-		}
-	}
 	
 	static class ExitAction extends AbstractAction {
 		@Override
@@ -116,6 +110,42 @@ public class Action {
     		
     		UIController.showTopPopUpMsg(task.length + " task(s) overdue.");
     		ExpandJPanel.updateJTableWithTasks(task);
+    	}
+    }
+    
+    static class RedoAction extends AbstractAction {
+    	@Override
+    	public void actionPerformed(ActionEvent e) {
+    		JIDLogic.setCommand("redo");
+    		logger.debug("******exeCmd(inside Action: Redo");
+    		Task[] task = JIDLogic.executeCommand("redo");
+    		
+    		UIController.showTopPopUpMsg("REDO: "+ task[0]);
+    		UIController.refresh();
+    	}
+    }
+    
+    static class ListAction extends AbstractAction {
+    	@Override
+    	public void actionPerformed(ActionEvent e) {
+    		UIController.refresh();
+    		UIController.expandFrame();
+    	}
+    }
+    
+    static class ExpandAction extends AbstractAction {
+    	@Override
+    	public void actionPerformed(ActionEvent e) {
+    		if(UIController.isFrameExpand())
+    			UIController.contractFrame();
+    		else
+    			UIController.expandFrame();
+    	}
+    }
+    
+    static class HelpAction extends AbstractAction {
+    	public void actionPerformed(ActionEvent e) {
+    		
     	}
     }
 }
