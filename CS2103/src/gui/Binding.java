@@ -34,115 +34,29 @@ public class Binding {
 	private void addKeyBinding() {
 	       KeyStroke key = KeyStroke.getKeyStroke(KeyEvent.VK_Z, Event.CTRL_MASK);
 	        inputMap.put(key, "undo");
-	        actionMap.put("undo", new UndoAction());
+	        actionMap.put("undo", new Action.UndoAction());
 
 
 	        key = KeyStroke.getKeyStroke(KeyEvent.VK_M, Event.CTRL_MASK);
 	        inputMap.put(key, "completed");
-	        actionMap.put("completed", new CompletedAction());
+	        actionMap.put("completed", new Action.CompletedAction());
 	        
 	        key = KeyStroke.getKeyStroke(KeyEvent.VK_D, Event.CTRL_MASK);
 	        inputMap.put(key, "delete");
-	        actionMap.put("delete", new DeleteAction());
+	        actionMap.put("delete", new Action.DeleteAction());
 	        
 	        key = KeyStroke.getKeyStroke(KeyEvent.VK_I, Event.CTRL_MASK);
 	        inputMap.put(key, "important");
-	        actionMap.put("important", new ImportantAction());
+	        actionMap.put("important", new Action.ImportantAction());
 	        
 	        key = KeyStroke.getKeyStroke(KeyEvent.VK_F4, Event.ALT_MASK);
 	        inputMap.put(key, "exit");
-	        actionMap.put("exit", new ExitAction());
+	        actionMap.put("exit", new Action.ExitAction());
 	
 	        key = KeyStroke.getKeyStroke(KeyEvent.VK_E, Event.CTRL_MASK);
 	        inputMap.put(key, "expand");
-	        actionMap.put("expand", new ExpandAction());
+	        actionMap.put("expand", new Action.ExpandAction());
 	}
 	
-	class ExpandAction extends AbstractAction {
-		@Override
-		public void actionPerformed(ActionEvent e) {
-		
-		}
-	}
-	
-	class ExitAction extends AbstractAction {
-		@Override
-		public void actionPerformed(ActionEvent e) {
-			JIDLogic.JIDLogic_close();
-			System.exit(0);
-		}
-	}
-	
-    class UndoAction extends AbstractAction {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-        	logger.debug("*****EXECMD: UNDO*******");
-        	JIDLogic.setCommand("UNDO");
-        	Task[] task = JIDLogic.executeCommand("UNDO");
-        	if(task == null)
-        		MainJFrame.showPopup("UNDO unsuccessfully!");
-        	else {
-        		MainJFrame.showPopup("UNDO: "+task[0].getName());
-            	ExpandJPanel.updateJTable();
-        	}
-        }
-    }
-	
-    class DeleteAction extends AbstractAction {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-        	Task[] taskList = ExpandJPanel.getTasks();
-        	
-        	JIDLogic.setCommand("DELETE");
-        	Task[] task = JIDLogic.executeCommand("DELETE " 
-        			+ taskList[ExpandJPanel.jTable1.getSelectedRow()].getTaskId());
-        	
-        	if(task == null)
-        		MainJFrame.showPopup("DELETE unsuccessfully!");
-        	else {
-        		MainJFrame.showPopup("DELETE: "+task[0].getName());
-            	ExpandJPanel.updateJTable();
-        	}        	
-        }
-    }
-    
-    class CompletedAction extends AbstractAction {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-        	Task[] taskList = ExpandJPanel.getTasks();
-        	
-        	JIDLogic.setCommand("COMPLETED");
-        	logger.debug("COMPLETED "
-        			+ taskList[ExpandJPanel.jTable1.getSelectedRow()].getTaskId());
-        	Task[] task = JIDLogic.executeCommand("COMPLETED " 
-        			+ taskList[ExpandJPanel.jTable1.getSelectedRow()].getTaskId());
-        	
-        	if(task == null)
-        		MainJFrame.showPopup("COMPLETED unsuccessfully!");
-        	else {
-        		MainJFrame.showPopup("COMPLETED: "+task[0].getName());
-            	ExpandJPanel.updateJTable();
-        	}        	
-        }
-    }
-    
-    class ImportantAction extends AbstractAction {
-    	@Override
-        public void actionPerformed(ActionEvent e) {
-        	Task[] taskList = ExpandJPanel.getTasks();
-        	
-        	JIDLogic.setCommand("IMPORTANT");
-        	logger.debug("IMPORTANT "
-        			+ taskList[ExpandJPanel.jTable1.getSelectedRow()].getTaskId());
-        	Task[] task = JIDLogic.executeCommand("IMPORTANT " 
-        			+ taskList[ExpandJPanel.jTable1.getSelectedRow()].getTaskId());
-        		
-        	if(task == null)
-        		MainJFrame.showPopup("IMPORTANT unsuccessfully!");
-        	else {
-        		MainJFrame.showPopup("IMPORTANT: "+task[0].getName());
-            	ExpandJPanel.updateJTable();
-        	}        	
-        }
-    }
+
 }

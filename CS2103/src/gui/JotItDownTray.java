@@ -6,6 +6,7 @@ import java.awt.MenuItem;
 import java.awt.PopupMenu;
 import java.awt.SystemTray;
 import java.awt.TrayIcon;
+import java.awt.TrayIcon.MessageType;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
@@ -18,17 +19,27 @@ import logic.JIDLogic;
 public class JotItDownTray {
 	final MainJFrame mainJFrame;
 	static SystemTray tray = SystemTray.getSystemTray();
+	PopupMenu popup;
+	Image trayImg;
+	TrayIcon trayIcon;
 	
 	JotItDownTray(final MainJFrame mainJFrame) {
 		this.mainJFrame = mainJFrame;
 		
-		// TODO Auto-generated method stub
+		getSystemTray();
+		addPopupMenu();
+		addTrayIcon();
+		showText("JotItDown!", "JID is running!");
+	}
+	
+	private void getSystemTray() {
 		tray = SystemTray.getSystemTray();
-		Image img = Resource.trayImage;
-		//Image img = Toolkit.getDefaultToolkit().getImage( "D:\\JAVAworkspace2\\GUITemp\\bin\\gui\\trayLogo.png");
-		
-		
-		PopupMenu popup = new PopupMenu();
+		trayImg = Resource.trayImage;
+
+	}
+
+	private void addPopupMenu() {
+		popup = new PopupMenu();
 		
 		MenuItem mItem1 = new MenuItem("Exit");
 		mItem1.addActionListener(new ActionListener() {
@@ -56,8 +67,11 @@ public class JotItDownTray {
 		
 		popup.add(mItem2);
 		popup.add(mItem1);
-		
-		TrayIcon trayIcon = new TrayIcon(img, "Jot It Down!", popup);
+
+	}
+
+	private void addTrayIcon() {
+		trayIcon = new TrayIcon(trayImg, "Jot It Down!", popup);
 		try {
 			tray.add(trayIcon);
 		} catch (AWTException e) {
@@ -85,4 +99,9 @@ public class JotItDownTray {
 	public SystemTray getTray() {
 		return tray;
 	}
+	
+	public void showText(String caption, String text) {
+		trayIcon.displayMessage(caption, text, MessageType.NONE);
+	}
+	
 }

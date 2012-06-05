@@ -19,6 +19,8 @@ import javax.swing.ImageIcon;
 import javax.swing.InputMap;
 import javax.swing.JButton;
 import javax.swing.JComponent;
+import javax.swing.JLabel;
+import javax.swing.JLayeredPane;
 import javax.swing.JPanel;
 import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
@@ -27,6 +29,7 @@ import javax.swing.Timer;
 import javax.swing.UIManager;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Component;
 import java.awt.Container;
 import java.awt.Dimension;
@@ -68,7 +71,8 @@ public class MainJFrame extends javax.swing.JFrame {
 	private static Logger logger=Logger.getLogger(JIDLogic.class);
 	
 	enum STATE {
-		ADD, DELETE, EDIT, SEARCH, COMPLETED, ARCHIVE, OVERDUE, NULL, LIST, UNDO, EXIT
+		ADD, DELETE, EDIT, SEARCH, COMPLETED, ARCHIVE
+		, OVERDUE, NULL, LIST, UNDO, EXIT, HELP
 	};
 	
 	boolean edit = false;
@@ -86,9 +90,11 @@ public class MainJFrame extends javax.swing.JFrame {
 	private javax.swing.JLabel jLabel1;
 	private javax.swing.JLabel jLabel2;
 	private javax.swing.JLabel jLabel3;
+	private JLabel bg;
 	private MouseListener curJLabel3;
 	private javax.swing.JPanel jPanel1;
 	private ExpandJPanel expandJPanel = new ExpandJPanel();
+	private	JLayeredPane lp;
 	// End of variables declaration
 
 	private static Point point = new Point();
@@ -151,6 +157,9 @@ public class MainJFrame extends javax.swing.JFrame {
 	@SuppressWarnings("unchecked")
 	// <editor-fold defaultstate="collapsed" desc="Generated Code">
 	private void initComponents() {
+
+		lp = this.getLayeredPane();
+		createBG();
 		
 		jLabel1 = new javax.swing.JLabel("", Resource.bigLogo,
 				SwingConstants.CENTER);
@@ -160,6 +169,7 @@ public class MainJFrame extends javax.swing.JFrame {
 				SwingConstants.CENTER);
 
 		jPanel1 = new javax.swing.JPanel();
+		jPanel1.setOpaque(false);
 		jComboBox1 = new javax.swing.JComboBox();
 
 		setPreferredSize(new java.awt.Dimension(378, 300));
@@ -285,6 +295,22 @@ public class MainJFrame extends javax.swing.JFrame {
 
 	}// </editor-fold>
 
+	@Override
+	public void paint(Graphics g){
+		super.paint(g);
+		this.getContentPane().setBackground(new Color(233, 239, 246));
+	}
+	
+	private void createBG() {
+		logger.debug("--->enter createBG function");
+		
+		//this.getContentPane().setBackground(Color.yellow);
+		
+		bg = new JLabel();
+		bg.setIcon(Resource.backgroundLogo);
+		
+		lp.add(bg, 1);
+	}
 
 	/**
 	 * setting drag option
@@ -442,14 +468,14 @@ public class MainJFrame extends javax.swing.JFrame {
 			public void mouseEntered(MouseEvent arg0) {
 				// TODO Auto-generated method stub
 				jLabel2.setIcon(Resource.exitOn);
-				//MainJFrame.this.revalidate();
+				MainJFrame.this.revalidate();
 			}
 
 			@Override
 			public void mouseExited(MouseEvent arg0) {
 				// TODO Auto-generated method stub
 				jLabel2.setIcon(Resource.exitImg);
-				//MainJFrame.this.revalidate();
+				MainJFrame.this.revalidate();
 			}
 
 		});
@@ -602,6 +628,8 @@ public class MainJFrame extends javax.swing.JFrame {
 										break;
 									case LIST:
 									case UNDO:
+										exeCmd = curText;									
+									case OVERDUE:
 										exeCmd = curText;
 									}
 									
@@ -611,7 +639,7 @@ public class MainJFrame extends javax.swing.JFrame {
 									
 									switch(curState) {
 									case DELETE:
-									case COMPLETED:
+									case COMPLETED:				
 									case ADD:
 									case EDIT:
 										if(!edit) {
@@ -632,25 +660,13 @@ public class MainJFrame extends javax.swing.JFrame {
 										expandFrame();
 									break;
 									case UNDO:
-										expandJPanel.updateJTable();
-										expandFrame();
-										if(tasks!=null)
-											showPopup("UNDO: " + tasks[0].getName());
-										else
-											showPopup("error!!!");
-									break;
+										break;
 									case EXIT:
-										JIDLogic.JIDLogic_close();
-										System.exit(0);
+										break;
+									case OVERDUE:
+										new Action.OverdueAction().actionPerformed(null);
 									break;
 									}
-									
-									/*
-									if(tasks==null)
-										logger.debug("error");
-									else
-										logger.debug(tasks[0].toString());
-									*/
 								}
 								
 								prevState = curState;
@@ -717,6 +733,8 @@ public class MainJFrame extends javax.swing.JFrame {
 									return STATE.UNDO;
 								if(firstWord.equalsIgnoreCase("exit"))
 									return STATE.EXIT;
+								if(firstWord.equalsIgnoreCase("help"))
+									return STATE.HELP;
 								return STATE.NULL;
 							} 
 

@@ -76,4 +76,12 @@ public class UIController {
 	    return null;
 	}
 	
+	public static void showTopPopUpMsg(String str) {
+		mainJFrame.showPopup(str);
+	}
+	
+	public static void showTrayMsg(String caption, String text) {
+		JIDtray.showText(caption, text);
+	}
+	
 }
