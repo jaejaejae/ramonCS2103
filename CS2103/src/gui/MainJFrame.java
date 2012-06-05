@@ -297,9 +297,13 @@ public class MainJFrame extends javax.swing.JFrame {
 
 	@Override
 	public void paint(Graphics g){
+		logger.debug("start drawing");
+		//super.paint(g);
+		//g.drawImage(Resource.backgroundImage, 0, 0, null);
 		super.paint(g);
 		
-		//this.getContentPane().setBackground(new Color(233, 239, 246));
+		
+		this.getContentPane().setBackground(new Color(233, 239, 246));
 	}
 	
 	private void createBG() {

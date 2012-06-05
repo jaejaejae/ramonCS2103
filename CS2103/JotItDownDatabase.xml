@@ -5,6 +5,27 @@
    <null/>
   </void>
   <void property="name">
+   <string>eating </string>
+  </void>
+  <void property="startDateTime">
+   <object class="data.DateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1338912000000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__06-06-2012T__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="description">
+   <null/>
+  </void>
+  <void property="name">
    <string>ghi </string>
   </void>
   <void property="startDateTime">

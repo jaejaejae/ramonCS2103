@@ -120,7 +120,13 @@ public class Action {
     		logger.debug("******exeCmd(inside Action: Redo");
     		Task[] task = JIDLogic.executeCommand("redo");
     		
-    		UIController.showTopPopUpMsg("REDO: "+ task[0]);
+        	if(task == null)
+        		MainJFrame.showPopup("REDO unsuccessfully!");
+        	else {
+        		MainJFrame.showPopup("REDO: "+task[0].getName());
+            	ExpandJPanel.updateJTable();
+        	}
+    		
     		UIController.refresh();
     	}
     }

@@ -40,6 +40,8 @@ public class Resource {
 	public final static Image trayImage = iconToImage(trayLogo); 
 	public final static Image backgroundImage = iconToImage(backgroundLogo);
 	
+	//public final static BufferedImage backgroundBuffered = BufferedImageBuilder.bufferImage(backgroundImage);
+	
 	static Image iconToImage(Icon icon) {
         if (icon instanceof ImageIcon) {
             return ((ImageIcon)icon).getImage();
@@ -68,5 +70,4 @@ public class Resource {
 			return null;
 		}
     }
-    
 }
