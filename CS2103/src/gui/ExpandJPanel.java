@@ -104,8 +104,17 @@ public class ExpandJPanel extends javax.swing.JPanel {
     	autoJTable.updateJTable(tasks);
     }
     
-    public static Task[] getTasks() {
+    public static Task[] getAllTasks() {
     	return autoJTable.getTasks();
+    }
+    
+    public static Task[] getSeletedTask() {
+    	int[] idx = jTable1.getSelectedRows();
+    	Task[] tasks = new Task[idx.length];
+    	for(int i=0; i<tasks.length; i++) {
+    		tasks[i] = autoJTable.getTasks()[idx[i]];
+    	}
+    	return tasks;
     }
     
     class MyTableModel extends DefaultTableModel{
