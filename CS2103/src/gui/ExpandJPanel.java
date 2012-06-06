@@ -4,6 +4,7 @@
  */
 package gui;
 
+import java.awt.Color;
 import java.awt.Event;
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
@@ -118,35 +119,5 @@ public class ExpandJPanel extends javax.swing.JPanel {
     	public boolean isCellEditable(int row, int column) {
 			return false;
     	}
-    }
-
-    protected void addBindings() {
-        InputMap inputMap = this.getInputMap(JComponent.WHEN_IN_FOCUSED_WINDOW);
-        ActionMap actionMap = this.getActionMap();
-        
-        //Ctrl-b to go backward one character
-        KeyStroke key = KeyStroke.getKeyStroke(KeyEvent.VK_D, Event.CTRL_MASK);
-        inputMap.put(key, "delete");
-        actionMap.put("delete", new DeleteAction());
-    }
-    
-    class DeleteAction extends AbstractAction {
-        @Override
-        public void actionPerformed(ActionEvent e) {
-        	System.out.println("*****EXECMD: DELETE*******");
-        	
-        	JIDLogic.setCommand("find");
-        	Task[] taskList = JIDLogic.executeCommand("find");
-        	
-        	JIDLogic.setCommand("DELETE");
-        	Task[] task = JIDLogic.executeCommand("DELETE" + jTable1.getSelectedRow());
-        	
-        	if(task == null)
-        		MainJFrame.showPopup("DELETE unsuccessfully!");
-        	else {
-        		MainJFrame.showPopup("DELETE: "+task[0].getName());
-            	updateJTable();
-        	}        	
-        }
     }
 }

@@ -841,7 +841,6 @@ public class MainJFrame extends javax.swing.JFrame {
 			@Override
 			public void run() {
 				// TODO Auto-generated method stub
-
 				MainJFrame.this.setVisible(false);
 			}
 

@@ -4,21 +4,37 @@
   <void property="description">
    <null/>
   </void>
+  <void property="endDateTime">
+   <object class="data.DateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1339081200000</long>
+    </void>
+   </object>
+  </void>
   <void property="name">
-   <string>eating </string>
+   <string>programming </string>
   </void>
   <void property="startDateTime">
    <object class="data.DateTime">
     <void property="hasDate">
      <boolean>true</boolean>
     </void>
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
     <void property="timeMilli">
-     <long>1338912000000</long>
+     <long>1339048800000</long>
     </void>
    </object>
   </void>
   <void property="taskId">
-   <string>$$__06-06-2012T__$$</string>
+   <string>$$__07-06-2012230000G__$$</string>
   </void>
  </object>
  <object class="data.Task">
@@ -26,20 +42,23 @@
    <null/>
   </void>
   <void property="name">
-   <string>ghi </string>
+   <string>dinner </string>
   </void>
   <void property="startDateTime">
    <object class="data.DateTime">
     <void property="hasDate">
      <boolean>true</boolean>
     </void>
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
     <void property="timeMilli">
-     <long>1338912000000</long>
+     <long>1339056000000</long>
     </void>
    </object>
   </void>
   <void property="taskId">
-   <string>$$__06-06-2012F__$$</string>
+   <string>$$__07-06-2012160000D__$$</string>
   </void>
  </object>
  <object class="data.Task">
@@ -47,7 +66,7 @@
    <null/>
   </void>
   <void property="name">
-   <string>abc</string>
+   <string>meeting at utown</string>
   </void>
   <void property="startDateTime">
    <object class="data.DateTime">
@@ -55,20 +74,23 @@
      <boolean>true</boolean>
     </void>
     <void property="timeMilli">
-     <long>1338912000000</long>
+     <long>1339257600000</long>
     </void>
    </object>
   </void>
   <void property="taskId">
-   <string>$$__06-06-2012E__$$</string>
+   <string>$$__10-06-2012H__$$</string>
   </void>
  </object>
  <object class="data.Task">
   <void property="description">
    <null/>
   </void>
+  <void property="important">
+   <boolean>true</boolean>
+  </void>
   <void property="name">
-   <string>meeting</string>
+   <string>meet at utown for cs2103 v0.2 implementation</string>
   </void>
   <void property="startDateTime">
    <object class="data.DateTime">
@@ -76,54 +98,39 @@
      <boolean>true</boolean>
     </void>
     <void property="timeMilli">
-     <long>1338912000000</long>
+     <long>1338998400000</long>
     </void>
    </object>
   </void>
   <void property="taskId">
-   <string>$$__06-06-2012S__$$</string>
+   <string>$$__07-06-2012L__$$</string>
   </void>
  </object>
  <object class="data.Task">
+  <void property="completed">
+   <boolean>true</boolean>
+  </void>
   <void property="description">
    <null/>
   </void>
   <void property="name">
-   <string>def</string>
+   <string>v0.15 presentation </string>
   </void>
   <void property="startDateTime">
    <object class="data.DateTime">
     <void property="hasDate">
      <boolean>true</boolean>
     </void>
-    <void property="timeMilli">
-     <long>1330704000000</long>
-    </void>
-   </object>
-  </void>
-  <void property="taskId">
-   <string>$$__03-03-2012B__$$</string>
-  </void>
- </object>
- <object class="data.Task">
-  <void property="description">
-   <null/>
-  </void>
-  <void property="name">
-   <string>working </string>
-  </void>
-  <void property="startDateTime">
-   <object class="data.DateTime">
-    <void property="hasDate">
+    <void property="hasTime">
      <boolean>true</boolean>
     </void>
     <void property="timeMilli">
-     <long>1338912000000</long>
+     <long>1338966000000</long>
     </void>
    </object>
   </void>
   <void property="taskId">
-   <string>$$__06-06-2012L__$$</string>
+   <string>$$__06-06-2012150000T__$$</string>
   </void>
  </object>
 </java>
