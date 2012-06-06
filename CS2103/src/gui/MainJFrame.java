@@ -10,19 +10,14 @@ import org.apache.log4j.*;
 import data.Task;
 import logic.JIDLogic;
 
-import com.seaglasslookandfeel.*;
+//import com.seaglasslookandfeel.*;
 
-import javax.swing.AbstractAction;
 import javax.swing.ActionMap;
-import javax.swing.Icon;
-import javax.swing.ImageIcon;
 import javax.swing.InputMap;
 import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JLayeredPane;
-import javax.swing.JPanel;
-import javax.swing.KeyStroke;
 import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.Timer;
@@ -33,34 +28,19 @@ import java.awt.Color;
 import java.awt.Component;
 import java.awt.Container;
 import java.awt.Dimension;
-import java.awt.Event;
 import java.awt.Graphics;
-import java.awt.Image;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.ItemEvent;
-import java.awt.event.ItemListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionAdapter;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
-import java.util.ArrayList;
-import java.util.Vector;
-
-import javax.swing.plaf.basic.BasicComboBoxEditor;
-import javax.swing.text.DefaultEditorKit;
-import javax.swing.text.JTextComponent;
 
 import javax.swing.JTextField;
 
-import data.Task;
-import data.TaskArrayList;
 
 /**
  * 
