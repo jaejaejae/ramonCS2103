@@ -4,22 +4,31 @@
  */
 package gui;
 
+import java.awt.Color;
+
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import data.*;
 /**
  *
  * @author Ramon
  */
-public class ExpandJPanel extends javax.swing.JPanel {
+public class ExpandComponent{
 
+    // Variables declaration - do not modify
+    private static javax.swing.JScrollPane jScrollPane1;
+    private static javax.swing.JTable jTable1;
+    private static javax.swing.JLayeredPane jLayeredPane1;
+    private static MyTableModel myTableModel;
+    // End of variables declaration
 	static AutoUpdateJTable autoJTable;
 	
     /**
      * Creates new form ExpandJPanel
      */
-    public ExpandJPanel() {
+    public static void initialize() {
         initComponents();
-        this.setOpaque(false);
         autoJTable = new AutoUpdateJTable(jTable1);
     }
 
@@ -30,18 +39,16 @@ public class ExpandJPanel extends javax.swing.JPanel {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">
-    private void initComponents() {
+    private static void initComponents() {
 
+        jLayeredPane1 = new javax.swing.JLayeredPane();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-
-        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        setPreferredSize(new java.awt.Dimension(378, 300));
-        setRequestFocusEnabled(false);
-
-        jTable1.setModel(new MyTableModel());
+        myTableModel = new MyTableModel();
+     
+        jTable1.setModel(myTableModel);
         jTable1.setTableHeader(null);
-        //jTable1.setCellEditor(jTable1.getCellEditor());
+        jTable1.setCellEditor(jTable1.getCellEditor());
         jTable1.setColumnSelectionAllowed(true);
         jTable1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jTable1.setEnabled(true);
@@ -53,30 +60,20 @@ public class ExpandJPanel extends javax.swing.JPanel {
         jTable1.setRowSorter(null);
         
         jScrollPane1.setViewportView(jTable1);
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(15, Short.MAX_VALUE)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 375, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 275, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(14, Short.MAX_VALUE))
-        );
+        jScrollPane1.setBounds(15, 115, 370, 270);
+        
+        
     }// </editor-fold>
-    // Variables declaration - do not modify
-    private javax.swing.JScrollPane jScrollPane1;
-    public static javax.swing.JTable jTable1;
     
-    // End of variables declaration
-    public void updateJTable(Task[] tasks) {
+    public static JScrollPane getJScrollPane() {
+    	return jScrollPane1;
+    }
+    
+    public static JTable getJTable() {
+    	return jTable1;
+    }
+    
+    public static void updateJTable(Task[] tasks) {
     	autoJTable.updateJTable(tasks);
     }
     
@@ -101,7 +98,7 @@ public class ExpandJPanel extends javax.swing.JPanel {
     	return tasks;
     }
     
-    class MyTableModel extends DefaultTableModel{
+    static class MyTableModel extends DefaultTableModel{
     	MyTableModel() {
     		super(
     			new Object [][] {null},

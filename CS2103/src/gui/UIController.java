@@ -22,6 +22,7 @@ public class UIController {
 	
 	public UIController() {
 		TopPopUp.createTopPopUp();
+		ExpandComponent.initialize();
 		mainJFrame = new MainJFrame();
 		
 		Timer timer = new Timer(100, new ActionListener(){
@@ -71,7 +72,7 @@ public class UIController {
 	}
 	
 	public static void refresh() {
-		ExpandJPanel.updateJTable();
+		ExpandComponent.updateJTable();
 	}
 	
 	public static boolean isFrameExpand() {

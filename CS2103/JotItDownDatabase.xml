@@ -4,6 +4,30 @@
   <void property="description">
    <null/>
   </void>
+  <void property="name">
+   <string>dinner </string>
+  </void>
+  <void property="startDateTime">
+   <object class="data.DateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1339056000000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__07-06-2012160000Y__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="description">
+   <null/>
+  </void>
   <void property="endDateTime">
    <object class="data.DateTime">
     <void property="hasDate">
@@ -34,31 +58,7 @@
    </object>
   </void>
   <void property="taskId">
-   <string>$$__07-06-2012230000G__$$</string>
-  </void>
- </object>
- <object class="data.Task">
-  <void property="description">
-   <null/>
-  </void>
-  <void property="name">
-   <string>dinner </string>
-  </void>
-  <void property="startDateTime">
-   <object class="data.DateTime">
-    <void property="hasDate">
-     <boolean>true</boolean>
-    </void>
-    <void property="hasTime">
-     <boolean>true</boolean>
-    </void>
-    <void property="timeMilli">
-     <long>1339056000000</long>
-    </void>
-   </object>
-  </void>
-  <void property="taskId">
-   <string>$$__07-06-2012160000D__$$</string>
+   <string>$$__07-06-2012230000J__$$</string>
   </void>
  </object>
  <object class="data.Task">
@@ -79,7 +79,7 @@
    </object>
   </void>
   <void property="taskId">
-   <string>$$__10-06-2012H__$$</string>
+   <string>$$__10-06-2012V__$$</string>
   </void>
  </object>
  <object class="data.Task">
@@ -103,34 +103,7 @@
    </object>
   </void>
   <void property="taskId">
-   <string>$$__07-06-2012L__$$</string>
-  </void>
- </object>
- <object class="data.Task">
-  <void property="completed">
-   <boolean>true</boolean>
-  </void>
-  <void property="description">
-   <null/>
-  </void>
-  <void property="name">
-   <string>v0.15 presentation </string>
-  </void>
-  <void property="startDateTime">
-   <object class="data.DateTime">
-    <void property="hasDate">
-     <boolean>true</boolean>
-    </void>
-    <void property="hasTime">
-     <boolean>true</boolean>
-    </void>
-    <void property="timeMilli">
-     <long>1338966000000</long>
-    </void>
-   </object>
-  </void>
-  <void property="taskId">
-   <string>$$__06-06-2012150000T__$$</string>
+   <string>$$__07-06-2012G__$$</string>
   </void>
  </object>
 </java>

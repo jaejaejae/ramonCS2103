@@ -66,14 +66,17 @@ public class MainJFrame extends javax.swing.JFrame {
 	static boolean expand = false;
 	
 	// Variables declaration - do not modify
-	private javax.swing.JComboBox jComboBox1;
-	private javax.swing.JLabel jLabel1;
-	private javax.swing.JLabel jLabel2;
-	private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel bgLabel;
+    private javax.swing.JLabel button1;
+    private javax.swing.JLabel button2;
+    private javax.swing.JLabel button3;
+    private javax.swing.JLabel downButton;
+    private javax.swing.JComboBox jComboBox1;
+    private javax.swing.JLayeredPane jLayeredPane1;
+	private javax.swing.JLabel logo;
 	private JLabel bg;
-	private MouseListener curJLabel3;
+	private MouseListener curdownButton;
 	private javax.swing.JPanel jPanel1;
-	private ExpandJPanel expandJPanel = new ExpandJPanel();
 	private	JLayeredPane lp;
 	// End of variables declaration
 
@@ -115,7 +118,7 @@ public class MainJFrame extends javax.swing.JFrame {
 		setAction();
 		this.setFocusable(true);
 		this.setDefaultCloseOperation(this.DO_NOTHING_ON_CLOSE);
-
+	
 		/*
 		 * Create and display the form
 		 */
@@ -137,197 +140,98 @@ public class MainJFrame extends javax.swing.JFrame {
 	@SuppressWarnings("unchecked")
 	// <editor-fold defaultstate="collapsed" desc="Generated Code">
 	private void initComponents() {
-		//createBG();
-		
-		jLabel1 = new javax.swing.JLabel("", Resource.bigLogo,
-				SwingConstants.CENTER);
-		jLabel2 = new javax.swing.JLabel("", Resource.exitImg,
-				SwingConstants.CENTER);
-		jLabel3 = new javax.swing.JLabel("", Resource.down,
-				SwingConstants.CENTER);
-
-		jPanel1 = new javax.swing.JPanel();
-		jPanel1.setOpaque(false);
 		jComboBox1 = new javax.swing.JComboBox();
-
-		setPreferredSize(new java.awt.Dimension(378, 300));
-
 		jComboBox1.setEditable(true);
 		jComboBox1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-
-		javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(
-				jPanel1);
-		jPanel1.setLayout(jPanel1Layout);
-		jPanel1Layout
-				.setHorizontalGroup(jPanel1Layout
-						.createParallelGroup(
-								javax.swing.GroupLayout.Alignment.LEADING)
-						.addGroup(
-								jPanel1Layout
-										.createSequentialGroup()
-										.addContainerGap()
-										.addComponent(
-												jLabel1,
-												javax.swing.GroupLayout.PREFERRED_SIZE,
-												56,
-												javax.swing.GroupLayout.PREFERRED_SIZE)
-										.addPreferredGap(
-												javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-										.addGroup(
-												jPanel1Layout
-														.createParallelGroup(
-																javax.swing.GroupLayout.Alignment.LEADING)
-														.addGroup(
-																jPanel1Layout
-																		.createSequentialGroup()
-																		.addGap(0,
-																				0,
-																				Short.MAX_VALUE)
-																		.addComponent(
-																				jLabel2))
-														.addGroup(
-																jPanel1Layout
-																		.createSequentialGroup()
-																		.addComponent(
-																				jComboBox1,
-																				javax.swing.GroupLayout.PREFERRED_SIZE,
-																				291,
-																				javax.swing.GroupLayout.PREFERRED_SIZE)
-																		.addPreferredGap(
-																				javax.swing.LayoutStyle.ComponentPlacement.RELATED,
-																				7,
-																				Short.MAX_VALUE)
-																		.addComponent(
-																				jLabel3,
-																				javax.swing.GroupLayout.PREFERRED_SIZE,
-																				22,
-																				javax.swing.GroupLayout.PREFERRED_SIZE)))
-										.addContainerGap()));
-		jPanel1Layout
-				.setVerticalGroup(jPanel1Layout
-						.createParallelGroup(
-								javax.swing.GroupLayout.Alignment.LEADING)
-						.addGroup(
-								jPanel1Layout
-										.createSequentialGroup()
-										.addGroup(
-												jPanel1Layout
-														.createParallelGroup(
-																javax.swing.GroupLayout.Alignment.LEADING)
-														.addGroup(
-																jPanel1Layout
-																		.createSequentialGroup()
-																		.addComponent(
-																				jLabel2,
-																				javax.swing.GroupLayout.PREFERRED_SIZE,
-																				25,
-																				javax.swing.GroupLayout.PREFERRED_SIZE)
-																		.addGap(18,
-																				18,
-																				18)
-																		.addGroup(
-																				jPanel1Layout
-																						.createParallelGroup(
-																								javax.swing.GroupLayout.Alignment.BASELINE)
-																						.addComponent(
-																								jComboBox1,
-																								javax.swing.GroupLayout.PREFERRED_SIZE,
-																								29,
-																								javax.swing.GroupLayout.PREFERRED_SIZE)
-																						.addComponent(
-																								jLabel3,
-																								javax.swing.GroupLayout.DEFAULT_SIZE,
-																								javax.swing.GroupLayout.DEFAULT_SIZE,
-																								Short.MAX_VALUE))
-																		.addGap(0,
-																				11,
-																				Short.MAX_VALUE))
-														.addGroup(
-																jPanel1Layout
-																		.createSequentialGroup()
-																		.addContainerGap()
-																		.addComponent(
-																				jLabel1,
-																				javax.swing.GroupLayout.DEFAULT_SIZE,
-																				javax.swing.GroupLayout.DEFAULT_SIZE,
-																				Short.MAX_VALUE)))
-										.addContainerGap()));
-
-		javax.swing.GroupLayout layout = new javax.swing.GroupLayout(
-				getContentPane());
-		getContentPane().setLayout(layout);
-		layout.setHorizontalGroup(layout.createParallelGroup(
-				javax.swing.GroupLayout.Alignment.LEADING).addComponent(
-				jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE,
-				javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE));
-		layout.setVerticalGroup(layout.createParallelGroup(
-				javax.swing.GroupLayout.Alignment.LEADING).addComponent(
-				jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE,
-				javax.swing.GroupLayout.DEFAULT_SIZE,
-				javax.swing.GroupLayout.PREFERRED_SIZE));
-
-		setIconImage((Resource.bigLogo).getImage());
-		setUndecorated(true);
-		setSize(400, 100);
-		// pack();
-
-	}// </editor-fold>
-
-	@Override
-	public void paint(Graphics g){
-		logger.debug("start drawing");
-		//super.paint(g);
-		//g.drawImage(Resource.backgroundImage, 0, 0, null);
-		super.paint(g);
 		
-		
-		this.getContentPane().setBackground(new Color(233, 239, 246));
+        jLayeredPane1 = new javax.swing.JLayeredPane();
+        button1 = new javax.swing.JLabel();
+        button2 = new javax.swing.JLabel();
+        button3 = new javax.swing.JLabel();
+        logo = new javax.swing.JLabel();
+        downButton = new javax.swing.JLabel();
+        bgLabel = new javax.swing.JLabel();
+
+        jComboBox1.setBounds(90, 40, 260, 30);
+        jLayeredPane1.add(jComboBox1, 2);
+
+        button1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        button1.setText("jLabel1");
+        button1.setBounds(300, 0, 30, 30);
+        jLayeredPane1.add(button1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        button2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        button2.setText("jLabel2");
+        button2.setBounds(330, 0, 30, 30);
+        jLayeredPane1.add(button2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        button3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        button3.setIcon(Resource.exitImg); 
+        button3.setBounds(360, 0, 30, 30);
+        jLayeredPane1.add(button3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        logo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        logo.setIcon(Resource.bigLogo);
+        logo.setBounds(10, 0, 70, 80);
+        jLayeredPane1.add(logo, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        downButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        downButton.setIcon(Resource.down);
+        downButton.setBounds(360, 40, 30, 30);
+        jLayeredPane1.add(downButton, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        jLayeredPane1.add(ExpandComponent.getJScrollPane(), JLayeredPane.DEFAULT_LAYER);
+        
+        bgLabel.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        bgLabel.setIcon(Resource.smallBG);
+        bgLabel.setBounds(0, 0, 400, 400);
+        jLayeredPane1.add(bgLabel, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 400, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLayeredPane1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 360, Short.MAX_VALUE)
+        );
+
+		this.setIconImage((Resource.bigLogo).getImage());
+		this.setUndecorated(true);
+		this.setBackground(new Color(0,0,0,0));
+		this.pack();
+		this.setSize(400, 100);
 	}
 	
-	private void createBG() {
-		logger.debug("--->enter createBG function");
-		
-		//this.getContentPane().setBackground(Color.yellow);
-		
-		bg = new JLabel();
-		bg.setIcon(Resource.backgroundLogo);
-		
-		lp.setSize(400, 400);
-		lp.add(bg, 1);
-		
-	}
-
-	/**
-	 * setting drag option
-	 * 
-	 */
 	private void setAction() {
 		setJFrameAction();
-		// setButtonAction();
 		setJComboBox1Action();
-		setJLabel1Action();
-		setJLabel2Action();
-		setJLabel3ActionExpand();
+		setlogoAction();
+		setbutton3Action();
+		setdownButtonActionExpand();
 	}
 	
-	public void setJLabel3ActionContract() {
-		jLabel3.setToolTipText("Contract");
+	public void setdownButtonActionContract() {
+		downButton.setToolTipText("Contract");
 
-		jLabel3.setIcon(Resource.up);
+		downButton.setIcon(Resource.up);
 		
-		jLabel3.removeMouseListener(curJLabel3);
-		jLabel3.addMouseListener(curJLabel3 = new MouseListener() {
+		downButton.removeMouseListener(curdownButton);
+		downButton.addMouseListener(curdownButton = new MouseListener() {
 
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
 				// TODO Auto-generated method stub
-				jLabel3.setIcon(Resource.upPress);
+				downButton.setIcon(Resource.upPress);
 				Timer timer = new Timer(100, new ActionListener() {
 
 					@Override
 					public void actionPerformed(ActionEvent arg0) {
 						// TODO Auto-generated method stub
-						jLabel3.setIcon(Resource.down);
+						downButton.setIcon(Resource.down);
 						if (MainJFrame.this.getSize().equals(
 								new Dimension(400, 400))) {
 							contractFrame();
@@ -345,52 +249,52 @@ public class MainJFrame extends javax.swing.JFrame {
 			public void mouseEntered(MouseEvent arg0) {
 				// TODO Auto-generated method stub
 
-				jLabel3.setIcon(Resource.upOn);
+				downButton.setIcon(Resource.upOn);
 			}
 
 			@Override
 			public void mouseExited(MouseEvent arg0) {
 				// TODO Auto-generated method stub
 
-				jLabel3.setIcon(Resource.up);
+				downButton.setIcon(Resource.up);
 			}
 
 			@Override
 			public void mousePressed(MouseEvent arg0) {
 				// TODO Auto-generated method stub
 
-				jLabel3.setIcon(Resource.upPress);
+				downButton.setIcon(Resource.upPress);
 			}
 
 			@Override
 			public void mouseReleased(MouseEvent arg0) {
 				// TODO Auto-generated method stub
 
-				jLabel3.setIcon(Resource.down);
+				downButton.setIcon(Resource.down);
 			}
 		});
 	}
 
-	public void setJLabel3ActionExpand() {
+	public void setdownButtonActionExpand() {
 		// TODO Auto-generated method stub
-		jLabel3.setToolTipText("Expand");
+		downButton.setToolTipText("Expand");
 
-		jLabel3.setIcon(Resource.down);
-		jLabel3.removeMouseListener(curJLabel3);
+		downButton.setIcon(Resource.down);
+		downButton.removeMouseListener(curdownButton);
 		
-		jLabel3.addMouseListener(curJLabel3 = new MouseListener() {
+		downButton.addMouseListener(curdownButton = new MouseListener() {
 
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
 				// TODO Auto-generated method stub
-				jLabel3.setIcon(Resource.downPress);
+				downButton.setIcon(Resource.downPress);
 				
 				Timer timer = new Timer(100, new ActionListener() {
 
 					@Override
 					public void actionPerformed(ActionEvent arg0) {
 						// TODO Auto-generated method stub
-						jLabel3.setIcon(Resource.up);
+						downButton.setIcon(Resource.up);
 						if (MainJFrame.this.getSize().equals(
 								new Dimension(400, 400))) {
 							contractFrame();
@@ -409,37 +313,37 @@ public class MainJFrame extends javax.swing.JFrame {
 			public void mouseEntered(MouseEvent arg0) {
 				// TODO Auto-generated method stub
 
-				jLabel3.setIcon(Resource.downOn);
+				downButton.setIcon(Resource.downOn);
 			}
 
 			@Override
 			public void mouseExited(MouseEvent arg0) {
 				// TODO Auto-generated method stub
 
-				jLabel3.setIcon(Resource.down);
+				downButton.setIcon(Resource.down);
 			}
 
 			@Override
 			public void mousePressed(MouseEvent arg0) {
 				// TODO Auto-generated method stub
 
-				jLabel3.setIcon(Resource.downPress);
+				downButton.setIcon(Resource.downPress);
 			}
 
 			@Override
 			public void mouseReleased(MouseEvent arg0) {
 				// TODO Auto-generated method stub
 
-				jLabel3.setIcon(Resource.up);
+				downButton.setIcon(Resource.up);
 			}
 		});
 	}
 
-	private void setJLabel2Action() {
+	private void setbutton3Action() {
 		// TODO Auto-generated method stub
-		jLabel2.setToolTipText("Close");
+		button3.setToolTipText("Close");
 
-		jLabel2.addMouseListener(new MouseAdapter() {
+		button3.addMouseListener(new MouseAdapter() {
 
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
@@ -453,14 +357,14 @@ public class MainJFrame extends javax.swing.JFrame {
 			@Override
 			public void mouseEntered(MouseEvent arg0) {
 				// TODO Auto-generated method stub
-				jLabel2.setIcon(Resource.exitOn);
+				button3.setIcon(Resource.exitOn);
 				MainJFrame.this.revalidate();
 			}
 
 			@Override
 			public void mouseExited(MouseEvent arg0) {
 				// TODO Auto-generated method stub
-				jLabel2.setIcon(Resource.exitImg);
+				button3.setIcon(Resource.exitImg);
 				MainJFrame.this.revalidate();
 			}
 
@@ -468,7 +372,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
 	}
 
-	private void setJLabel1Action() {
+	private void setlogoAction() {
 		// TODO Auto-generated method stub
 
 	}
@@ -632,17 +536,17 @@ public class MainJFrame extends javax.swing.JFrame {
 											if(tasks!=null) {
 												showPopup( curState.toString()+ " " 
 														+ tasks[0]);
-												expandJPanel.updateJTable();
+												ExpandComponent.updateJTable();
 											}else
 												showPopup("invalid input");
 										}
 									break;									
 									case SEARCH:
-										expandJPanel.updateJTable(tasks);
+										ExpandComponent.updateJTable(tasks);
 										expandFrame();
 									break;
 									case LIST:
-										expandJPanel.updateJTable();
+										ExpandComponent.updateJTable();
 										expandFrame();
 									break;
 									case UNDO:
@@ -846,20 +750,20 @@ public class MainJFrame extends javax.swing.JFrame {
 	
 	public void expandFrame() {
 		if(!expand) {
-			MainJFrame.this.setLayout(new BorderLayout());
-			MainJFrame.this.add(expandJPanel, BorderLayout.SOUTH);
 			MainJFrame.this.setSize(400,400);
+			jLayeredPane1.setSize(400,400);
+			bgLabel.setIcon(Resource.largeBG);
 			expand = true;
-			setJLabel3ActionContract();
+			setdownButtonActionContract();
 		}
 	}
 	
 	public void contractFrame() {
 		if (expand) {
-			MainJFrame.this.remove(expandJPanel);
 			MainJFrame.this.setSize(400, 100);
 			expand = false;
-			setJLabel3ActionExpand();
+			setdownButtonActionExpand();
+			bgLabel.setIcon(Resource.smallBG);
 		}
 	}
 	
