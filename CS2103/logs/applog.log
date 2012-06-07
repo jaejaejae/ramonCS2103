@@ -5999,3 +5999,193 @@
 2012-06-07 13:45:39,279 - operation.Search - DEBUG - after sorting
 2012-06-07 13:45:39,279 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
 2012-06-07 13:45:39,404 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 18:33:49,328 - Abc - DEBUG - array out of bounds!
+2012-06-07 18:33:50,493 - logic.JIDLogic - DEBUG - --->enter createBG function
+2012-06-07 18:33:50,569 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-07 18:33:50,569 - logic.JIDLogic - DEBUG - find *.*
+2012-06-07 18:33:50,569 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-07 18:33:50,589 - operation.Operation - DEBUG - find
+2012-06-07 18:33:50,589 - operation.Search - DEBUG - finding objects
+2012-06-07 18:33:50,594 - operation.Search - DEBUG - returning all objects
+2012-06-07 18:33:50,594 - operation.Search - DEBUG - before sorting
+2012-06-07 18:33:50,594 - operation.Search - DEBUG - after sorting
+2012-06-07 18:33:50,594 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-07 18:33:50,724 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 18:33:52,334 - logic.JIDLogic - DEBUG - curText:
+2012-06-07 18:33:52,334 - logic.JIDLogic - DEBUG - prevText: null
+2012-06-07 18:33:52,334 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-07 18:33:52,334 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-07 18:33:52,339 - logic.JIDLogic - DEBUG - index: 0
+2012-06-07 18:34:10,880 - logic.JIDLogic - DEBUG - curText:
+2012-06-07 18:34:10,880 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-07 18:34:10,880 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-07 18:34:10,880 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-07 18:34:10,880 - logic.JIDLogic - DEBUG - index: 0
+2012-06-07 18:34:16,331 - logic.JIDLogic - DEBUG - curText:
+2012-06-07 18:34:16,331 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-07 18:34:16,331 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-07 18:34:16,331 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-07 18:34:16,331 - logic.JIDLogic - DEBUG - index: 0
+2012-06-07 18:34:27,627 - logic.JIDLogic - DEBUG - curText:
+2012-06-07 18:34:27,627 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-07 18:34:27,627 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-07 18:34:27,632 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-07 18:34:27,632 - logic.JIDLogic - DEBUG - index: 0
+2012-06-07 18:34:53,218 - logic.JIDLogic - DEBUG - curText:
+2012-06-07 18:34:53,218 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-07 18:34:53,218 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-07 18:34:53,218 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-07 18:34:53,218 - logic.JIDLogic - DEBUG - index: 0
+2012-06-07 18:42:10,925 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 18:42:10,951 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 18:42:11,131 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 18:42:11,171 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 18:42:11,266 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 18:42:11,286 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 18:42:11,301 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 18:42:11,316 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 18:42:41,961 - logic.JIDLogic - DEBUG - curText:
+2012-06-07 18:42:41,961 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-07 18:42:41,961 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-07 18:42:41,966 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-07 18:42:41,966 - logic.JIDLogic - DEBUG - index: 0
+2012-06-07 18:42:47,847 - logic.JIDLogic - DEBUG - curText:
+2012-06-07 18:42:47,847 - logic.JIDLogic - DEBUG - prevText: 
+2012-06-07 18:42:47,847 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-07 18:42:47,847 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-07 18:42:47,847 - logic.JIDLogic - DEBUG - index: 0
+2012-06-07 18:43:04,633 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 19:01:15,590 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 19:01:15,661 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 19:01:15,791 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 19:01:15,841 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 19:01:15,896 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 19:01:15,981 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 19:32:31,875 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 19:32:31,880 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 19:32:33,871 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 19:32:34,522 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 19:32:41,132 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 19:32:41,863 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 19:32:42,025 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 19:32:42,182 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 19:32:46,631 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 19:32:46,807 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 19:33:06,221 - Abc - DEBUG - array out of bounds!
+2012-06-07 19:33:07,447 - logic.JIDLogic - DEBUG - --->enter createBG function
+2012-06-07 19:33:07,518 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-07 19:33:07,518 - logic.JIDLogic - DEBUG - find *.*
+2012-06-07 19:33:07,518 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-07 19:33:07,538 - operation.Operation - DEBUG - find
+2012-06-07 19:33:07,543 - operation.Search - DEBUG - finding objects
+2012-06-07 19:33:07,543 - operation.Search - DEBUG - returning all objects
+2012-06-07 19:33:07,548 - operation.Search - DEBUG - before sorting
+2012-06-07 19:33:07,548 - operation.Search - DEBUG - after sorting
+2012-06-07 19:33:07,548 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-07 19:33:07,668 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 19:33:10,318 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 19:33:10,328 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 19:33:11,804 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 20:10:08,297 - Abc - DEBUG - array out of bounds!
+2012-06-07 20:10:09,855 - logic.JIDLogic - DEBUG - --->enter createBG function
+2012-06-07 20:10:09,920 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-07 20:10:09,922 - logic.JIDLogic - DEBUG - find *.*
+2012-06-07 20:10:09,922 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-07 20:10:09,946 - operation.Operation - DEBUG - find
+2012-06-07 20:10:09,948 - operation.Search - DEBUG - finding objects
+2012-06-07 20:10:09,949 - operation.Search - DEBUG - returning all objects
+2012-06-07 20:10:09,952 - operation.Search - DEBUG - before sorting
+2012-06-07 20:10:09,953 - operation.Search - DEBUG - after sorting
+2012-06-07 20:10:09,954 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-07 20:10:10,070 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 20:10:13,382 - logic.JIDLogic - DEBUG - curText:
+2012-06-07 20:10:13,383 - logic.JIDLogic - DEBUG - prevText: null
+2012-06-07 20:10:13,383 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-07 20:10:13,384 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-07 20:10:13,389 - logic.JIDLogic - DEBUG - index: 0
+2012-06-07 20:15:30,750 - Abc - DEBUG - array out of bounds!
+2012-06-07 20:15:31,956 - logic.JIDLogic - DEBUG - --->enter createBG function
+2012-06-07 20:15:32,025 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-07 20:15:32,027 - logic.JIDLogic - DEBUG - find *.*
+2012-06-07 20:15:32,027 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-07 20:15:32,046 - operation.Operation - DEBUG - find
+2012-06-07 20:15:32,048 - operation.Search - DEBUG - finding objects
+2012-06-07 20:15:32,049 - operation.Search - DEBUG - returning all objects
+2012-06-07 20:15:32,051 - operation.Search - DEBUG - before sorting
+2012-06-07 20:15:32,052 - operation.Search - DEBUG - after sorting
+2012-06-07 20:15:32,053 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-07 20:15:32,299 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 20:15:46,056 - Abc - DEBUG - array out of bounds!
+2012-06-07 20:15:47,162 - logic.JIDLogic - DEBUG - --->enter createBG function
+2012-06-07 20:15:47,232 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-07 20:15:47,233 - logic.JIDLogic - DEBUG - find *.*
+2012-06-07 20:15:47,234 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-07 20:15:47,252 - operation.Operation - DEBUG - find
+2012-06-07 20:15:47,254 - operation.Search - DEBUG - finding objects
+2012-06-07 20:15:47,255 - operation.Search - DEBUG - returning all objects
+2012-06-07 20:15:47,258 - operation.Search - DEBUG - before sorting
+2012-06-07 20:15:47,258 - operation.Search - DEBUG - after sorting
+2012-06-07 20:15:47,259 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-07 20:15:47,382 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 20:15:54,052 - logic.JIDLogic - DEBUG - curText:a
+2012-06-07 20:15:54,053 - logic.JIDLogic - DEBUG - prevText: null
+2012-06-07 20:15:54,054 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-07 20:15:54,054 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-07 20:15:54,059 - logic.JIDLogic - DEBUG - index: 0
+2012-06-07 20:15:54,085 - logic.JIDLogic - DEBUG - curText:as
+2012-06-07 20:15:54,086 - logic.JIDLogic - DEBUG - prevText: a
+2012-06-07 20:15:54,086 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-07 20:15:54,087 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-07 20:15:54,087 - logic.JIDLogic - DEBUG - index: 0
+2012-06-07 20:15:54,112 - logic.JIDLogic - DEBUG - curText:asd
+2012-06-07 20:15:54,113 - logic.JIDLogic - DEBUG - prevText: as
+2012-06-07 20:15:54,113 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-07 20:15:54,114 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-07 20:15:54,114 - logic.JIDLogic - DEBUG - index: 0
+2012-06-07 20:15:54,207 - logic.JIDLogic - DEBUG - curText:asdf
+2012-06-07 20:15:54,208 - logic.JIDLogic - DEBUG - prevText: asd
+2012-06-07 20:15:54,208 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-07 20:15:54,208 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-07 20:15:54,209 - logic.JIDLogic - DEBUG - index: 0
+2012-06-07 20:15:54,810 - logic.JIDLogic - DEBUG - curText:asdf
+2012-06-07 20:15:54,810 - logic.JIDLogic - DEBUG - prevText: asdf
+2012-06-07 20:15:54,811 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-07 20:15:54,811 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-07 20:15:54,812 - logic.JIDLogic - DEBUG - index: 0
+2012-06-07 20:15:54,923 - logic.JIDLogic - DEBUG - curText:asdf
+2012-06-07 20:15:54,924 - logic.JIDLogic - DEBUG - prevText: asdf
+2012-06-07 20:15:54,924 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-07 20:15:54,924 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-07 20:15:54,925 - logic.JIDLogic - DEBUG - index: 0
+2012-06-07 20:15:55,202 - logic.JIDLogic - DEBUG - curText:
+2012-06-07 20:15:55,202 - logic.JIDLogic - DEBUG - prevText: asdf
+2012-06-07 20:15:55,203 - logic.JIDLogic - DEBUG - state: NULL
+2012-06-07 20:15:55,203 - logic.JIDLogic - DEBUG - prev: NULL
+2012-06-07 20:15:55,204 - logic.JIDLogic - DEBUG - index: 0
+2012-06-07 20:16:25,432 - Abc - DEBUG - array out of bounds!
+2012-06-07 20:16:26,529 - logic.JIDLogic - DEBUG - --->enter createBG function
+2012-06-07 20:16:26,600 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-07 20:16:26,601 - logic.JIDLogic - DEBUG - find *.*
+2012-06-07 20:16:26,602 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-07 20:16:26,620 - operation.Operation - DEBUG - find
+2012-06-07 20:16:26,622 - operation.Search - DEBUG - finding objects
+2012-06-07 20:16:26,623 - operation.Search - DEBUG - returning all objects
+2012-06-07 20:16:26,625 - operation.Search - DEBUG - before sorting
+2012-06-07 20:16:26,626 - operation.Search - DEBUG - after sorting
+2012-06-07 20:16:26,627 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-07 20:16:26,864 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 20:16:27,023 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 20:16:31,268 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 20:16:42,018 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 20:16:42,253 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 20:16:42,570 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 20:16:42,650 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 20:16:42,983 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 20:16:43,179 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 20:16:43,324 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 20:16:43,388 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 20:16:43,521 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 20:16:44,003 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 20:16:44,191 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 20:16:45,160 - logic.JIDLogic - DEBUG - start drawing
+2012-06-07 20:16:45,698 - logic.JIDLogic - DEBUG - start drawing

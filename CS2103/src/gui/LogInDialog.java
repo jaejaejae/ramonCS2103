@@ -5,6 +5,7 @@
 package gui;
 
 import java.awt.Component;
+import java.awt.Color;
 import java.awt.Container;
 import java.awt.FocusTraversalPolicy;
 import java.awt.Point;
@@ -36,6 +37,7 @@ public class LogInDialog extends javax.swing.JDialog {
         this.addEvent();
         this.setTabSequence();
         this.setMovable();
+        this.setBackground(new Color(0,0,0,0));
         this.setVisible(true);
     }
 

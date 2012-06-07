@@ -137,9 +137,7 @@ public class MainJFrame extends javax.swing.JFrame {
 	@SuppressWarnings("unchecked")
 	// <editor-fold defaultstate="collapsed" desc="Generated Code">
 	private void initComponents() {
-
-		lp = this.getLayeredPane();
-		createBG();
+		//createBG();
 		
 		jLabel1 = new javax.swing.JLabel("", Resource.bigLogo,
 				SwingConstants.CENTER);

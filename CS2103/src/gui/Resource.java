@@ -17,7 +17,7 @@ public class Resource {
 	public final static ImageIcon exitOn = createImageIcon("Images/exitOn.png","");
 	public final static ImageIcon trayLogo = createImageIcon("Images/trayLogo.png","");
 	
-	public final static ImageIcon backgroundLogo = createImageIcon("Images/bgImage.png","");
+	public final static ImageIcon backgroundLogo = createImageIcon("Images/smallBG.png","");
 	
 	public final static ImageIcon down = createImageIcon("Images/down.png","");
 	public final static ImageIcon downOn = createImageIcon("Images/downOn.png","");
@@ -27,7 +27,10 @@ public class Resource {
     public final static ImageIcon upOn = createImageIcon("Images/upOn.png", "");
     public final static ImageIcon upPress = createImageIcon("Images/upPress.png", "");
     
-    public final static ImageIcon loginBG = createImageIcon("Images/logInBG.png", "");
+    public final static ImageIcon loginBG = createImageIcon("Images/smallBG.png", "");
+    
+    public final static ImageIcon largeBG = createImageIcon("Images/largeBG.png", "");
+    public final static ImageIcon smallBG = createImageIcon("Images/smallBG.png", "");
     
 	public final static Image trayImage = iconToImage(trayLogo); 
 	public final static Image backgroundImage = iconToImage(backgroundLogo);

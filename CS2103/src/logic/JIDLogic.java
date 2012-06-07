@@ -226,11 +226,8 @@ public class JIDLogic {
 				logger.debug("isundoable");
 			}
 			return result;
-			
-			
 		}
-		
-		}
+	}
 		
 	public static void JIDLogic_init()
 	{
@@ -282,6 +279,3 @@ public class JIDLogic {
 		return command;
 	}
 }
-
-
-

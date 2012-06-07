@@ -10,12 +10,15 @@ import java.io.IOException;
 
 import javax.swing.Timer;
 
+import constant.OperationFeedback;
+
 import logic.JIDLogic;
 
 public class UIController {
 	static MainJFrame mainJFrame;
 	Reminder reminder;
 	static JotItDownTray JIDtray;
+	static OperationFeedback operationFeedback;
 	
 	public UIController() {
 		TopPopUp.createTopPopUp();
@@ -85,5 +88,13 @@ public class UIController {
 	
 	public static void logInToGCalendar(String username, char[] password) {
 		
+	}
+	
+	/**
+	 * receive feedback after each operation
+	 * @param newOPFeedback
+	 */
+	public static void sendOperationFeedback(OperationFeedback newOPFeedback) {
+		operationFeedback = newOPFeedback;
 	}
 }
