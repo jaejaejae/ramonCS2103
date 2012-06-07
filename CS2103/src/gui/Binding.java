@@ -65,6 +65,10 @@ public class Binding {
 	        key = KeyStroke.getKeyStroke(KeyEvent.VK_O, Event.CTRL_MASK);
 	        inputMap.put(key, "overdue");
 	        actionMap.put("overdue", new Action.OverdueAction());
+	        
+	        key = KeyStroke.getKeyStroke(KeyEvent.VK_G, Event.CTRL_MASK);
+	        inputMap.put(key, "gCalendar");
+	        actionMap.put("gCalendar", new Action.GCalendarAction());
 	}
 	
 

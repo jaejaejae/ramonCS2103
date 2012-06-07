@@ -82,4 +82,8 @@ public class UIController {
 	public static void contractFrame() {
 		mainJFrame.contractFrame();
 	}
+	
+	public static void logInToGCalendar(String username, char[] password) {
+		
+	}
 }

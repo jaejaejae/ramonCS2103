@@ -777,18 +777,6 @@ public class MainJFrame extends javax.swing.JFrame {
 			}
 		});
 
-		this.addKeyListener(new KeyAdapter() {
-
-			@Override
-			public void keyTyped(KeyEvent e) {
-				// TODO Auto-generated method stub
-				if (TEST)
-					if (e.getKeyChar() == 'b') {
-						logger.debug("B");
-					}
-			}
-
-		});
 	}
 
 	public static void showPopup(String str) {

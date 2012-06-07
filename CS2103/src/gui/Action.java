@@ -9,6 +9,12 @@ import org.apache.log4j.Logger;
 import logic.JIDLogic;
 import data.Task;
 
+/**
+ * Action class for using with key binding
+ * 
+ * @author Ramon
+ *
+ */
 public class Action {
 	
 	private static Logger logger=Logger.getLogger(JIDLogic.class);
@@ -177,6 +183,13 @@ public class Action {
     static class HelpAction extends AbstractAction {
     	public void actionPerformed(ActionEvent e) {
     		
+    	}
+    }
+
+    static class GCalendarAction extends AbstractAction {
+    	@Override
+    	public void actionPerformed(ActionEvent e) {
+    		new LogInDialog(UIController.mainJFrame, false);
     	}
     }
 }
