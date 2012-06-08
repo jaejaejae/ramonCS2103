@@ -182,14 +182,17 @@ public class Action {
     
     static class HelpAction extends AbstractAction {
     	public void actionPerformed(ActionEvent e) {
-    		
+    		//call help dialog
     	}
     }
 
     static class GCalendarAction extends AbstractAction {
     	@Override
     	public void actionPerformed(ActionEvent e) {
-    		new LogInDialog(UIController.mainJFrame, false);
+    		new LogInDialog(UIController.mainJFrame
+    				, UIController.mainJFrame.getLocation().x + 60
+    				, UIController.mainJFrame.getLocation().y - 120
+    				);
     	}
     }
 }

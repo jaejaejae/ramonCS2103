@@ -13,9 +13,15 @@ import javax.swing.ImageIcon;
 public class Resource {
 	
     public final static ImageIcon bigLogo = createImageIcon("images/logo.png","");
-	public final static ImageIcon exitImg = createImageIcon("images/exit.png","");
-	public final static ImageIcon exitOn = createImageIcon("Images/exitOn.png","");
+	public final static ImageIcon exitImg = createImageIcon("images/exit_.png","");
+	public final static ImageIcon exitOn = createImageIcon("Images/exit_On.png","");
+	public final static ImageIcon minimizeImg = createImageIcon("images/min_.png", "");
+	public final static ImageIcon minimizeImgOn = createImageIcon("Images/min_on.png", "");
+	public final static ImageIcon helpImg = createImageIcon("images/help_.png","");
+	public final static ImageIcon helpImgOn = createImageIcon("Images/help_on.png","");
 	public final static ImageIcon trayLogo = createImageIcon("Images/trayLogo.png","");
+	
+	public final static ImageIcon topPopUpBG = createImageIcon("Images/topPopUpBG.png", "");
 	
 	public final static ImageIcon backgroundLogo = createImageIcon("Images/smallBG.png","");
 	
@@ -27,7 +33,7 @@ public class Resource {
     public final static ImageIcon upOn = createImageIcon("Images/upOn.png", "");
     public final static ImageIcon upPress = createImageIcon("Images/upPress.png", "");
     
-    public final static ImageIcon loginBG = createImageIcon("Images/smallBG.png", "");
+    public final static ImageIcon loginBG = createImageIcon("Images/logInBG.png", "");
     
     public final static ImageIcon largeBG = createImageIcon("Images/largeBG.png", "");
     public final static ImageIcon smallBG = createImageIcon("Images/smallBG.png", "");

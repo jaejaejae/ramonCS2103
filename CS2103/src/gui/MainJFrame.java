@@ -156,12 +156,12 @@ public class MainJFrame extends javax.swing.JFrame {
         jLayeredPane1.add(jComboBox1, 2);
 
         button1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        button1.setText("jLabel1");
+        button1.setIcon(Resource.helpImg);
         button1.setBounds(300, 0, 30, 30);
         jLayeredPane1.add(button1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         button2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        button2.setText("jLabel2");
+        button2.setIcon(Resource.minimizeImg);
         button2.setBounds(330, 0, 30, 30);
         jLayeredPane1.add(button2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
@@ -171,6 +171,7 @@ public class MainJFrame extends javax.swing.JFrame {
         jLayeredPane1.add(button3, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         logo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        logo.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         logo.setIcon(Resource.bigLogo);
         logo.setBounds(10, 0, 70, 80);
         jLayeredPane1.add(logo, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -210,10 +211,41 @@ public class MainJFrame extends javax.swing.JFrame {
 		setJFrameAction();
 		setJComboBox1Action();
 		setlogoAction();
+		setbutton1Action();
+		setbutton2Action();
 		setbutton3Action();
 		setdownButtonActionExpand();
 	}
 	
+	private void setbutton2Action() {
+		// TODO Auto-generated method stub
+		button2.addMouseListener(new MouseAdapter() {
+
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+				if (TopPopUp.isShow())
+					TopPopUp.hideBox();
+				MainJFrame.this.setVisible(false);
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				button2.setIcon(Resource.minimizeImgOn);
+			}
+
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+				button2.setIcon(Resource.minimizeImg);
+			}
+
+		});
+		
+	}
+
+	private void setbutton1Action() {
+		//call help.
+	}
+
 	public void setdownButtonActionContract() {
 		downButton.setToolTipText("Contract");
 
@@ -340,38 +372,32 @@ public class MainJFrame extends javax.swing.JFrame {
 	}
 
 	private void setbutton3Action() {
-		// TODO Auto-generated method stub
 		button3.setToolTipText("Close");
 
 		button3.addMouseListener(new MouseAdapter() {
 
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-				// TODO Auto-generated method stub
 				if (TopPopUp.isShow())
 					TopPopUp.hideBox();
 				MainJFrame.this.setVisible(false);
-				//JIDLogic.JIDLogic_close();
+				JIDLogic.JIDLogic_close();
+				System.exit(0);
 			}
 
 			@Override
 			public void mouseEntered(MouseEvent arg0) {
-				// TODO Auto-generated method stub
 				button3.setIcon(Resource.exitOn);
-				MainJFrame.this.revalidate();
 			}
 
 			@Override
 			public void mouseExited(MouseEvent arg0) {
-				// TODO Auto-generated method stub
 				button3.setIcon(Resource.exitImg);
-				MainJFrame.this.revalidate();
 			}
 
 		});
-
 	}
-
+	
 	private void setlogoAction() {
 		// TODO Auto-generated method stub
 
@@ -684,7 +710,7 @@ public class MainJFrame extends javax.swing.JFrame {
 	public static void showPopup(String str) {
 		logger.debug("-----------------POPUP-----------------------");
 		TopPopUp.setText(str);
-		TopPopUp.setPosition(currentLocation.x, currentLocation.y - 30);
+		TopPopUp.setPosition(currentLocation.x + 15, currentLocation.y - 30);
 		TopPopUp.showBox();
 		TopPopUp.jFrame.setFocusable(true);
 	}
