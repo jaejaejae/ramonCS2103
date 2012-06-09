@@ -1,5 +1,7 @@
 package gui;
 
+import gui.mainWindow.MainJFrame;
+
 import java.awt.AWTException;
 import java.awt.Image;
 import java.awt.MenuItem;

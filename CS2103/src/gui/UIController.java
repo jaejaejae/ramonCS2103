@@ -1,5 +1,11 @@
 package gui;
 
+import gui.extended.ExpandComponent;
+import gui.extended.HelpFrame;
+import gui.extended.TopPopUp;
+import gui.mainWindow.MainJFrame;
+import gui.reminder.Reminder;
+
 import java.awt.Toolkit;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.Transferable;
@@ -15,7 +21,7 @@ import constant.OperationFeedback;
 import logic.JIDLogic;
 
 public class UIController {
-	static MainJFrame mainJFrame;
+	public static MainJFrame mainJFrame;
 	Reminder reminder;
 	static JotItDownTray JIDtray;
 	static OperationFeedback operationFeedback = OperationFeedback.VALID;
