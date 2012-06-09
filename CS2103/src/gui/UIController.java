@@ -88,7 +88,14 @@ public class UIController {
 	}
 	
 	public static void logInToGCalendar(String username, char[] password) {
-		
+		JIDLogic.setCommand("login");
+		String execmd = "login " + username + " ";
+		for(int i=0; i<password.length; i++)
+			execmd += password[i];
+		System.out.println(execmd);
+		JIDLogic.executeCommand(execmd);
+		UIController.refresh();
+		UIController.showInvalidDisplay();
 	}
 	
 	/**

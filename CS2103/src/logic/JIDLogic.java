@@ -16,10 +16,10 @@ import storagecontroller.StorageManager;
 public class JIDLogic {
 	
 		private static Logger logger=Logger.getLogger(JIDLogic.class);
-		
+		//private static String command;
 		public static void main(String[] args) {
 	        //logger.info("hi");
-		/*	
+		/*
 			logger.debug(StorageManager.loadFile());
 			command="search";
 			Task[] def=executeCommand("find *.*");
@@ -27,10 +27,19 @@ public class JIDLogic {
 	    	{
 	    		for (int i=0;i<def.length;i++)
 	    		{
-	    			System.out.println(def[i].getTaskId());
+	    			logger.debug(def[i].toString2());
 	    		}
 	    	}
-			
+	    	def=executeCommand("login jid.troubleshoot@gmail.com jotitdown");
+	    	logger.debug("executed gcal sync");
+	    	def=executeCommand("find *.*");
+	    	if (def!=null)
+	    	{
+	    		for (int i=0;i<def.length;i++)
+	    		{
+	    			logger.debug(def[i].toString());
+	    		}
+	    	}
 	    	/*Add adder=new Add();
 	    	
 	    	Task[] abc=adder.execute("add *go to meet bhairav weekly by 3.45pm 3/5/2013  @work @home");
@@ -55,8 +64,8 @@ public class JIDLogic {
 	    			logger.debug(StorageManager.getAllTasks()[i].getEndDateTime().getDate());
     		}
 	    	
-	    
-	    	
+	    */
+	    	/*
 	    	command="delete";
 	    	Task[] xyz=executeCommand("star meet");
 	    	if (xyz!=null)
@@ -105,7 +114,7 @@ public class JIDLogic {
 	    			logger.debug("Task that was undone: "+def[i].getName());
 	    			logger.debug(def[i].getImportant());
 	    		}
-	    	}/*
+	    	}
 	    	def=executeCommand("find *.*");
 	    	if (def!=null)
 	    	{
@@ -126,7 +135,7 @@ public class JIDLogic {
 	    			logger.debug("Task that was redone:"+def[i].getName());
 	    			logger.debug(def[i].getImportant());
 	    		}
-	    	}/*
+	    	}
 	    	def=executeCommand("find *.*");
 	    	if (def!=null)
 	    	{
@@ -160,11 +169,15 @@ public class JIDLogic {
 	    			logger.debug(def[i].toString());
 	    		}
 	    	}
+	    	
+	    	*/
 	    	//logger.debug(StorageManager.saveFile());
-			*/
-			JIDLogic_init();
-			UIController ui=new UIController();
 			
+			JIDLogic_init();
+			
+			
+		UIController ui=new UIController();
+		JIDLogic_close();
 			//logger.debug(StorageManager.loadFile());
 			
 			
@@ -187,7 +200,7 @@ public class JIDLogic {
 	public static Task[] executeCommand (String commandFromUser) {
 		Operation op = null;
 		logger.debug("inside execute command");
-		logger.debug(commandFromUser);
+		//logger.debug(commandFromUser);
 		if (command == null || command.equals("")) {
 			logger.debug("inside first cond");
 			return null;
@@ -225,9 +238,13 @@ public class JIDLogic {
 				undoStack.push(op);
 				logger.debug("isundoable");
 			}
+			//UIController.showTopPopUpMsg(op.getErrorMessage());
 			return result;
+			
+			
 		}
-	}
+		
+		}
 		
 	public static void JIDLogic_init()
 	{
@@ -279,3 +296,6 @@ public class JIDLogic {
 		return command;
 	}
 }
+
+
+

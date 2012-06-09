@@ -4,35 +4,69 @@ import java.util.GregorianCalendar;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class DateParser {
+import logic.JIDLogic;
+import org.apache.log4j.Logger;
 
+
+public class DateParser {
+	private Logger logger=Logger.getLogger(JIDLogic.class);
+	
 	private Pattern pattern1, pattern2, pattern3, pattern4, pattern5, pattern;
 	private Matcher matcher1, matcher2, matcher3, matcher4, matcher5, matcher;
 	
-	private int startDay=-1, startMonth=-1, startYear=-1;
-	private int endDay=-1, endMonth=-1, endYear=-1;
-	private int dummyDay=-1, dummyMonth=-1, dummyYear=-1;
+	private int startDay, startMonth, startYear;
+	private int endDay, endMonth, endYear;
+	private int dummyDay, dummyMonth, dummyYear;
 	
-	private static final String MONTH_IN_DIGIT_DATE_WITH_YEAR = "(0?[1-9]|[12][0-9]|3[01])[/ -](0?[1-9]|1[012])[/ -]((19|20)\\d\\d)";
-	private static final String MONTH_IN_TEXT_DATE_WITH_YEAR = "((0?[1-9]|[12][0-9]|3[01])(?i)(th)?)[/ - \\s \\,](\\s)?((?i)(January|Jan|February|Feb|March|Mar|April|Apr|May|June|Jun|July|Jul|August|Aug|September|Sep|October|Oct|November|Nov|December|Dec))[/ - \\s \\,](\\s)?((19|20)\\d\\d)";
-	private static final String MONTH_IN_DIGIT_DATE_WITHOUT_YEAR = "(0?[1-9]|[12][0-9]|3[01])[/ -](0?[1-9]|1[012])";
-	private static final String MONTH_IN_TEXT_DATE_WITHOUT_YEAR = "((0?[1-9]|[12][0-9]|3[01])(?i)(th)?)[/ - \\s \\,](\\s)?((?i)(January|Jan|February|Feb|March|Mar|April|Apr|May|June|Jun|July|Jul|August|Aug|September|Sep|October|Oct|November|Nov|December|Dec))";
+	private static final String TH ="((?i)(th)?)";
+	private static final String ST ="((?i)(st)?)";
+	private static final String ND ="((?i)(nd)?)";
+	private static final String RD ="((?i)(rd)?)";
+	private static final String MONTH_TEXT = "((?i)(January|Jan|February|Feb|March|Mar|April|Apr|May|June|Jun|July|Jul|August|Aug|September|Sep|October|Oct|November|Nov|December|Dec))";
+	private static final String MONTH_IN_DIGIT_DATE_WITH_YEAR = "(0?[1-9]|[12][0-9]|3[01])[/ \\-](0?[1-9]|1[012])[/ \\-]((19|20)\\d\\d)";
+	private static final String MONTH_IN_TEXT_DATE_WITH_YEAR = "((0?(1"+ST+"|2"+ND+"|3"+RD+"|[4-9]"+TH+")|1[0-9]"+TH+"|2(1"+ST+"|2"+ND+"|3"+RD+"|[4-9]"+TH+")|30"+TH+")|31"+ST+")[/ \\-\\,]"+MONTH_TEXT+"[/ \\-\\,]((19|20)\\d\\d)";
+	private static final String MONTH_IN_DIGIT_DATE_WITHOUT_YEAR = "(0?[1-9]|[12][0-9]|3[01])[/ \\-](0?[1-9]|1[012])";
+	private static final String MONTH_IN_TEXT_DATE_WITHOUT_YEAR = "((0?(1"+ST+"|2"+ND+"|3"+RD+"|[4-9]"+TH+")|1[0-9]"+TH+"|2(1"+ST+"|2"+ND+"|3"+RD+"|[4-9]"+TH+")|30"+TH+")|31"+ST+")[/ \\-\\,]"+MONTH_TEXT;
 	
-	private static final String TODAY_REGEX = "(?i)(today)";
-	private static final String TOMORROW_REGEX = "(?i)(tmr|tomorrow)";
-	private static final String WEEKDAY_REGEX = "(?i)(monday|mon|tuesday|tue|wednesday|wed|thursday|thu|friday|fri|saturday|sat|sunday|sun)";
-	private static final String TODAY_TMR_WEEKDAY_REGEX = "("+TODAY_REGEX+")|("+TOMORROW_REGEX+")|("+WEEKDAY_REGEX+")";
+	private static final String NEXT = "(?i)(next)";
+	private static final String TODAY = "(?i)(today)";
+	private static final String TOMORROW = "(?i)(tmr|tomorrow)";
+	private static final String WEEKDAY = "("+NEXT+"[ ])?((?i)(monday|mon|tuesday|tue|wednesday|wed|thursday|thu|friday|fri|saturday|sat|sunday|sun))";
+	private static final String TODAY_TMR_WEEKDAY = "("+TODAY+")|("+TOMORROW+")|("+WEEKDAY+")";
 	
 	private static final String GENERAL_DATE_PATTERN = "(((?i)(on))[\\s])?(("
 			+ MONTH_IN_DIGIT_DATE_WITH_YEAR + ")|("
 			+ MONTH_IN_TEXT_DATE_WITH_YEAR + ")|("
 			+ MONTH_IN_DIGIT_DATE_WITHOUT_YEAR + ")|("
-			+ MONTH_IN_TEXT_DATE_WITHOUT_YEAR + ")|(" + TODAY_TMR_WEEKDAY_REGEX + "))";
+			+ MONTH_IN_TEXT_DATE_WITHOUT_YEAR + ")|(" + TODAY_TMR_WEEKDAY + "))";
 	
+	/**
+	 * 
+	 */
+	public DateParser() {
+		
+		pattern1 = Pattern.compile(MONTH_IN_DIGIT_DATE_WITH_YEAR);
+		pattern2 = Pattern.compile(MONTH_IN_TEXT_DATE_WITH_YEAR);
+		pattern3 = Pattern.compile(MONTH_IN_DIGIT_DATE_WITHOUT_YEAR);
+		pattern4 = Pattern.compile(MONTH_IN_TEXT_DATE_WITHOUT_YEAR);
+		pattern5 = Pattern.compile(TODAY_TMR_WEEKDAY);
+		
+		pattern = Pattern.compile(GENERAL_DATE_PATTERN);
+		
+		startDay=-1; startMonth=-1; startYear=-1;
+		endDay=-1; endMonth=-1; endYear=-1;
+		dummyDay=-1; dummyMonth=-1; dummyYear=-1;
+	}
+	/**
+	 * 
+	 */
 	private void resetDummyDate() {
 		dummyDay=-1; dummyMonth=-1; dummyYear=-1;
 	}
-	
+	/**
+	 * 
+	 * @return
+	 */
 	public int[] getStartDate() {
 		int[] startDateArr = {-1,-1,-1};
 		
@@ -44,7 +78,10 @@ public class DateParser {
 		
 		return startDateArr;
 	}
-	
+	/**
+	 * 
+	 * @return
+	 */
 	public int[] getEndDate() {
 		int[] endDateArr = {-1,-1,-1};
 		
@@ -56,71 +93,60 @@ public class DateParser {
 		
 		return endDateArr;
 	}
-	
-	public DateParser() {
-		
-		/*
-		 * assign more meaningful names to these patterns
-		 */
-		pattern1 = Pattern.compile(MONTH_IN_DIGIT_DATE_WITH_YEAR);
-		pattern2 = Pattern.compile(MONTH_IN_TEXT_DATE_WITH_YEAR);
-		pattern3 = Pattern.compile(MONTH_IN_DIGIT_DATE_WITHOUT_YEAR);
-		pattern4 = Pattern.compile(MONTH_IN_TEXT_DATE_WITHOUT_YEAR);
-		pattern5 = Pattern.compile(TODAY_TMR_WEEKDAY_REGEX);
-		
-		pattern = Pattern.compile(GENERAL_DATE_PATTERN);
-		
-		startDay=-1; startMonth=-1; startYear=-1;
-		endDay=-1; endMonth=-1; endYear=-1;
-		dummyDay=-1; dummyMonth=-1; dummyYear=-1;
-	}
-
+	/**
+	 * 
+	 * @return
+	 */
 	public static String getGeneralPattern() {
 		return GENERAL_DATE_PATTERN;
 	}
-
+	/*
 	public String extractDate(String inputS) {
 		String s = null;
 		matcher = pattern.matcher(inputS);
 
 		if (matcher.find())
-			s = matcher.group(4);
+			if (matcher.group(4)!=null)
+				s = matcher.group(4);
 		
-		/*
-		System.out.println("no. of groups in date string: "+matcher.groupCount());
-		System.out.println("group 1 string: "+matcher.group(1));
-		System.out.println("group 2 string: "+matcher.group(2));
-		System.out.println("group 3 string: "+matcher.group(3));
-		System.out.println("group 4 string: "+matcher.group(4));
-		System.out.println("group 5 string: "+matcher.group(5));
-		*/
 		
-		/*
-		 * do not include "on" if its included
-		 */
-		
+		logger.debug("no. of groups in date string: "+matcher.groupCount());
+		logger.debug("group 1 string: "+matcher.group(1));
+		logger.debug("group 2 string: "+matcher.group(2));
+		logger.debug("group 3 string: "+matcher.group(3));
+		logger.debug("group 4 string: "+matcher.group(4));
+		logger.debug("group 5 string: "+matcher.group(5));
+	
 		return s;
 	}
 	
 	public void printDates() { //for your testing
 		if ((startDay>0 && startMonth>0 && startYear>0)) {
-			System.out.println("startDay: "+startDay);
-			System.out.println("startMon: "+startMonth);
-			System.out.println("startYear: "+startYear);
+			logger.debug("startDay: "+startDay);
+			logger.debug("startMon: "+startMonth);
+			logger.debug("startYear: "+startYear);
 		}
 		
 		if ((endDay>0 && endMonth>0 && endYear>0)) {
-			System.out.println("endDay: "+startDay);
-			System.out.println("endMon: "+endMonth);
-			System.out.println("endYear: "+endYear);
+			logger.debug("endDay: "+startDay);
+			logger.debug("endMon: "+endMonth);
+			logger.debug("endYear: "+endYear);
 		}
 		
 		else
-			System.out.println("no attributes exist!");
+			logger.debug("no attributes exist!");
 	}
-	
+	*/
+	/**
+	 * 
+	 * @param startD
+	 * @return
+	 */
 	public boolean setStartDate(String startD) {
-		if (setMonthInDigitWithYear(startD) || setMonthInTextWithYear(startD) || setMonthInDigitWithoutYear(startD) || setMonthInTextWithoutYear(startD) || inferAndSetDate(startD)) {
+		if (startD==null)
+			return false;
+		
+		if (setMonthInDigitWithYear(startD) || setMonthInTextWithYear(startD) || setMonthInDigitWithoutYear(startD) || setMonthInTextWithoutYear(startD) || setByWeekday(startD)) {
 			if (dummyDay>0 && dummyMonth>0 && dummyYear>0){
 				startDay = dummyDay;
 				startMonth = dummyMonth;
@@ -130,16 +156,23 @@ public class DateParser {
 			}
 			
 			else {
-				//System.out.println("1st return of setStartDate: false");
+				//logger.debug("1st return of setStartDate: false");
 				return false;
 			}
 		}
-		//System.out.println("2nd return of setStartDate: false");
+		//logger.debug("2nd return of setStartDate: false");
 		return false;
 	}
-	
+	/**
+	 * 
+	 * @param endD
+	 * @return
+	 */
 	public boolean setEndDate(String endD) {
-		if (setMonthInDigitWithYear(endD) || setMonthInTextWithYear(endD) || setMonthInDigitWithoutYear(endD) || setMonthInTextWithoutYear(endD) || inferAndSetDate(endD)) {
+		if (endD==null)
+			return false;
+		
+		if (setMonthInDigitWithYear(endD) || setMonthInTextWithYear(endD) || setMonthInDigitWithoutYear(endD) || setMonthInTextWithoutYear(endD) || setByWeekday(endD)) {
 			if (dummyDay>0 && dummyMonth>0 && dummyYear>0){
 				endDay = dummyDay;
 				endMonth = dummyMonth;
@@ -149,78 +182,55 @@ public class DateParser {
 			}
 			
 			else {
-				//System.out.println("1st return of setStartDate: false");
+				//logger.debug("1st return of setStartDate: false");
 				return false;
 			}
 		}
-		//System.out.println("2nd return of setStartDate: false");
+		//logger.debug("2nd return of setStartDate: false");
 		return false;
 	}
-	
+	/**
+	 * 
+	 * @param date
+	 * @return
+	 */
 	public boolean isValidGeneral(final String date) {
 		matcher = pattern.matcher(date);
 		return matcher.matches();
 	}
-
+	/**
+	 * 
+	 * @param date
+	 * @return
+	 */
 	private boolean setMonthInDigitWithYear(final String date) {
 		
 		matcher1 = pattern1.matcher(date);
 		
 		if (matcher1.matches()) {
-			String dayString = matcher1.group(1);
-			String monthString = matcher1.group(2);
-			String yearString = matcher1.group(3);
-			int dayInt = Integer.parseInt(dayString);
-			int monthInt = Integer.parseInt(monthString);
-			int year = Integer.parseInt(yearString);
-			
-			/*
-			 * System.out.println("inputDay= "+dayInt);
-			 * System.out.println("currDay= "+currDay);
-			 * System.out.println("inputMonth= "+monthInt);
-			 * System.out.println("currMonth= "+currMonth);
-			 */
-
-			if (dayInt == 31
-					&& ((monthInt == 4) || (monthInt == 6) || (monthInt == 9) || (monthInt == 11)))
-				return false; // only 1,3,5,7,8,10,12 has 31 days
-
-			// ----ATTENTION!------add the correct definition of leap year!!!
-			// -----current=julian calender-----
-			else if (monthInt == 2) {
-				if (year % 4 == 0) {
-					if (dayInt == 30 || dayInt == 31)
-						return false;
-					else {
-						dummyDay=dayInt;
-						dummyMonth=monthInt;
-						dummyYear=year;
-						return true;
-					}
-				} 
-				else {
-					if (dayInt == 29 || dayInt == 30 || dayInt == 31)
-						return false;
-					else {
-						dummyDay=dayInt;
-						dummyMonth=monthInt;
-						dummyYear=year;
-						return true;
-					}
-				}
-			} 
-			else {
-				dummyDay=dayInt;
-				dummyMonth=monthInt;
-				dummyYear=year;
-				return true;
+			if (matcher1.group(1)!=null && matcher1.group(2)!=null && matcher1.group(3)!=null) {
+				String dayString = matcher1.group(1);
+				String monthString = matcher1.group(2);
+				String yearString = matcher1.group(3);
+				int dayInt = Integer.parseInt(dayString);
+				int monthInt = Integer.parseInt(monthString);
+				int yearInt = Integer.parseInt(yearString);
+				
+				//logger.debug("inputDay= "+dayInt);
+				//logger.debug("inputMon= "+monthInt);
+				//logger.debug("inputYear= "+yearInt);
+				 
+				return setDummyDate(dayInt, monthInt, yearInt);
 			}
-
 		}
 		return false;
 	}
-
-	public boolean setMonthInTextWithYear(final String date) {
+	/**
+	 * 
+	 * @param date
+	 * @return
+	 */
+	private boolean setMonthInTextWithYear(final String date) {
 		final String JAN = "(?i)(Jan|January)";
 		final String FEB = "(?i)(Feb|February)";
 		final String MAR = "(?i)(Mar|March)";
@@ -237,155 +247,78 @@ public class DateParser {
 		matcher2 = pattern2.matcher(date);
 
 		if (matcher2.matches()) {
-			String monthString = matcher2.group(6);
-			int dayInt = Integer.parseInt(matcher2.group(2));
-			int year = Integer.parseInt(matcher2.group(8));
-			int monthInt = -1;
-
-			if (monthString.matches(JAN))		monthInt = 1;
-			if (monthString.matches(FEB))		monthInt = 2;
-			if (monthString.matches(MAR))		monthInt = 3;
-			if (monthString.matches(APR))		monthInt = 4;
-			if (monthString.matches(MAY))		monthInt = 5;
-			if (monthString.matches(JUN))		monthInt = 6;
-			if (monthString.matches(JUL))		monthInt = 7;
-			if (monthString.matches(AUG))		monthInt = 8;
-			if (monthString.matches(SEP))		monthInt = 9;
-			if (monthString.matches(OCT))		monthInt = 10;
-			if (monthString.matches(NOV))		monthInt = 11;
-			if (monthString.matches(DEC))		monthInt = 12;
-			
 			/*
-			System.out.println("day int: "+dayInt);
-			System.out.println("month int: "+monthInt);
-			System.out.println("year int: "+year);
+			for(int i=0; i<matcher2.groupCount(); i++)
+				logger.debug("group "+i+"= "+matcher2.group(i));
 			*/
+			
+			if (matcher2.group(27)!=null && matcher2.group(1)!=null && matcher2.group(29)!=null) {
+				String monthString = matcher2.group(27);
+				String dayString = matcher2.group(1);
+				
+				if (dayString.length()==3)
+					dayString = dayString.substring(0, 1);
+				else if (dayString.length()==4)
+					dayString = dayString.substring(0, 2);
+					
+				int dayInt = Integer.parseInt(dayString);
+				int yearInt = Integer.parseInt(matcher2.group(29));
+				int monthInt = -1;
 
-			if (dayInt == 31
-					&& ((monthInt == 4) || (monthInt == 6) || (monthInt == 9) || (monthInt == 11)))
-				return false; // only 1,3,5,7,8,10,12 has 31 days
-
-			// ----ATTENTION!------add the correct definition of leap year!!!
-			// -----current=julian calender-----
-			else if (monthInt == 2) { // leap year testing
-				if (year % 4 == 0) {
-					if (dayInt == 30 || dayInt == 31)
-						return false;
-					else {
-						dummyDay=dayInt;
-						dummyMonth=monthInt;
-						dummyYear=year;
-						/*
-						System.out.println("dummyDay: "+dummyDay);
-						System.out.println("dummyMon: "+dummyMonth);
-						System.out.println("dummyYear: "+dummyYear);
-						*/
-						return true;
-					}
-				} else {
-					if (dayInt == 29 || dayInt == 30 || dayInt == 31)
-						return false;
-					else {
-						dummyDay=dayInt;
-						dummyMonth=monthInt;
-						dummyYear=year;
-						/*
-						System.out.println("dummyDay: "+dummyDay);
-						System.out.println("dummyMon: "+dummyMonth);
-						System.out.println("dummyYear: "+dummyYear);
-						*/
-						return true;
-					}
-				}
-			} else {
-				dummyDay=dayInt;
-				dummyMonth=monthInt;
-				dummyYear=year;
-				/*
-				System.out.println("dummyDay: "+dummyDay);
-				System.out.println("dummyMon: "+dummyMonth);
-				System.out.println("dummyYear: "+dummyYear);
-				*/
-				return true;
+				if (monthString.matches(JAN))		monthInt = 1;
+				if (monthString.matches(FEB))		monthInt = 2;
+				if (monthString.matches(MAR))		monthInt = 3;
+				if (monthString.matches(APR))		monthInt = 4;
+				if (monthString.matches(MAY))		monthInt = 5;
+				if (monthString.matches(JUN))		monthInt = 6;
+				if (monthString.matches(JUL))		monthInt = 7;
+				if (monthString.matches(AUG))		monthInt = 8;
+				if (monthString.matches(SEP))		monthInt = 9;
+				if (monthString.matches(OCT))		monthInt = 10;
+				if (monthString.matches(NOV))		monthInt = 11;
+				if (monthString.matches(DEC))		monthInt = 12;
+				
+				logger.debug("inputDay= "+dayInt);
+				logger.debug("inputMon= "+monthInt);
+				logger.debug("inputYear= "+yearInt);
+				
+				return setDummyDate(dayInt, monthInt, yearInt);
 			}
+			
 		}
 
 		return false;
 	}
-
-	public boolean setMonthInDigitWithoutYear(final String date) {
+	/**
+	 * 
+	 * @param date
+	 * @return
+	 */
+	private boolean setMonthInDigitWithoutYear(final String date) {
 		matcher3 = pattern3.matcher(date);
 		
 		if (matcher3.matches()) {
-			String dayString = matcher3.group(1);
-			String monthString = matcher3.group(2);
-			int dayInt = Integer.parseInt(dayString);
-			int monthInt = Integer.parseInt(monthString);
-
-			GregorianCalendar calen = new GregorianCalendar();
-			int currMonth = calen.get(GregorianCalendar.MONTH) + 1;
-			int currDay = calen.get(GregorianCalendar.DATE);
-			int year;
-
-			/*
-			 * System.out.println("inputDay= "+dayInt);
-			 * System.out.println("currDay= "+currDay);
-			 * System.out.println("inputMonth= "+monthInt);
-			 * System.out.println("currMonth= "+currMonth);
-			 */
-
-			if (monthInt < currMonth)
-				year = calen.get(GregorianCalendar.YEAR) + 1;
-			else if (monthInt == currMonth) {
-				if (dayInt < currDay)
-					year = calen.get(GregorianCalendar.YEAR) + 1;
-				else
-					year = calen.get(GregorianCalendar.YEAR);
-			} else
-				year = calen.get(GregorianCalendar.YEAR);
-
-			
-			if (dayInt == 31
-					&& ((monthInt == 4) || (monthInt == 6) || (monthInt == 9) || (monthInt == 11)))
-				return false; // only 1,3,5,7,8,10,12 has 31 days
-
-			// ----ATTENTION!------add the correct definition of leap year!!!
-			// -----current=julian calender-----
-			else if (monthInt == 2) {
-				if (year % 4 == 0) {
-					if (dayInt == 30 || dayInt == 31)
-						return false;
-					else {
-						dummyDay=dayInt;
-						dummyMonth=monthInt;
-						dummyYear=year;
-						return true;
-					}
-				} 
-				else {
-					if (dayInt == 29 || dayInt == 30 || dayInt == 31)
-						return false;
-					else {
-						dummyDay=dayInt;
-						dummyMonth=monthInt;
-						dummyYear=year;
-						return true;
-					}
-				}
-			} 
-			else {
-				dummyDay=dayInt;
-				dummyMonth=monthInt;
-				dummyYear=year;
-				return true;
+			if(matcher3.group(1)!=null && matcher3.group(2)!=null) {
+				String dayString = matcher3.group(1);
+				String monthString = matcher3.group(2);
+				int dayInt = Integer.parseInt(dayString);
+				int monthInt = Integer.parseInt(monthString);
+				
+				logger.debug("inputDay= "+dayInt);
+				logger.debug("inputMon= "+monthInt);
+				
+				return setDummyDate(dayInt, monthInt);
 			}
-
 		}
 
 		return false;
 	}
-
-	public boolean setMonthInTextWithoutYear(final String date) {
+	/**
+	 * 
+	 * @param date
+	 * @return
+	 */
+	private boolean setMonthInTextWithoutYear(final String date) {
 		final String JAN = "(?i)(Jan|January)";
 		final String FEB = "(?i)(Feb|February)";
 		final String MAR = "(?i)(Mar|March)";
@@ -402,89 +335,52 @@ public class DateParser {
 		matcher4 = pattern4.matcher(date);
 
 		if (matcher4.matches()) {
-
-			String dayString = matcher4.group(2);
-			String monthString = matcher4.group(6);
-			int dayInt = Integer.parseInt(dayString);
-			int monthInt = -1;
-
-			if (monthString.matches(JAN))		monthInt = 1;
-			if (monthString.matches(FEB))		monthInt = 2;
-			if (monthString.matches(MAR))		monthInt = 3;
-			if (monthString.matches(APR))		monthInt = 4;
-			if (monthString.matches(MAY))		monthInt = 5;
-			if (monthString.matches(JUN))		monthInt = 6;
-			if (monthString.matches(JUL))		monthInt = 7;
-			if (monthString.matches(AUG))		monthInt = 8;
-			if (monthString.matches(SEP))		monthInt = 9;
-			if (monthString.matches(OCT))		monthInt = 10;
-			if (monthString.matches(NOV))		monthInt = 11;
-			if (monthString.matches(DEC))		monthInt = 12;
 			
-			GregorianCalendar calen = new GregorianCalendar();
-			int currMonth = calen.get(GregorianCalendar.MONTH) + 1;
-			int currDay = calen.get(GregorianCalendar.DATE);
-			int year;
+			for(int i=0; i<matcher4.groupCount(); i++)
+				logger.debug("group "+i+"= "+matcher4.group(i));
+			
+			
+			if (matcher4.group(1)!=null && matcher4.group(27)!=null) {
+				String dayString = matcher4.group(1);
+				String monthString = matcher4.group(27);
+				
+				if (dayString.length()==3)
+					dayString = dayString.substring(0, 1);
+				else if (dayString.length()==4)
+					dayString = dayString.substring(0, 2);
+				
+				int dayInt = Integer.parseInt(dayString);
+				int monthInt = -1;
 
-			/*
-			 * System.out.println("inputDay= "+dayInt);
-			 * System.out.println("currDay= "+currDay);
-			 * System.out.println("inputMonth= "+monthInt);
-			 * System.out.println("currMonth= "+currMonth);
-			 */
-
-			if (monthInt < currMonth)
-				year = calen.get(GregorianCalendar.YEAR) + 1;
-			else if (monthInt == currMonth) {
-				if (dayInt < currDay)
-					year = calen.get(GregorianCalendar.YEAR) + 1;
-				else
-					year = calen.get(GregorianCalendar.YEAR);
-			} else
-				year = calen.get(GregorianCalendar.YEAR);
-
-			// System.out.println("year= "+year);
-
-			if (dayInt == 31
-					&& ((monthInt == 4) || (monthInt == 6) || (monthInt == 9) || (monthInt == 11)))
-				return false; // only 1,3,5,7,8,10,12 has 31 days
-
-			// ----ATTENTION!------add the correct definition of leap year!!!
-			// -----current=julian calender-----
-			else if (monthInt == 2) { // leap year testing
-				if (year % 4 == 0) {
-					if (dayInt == 30 || dayInt == 31)
-						return false;
-					else {
-						dummyDay=dayInt;
-						dummyMonth=monthInt;
-						dummyYear=year;
-						return true;
-					}
-				} else {
-					if (dayInt == 29 || dayInt == 30 || dayInt == 31)
-						return false;
-					else {
-						dummyDay=dayInt;
-						dummyMonth=monthInt;
-						dummyYear=year;
-						return true;
-					}
-				}
-			} else {
-				dummyDay=dayInt;
-				dummyMonth=monthInt;
-				dummyYear=year;
-				return true;
+				if (monthString.matches(JAN))		monthInt = 1;
+				if (monthString.matches(FEB))		monthInt = 2;
+				if (monthString.matches(MAR))		monthInt = 3;
+				if (monthString.matches(APR))		monthInt = 4;
+				if (monthString.matches(MAY))		monthInt = 5;
+				if (monthString.matches(JUN))		monthInt = 6;
+				if (monthString.matches(JUL))		monthInt = 7;
+				if (monthString.matches(AUG))		monthInt = 8;
+				if (monthString.matches(SEP))		monthInt = 9;
+				if (monthString.matches(OCT))		monthInt = 10;
+				if (monthString.matches(NOV))		monthInt = 11;
+				if (monthString.matches(DEC))		monthInt = 12;
+				
+				logger.debug("inputDay= "+dayInt);
+				logger.debug("inputMon= "+monthInt);
+				
+				return setDummyDate(dayInt, monthInt);
 			}
+			
 		}
-
+		
 		return false;
-
 	}
-	
-	// inferAndSetDate() also, include condition in setStartDate, setEndDate
-	public boolean inferAndSetDate (final String s) {
+	/**
+	 * 
+	 * @param s
+	 * @return
+	 */
+	private boolean setByWeekday (final String s) {
 		final String MON = "(?i)(mon|monday)";
 		final String TUE = "(?i)(tue|tuesday)";
 		final String WED = "(?i)(wed|wednesday)";
@@ -492,51 +388,52 @@ public class DateParser {
 		final String FRI = "(?i)(fri|friday)";
 		final String SAT = "(?i)(sat|saturday)";
 		final String SUN = "(?i)(sun|sunday)";
-		/*
-		 * set numbers to weeks for easy comparison!
-		 */
 		
 		matcher5 = pattern5.matcher(s);
 		
 		GregorianCalendar calen = new GregorianCalendar();
 		
 		if (matcher5.matches()) {
-			if (s.matches(TODAY_REGEX)) {
-				dummyDay = calen.get(GregorianCalendar.DATE);
-				dummyMonth = calen.get(GregorianCalendar.MONTH) + 1 ;
-				dummyYear = calen.get(GregorianCalendar.YEAR);
+			if (s.matches(TODAY)) {
+				setDummyDate(calen);
 				return true;
 			}
-			else if (s.matches(TOMORROW_REGEX)) {
+			else if (s.matches(TOMORROW)) {
 				calen.add(GregorianCalendar.DATE, 1);
-				dummyDay = calen.get(GregorianCalendar.DATE);
-				dummyMonth = calen.get(GregorianCalendar.MONTH) + 1;
-				dummyYear = calen.get(GregorianCalendar.YEAR);
+				setDummyDate(calen);
 				return true;
 			}
-			else if (s.matches(WEEKDAY_REGEX)) { //sunday is considered day 1 of the week
+			else if (s.matches(WEEKDAY)) {
+				//logger.debug("inside else if statement of setByWeekDay");
+				/*
+				for (int i=0; i<matcher5.groupCount(); i++)
+					logger.debug("group "+i+": "+matcher5.group(i));
+				*/
+				String nextString = matcher5.group(6);
+				String inputWeekString = matcher5.group(8);
 				
 				int inputWeekDay = -1;
 
-				if (s.matches(SUN)) inputWeekDay = 1;
-				if (s.matches(MON)) inputWeekDay = 2;
-				if (s.matches(TUE)) inputWeekDay = 3;
-				if (s.matches(WED)) inputWeekDay = 4;
-				if (s.matches(THU)) inputWeekDay = 5;
-				if (s.matches(FRI)) inputWeekDay = 6;
-				if (s.matches(SAT)) inputWeekDay = 7;
+				if (inputWeekString.matches(SUN)) inputWeekDay = 1;
+				if (inputWeekString.matches(MON)) inputWeekDay = 2;
+				if (inputWeekString.matches(TUE)) inputWeekDay = 3;
+				if (inputWeekString.matches(WED)) inputWeekDay = 4;
+				if (inputWeekString.matches(THU)) inputWeekDay = 5;
+				if (inputWeekString.matches(FRI)) inputWeekDay = 6;
+				if (inputWeekString.matches(SAT)) inputWeekDay = 7;
 				
 				if (inputWeekDay>0) {
 					int dayDiff = (inputWeekDay - calen.get(GregorianCalendar.DAY_OF_WEEK));
+					
+					if (nextString!=null && nextString.matches(NEXT));
+						calen.add(GregorianCalendar.DATE, 7);
 					
 					if (dayDiff<0)
 						calen.add(GregorianCalendar.DATE, (7+dayDiff));
 					else
 						calen.add(GregorianCalendar.DATE, (dayDiff));
 					
-					dummyDay = calen.get(GregorianCalendar.DATE);
-					dummyMonth = calen.get(GregorianCalendar.MONTH) + 1;
-					dummyYear = calen.get(GregorianCalendar.YEAR);
+					setDummyDate(calen);
 					return true;
 				}
 				
@@ -547,32 +444,94 @@ public class DateParser {
 		}
 		
 		return false;
-			
-		/*
-		int currMonth 
-		int currDay
-		int year;
-		*/
 		
 	}
-	
-	public void dummyFunction() {
+	/**
+	 * 
+	 * @param dayInt
+	 * @param monthInt
+	 * @return
+	 */
+	private boolean setDummyDate (int dayInt, int monthInt) {
 		GregorianCalendar calen = new GregorianCalendar();
+		int currMonth = calen.get(GregorianCalendar.MONTH) + 1;
+		int currDay = calen.get(GregorianCalendar.DATE);
+		int yearInt;
 		
-		System.out.println("date:"+calen.get(GregorianCalendar.DATE));
-		System.out.println("month:"+calen.get(GregorianCalendar.MONTH));
-		System.out.println("year:"+calen.get(GregorianCalendar.YEAR));
-		System.out.println("day of month:"+calen.get(GregorianCalendar.DAY_OF_MONTH));
-		System.out.println("day of week:"+calen.get(GregorianCalendar.DAY_OF_WEEK));
+		if (monthInt < currMonth)
+			yearInt = calen.get(GregorianCalendar.YEAR) + 1;
+		else if (monthInt == currMonth) {
+			if (dayInt < currDay)
+				yearInt = calen.get(GregorianCalendar.YEAR) + 1;
+			else
+				yearInt = calen.get(GregorianCalendar.YEAR);
+		} 
+		else
+			yearInt = calen.get(GregorianCalendar.YEAR);
+
+		if (dayInt == 31 && ((monthInt == 4) || (monthInt == 6) || (monthInt == 9) || (monthInt == 11)))
+			return false; // only 1,3,5,7,8,10,12 has 31 days
+
+		// ----ATTENTION!------add the correct definition of leap year!!!
+		// -----current=julian calender-----
+		else if (monthInt == 2) { // leap year testing
+			if (yearInt%4==0) {
+				if (dayInt == 30 || dayInt == 31)
+					return false;
+			} 
+			else {
+				if (dayInt == 29 || dayInt == 30 || dayInt == 31)
+					return false;
+			}
+		} 
 		
-		calen.add(GregorianCalendar.DATE, 5);
+		dummyDay=dayInt;
+		dummyMonth=monthInt;
+		dummyYear=yearInt;
 		
-		System.out.println("date:"+calen.get(GregorianCalendar.DATE));
-		System.out.println("month:"+calen.get(GregorianCalendar.MONTH));
-		System.out.println("year:"+calen.get(GregorianCalendar.YEAR));
-		System.out.println("day of month:"+calen.get(GregorianCalendar.DAY_OF_MONTH));
-		System.out.println("day of week:"+calen.get(GregorianCalendar.DAY_OF_WEEK));
+		return true;
+	}
+	/**
+	 * 
+	 * @param dayInt
+	 * @param monthInt
+	 * @param yearInt
+	 * @return
+	 */
+	private boolean setDummyDate (int dayInt, int monthInt, int yearInt) {
+		if (dayInt == 31 && ((monthInt == 4) || (monthInt == 6) || (monthInt == 9) || (monthInt == 11)))
+			return false; // only 1,3,5,7,8,10,12 has 31 days
+
+		// ----ATTENTION!------add the correct definition of leap year!!!
+		// -----current=julian calender-----
+		else if (monthInt == 2) { // leap year testing
+			if (yearInt % 4 == 0) {
+				if (dayInt == 30 || dayInt == 31)
+					return false;
+			} 
+			else {
+				if (dayInt == 29 || dayInt == 30 || dayInt == 31)
+					return false;
+			}
+		} 
 		
+		dummyDay=dayInt;
+		dummyMonth=monthInt;
+		dummyYear=yearInt;
+		return true;
+	}
+	/**
+	 * 
+	 * @param c
+	 */
+	private void setDummyDate (GregorianCalendar c) {
+		dummyDay = c.get(GregorianCalendar.DATE);
+		dummyMonth = c.get(GregorianCalendar.MONTH) + 1 ;
+		dummyYear = c.get(GregorianCalendar.YEAR);
+
+		logger.debug("dummyDay:"+dummyDay);
+		logger.debug("dummyMonth:"+dummyMonth);
+		logger.debug("dummyYear:"+dummyYear);
 	}
 
 }

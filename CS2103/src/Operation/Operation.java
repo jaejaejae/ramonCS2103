@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 import org.apache.log4j.Logger;
 
-import constant.OperationFeedback;
-
 import data.Task;
 
 
@@ -51,6 +49,9 @@ public abstract class Operation {
 		else if (intendedOperation.equals("overdue")){
 			object= new Overdue(intendedOperation);
 		}
+		else if (intendedOperation.equals("login")){
+			object= new GoogleCalendarOp();
+		}
 		else
 		{
 			object=new Default();
@@ -76,11 +77,9 @@ public abstract class Operation {
 	public abstract boolean isUndoAble();
 	
 	public abstract boolean isInputCorrect(String command);
-	
 	public abstract String getErrorMessage();
 	
 	public abstract String getOperationName();
-	
 	
 	/**
 	 * @param args

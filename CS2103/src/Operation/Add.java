@@ -1,3 +1,6 @@
+/**
+ * @author Shubhendra Agrawal
+ */
 package operation;
 
 //import org.apache.log4j.Level;
@@ -12,6 +15,7 @@ public class Add extends Operation {
 	
 	private Task addedTask;
 	private String commandName;
+//	private enum addErrorCode
 	
 	public Add (String command)
 	{
@@ -24,7 +28,9 @@ public class Add extends Operation {
 		commandName="add";
 		
 	}
-	
+	/**
+	 * 
+	 */
 	public Task[] execute (String userCommand)
 	{
 		String params=null;
@@ -47,14 +53,21 @@ public class Add extends Operation {
 			return null;
 		
 	}
-	
+	/**
+	 * 
+	 * @param params
+	 * @return
+	 */
 	private Task parseCommand(String params) {
 		// TODO Auto-generated method stub
 		Parser newParser=new Parser();
-		return newParser.parse(params);
+		return newParser.parseForAdd(params);
 		
 	}
 	@Override
+	/**
+	 * 
+	 */
 	public boolean isInputCorrect(String command) {
 		// TODO Auto-generated method stub
 		return false;
@@ -77,7 +90,9 @@ public class Add extends Operation {
 		
 		
 	}
-	
+	/**
+	 * 
+	 */
 	public Task[] redo() {
 		
 		Task[] redone = new Task[1];
@@ -122,7 +137,11 @@ private static Logger logger = Logger.getLogger(Add.class);
     	if (abc[0]!=null)
     	System.out.println(abc[0].getName());
     }
-	
+	/**
+	 * 
+	 * @param taskAdded
+	 * @return
+	 */
     public boolean add(Task taskAdded) {
 		// TODO Auto-generated method stub
 		if (taskAdded!=null)

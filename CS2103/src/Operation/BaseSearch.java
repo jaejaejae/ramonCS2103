@@ -62,7 +62,7 @@ public class BaseSearch extends Operation{
 	private Task parseEvent(String userCommand) {
 		// TODO Auto-generated method stub
 		Parser newparser= new Parser();
-		return newparser.parse(userCommand);
+		return newparser.parseForSearch(userCommand);
 		
 	}
 
@@ -71,11 +71,10 @@ public class BaseSearch extends Operation{
 		
 		Parser newparser= new Parser();
 		
-		String[] extractedId= new String[] {newparser.fetchTaskId(params.toUpperCase())};
-		if (extractedId[0]!=null)
-			return extractedId;
-		else
-			return null;
+		String[] extractedIds= newparser.fetchTaskIds(params.toUpperCase());
+		
+		return extractedIds;
+		
 		
 		
 		

@@ -283,16 +283,17 @@ public class MainJFrame extends javax.swing.JFrame {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
 				downButton.setIcon(Resource.upPress);
+				if (MainJFrame.this.expand) {
+					contractFrame();
+				} else {
+					expandFrame();
+				}
+				
 				Timer timer = new Timer(100, new ActionListener() {
 
 					@Override
 					public void actionPerformed(ActionEvent arg0) {
 						downButton.setIcon(Resource.down);
-						if (MainJFrame.this.expand) {
-							contractFrame();
-						} else {
-							expandFrame();
-						}
 					}
 
 				});
@@ -334,17 +335,18 @@ public class MainJFrame extends javax.swing.JFrame {
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
 				downButton.setIcon(Resource.downPress);
+
+				if (MainJFrame.this.expand) {
+					contractFrame();
+				} else {
+					expandFrame();
+				}
 				
 				Timer timer = new Timer(100, new ActionListener() {
 
 					@Override
 					public void actionPerformed(ActionEvent arg0) {
 						downButton.setIcon(Resource.up);
-						if (MainJFrame.this.expand) {
-							contractFrame();
-						} else {
-							expandFrame();
-						}
 					}
 
 				});
