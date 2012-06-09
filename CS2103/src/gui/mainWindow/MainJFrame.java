@@ -13,7 +13,6 @@ import gui.UIController;
 import gui.mainWindow.extended.AutoCompletion;
 import gui.mainWindow.extended.ExpandComponent;
 import gui.mainWindow.extended.HelpFrame;
-import gui.mainWindow.extended.LogInDialog;
 import gui.mainWindow.extended.TopPopUp;
 import logic.JIDLogic;
 
@@ -25,22 +24,16 @@ import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JLabel;
 import javax.swing.JLayeredPane;
-import javax.swing.SwingConstants;
 import javax.swing.SwingUtilities;
 import javax.swing.Timer;
 import javax.swing.UIManager;
 
-import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Container;
-import java.awt.Dimension;
-import java.awt.Graphics;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.FocusEvent;
-import java.awt.event.FocusListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseAdapter;
@@ -49,7 +42,6 @@ import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionAdapter;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
 
 import javax.swing.JTextField;
 
@@ -769,8 +761,9 @@ public class MainJFrame extends javax.swing.JFrame {
 
 			@Override
 			public void windowDeactivated(WindowEvent arg0) {
-				if(HelpFrame.isShown());
+				if(HelpFrame.isShown() && !UIController.isLoginOn()) {
 					HelpFrame.hideHelpTempolarily();
+				}
 			}
 		});		
 		

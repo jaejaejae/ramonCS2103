@@ -25,6 +25,7 @@ public class UIController {
 	Reminder reminder;
 	static JotItDownTray JIDtray;
 	static OperationFeedback operationFeedback = OperationFeedback.VALID;
+	static boolean loginOn = false;
 	
 	/**
 	 * constructor
@@ -223,5 +224,17 @@ public class UIController {
 				JIDtray.showText("Jot It Down!", "search not found!");
 			}
 		}
+	}
+	
+	/**
+	 * 
+	 * @return true if login dialog is opened
+	 */
+	public static boolean isLoginOn() {
+		return loginOn;
+	}
+	
+	public static void setLoginOn(boolean status) {
+		loginOn = status;
 	}
 }

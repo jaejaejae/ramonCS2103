@@ -33,6 +33,7 @@ public class LogInDialog extends javax.swing.JDialog {
      */
     public LogInDialog(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
+    	UIController.setLoginOn(true);
         this.initComponents();
         this.addEvent();
         this.setTabSequence();
@@ -49,6 +50,7 @@ public class LogInDialog extends javax.swing.JDialog {
      */
     public LogInDialog(java.awt.Frame parent, int x, int y) {
     	super(parent, true);
+    	UIController.setLoginOn(true);
         this.initComponents();
         this.addEvent();
         this.setTabSequence();
@@ -148,6 +150,7 @@ public class LogInDialog extends javax.swing.JDialog {
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {
     	this.dispose();
     	UIController.logInToGCalendar(userTextField.getText(), passTextField.getPassword());
+    	UIController.setLoginOn(false);
     }
     
     /**
@@ -156,6 +159,7 @@ public class LogInDialog extends javax.swing.JDialog {
      */
 	private void cancelButtonActionPerformed(ActionEvent evt) {
 		this.dispose();
+    	UIController.setLoginOn(false);
 	}
     
 	/**
@@ -240,6 +244,7 @@ public class LogInDialog extends javax.swing.JDialog {
     private javax.swing.JTextField userTextField;
     private javax.swing.JLabel userLabel;
     private javax.swing.JLabel passLabel;
+    private static boolean shown = true;
     // End of variables declaration
     
     /**
@@ -342,4 +347,5 @@ public class LogInDialog extends javax.swing.JDialog {
 			}
 		});
     }
+    
 }
