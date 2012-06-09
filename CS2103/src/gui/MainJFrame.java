@@ -405,12 +405,14 @@ public class MainJFrame extends javax.swing.JFrame {
 								jBoxCompletion.stopWorking();
 								//curText= editorcomp.getText();
 								curState= checkCommand(curText);curIndex= getIndex();
+								logger.debug("------------------------------");
 								logger.debug("curText:" + curText);
 								logger.debug("prevText: " + prevText);
 								//logger.debug("cmd: " + command);
 								logger.debug("state: " +curState);
 								logger.debug("prev: " +prevState);
 								logger.debug("index: "+ curIndex);
+								
 
 								if(prevState == STATE.NULL && curState!=prevState) {
 									command = new String(curText);
@@ -513,6 +515,7 @@ public class MainJFrame extends javax.swing.JFrame {
 										break;
 									case LIST:
 									case UNDO:
+									case REDO:
 										exeCmd = curText;									
 									case OVERDUE:
 										exeCmd = curText;
@@ -526,6 +529,8 @@ public class MainJFrame extends javax.swing.JFrame {
 									case DELETE:
 									case COMPLETED:				
 									case ADD:
+									case UNDO:
+									case REDO:
 									case EDIT:
 										if(!edit) {
 											if(tasks!=null) {
@@ -543,17 +548,12 @@ public class MainJFrame extends javax.swing.JFrame {
 										ExpandComponent.updateJTable();
 										expandFrame();
 									break;
-									case UNDO:
-										break;
 									case EXIT:
 										JIDLogic.JIDLogic_close();
 										System.exit(0);
 										break;
 									case OVERDUE:
 										new Action.OverdueAction().actionPerformed(null);
-									break;
-									case REDO:
-										new Action.RedoAction().actionPerformed(null);
 									break;
 									}
 									
@@ -639,7 +639,7 @@ public class MainJFrame extends javax.swing.JFrame {
 									return STATE.EXIT;
 								if(firstWord.equalsIgnoreCase("help"))
 									return STATE.HELP;
-								if(firstWord.equalsIgnoreCase("redu"))
+								if(firstWord.equalsIgnoreCase("redo"))
 									return STATE.REDO;
 								return STATE.NULL;
 							} 
