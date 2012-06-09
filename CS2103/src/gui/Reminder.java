@@ -51,7 +51,7 @@ public class Reminder {
 				}
 				else {
 					UIController.showTrayMsg("Jot It Down!", task.getName() + " is starting at " 
-							+ task.getStartDateTime().formattedToString());
+							+ task.getStart().formattedToString());
 				}
 
 				task = null;
@@ -105,7 +105,7 @@ public class Reminder {
 		long nowMilli;
 		long timeDiff = -1;
 		
-		nextReminderMilli = task.getStartDateTime().getTimeMilli();
+		nextReminderMilli = task.getStart().getTimeMilli();
 		nowMilli = now.getTimeInMillis();
 		
 		logger.debug(nextReminderMilli);

@@ -10,8 +10,8 @@ import java.awt.event.ActionListener;
 
 import javax.swing.UIManager;
 
-import data.DateTime;
 import data.Task;
+import data.TaskDateTime;
 
 /**
  *
@@ -129,7 +129,7 @@ public class AlarmFrame extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
 
             public void run() {
-                new AlarmFrame(new Task("MEETING", "", new DateTime(2012,2,2), new DateTime(2012,2,2), "")).setVisible(true);
+                new AlarmFrame(new Task("MEETING", "", new TaskDateTime(2012,2,2), new TaskDateTime(2012,2,2), "")).setVisible(true);
             }
         });
     }
@@ -146,8 +146,8 @@ public class AlarmFrame extends javax.swing.JFrame {
     	str = "<HTML><b>";
     	str += task.getName();
     	str += "<br/></b>";
-    	if(task.getStartDateTime()!= null) {
-    		str+="<br/><i>start: </i>"+task.getStartDateTime().presentableToString();
+    	if(task.getStart()!= null) {
+    		str+="<br/><i>start: </i>"+task.getStart().presentableToString();
     	}
     	str += "</HTML>";
     	

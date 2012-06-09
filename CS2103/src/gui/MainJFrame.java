@@ -568,6 +568,7 @@ public class MainJFrame extends javax.swing.JFrame {
 											if(tasks!=null) {
 												showPopup( curState.toString()+ " " 
 														+ tasks[0]);
+												Reminder.update();
 												ExpandComponent.updateJTable();
 											}
 										}
@@ -584,17 +585,20 @@ public class MainJFrame extends javax.swing.JFrame {
 										JIDLogic.JIDLogic_close();
 										System.exit(0);
 										break;
+									case HELP:
+										HelpFrame.toggleShown();
+										break;
 									case OVERDUE:
 										new Action.OverdueAction().actionPerformed(null);
 									break;
 									}
 									
 									if(UIController.getOperationFeedback() == OperationFeedback.VALID && !edit) {
-										
 										jBoxCompletion.setStandardModel();
 										editorcomp.setText("");
 										curState = STATE.NULL;
-										UIController.refresh();
+										
+										//UIController.refresh();
 									}
 									else {
 										UIController.showInvalidDisplay();

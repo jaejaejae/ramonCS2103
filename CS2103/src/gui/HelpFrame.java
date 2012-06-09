@@ -129,4 +129,11 @@ public class HelpFrame extends JFrame{
 		}
 		
 	}
+	
+	public static void toggleShown() {
+		if(isShown())
+			hideHelp();
+		else
+			showHelp();
+	}
 }

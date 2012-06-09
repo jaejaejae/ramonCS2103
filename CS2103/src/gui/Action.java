@@ -184,7 +184,7 @@ public class Action {
     
     static class HelpAction extends AbstractAction {
     	public void actionPerformed(ActionEvent e) {
-    		//call help dialog
+    		HelpFrame.toggleShown();
     	}
     }
 
