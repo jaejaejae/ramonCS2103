@@ -10,10 +10,10 @@ import org.apache.log4j.*;
 import data.Task;
 import gui.Resource;
 import gui.UIController;
-import gui.extended.AutoCompletion;
-import gui.extended.ExpandComponent;
-import gui.extended.HelpFrame;
-import gui.extended.TopPopUp;
+import gui.mainWindow.extended.AutoCompletion;
+import gui.mainWindow.extended.ExpandComponent;
+import gui.mainWindow.extended.HelpFrame;
+import gui.mainWindow.extended.TopPopUp;
 import gui.reminder.Reminder;
 import logic.JIDLogic;
 

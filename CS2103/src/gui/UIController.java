@@ -1,9 +1,9 @@
 package gui;
 
-import gui.extended.ExpandComponent;
-import gui.extended.HelpFrame;
-import gui.extended.TopPopUp;
 import gui.mainWindow.MainJFrame;
+import gui.mainWindow.extended.ExpandComponent;
+import gui.mainWindow.extended.HelpFrame;
+import gui.mainWindow.extended.TopPopUp;
 import gui.reminder.Reminder;
 
 import java.awt.Toolkit;
@@ -79,6 +79,18 @@ public class UIController {
 	public static void refresh() {
 		ExpandComponent.updateJTable();
 		Reminder.update();
+	}
+	
+	public static boolean isWindowVisible() {
+		return mainJFrame.isVisible();
+	}
+	
+	public static void showWindow() {
+		mainJFrame.showFrame();
+	}
+	
+	public static void hideWindow() {
+		mainJFrame.hideFrame();
 	}
 	
 	public static boolean isFrameExpand() {

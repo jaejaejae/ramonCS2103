@@ -4055,3 +4055,144 @@
 2012-06-10 01:18:55,832 - operation.BaseSearch - DEBUG - inside basesearch
 2012-06-10 01:18:55,833 - operation.BaseSearch - DEBUG - going to the id part
 2012-06-10 01:18:55,833 - operation.BaseSearch - DEBUG - $$__11-06-2014000000W__$$
+2012-06-10 01:33:55,929 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-10 01:33:56,787 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 01:33:56,789 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 01:33:56,802 - operation.Operation - DEBUG - find
+2012-06-10 01:33:56,803 - operation.Search - DEBUG - finding objects
+2012-06-10 01:33:56,805 - operation.Search - DEBUG - returning all objects
+2012-06-10 01:33:56,807 - operation.Search - DEBUG - before sorting
+2012-06-10 01:33:56,807 - operation.Search - DEBUG - after sorting
+2012-06-10 01:33:56,808 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 01:33:57,408 - gui.reminder.Reminder - DEBUG - true
+2012-06-10 01:33:57,410 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 01:33:57,411 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 01:33:57,411 - operation.Operation - DEBUG - find
+2012-06-10 01:33:57,412 - operation.Search - DEBUG - finding objects
+2012-06-10 01:33:57,412 - operation.Search - DEBUG - returning all objects
+2012-06-10 01:33:57,413 - operation.Search - DEBUG - before sorting
+2012-06-10 01:33:57,418 - operation.Search - DEBUG - after sorting
+2012-06-10 01:33:57,419 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 01:33:57,419 - gui.reminder.Reminder - DEBUG - 1339344000000
+2012-06-10 01:33:57,420 - gui.reminder.Reminder - DEBUG - 1339263237410
+2012-06-10 01:33:57,420 - gui.reminder.Reminder - DEBUG - timediff: 80462590
+2012-06-10 01:33:57,421 - gui.reminder.Reminder - DEBUG - latestTask: ade on 11 Jun 2012 labels: []
+2012-06-10 01:33:57,422 - gui.reminder.Reminder - DEBUG - 1339344000000
+2012-06-10 01:33:57,422 - gui.reminder.Reminder - DEBUG - 1339263237410
+2012-06-10 01:33:57,423 - gui.reminder.Reminder - DEBUG - timediff: 80462590
+2012-06-10 01:33:57,423 - gui.reminder.Reminder - DEBUG - setTimer: 80462590
+2012-06-10 01:33:59,839 - storagecontroller.FileHandler - DEBUG - 2
+2012-06-10 01:36:11,036 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-10 01:36:11,910 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 01:36:11,913 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 01:36:11,929 - operation.Operation - DEBUG - find
+2012-06-10 01:36:11,931 - operation.Search - DEBUG - finding objects
+2012-06-10 01:36:11,933 - operation.Search - DEBUG - returning all objects
+2012-06-10 01:36:11,935 - operation.Search - DEBUG - before sorting
+2012-06-10 01:36:11,936 - operation.Search - DEBUG - after sorting
+2012-06-10 01:36:11,936 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 01:36:12,594 - gui.reminder.Reminder - DEBUG - true
+2012-06-10 01:36:12,596 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 01:36:12,596 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 01:36:12,597 - operation.Operation - DEBUG - find
+2012-06-10 01:36:12,598 - operation.Search - DEBUG - finding objects
+2012-06-10 01:36:12,598 - operation.Search - DEBUG - returning all objects
+2012-06-10 01:36:12,599 - operation.Search - DEBUG - before sorting
+2012-06-10 01:36:12,604 - operation.Search - DEBUG - after sorting
+2012-06-10 01:36:12,605 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 01:36:12,605 - gui.reminder.Reminder - DEBUG - 1339344000000
+2012-06-10 01:36:12,606 - gui.reminder.Reminder - DEBUG - 1339263372596
+2012-06-10 01:36:12,606 - gui.reminder.Reminder - DEBUG - timediff: 80327404
+2012-06-10 01:36:12,607 - gui.reminder.Reminder - DEBUG - latestTask: ade on 11 Jun 2012 labels: []
+2012-06-10 01:36:12,608 - gui.reminder.Reminder - DEBUG - 1339344000000
+2012-06-10 01:36:12,608 - gui.reminder.Reminder - DEBUG - 1339263372596
+2012-06-10 01:36:12,609 - gui.reminder.Reminder - DEBUG - timediff: 80327404
+2012-06-10 01:36:12,609 - gui.reminder.Reminder - DEBUG - setTimer: 80327404
+2012-06-10 01:36:30,003 - storagecontroller.FileHandler - DEBUG - 2
+2012-06-10 01:38:36,080 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-10 01:38:36,910 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 01:38:36,951 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 01:38:36,964 - operation.Operation - DEBUG - find
+2012-06-10 01:38:36,965 - operation.Search - DEBUG - finding objects
+2012-06-10 01:38:36,967 - operation.Search - DEBUG - returning all objects
+2012-06-10 01:38:36,969 - operation.Search - DEBUG - before sorting
+2012-06-10 01:38:36,969 - operation.Search - DEBUG - after sorting
+2012-06-10 01:38:36,970 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 01:38:37,557 - gui.reminder.Reminder - DEBUG - true
+2012-06-10 01:38:37,559 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 01:38:37,560 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 01:38:37,561 - operation.Operation - DEBUG - find
+2012-06-10 01:38:37,561 - operation.Search - DEBUG - finding objects
+2012-06-10 01:38:37,562 - operation.Search - DEBUG - returning all objects
+2012-06-10 01:38:37,562 - operation.Search - DEBUG - before sorting
+2012-06-10 01:38:37,568 - operation.Search - DEBUG - after sorting
+2012-06-10 01:38:37,568 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 01:38:37,569 - gui.reminder.Reminder - DEBUG - 1339344000000
+2012-06-10 01:38:37,569 - gui.reminder.Reminder - DEBUG - 1339263517559
+2012-06-10 01:38:37,570 - gui.reminder.Reminder - DEBUG - timediff: 80182441
+2012-06-10 01:38:37,571 - gui.reminder.Reminder - DEBUG - latestTask: ade on 11 Jun 2012 labels: []
+2012-06-10 01:38:37,571 - gui.reminder.Reminder - DEBUG - 1339344000000
+2012-06-10 01:38:37,572 - gui.reminder.Reminder - DEBUG - 1339263517559
+2012-06-10 01:38:37,573 - gui.reminder.Reminder - DEBUG - timediff: 80182441
+2012-06-10 01:38:37,573 - gui.reminder.Reminder - DEBUG - setTimer: 80182441
+2012-06-10 01:38:45,136 - storagecontroller.FileHandler - DEBUG - 2
+2012-06-10 01:40:32,896 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-10 01:40:33,715 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 01:40:33,717 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 01:40:33,729 - operation.Operation - DEBUG - find
+2012-06-10 01:40:33,730 - operation.Search - DEBUG - finding objects
+2012-06-10 01:40:33,732 - operation.Search - DEBUG - returning all objects
+2012-06-10 01:40:33,734 - operation.Search - DEBUG - before sorting
+2012-06-10 01:40:33,734 - operation.Search - DEBUG - after sorting
+2012-06-10 01:40:33,735 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 01:40:34,479 - gui.reminder.Reminder - DEBUG - true
+2012-06-10 01:40:34,481 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 01:40:34,482 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 01:40:34,482 - operation.Operation - DEBUG - find
+2012-06-10 01:40:34,483 - operation.Search - DEBUG - finding objects
+2012-06-10 01:40:34,483 - operation.Search - DEBUG - returning all objects
+2012-06-10 01:40:34,484 - operation.Search - DEBUG - before sorting
+2012-06-10 01:40:34,489 - operation.Search - DEBUG - after sorting
+2012-06-10 01:40:34,490 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 01:40:34,490 - gui.reminder.Reminder - DEBUG - 1339344000000
+2012-06-10 01:40:34,491 - gui.reminder.Reminder - DEBUG - 1339263634481
+2012-06-10 01:40:34,492 - gui.reminder.Reminder - DEBUG - timediff: 80065519
+2012-06-10 01:40:34,493 - gui.reminder.Reminder - DEBUG - latestTask: ade on 11 Jun 2012 labels: []
+2012-06-10 01:40:34,493 - gui.reminder.Reminder - DEBUG - 1339344000000
+2012-06-10 01:40:34,494 - gui.reminder.Reminder - DEBUG - 1339263634481
+2012-06-10 01:40:34,494 - gui.reminder.Reminder - DEBUG - timediff: 80065519
+2012-06-10 01:40:34,495 - gui.reminder.Reminder - DEBUG - setTimer: 80065519
+2012-06-10 01:40:40,256 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 01:40:40,257 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 01:40:40,258 - operation.Operation - DEBUG - delete
+2012-06-10 01:40:40,259 - operation.BaseSearch - DEBUG - delete
+2012-06-10 01:40:40,260 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-10 01:40:40,266 - operation.BaseSearch - DEBUG - going to the id part
+2012-06-10 01:40:40,267 - operation.BaseSearch - DEBUG - $$__11-06-2012000000N__$$
+2012-06-10 01:40:40,267 - operation.Delete - DEBUG - isUndoAble value changed
+2012-06-10 01:40:40,268 - operation.Delete - DEBUG - deleted succesfully
+2012-06-10 01:40:40,269 - operation.BaseSearch - DEBUG - Result Added
+2012-06-10 01:40:40,269 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-06-10 01:40:40,270 - logic.JIDLogic - DEBUG - isundoable
+2012-06-10 01:40:40,271 - gui.mainWindow.MainJFrame - DEBUG - -----------------POPUP-----------------------
+2012-06-10 01:40:40,282 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 01:40:40,283 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 01:40:40,284 - operation.Operation - DEBUG - find
+2012-06-10 01:40:40,284 - operation.Search - DEBUG - finding objects
+2012-06-10 01:40:40,285 - operation.Search - DEBUG - returning all objects
+2012-06-10 01:40:40,285 - operation.Search - DEBUG - before sorting
+2012-06-10 01:40:40,286 - operation.Search - DEBUG - after sorting
+2012-06-10 01:40:40,287 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 01:40:40,287 - gui.reminder.Reminder - DEBUG - 1402416000000
+2012-06-10 01:40:40,288 - gui.reminder.Reminder - DEBUG - 1339263640282
+2012-06-10 01:40:40,288 - gui.reminder.Reminder - DEBUG - timediff: 63152059718
+2012-06-10 01:40:40,289 - gui.reminder.Reminder - DEBUG - latestTask: null
+2012-06-10 01:40:40,383 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 01:40:40,384 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 01:40:40,384 - operation.Operation - DEBUG - find
+2012-06-10 01:40:40,385 - operation.Search - DEBUG - finding objects
+2012-06-10 01:40:40,385 - operation.Search - DEBUG - returning all objects
+2012-06-10 01:40:40,385 - operation.Search - DEBUG - before sorting
+2012-06-10 01:40:40,386 - operation.Search - DEBUG - after sorting
+2012-06-10 01:40:40,386 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 01:40:42,195 - storagecontroller.FileHandler - DEBUG - 1

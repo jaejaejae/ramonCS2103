@@ -42,6 +42,9 @@ public class Binding {
 	        inputMap.put(key, "delete");
 	        actionMap.put("delete", new Action.DeleteAction());
 	        
+	        key = KeyStroke.getKeyStroke(KeyEvent.VK_DELETE, 0);
+	        inputMap.put(key, "delete");
+	        
 	        key = KeyStroke.getKeyStroke(KeyEvent.VK_I, Event.CTRL_MASK);
 	        inputMap.put(key, "important");
 	        actionMap.put("important", new Action.ImportantAction());

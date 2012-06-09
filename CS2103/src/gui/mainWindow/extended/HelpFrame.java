@@ -1,4 +1,4 @@
-package gui.extended;
+package gui.mainWindow.extended;
 
 import gui.Resource;
 import gui.mainWindow.MainJFrame;

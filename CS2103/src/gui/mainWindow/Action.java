@@ -1,9 +1,9 @@
 package gui.mainWindow;
 
 import gui.UIController;
-import gui.extended.ExpandComponent;
-import gui.extended.HelpFrame;
-import gui.extended.LogInDialog;
+import gui.mainWindow.extended.ExpandComponent;
+import gui.mainWindow.extended.HelpFrame;
+import gui.mainWindow.extended.LogInDialog;
 
 import java.awt.event.ActionEvent;
 
@@ -52,7 +52,7 @@ public class Action {
     static class DeleteAction extends AbstractAction {
     	Task[] task;
         @Override
-        public void actionPerformed(ActionEvent e) {
+        public void actionPerformed(ActionEvent e) {        	
         	Task[] taskList = ExpandComponent.getSeletedTask();
         	
         	if(taskList.length == 0)
