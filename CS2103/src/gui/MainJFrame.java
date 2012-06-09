@@ -41,6 +41,7 @@ import java.awt.event.MouseMotionAdapter;
 
 import javax.swing.JTextField;
 
+import constant.OperationFeedback;
 
 /**
  * 
@@ -223,9 +224,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-				if (TopPopUp.isShow())
-					TopPopUp.hideBox();
-				MainJFrame.this.setVisible(false);
+				MainJFrame.this.hideFrame();
 			}
 
 			@Override
@@ -343,29 +342,21 @@ public class MainJFrame extends javax.swing.JFrame {
 
 			@Override
 			public void mouseEntered(MouseEvent arg0) {
-				// TODO Auto-generated method stub
-
 				downButton.setIcon(Resource.downOn);
 			}
 
 			@Override
 			public void mouseExited(MouseEvent arg0) {
-				// TODO Auto-generated method stub
-
 				downButton.setIcon(Resource.down);
 			}
 
 			@Override
 			public void mousePressed(MouseEvent arg0) {
-				// TODO Auto-generated method stub
-
 				downButton.setIcon(Resource.downPress);
 			}
 
 			@Override
 			public void mouseReleased(MouseEvent arg0) {
-				// TODO Auto-generated method stub
-
 				downButton.setIcon(Resource.up);
 			}
 		});
@@ -563,8 +554,7 @@ public class MainJFrame extends javax.swing.JFrame {
 												showPopup( curState.toString()+ " " 
 														+ tasks[0]);
 												ExpandComponent.updateJTable();
-											}else
-												showPopup("invalid input");
+											}
 										}
 									break;									
 									case SEARCH:
@@ -588,6 +578,13 @@ public class MainJFrame extends javax.swing.JFrame {
 										new Action.RedoAction().actionPerformed(null);
 									break;
 									}
+									
+									if(UIController.getOperationFeedback() == OperationFeedback.VALID)
+										editorcomp.setText("");
+									else {
+										UIController.showInvalidDisplay();
+										UIController.sendOperationFeedback(OperationFeedback.VALID);
+									}
 								}
 								
 								prevState = curState;
@@ -596,6 +593,8 @@ public class MainJFrame extends javax.swing.JFrame {
 								prevTasks = tasks;
 							}
 							
+
+
 							private int getIndex() {
 								int idx = jComboBox1.getSelectedIndex();
 								
@@ -738,6 +737,7 @@ public class MainJFrame extends javax.swing.JFrame {
 			public void run() {
 				// TODO Auto-generated method stub
 				MainJFrame.this.setVisible(false);
+				UIController.showTrayMsg("Jot It Down!", "is hiding!");
 			}
 
 		});
@@ -803,4 +803,5 @@ public class MainJFrame extends javax.swing.JFrame {
         
         new Binding(this, inputMap, actionMap);
     }
+    
 }

@@ -5,6 +5,27 @@
    <null/>
   </void>
   <void property="name">
+   <string>abc</string>
+  </void>
+  <void property="startDateTime">
+   <object class="data.DateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1339257600000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__10-06-2012A__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="description">
+   <null/>
+  </void>
+  <void property="name">
    <string>meeting at utown</string>
   </void>
   <void property="startDateTime">
