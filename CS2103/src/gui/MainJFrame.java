@@ -426,11 +426,12 @@ public class MainJFrame extends javax.swing.JFrame {
 				 SwingUtilities.invokeLater(
 				      new Runnable() {
 					    	int curIndex;
+					    	int curLocation;
 					    	String command;
 					    	String curText;
 							@Override
 							public void run() {
-
+								curLocation = editorcomp.getSelectionStart();
 						    	curText = editorcomp.getText();
 								jBoxCompletion.stopWorking();
 								//curText= editorcomp.getText();
@@ -443,6 +444,11 @@ public class MainJFrame extends javax.swing.JFrame {
 								logger.debug("prev: " +prevState);
 								logger.debug("index: "+ curIndex);
 								
+								if(prevState == STATE.EDIT && curState!=prevState && edit == true) {
+									logger.debug("canceledit");
+									JIDLogic.executeCommand("canceledit");
+									edit = false;
+								}
 
 								if(prevState == STATE.NULL && curState!=prevState) {
 									command = new String(curText);
@@ -488,6 +494,8 @@ public class MainJFrame extends javax.swing.JFrame {
 	
 											jComboBox1.setSelectedIndex(-1);
 											editorcomp.setText(curText);
+											editorcomp.setSelectionStart(curLocation);
+											editorcomp.setSelectionEnd(curLocation);
 											//editorcomp.setText(curState.toString() + tasks[0]);
 	
 											if (tasks != null)
