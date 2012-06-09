@@ -48,7 +48,7 @@ import javax.swing.JTextField;
  */
 public class MainJFrame extends javax.swing.JFrame {
 
-	private static Logger logger=Logger.getLogger(JIDLogic.class);
+	private static Logger logger=Logger.getLogger(MainJFrame.class);
 	
 	enum STATE {
 		ADD, DELETE, EDIT, SEARCH, COMPLETED, ARCHIVE

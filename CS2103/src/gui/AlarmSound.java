@@ -16,24 +16,27 @@ import javax.swing.JFrame;
 import javax.swing.JButton;
 import java.io.*;
 
-public class Voice
+public class AlarmSound
 {
-	Clip clip;
+	static Clip clip;
 	
-	public Voice()
+	public AlarmSound()
 	{
 		createMusic();
 	}
 	
-	public void music(boolean value)
+	public static void music(boolean value)
 	{
-		if(value)	
+		if(clip == null)
+			createMusic();
+		
+		if(value)
 			clip.start();
 		else 
 			clip.stop();
 	}
 	
-	public void createMusic() {
+	private static void createMusic() {
 		AudioInputStream audio;         
 		try
 		{
@@ -46,9 +49,15 @@ public class Voice
 		{
 			System.out.println("File Not Found");
 		}
-		catch( UnsupportedAudioFileException e)
+		catch(UnsupportedAudioFileException e)
 		{}
 		catch(LineUnavailableException e2)
 		{}
+	}
+	
+	public static void main(String[] args) {
+		createMusic();
+		System.out.println("have created Music");
+		music(true);
 	}
 }

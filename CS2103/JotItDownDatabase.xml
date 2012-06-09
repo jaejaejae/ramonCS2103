@@ -4,43 +4,6 @@
   <void property="description">
    <null/>
   </void>
-  <void property="endDateTime">
-   <object class="data.DateTime">
-    <void property="hasDate">
-     <boolean>true</boolean>
-    </void>
-    <void property="hasTime">
-     <boolean>true</boolean>
-    </void>
-    <void property="timeMilli">
-     <long>1339081200000</long>
-    </void>
-   </object>
-  </void>
-  <void property="name">
-   <string>programming </string>
-  </void>
-  <void property="startDateTime">
-   <object class="data.DateTime">
-    <void property="hasDate">
-     <boolean>true</boolean>
-    </void>
-    <void property="hasTime">
-     <boolean>true</boolean>
-    </void>
-    <void property="timeMilli">
-     <long>1339048800000</long>
-    </void>
-   </object>
-  </void>
-  <void property="taskId">
-   <string>$$__07-06-2012230000Y__$$</string>
-  </void>
- </object>
- <object class="data.Task">
-  <void property="description">
-   <null/>
-  </void>
   <void property="name">
    <string>meeting at utown</string>
   </void>
@@ -49,37 +12,16 @@
     <void property="hasDate">
      <boolean>true</boolean>
     </void>
-    <void property="timeMilli">
-     <long>1339257600000</long>
-    </void>
-   </object>
-  </void>
-  <void property="taskId">
-   <string>$$__10-06-2012V__$$</string>
-  </void>
- </object>
- <object class="data.Task">
-  <void property="description">
-   <null/>
-  </void>
-  <void property="name">
-   <string>dinner </string>
-  </void>
-  <void property="startDateTime">
-   <object class="data.DateTime">
-    <void property="hasDate">
-     <boolean>true</boolean>
-    </void>
     <void property="hasTime">
      <boolean>true</boolean>
     </void>
     <void property="timeMilli">
-     <long>1339142400000</long>
+     <long>1339199400000</long>
     </void>
    </object>
   </void>
   <void property="taskId">
-   <string>$$__08-06-2012160000T__$$</string>
+   <string>$$__09-06-2012075000J__$$</string>
   </void>
  </object>
 </java>

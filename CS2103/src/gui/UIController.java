@@ -73,6 +73,7 @@ public class UIController {
 	
 	public static void refresh() {
 		ExpandComponent.updateJTable();
+		Reminder.update();
 	}
 	
 	public static boolean isFrameExpand() {

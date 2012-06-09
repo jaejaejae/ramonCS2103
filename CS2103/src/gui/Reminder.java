@@ -16,46 +16,48 @@ import java.util.GregorianCalendar;
 import javax.swing.JDialog;
 import javax.swing.Timer;
 
+import org.apache.log4j.Logger;
+
 public class Reminder {
 	
+	private static Logger logger=Logger.getLogger(Reminder.class);
+	
 	SystemTray tray;
-	long timeLeft;
-	long delay = 0;
-	Task task;
-	Timer timer;
-	ActionListener reminderPerformer;
+	static long timeLeft;
+	static long delay = 0;
+	static Task task;
+	static Timer timer;
+	static ActionListener reminderPerformer;
+	static GregorianCalendar now;
 
 	public Reminder(SystemTray tray) {
 		this.tray = tray;
+		logger.debug("tray: " + tray!=null);
 		init();
 		runReminder();
-		// swingworker
-		// check every second for new task coming.
 	}
 
-	private void init() {
+	public static void init() {
 		reminderPerformer = new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				logger.debug("reminderPerformer starts");
+				
 				if(task.getImportant()) {
-					//new JFrame that have noice
+					new AlarmFrame(task);
 				}
-				else
+				else {
 					UIController.showTrayMsg("REMINDER", task.getName() + " is starting at " 
 							+ task.getStartDateTime().formattedToString());
+				}
 				
 				task = null;
-				try {
-					wait(1000);
-				} catch (InterruptedException e1) {
-					e1.printStackTrace();
-				}
 				runReminder();
 			}
 		};
 	}
 
-	private void setUpdateNextHour() {
+	private static void setUpdateNextHour() {
 		// TODO Auto-generated method stub
 		Timer autoRefresh = new Timer( 1000*60*60, new ActionListener(){
 			@Override
@@ -67,10 +69,11 @@ public class Reminder {
 		autoRefresh.start();
 	}
 
-	protected void runReminder() {
+	protected static void runReminder() {
 		// TODO Auto-generated method stub
+		now = new GregorianCalendar();
 		task = findLatestTask();
-		timeLeft = findTimeLeft();
+		timeLeft = findTimeLeft(task);
 		
 		if(timeLeft >= 0)
 			setTimer((int)timeLeft);
@@ -78,41 +81,79 @@ public class Reminder {
 			setUpdateNextHour();
 	}
 
-	private void setTimer(int timeLeft) {
+	private static void setTimer(int timeLeft) {
 		// TODO Auto-generated method stub
-
+		logger.debug("setTimer: " + timeLeft);
+		
 		if(timer != null) 
 			timer.stop();
 
 		timer = new Timer(timeLeft, reminderPerformer);
+		timer.setRepeats(false);
+		timer.start();
 	}
 
-	private long findTimeLeft() {
+	private static long findTimeLeft(Task task) {
 		if(task == null)
 			return -1;
 		
-		GregorianCalendar now = new GregorianCalendar();
 		
-		long nextReminderMilli = task.getStartDateTime().getTimeMilli();
-		long nowMilli = now.getTimeInMillis();
+		long nextReminderMilli;
+		long nowMilli;
+		long timeDiff = -1;
 		
-		long timeDiff = nextReminderMilli - nowMilli - delay;
+		nextReminderMilli = task.getStartDateTime().getTimeMilli();
+		nowMilli = now.getTimeInMillis();
 		
-		if(timeDiff <0)
+		logger.debug(nextReminderMilli);
+		logger.debug(nowMilli);
+		
+		timeDiff = nextReminderMilli - nowMilli - delay;
+			
+		logger.debug("timediff: " + timeDiff);
+		
+		if(timeDiff <0) {
 			return -1;
+		}
 		
-		if(timeDiff > Integer.MAX_VALUE)
+		if(timeDiff > Integer.MAX_VALUE) {
 			return -1;
+		}
 		
 		return timeDiff;
 	}
 
-	private Task findLatestTask() {
+	private static Task findLatestTask() {
 		JIDLogic.setCommand("find");
-		return JIDLogic.executeCommand("find *.*")[0];
+		Task[] tasks = JIDLogic.executeCommand("find *.*");
+		if(tasks != null) {
+			for(int i=0; i<tasks.length; i++) {
+				if(!isPassed(tasks[i])) {
+					logger.debug("latestTask: " + tasks[i].toString());
+					return tasks[i];
+				}
+			}
+		}
+		
+		logger.debug("latestTask: null") ;
+		
+		task = null;
+		return null;		
+	}
+	
+	private static boolean isPassed(Task task) {
+		return findTimeLeft(task) < 0;
 	}
 
+	public static void update() {
+		runReminder();
+	}
+	
+	public static void setDelay(long newDelay) {
+		delay = newDelay;
+	}
 	
 	public static void main(String[] arguments) {
+		new Reminder(null);
 	}
 }
