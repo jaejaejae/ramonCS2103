@@ -15,12 +15,21 @@ import logic.JIDLogic;
 
 import data.Task;
 
+/**
+ * an update JTable
+ * @author Ramon
+ *
+ */
 public class AutoUpdateJTable {
 	private JTable jTable;
 	private DefaultTableModel model;
     private Vector<String> listLabel = new Vector<String>();
     private Task[] tasks;
 	
+    /**
+     * Constructor
+     * @param jTable that needs to be updated
+     */
 	AutoUpdateJTable(final JTable jTable){
 		this.jTable = jTable;
 		model = (DefaultTableModel) this.jTable.getModel();
@@ -28,6 +37,9 @@ public class AutoUpdateJTable {
 
 	}
 	
+	/**
+	 * manage appearance of table
+	 */
 	private void setAppearance() {
 		jTable.setRowHeight(60);
 		while(model.getRowCount()>0)
@@ -39,6 +51,10 @@ public class AutoUpdateJTable {
 	}
 	
 
+	/**
+	 * make JLabel for display
+	 * @param task the task that needs to be displayed
+	 */
     private void makeJLabel(Task task) {
     	String str;
     	String completedFont = "<font color = \"#BBBBBB\">";
@@ -68,6 +84,11 @@ public class AutoUpdateJTable {
     	listLabel.add(str);
     }
     
+    /**
+     * change labels in task to HTML code
+     * @param task a task that containing label
+     * @return String that has HTML code
+     */
     private String tagToCode(Task task) {
     	String str = new String();
     	if(task.getLabels()!=null)
@@ -80,6 +101,10 @@ public class AutoUpdateJTable {
 		return str;
 	}
 
+    /**
+     * make all displaying JLabel
+     * @param tasks tasks that need to be converted to JLabel
+     */
 	private void makeAllJLabel(Task[] tasks) {
     	
     	for(int i=0; i<tasks.length; i++) {
@@ -87,7 +112,9 @@ public class AutoUpdateJTable {
     	}
     }
     
-    
+    /**
+     * show all tasks on the table
+     */
     public void updateJTable() {
 
     	Timer timer = new Timer(100, new ActionListener(){
@@ -107,6 +134,10 @@ public class AutoUpdateJTable {
     	
     }
     
+    /**
+     * show some tasks on the table
+     * @param tasks tasks that will be displayed on the table
+     */
     public void updateJTable(final Task[] tasks) {
     	Timer timer = new Timer(100, new ActionListener(){
 
@@ -127,6 +158,11 @@ public class AutoUpdateJTable {
     	timer.start();
     }
     
+    /**
+     * making JLabel inside table change colors when selected
+     * @author Ramon
+     *
+     */
     class MyRenderer extends DefaultTableCellRenderer {
     	  /*
     	   * @see TableCellRenderer#getTableCellRendererComponent(JTable, Object, boolean, boolean, int, int)
@@ -148,10 +184,20 @@ public class AutoUpdateJTable {
     	  }
     }
     	  
+    
+    /**
+     * 
+     * @return tasks in the JTable
+     */
     public Task[] getTasks() {
     	return tasks;
     }
     	  
+    /**
+     * table model that forbid people from editting the cell.
+     * @author Ramon
+     *
+     */
     class MyDefaultTableModel extends DefaultTableModel {  
     	public MyDefaultTableModel() {  
     		super();  

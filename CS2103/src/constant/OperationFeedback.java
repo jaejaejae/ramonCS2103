@@ -11,13 +11,13 @@ public enum OperationFeedback {
 	INVALID_NOINTERNET, //not connect to internet
 	NOT_FOUND;
 	
-	private String msg;
+	private static String msg;
 	
-	public void setMsg(String msg) {
-		this.msg = msg;
+	public void setMsg(String Newmsg) {
+		msg = Newmsg;
 	}
 	
 	public String getMsg() {
-		return this.msg;
+		return msg;
 	}
 }

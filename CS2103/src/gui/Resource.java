@@ -45,7 +45,7 @@ public class Resource {
 	public final static Image loginBGImage = iconToImage(loginBG);
 	
 	
-	public final static URL alarmSoundURL = Resource.class.getResource("sound/alarm.wav");
+	public final static URL alarmSoundURL = Resource.class.getResource("alarm.wav");
 	//public final static BufferedImage backgroundBuffered = BufferedImageBuilder.bufferImage(backgroundImage);
 	
 	static Image iconToImage(Icon icon) {

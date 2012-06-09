@@ -4196,3 +4196,383 @@
 2012-06-10 01:40:40,386 - operation.Search - DEBUG - after sorting
 2012-06-10 01:40:40,386 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
 2012-06-10 01:40:42,195 - storagecontroller.FileHandler - DEBUG - 1
+2012-06-10 01:49:58,415 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-10 01:49:59,254 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 01:49:59,256 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 01:49:59,268 - operation.Operation - DEBUG - find
+2012-06-10 01:49:59,269 - operation.Search - DEBUG - finding objects
+2012-06-10 01:49:59,271 - operation.Search - DEBUG - returning all objects
+2012-06-10 01:49:59,273 - operation.Search - DEBUG - before sorting
+2012-06-10 01:49:59,273 - operation.Search - DEBUG - after sorting
+2012-06-10 01:49:59,274 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 01:49:59,944 - gui.reminder.Reminder - DEBUG - true
+2012-06-10 01:49:59,946 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 01:49:59,946 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 01:49:59,947 - operation.Operation - DEBUG - find
+2012-06-10 01:49:59,948 - operation.Search - DEBUG - finding objects
+2012-06-10 01:49:59,948 - operation.Search - DEBUG - returning all objects
+2012-06-10 01:49:59,949 - operation.Search - DEBUG - before sorting
+2012-06-10 01:49:59,954 - operation.Search - DEBUG - after sorting
+2012-06-10 01:49:59,954 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 01:49:59,955 - gui.reminder.Reminder - DEBUG - 1402416000000
+2012-06-10 01:49:59,955 - gui.reminder.Reminder - DEBUG - 1339264199946
+2012-06-10 01:49:59,956 - gui.reminder.Reminder - DEBUG - timediff: 63151500054
+2012-06-10 01:49:59,956 - gui.reminder.Reminder - DEBUG - latestTask: null
+2012-06-10 01:50:02,000 - gui.mainWindow.MainJFrame - DEBUG - *********************enter
+2012-06-10 01:50:02,001 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: LOGIN
+2012-06-10 01:50:02,001 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: 
+2012-06-10 01:50:02,002 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 01:50:02,002 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 01:50:02,003 - operation.Operation - DEBUG - 
+2012-06-10 01:50:02,003 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 01:51:05,483 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-10 01:51:06,314 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 01:51:06,316 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 01:51:06,328 - operation.Operation - DEBUG - find
+2012-06-10 01:51:06,330 - operation.Search - DEBUG - finding objects
+2012-06-10 01:51:06,331 - operation.Search - DEBUG - returning all objects
+2012-06-10 01:51:06,333 - operation.Search - DEBUG - before sorting
+2012-06-10 01:51:06,334 - operation.Search - DEBUG - after sorting
+2012-06-10 01:51:06,335 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 01:51:06,985 - gui.reminder.Reminder - DEBUG - true
+2012-06-10 01:51:07,007 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 01:51:07,008 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 01:51:07,009 - operation.Operation - DEBUG - find
+2012-06-10 01:51:07,009 - operation.Search - DEBUG - finding objects
+2012-06-10 01:51:07,010 - operation.Search - DEBUG - returning all objects
+2012-06-10 01:51:07,010 - operation.Search - DEBUG - before sorting
+2012-06-10 01:51:07,016 - operation.Search - DEBUG - after sorting
+2012-06-10 01:51:07,016 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 01:51:07,017 - gui.reminder.Reminder - DEBUG - 1402416000000
+2012-06-10 01:51:07,017 - gui.reminder.Reminder - DEBUG - 1339264267007
+2012-06-10 01:51:07,018 - gui.reminder.Reminder - DEBUG - timediff: 63151432993
+2012-06-10 01:51:07,018 - gui.reminder.Reminder - DEBUG - latestTask: null
+2012-06-10 01:51:07,666 - gui.mainWindow.MainJFrame - DEBUG - *********************enter
+2012-06-10 01:51:07,666 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: LOGIN
+2012-06-10 01:51:07,667 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: 
+2012-06-10 01:51:07,667 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 01:51:07,668 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 01:51:07,668 - operation.Operation - DEBUG - 
+2012-06-10 01:51:07,669 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 01:51:24,732 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-10 01:51:25,570 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 01:51:25,572 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 01:51:25,584 - operation.Operation - DEBUG - find
+2012-06-10 01:51:25,586 - operation.Search - DEBUG - finding objects
+2012-06-10 01:51:25,587 - operation.Search - DEBUG - returning all objects
+2012-06-10 01:51:25,589 - operation.Search - DEBUG - before sorting
+2012-06-10 01:51:25,589 - operation.Search - DEBUG - after sorting
+2012-06-10 01:51:25,590 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 01:51:26,456 - gui.reminder.Reminder - DEBUG - true
+2012-06-10 01:51:26,458 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 01:51:26,459 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 01:51:26,459 - operation.Operation - DEBUG - find
+2012-06-10 01:51:26,460 - operation.Search - DEBUG - finding objects
+2012-06-10 01:51:26,460 - operation.Search - DEBUG - returning all objects
+2012-06-10 01:51:26,461 - operation.Search - DEBUG - before sorting
+2012-06-10 01:51:26,466 - operation.Search - DEBUG - after sorting
+2012-06-10 01:51:26,467 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 01:51:26,467 - gui.reminder.Reminder - DEBUG - 1402416000000
+2012-06-10 01:51:26,468 - gui.reminder.Reminder - DEBUG - 1339264286458
+2012-06-10 01:51:26,468 - gui.reminder.Reminder - DEBUG - timediff: 63151413542
+2012-06-10 01:51:26,469 - gui.reminder.Reminder - DEBUG - latestTask: null
+2012-06-10 01:51:26,674 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:51:26,674 - gui.mainWindow.MainJFrame - DEBUG - curText:l
+2012-06-10 01:51:26,675 - gui.mainWindow.MainJFrame - DEBUG - prevText: null
+2012-06-10 01:51:26,676 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-10 01:51:26,676 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-10 01:51:26,677 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:51:26,814 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:51:26,815 - gui.mainWindow.MainJFrame - DEBUG - curText:lo
+2012-06-10 01:51:26,815 - gui.mainWindow.MainJFrame - DEBUG - prevText: l
+2012-06-10 01:51:26,816 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-10 01:51:26,816 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-10 01:51:26,816 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:51:26,939 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:51:26,940 - gui.mainWindow.MainJFrame - DEBUG - curText:log
+2012-06-10 01:51:26,941 - gui.mainWindow.MainJFrame - DEBUG - prevText: lo
+2012-06-10 01:51:26,941 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-10 01:51:26,942 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-10 01:51:26,942 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:51:27,035 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:51:27,036 - gui.mainWindow.MainJFrame - DEBUG - curText:logi
+2012-06-10 01:51:27,037 - gui.mainWindow.MainJFrame - DEBUG - prevText: log
+2012-06-10 01:51:27,037 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-10 01:51:27,038 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-10 01:51:27,038 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:51:27,119 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:51:27,120 - gui.mainWindow.MainJFrame - DEBUG - curText:login
+2012-06-10 01:51:27,121 - gui.mainWindow.MainJFrame - DEBUG - prevText: logi
+2012-06-10 01:51:27,121 - gui.mainWindow.MainJFrame - DEBUG - state: LOGIN
+2012-06-10 01:51:27,121 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-10 01:51:27,122 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:51:27,332 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:51:27,333 - gui.mainWindow.MainJFrame - DEBUG - curText:login
+2012-06-10 01:51:27,333 - gui.mainWindow.MainJFrame - DEBUG - prevText: login
+2012-06-10 01:51:27,334 - gui.mainWindow.MainJFrame - DEBUG - state: LOGIN
+2012-06-10 01:51:27,334 - gui.mainWindow.MainJFrame - DEBUG - prev: LOGIN
+2012-06-10 01:51:27,334 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:51:27,335 - gui.mainWindow.MainJFrame - DEBUG - *********************enter
+2012-06-10 01:51:27,336 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: LOGIN
+2012-06-10 01:51:27,336 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: 
+2012-06-10 01:51:27,337 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 01:51:27,337 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 01:51:27,338 - operation.Operation - DEBUG - 
+2012-06-10 01:51:27,338 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 01:52:21,390 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-10 01:52:22,224 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 01:52:22,226 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 01:52:22,238 - operation.Operation - DEBUG - find
+2012-06-10 01:52:22,239 - operation.Search - DEBUG - finding objects
+2012-06-10 01:52:22,240 - operation.Search - DEBUG - returning all objects
+2012-06-10 01:52:22,243 - operation.Search - DEBUG - before sorting
+2012-06-10 01:52:22,243 - operation.Search - DEBUG - after sorting
+2012-06-10 01:52:22,244 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 01:52:22,893 - gui.reminder.Reminder - DEBUG - true
+2012-06-10 01:52:22,895 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 01:52:22,895 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 01:52:22,896 - operation.Operation - DEBUG - find
+2012-06-10 01:52:22,897 - operation.Search - DEBUG - finding objects
+2012-06-10 01:52:22,897 - operation.Search - DEBUG - returning all objects
+2012-06-10 01:52:22,898 - operation.Search - DEBUG - before sorting
+2012-06-10 01:52:22,903 - operation.Search - DEBUG - after sorting
+2012-06-10 01:52:22,903 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 01:52:22,904 - gui.reminder.Reminder - DEBUG - 1402416000000
+2012-06-10 01:52:22,904 - gui.reminder.Reminder - DEBUG - 1339264342895
+2012-06-10 01:52:22,905 - gui.reminder.Reminder - DEBUG - timediff: 63151357105
+2012-06-10 01:52:22,905 - gui.reminder.Reminder - DEBUG - latestTask: null
+2012-06-10 01:52:23,027 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:52:23,027 - gui.mainWindow.MainJFrame - DEBUG - curText:
+2012-06-10 01:52:23,028 - gui.mainWindow.MainJFrame - DEBUG - prevText: null
+2012-06-10 01:52:23,028 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-10 01:52:23,029 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-10 01:52:23,029 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:52:23,299 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:52:23,300 - gui.mainWindow.MainJFrame - DEBUG - curText:
+2012-06-10 01:52:23,301 - gui.mainWindow.MainJFrame - DEBUG - prevText: 
+2012-06-10 01:52:23,302 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-10 01:52:23,302 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-10 01:52:23,303 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:52:25,148 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:52:25,148 - gui.mainWindow.MainJFrame - DEBUG - curText:l
+2012-06-10 01:52:25,149 - gui.mainWindow.MainJFrame - DEBUG - prevText: 
+2012-06-10 01:52:25,149 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-10 01:52:25,150 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-10 01:52:25,150 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:52:25,296 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:52:25,297 - gui.mainWindow.MainJFrame - DEBUG - curText:lo
+2012-06-10 01:52:25,297 - gui.mainWindow.MainJFrame - DEBUG - prevText: l
+2012-06-10 01:52:25,298 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-10 01:52:25,298 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-10 01:52:25,298 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:52:25,425 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:52:25,426 - gui.mainWindow.MainJFrame - DEBUG - curText:log
+2012-06-10 01:52:25,426 - gui.mainWindow.MainJFrame - DEBUG - prevText: lo
+2012-06-10 01:52:25,427 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-10 01:52:25,427 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-10 01:52:25,427 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:52:25,494 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:52:25,494 - gui.mainWindow.MainJFrame - DEBUG - curText:logi
+2012-06-10 01:52:25,495 - gui.mainWindow.MainJFrame - DEBUG - prevText: log
+2012-06-10 01:52:25,495 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-10 01:52:25,496 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-10 01:52:25,496 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:52:25,572 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:52:25,573 - gui.mainWindow.MainJFrame - DEBUG - curText:login
+2012-06-10 01:52:25,573 - gui.mainWindow.MainJFrame - DEBUG - prevText: logi
+2012-06-10 01:52:25,573 - gui.mainWindow.MainJFrame - DEBUG - state: LOGIN
+2012-06-10 01:52:25,574 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-10 01:52:25,574 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:52:25,717 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:52:25,718 - gui.mainWindow.MainJFrame - DEBUG - curText:login
+2012-06-10 01:52:25,718 - gui.mainWindow.MainJFrame - DEBUG - prevText: login
+2012-06-10 01:52:25,719 - gui.mainWindow.MainJFrame - DEBUG - state: LOGIN
+2012-06-10 01:52:25,719 - gui.mainWindow.MainJFrame - DEBUG - prev: LOGIN
+2012-06-10 01:52:25,720 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:52:25,720 - gui.mainWindow.MainJFrame - DEBUG - *********************enter
+2012-06-10 01:52:25,721 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: LOGIN
+2012-06-10 01:52:25,721 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: 
+2012-06-10 01:52:25,722 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 01:52:25,722 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 01:52:25,722 - operation.Operation - DEBUG - 
+2012-06-10 01:52:25,723 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 01:52:53,943 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-10 01:52:54,780 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 01:52:54,782 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 01:52:54,794 - operation.Operation - DEBUG - find
+2012-06-10 01:52:54,795 - operation.Search - DEBUG - finding objects
+2012-06-10 01:52:54,797 - operation.Search - DEBUG - returning all objects
+2012-06-10 01:52:54,799 - operation.Search - DEBUG - before sorting
+2012-06-10 01:52:54,799 - operation.Search - DEBUG - after sorting
+2012-06-10 01:52:54,800 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 01:52:55,416 - gui.reminder.Reminder - DEBUG - true
+2012-06-10 01:52:55,418 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 01:52:55,419 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 01:52:55,420 - operation.Operation - DEBUG - find
+2012-06-10 01:52:55,420 - operation.Search - DEBUG - finding objects
+2012-06-10 01:52:55,421 - operation.Search - DEBUG - returning all objects
+2012-06-10 01:52:55,421 - operation.Search - DEBUG - before sorting
+2012-06-10 01:52:55,426 - operation.Search - DEBUG - after sorting
+2012-06-10 01:52:55,427 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 01:52:55,428 - gui.reminder.Reminder - DEBUG - 1402416000000
+2012-06-10 01:52:55,428 - gui.reminder.Reminder - DEBUG - 1339264375418
+2012-06-10 01:52:55,429 - gui.reminder.Reminder - DEBUG - timediff: 63151324582
+2012-06-10 01:52:55,429 - gui.reminder.Reminder - DEBUG - latestTask: null
+2012-06-10 01:52:56,907 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:52:56,907 - gui.mainWindow.MainJFrame - DEBUG - curText:l
+2012-06-10 01:52:56,908 - gui.mainWindow.MainJFrame - DEBUG - prevText: null
+2012-06-10 01:52:56,908 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-10 01:52:56,909 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-10 01:52:56,909 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:52:57,063 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:52:57,064 - gui.mainWindow.MainJFrame - DEBUG - curText:lo
+2012-06-10 01:52:57,064 - gui.mainWindow.MainJFrame - DEBUG - prevText: l
+2012-06-10 01:52:57,064 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-10 01:52:57,065 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-10 01:52:57,065 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:52:57,181 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:52:57,182 - gui.mainWindow.MainJFrame - DEBUG - curText:log
+2012-06-10 01:52:57,182 - gui.mainWindow.MainJFrame - DEBUG - prevText: lo
+2012-06-10 01:52:57,183 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-10 01:52:57,183 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-10 01:52:57,184 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:52:57,277 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:52:57,277 - gui.mainWindow.MainJFrame - DEBUG - curText:logi
+2012-06-10 01:52:57,278 - gui.mainWindow.MainJFrame - DEBUG - prevText: log
+2012-06-10 01:52:57,278 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-10 01:52:57,279 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-10 01:52:57,279 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:52:57,361 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:52:57,362 - gui.mainWindow.MainJFrame - DEBUG - curText:login
+2012-06-10 01:52:57,362 - gui.mainWindow.MainJFrame - DEBUG - prevText: logi
+2012-06-10 01:52:57,363 - gui.mainWindow.MainJFrame - DEBUG - state: LOGIN
+2012-06-10 01:52:57,363 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-10 01:52:57,364 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:52:57,524 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:52:57,524 - gui.mainWindow.MainJFrame - DEBUG - curText:login
+2012-06-10 01:52:57,525 - gui.mainWindow.MainJFrame - DEBUG - prevText: login
+2012-06-10 01:52:57,525 - gui.mainWindow.MainJFrame - DEBUG - state: LOGIN
+2012-06-10 01:52:57,525 - gui.mainWindow.MainJFrame - DEBUG - prev: LOGIN
+2012-06-10 01:52:57,526 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:52:57,526 - gui.mainWindow.MainJFrame - DEBUG - *********************enter
+2012-06-10 01:52:57,527 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: LOGIN
+2012-06-10 01:52:57,527 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: 
+2012-06-10 01:52:57,528 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 01:52:57,528 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 01:52:57,529 - operation.Operation - DEBUG - 
+2012-06-10 01:52:57,529 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 01:53:29,135 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-10 01:53:29,963 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 01:53:29,966 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 01:53:29,978 - operation.Operation - DEBUG - find
+2012-06-10 01:53:29,980 - operation.Search - DEBUG - finding objects
+2012-06-10 01:53:29,981 - operation.Search - DEBUG - returning all objects
+2012-06-10 01:53:29,983 - operation.Search - DEBUG - before sorting
+2012-06-10 01:53:29,984 - operation.Search - DEBUG - after sorting
+2012-06-10 01:53:29,985 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 01:53:30,600 - gui.reminder.Reminder - DEBUG - true
+2012-06-10 01:53:30,602 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 01:53:30,602 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 01:53:30,603 - operation.Operation - DEBUG - find
+2012-06-10 01:53:30,604 - operation.Search - DEBUG - finding objects
+2012-06-10 01:53:30,604 - operation.Search - DEBUG - returning all objects
+2012-06-10 01:53:30,605 - operation.Search - DEBUG - before sorting
+2012-06-10 01:53:30,610 - operation.Search - DEBUG - after sorting
+2012-06-10 01:53:30,610 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 01:53:30,611 - gui.reminder.Reminder - DEBUG - 1402416000000
+2012-06-10 01:53:30,612 - gui.reminder.Reminder - DEBUG - 1339264410602
+2012-06-10 01:53:30,612 - gui.reminder.Reminder - DEBUG - timediff: 63151289398
+2012-06-10 01:53:30,613 - gui.reminder.Reminder - DEBUG - latestTask: null
+2012-06-10 01:53:34,649 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:53:34,650 - gui.mainWindow.MainJFrame - DEBUG - curText:l
+2012-06-10 01:53:34,650 - gui.mainWindow.MainJFrame - DEBUG - prevText: null
+2012-06-10 01:53:34,651 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-10 01:53:34,651 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-10 01:53:34,652 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:53:34,823 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:53:34,824 - gui.mainWindow.MainJFrame - DEBUG - curText:lo
+2012-06-10 01:53:34,824 - gui.mainWindow.MainJFrame - DEBUG - prevText: l
+2012-06-10 01:53:34,824 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-10 01:53:34,825 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-10 01:53:34,825 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:53:35,008 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:53:35,009 - gui.mainWindow.MainJFrame - DEBUG - curText:log
+2012-06-10 01:53:35,010 - gui.mainWindow.MainJFrame - DEBUG - prevText: lo
+2012-06-10 01:53:35,010 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-10 01:53:35,010 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-10 01:53:35,011 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:53:35,209 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:53:35,210 - gui.mainWindow.MainJFrame - DEBUG - curText:lo
+2012-06-10 01:53:35,210 - gui.mainWindow.MainJFrame - DEBUG - prevText: log
+2012-06-10 01:53:35,211 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-10 01:53:35,211 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-10 01:53:35,212 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:53:35,368 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:53:35,369 - gui.mainWindow.MainJFrame - DEBUG - curText:l
+2012-06-10 01:53:35,369 - gui.mainWindow.MainJFrame - DEBUG - prevText: lo
+2012-06-10 01:53:35,370 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-10 01:53:35,370 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-10 01:53:35,370 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:53:35,501 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:53:35,501 - gui.mainWindow.MainJFrame - DEBUG - curText:
+2012-06-10 01:53:35,502 - gui.mainWindow.MainJFrame - DEBUG - prevText: l
+2012-06-10 01:53:35,502 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-10 01:53:35,503 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-10 01:53:35,503 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:53:36,550 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:53:36,551 - gui.mainWindow.MainJFrame - DEBUG - curText:l
+2012-06-10 01:53:36,551 - gui.mainWindow.MainJFrame - DEBUG - prevText: 
+2012-06-10 01:53:36,552 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-10 01:53:36,552 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-10 01:53:36,552 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:53:36,689 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:53:36,689 - gui.mainWindow.MainJFrame - DEBUG - curText:lo
+2012-06-10 01:53:36,690 - gui.mainWindow.MainJFrame - DEBUG - prevText: l
+2012-06-10 01:53:36,690 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-10 01:53:36,691 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-10 01:53:36,691 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:53:36,789 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:53:36,790 - gui.mainWindow.MainJFrame - DEBUG - curText:log
+2012-06-10 01:53:36,790 - gui.mainWindow.MainJFrame - DEBUG - prevText: lo
+2012-06-10 01:53:36,790 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-10 01:53:36,791 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-10 01:53:36,791 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:53:36,881 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:53:36,881 - gui.mainWindow.MainJFrame - DEBUG - curText:logi
+2012-06-10 01:53:36,882 - gui.mainWindow.MainJFrame - DEBUG - prevText: log
+2012-06-10 01:53:36,882 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-10 01:53:36,883 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-10 01:53:36,883 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:53:36,959 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:53:36,960 - gui.mainWindow.MainJFrame - DEBUG - curText:login
+2012-06-10 01:53:36,960 - gui.mainWindow.MainJFrame - DEBUG - prevText: logi
+2012-06-10 01:53:36,960 - gui.mainWindow.MainJFrame - DEBUG - state: LOGIN
+2012-06-10 01:53:36,961 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-10 01:53:36,961 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:53:37,090 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-10 01:53:37,090 - gui.mainWindow.MainJFrame - DEBUG - curText:login
+2012-06-10 01:53:37,091 - gui.mainWindow.MainJFrame - DEBUG - prevText: login
+2012-06-10 01:53:37,091 - gui.mainWindow.MainJFrame - DEBUG - state: LOGIN
+2012-06-10 01:53:37,092 - gui.mainWindow.MainJFrame - DEBUG - prev: LOGIN
+2012-06-10 01:53:37,092 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-10 01:53:37,092 - gui.mainWindow.MainJFrame - DEBUG - *********************enter
+2012-06-10 01:53:37,093 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: LOGIN
+2012-06-10 01:53:37,093 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: 
+2012-06-10 01:53:37,094 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 01:53:37,094 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 01:53:37,095 - operation.Operation - DEBUG - 
+2012-06-10 01:53:37,095 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-10 01:53:55,723 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 01:53:55,724 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 01:53:55,725 - operation.Operation - DEBUG - login
+2012-06-10 01:53:55,726 - operation.GoogleCalendarOp - DEBUG - login aaa bbb
+2012-06-10 01:53:55,727 - operation.GoogleCalendarOp - DEBUG - aaa
+2012-06-10 01:53:55,728 - operation.GoogleCalendarOp - DEBUG - bbb
+2012-06-10 01:54:08,796 - storagecontroller.FileHandler - DEBUG - 1
+2012-06-10 01:54:25,765 - storagecontroller.FileHandler - DEBUG - 1
+2012-06-10 02:07:02,502 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-10 02:07:02,510 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-10 02:07:02,530 - operation.Operation - DEBUG - login
+2012-06-10 02:07:02,532 - operation.GoogleCalendarOp - DEBUG - login aa bb
+2012-06-10 02:07:02,532 - operation.GoogleCalendarOp - DEBUG - aa
+2012-06-10 02:07:02,533 - operation.GoogleCalendarOp - DEBUG - bb

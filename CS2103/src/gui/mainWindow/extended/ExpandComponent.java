@@ -11,7 +11,7 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 import data.*;
 /**
- *
+ *the bottom part of the mainWindow component
  * @author Ramon
  */
 public class ExpandComponent{
@@ -65,30 +65,49 @@ public class ExpandComponent{
         
     }// </editor-fold>
     
+    /**
+     * 
+     * @return JScrollPane that contains table
+     */
     public static JScrollPane getJScrollPane() {
     	return jScrollPane1;
     }
     
+    /**
+     * 
+     * @return a table that show all tasks
+     */
     public static JTable getJTable() {
     	return jTable1;
     }
     
+    /**
+     * make JTable show some tasks
+     * @param tasks tasks that will be displayed
+     */
     public static void updateJTable(Task[] tasks) {
     	autoJTable.updateJTable(tasks);
     }
     
+    /**
+     * make JTable show all tasks
+     */
     public static void updateJTable() {
     	autoJTable.updateJTable();
     }
     
-    public static void updateJTableWithTasks(Task[] tasks) {
-    	autoJTable.updateJTable(tasks);
-    }
-    
+    /**
+     * 
+     * @return all displayed tasks in jtable
+     */
     public static Task[] getAllTasks() {
     	return autoJTable.getTasks();
     }
     
+    /**
+     * 
+     * @return tasks selected in jtable
+     */
     public static Task[] getSeletedTask() {
     	int[] idx = jTable1.getSelectedRows();
     	Task[] tasks = new Task[idx.length];
@@ -98,6 +117,11 @@ public class ExpandComponent{
     	return tasks;
     }
     
+    /**
+     * table model that has only 1 column and is not editable.
+     * @author Ramon
+     *
+     */
     static class MyTableModel extends DefaultTableModel{
     	MyTableModel() {
     		super(
