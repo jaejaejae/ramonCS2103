@@ -1,19 +1,12 @@
 package gui;
 
-import java.awt.Color;
-import java.awt.FlowLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-import sun.audio.*;
 
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
-import javax.swing.JFrame;
-import javax.swing.JButton;
 import java.io.*;
 
 public class AlarmSound
@@ -30,8 +23,10 @@ public class AlarmSound
 		if(clip == null)
 			createMusic();
 		
-		if(value)
+		if(value) {
+			clip.loop(Clip.LOOP_CONTINUOUSLY);
 			clip.start();
+		}
 		else 
 			clip.stop();
 	}
@@ -41,7 +36,9 @@ public class AlarmSound
 		try
 		{
 			clip=AudioSystem.getClip();
-			audio=AudioSystem.getAudioInputStream(new File("alarm.wav"));
+			//AudioInputStream inputStream = AudioSystem.getAudioInputStream(Resource.alarmSoundURL);
+	    
+			audio=AudioSystem.getAudioInputStream(Resource.alarmSoundURL);
 			clip.open(audio);
 
 		}

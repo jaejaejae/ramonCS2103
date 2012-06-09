@@ -47,7 +47,7 @@ public class Reminder {
 					new AlarmFrame(task);
 				}
 				else {
-					UIController.showTrayMsg("REMINDER", task.getName() + " is starting at " 
+					UIController.showTrayMsg("Jot It Down!", task.getName() + " is starting at " 
 							+ task.getStartDateTime().formattedToString());
 				}
 				

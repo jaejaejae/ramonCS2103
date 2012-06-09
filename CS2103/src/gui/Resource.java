@@ -6,6 +6,7 @@ import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
+import java.net.URL;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -42,6 +43,7 @@ public class Resource {
 	public final static Image backgroundImage = iconToImage(backgroundLogo);
 	public final static Image loginBGImage = iconToImage(loginBG);
 	
+	public final static URL alarmSoundURL = Resource.class.getResource("sound/alarm.wav");
 	//public final static BufferedImage backgroundBuffered = BufferedImageBuilder.bufferImage(backgroundImage);
 	
 	static Image iconToImage(Icon icon) {

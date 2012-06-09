@@ -579,8 +579,10 @@ public class MainJFrame extends javax.swing.JFrame {
 									break;
 									}
 									
-									if(UIController.getOperationFeedback() == OperationFeedback.VALID)
+									if(UIController.getOperationFeedback() == OperationFeedback.VALID && !edit) {
 										editorcomp.setText("");
+										UIController.refresh();
+									}
 									else {
 										UIController.showInvalidDisplay();
 										UIController.sendOperationFeedback(OperationFeedback.VALID);
