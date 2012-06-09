@@ -34,14 +34,17 @@ public class Resource {
     public final static ImageIcon upOn = createImageIcon("Images/upOn.png", "");
     public final static ImageIcon upPress = createImageIcon("Images/upPress.png", "");
     
-    public final static ImageIcon loginBG = createImageIcon("Images/logInBG.png", "");
+    public final static ImageIcon loginBG = createImageIcon("Images/logInBG2.png", "");
     
-    public final static ImageIcon largeBG = createImageIcon("Images/largeBG.png", "");
-    public final static ImageIcon smallBG = createImageIcon("Images/smallBG.png", "");
+    public final static ImageIcon largeBG = createImageIcon("Images/largeBG2.png", "");
+    public final static ImageIcon smallBG = createImageIcon("Images/smallBG2.png", "");
+    
+    public final static ImageIcon alarmBG = createImageIcon("Images/reminderBG.png", "");
     
 	public final static Image trayImage = iconToImage(trayLogo); 
 	public final static Image backgroundImage = iconToImage(backgroundLogo);
 	public final static Image loginBGImage = iconToImage(loginBG);
+	
 	
 	public final static URL alarmSoundURL = Resource.class.getResource("sound/alarm.wav");
 	//public final static BufferedImage backgroundBuffered = BufferedImageBuilder.bufferImage(backgroundImage);

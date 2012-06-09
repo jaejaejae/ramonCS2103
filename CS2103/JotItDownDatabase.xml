@@ -4,6 +4,61 @@
   <void property="description">
    <null/>
   </void>
+  <void property="endDateTime">
+   <object class="data.DateTime">
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>946702800000</long>
+    </void>
+   </object>
+  </void>
+  <void property="important">
+   <boolean>true</boolean>
+  </void>
+  <void property="name">
+   <string>meeting </string>
+  </void>
+  <void property="startDateTime">
+   <object class="data.DateTime">
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>946699200000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__01-01-2000130000U__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="description">
+   <null/>
+  </void>
+  <void property="name">
+   <string>meeting at utown blah blah</string>
+  </void>
+  <void property="startDateTime">
+   <object class="data.DateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1339257600000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__10-06-2012I__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="description">
+   <null/>
+  </void>
   <void property="name">
    <string>abc</string>
   </void>
@@ -18,7 +73,7 @@
    </object>
   </void>
   <void property="taskId">
-   <string>$$__10-06-2012A__$$</string>
+   <string>$$__10-06-2012Q__$$</string>
   </void>
  </object>
  <object class="data.Task">
@@ -26,7 +81,7 @@
    <null/>
   </void>
   <void property="name">
-   <string>meeting at utown</string>
+   <string>meeting from to 12pm</string>
   </void>
   <void property="startDateTime">
    <object class="data.DateTime">
@@ -37,12 +92,12 @@
      <boolean>true</boolean>
     </void>
     <void property="timeMilli">
-     <long>1339199400000</long>
+     <long>1339293600000</long>
     </void>
    </object>
   </void>
   <void property="taskId">
-   <string>$$__09-06-2012075000J__$$</string>
+   <string>$$__10-06-2012100000J__$$</string>
   </void>
  </object>
 </java>

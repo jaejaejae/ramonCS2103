@@ -100,6 +100,8 @@ public class UIController {
 		operationFeedback = newOPFeedback;
 	}
 	
+	//UI.sendOperationFeedback(OperationFeedback.INVALID_);
+	
 	public static OperationFeedback getOperationFeedback() {
 		return operationFeedback;
 	}

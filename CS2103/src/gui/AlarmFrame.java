@@ -4,11 +4,13 @@
  */
 package gui;
 
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.UIManager;
 
+import data.DateTime;
 import data.Task;
 
 /**
@@ -26,9 +28,11 @@ public class AlarmFrame extends javax.swing.JFrame {
     public AlarmFrame(Task task) {
     	this.task = task;
         initComponents();
-        //this.setTextTaskDetailLabel(task);
+        this.setTextTaskDetailLabel(task);
         AlarmSound.music(true);
         this.addAction();
+        this.setBackground(new Color(0,0,0,0));
+        this.setLocationRelativeTo(null);
         this.setVisible(true);
     }
 
@@ -65,6 +69,8 @@ public class AlarmFrame extends javax.swing.JFrame {
         stopButton.setText("stop");
         stopButton.setBounds(140, 110, 90, 30);
         jLayeredPane1.add(stopButton, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        
+        bgLabel.setIcon(Resource.alarmBG);
         bgLabel.setBounds(0, 0, 240, 150);
         jLayeredPane1.add(bgLabel, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
@@ -123,7 +129,7 @@ public class AlarmFrame extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
 
             public void run() {
-                new AlarmFrame(new Task()).setVisible(true);
+                new AlarmFrame(new Task("MEETING", "", new DateTime(2012,2,2), new DateTime(2012,2,2), "")).setVisible(true);
             }
         });
     }
@@ -136,25 +142,12 @@ public class AlarmFrame extends javax.swing.JFrame {
     
     private void setTextTaskDetailLabel(Task task) {
     	String str;
-    	String completedFont = "<font color = \"#BBBBBB\">";
     	
     	str = "<HTML><b>";
-    	if(task.getCompleted()) {
-    		str+=completedFont;
-    		System.out.println("completed task");
-    	}
-    	else if(task.getImportant()) {
-    		str += "<font color=\"red\">";
-    	}
     	str += task.getName();
     	str += "<br/></b>";
-    	if(task.getCompleted())
-    		str+=completedFont;
     	if(task.getStartDateTime()!= null) {
     		str+="<br/><i>start: </i>"+task.getStartDateTime().presentableToString();
-    	}
-    	if(task.getEndDateTime()!=null) {
-    		str+="<i>                  end: </i>"+task.getEndDateTime().presentableToString();
     	}
     	str += "</HTML>";
     	

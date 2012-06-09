@@ -219,7 +219,6 @@ public class MainJFrame extends javax.swing.JFrame {
 	}
 	
 	private void setbutton2Action() {
-		// TODO Auto-generated method stub
 		button2.addMouseListener(new MouseAdapter() {
 
 			@Override
@@ -255,13 +254,11 @@ public class MainJFrame extends javax.swing.JFrame {
 
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-				// TODO Auto-generated method stub
 				downButton.setIcon(Resource.upPress);
 				Timer timer = new Timer(100, new ActionListener() {
 
 					@Override
 					public void actionPerformed(ActionEvent arg0) {
-						// TODO Auto-generated method stub
 						downButton.setIcon(Resource.down);
 						if (MainJFrame.this.getSize().equals(
 								new Dimension(400, 400))) {
@@ -278,36 +275,27 @@ public class MainJFrame extends javax.swing.JFrame {
 
 			@Override
 			public void mouseEntered(MouseEvent arg0) {
-				// TODO Auto-generated method stub
-
 				downButton.setIcon(Resource.upOn);
 			}
 
 			@Override
 			public void mouseExited(MouseEvent arg0) {
-				// TODO Auto-generated method stub
-
 				downButton.setIcon(Resource.up);
 			}
 
 			@Override
 			public void mousePressed(MouseEvent arg0) {
-				// TODO Auto-generated method stub
-
 				downButton.setIcon(Resource.upPress);
 			}
 
 			@Override
 			public void mouseReleased(MouseEvent arg0) {
-				// TODO Auto-generated method stub
-
 				downButton.setIcon(Resource.down);
 			}
 		});
 	}
 
 	public void setdownButtonActionExpand() {
-		// TODO Auto-generated method stub
 		downButton.setToolTipText("Expand");
 
 		downButton.setIcon(Resource.down);
@@ -317,14 +305,12 @@ public class MainJFrame extends javax.swing.JFrame {
 
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-				// TODO Auto-generated method stub
 				downButton.setIcon(Resource.downPress);
 				
 				Timer timer = new Timer(100, new ActionListener() {
 
 					@Override
 					public void actionPerformed(ActionEvent arg0) {
-						// TODO Auto-generated method stub
 						downButton.setIcon(Resource.up);
 						if (MainJFrame.this.getSize().equals(
 								new Dimension(400, 400))) {
@@ -390,14 +376,11 @@ public class MainJFrame extends javax.swing.JFrame {
 	}
 	
 	private void setlogoAction() {
-		// TODO Auto-generated method stub
-
 	}
 
 	private void setJComboBox1Action() {
 		
 		int index;
-		// TODO Auto-generated method stub
 		this.getButtonSubComponent(jComboBox1).setVisible(false);
 		final AutoCompletion jBoxCompletion = new AutoCompletion(jComboBox1);
 
@@ -409,7 +392,6 @@ public class MainJFrame extends javax.swing.JFrame {
 
 			@Override
 			public void keyPressed(KeyEvent arg0) {
-				// TODO Auto-generated method stub
 				final KeyEvent e = arg0;
 				 SwingUtilities.invokeLater(
 				      new Runnable() {
@@ -455,7 +437,6 @@ public class MainJFrame extends javax.swing.JFrame {
 	
 										@Override
 										public void run() {
-											// TODO Auto-generated method stub
 											System.out
 													.println("***enter interstate: ");
 	
@@ -465,8 +446,6 @@ public class MainJFrame extends javax.swing.JFrame {
 													+ curText);
 											tasks = JIDLogic
 													.executeCommand(curText);
-	
-											//logger.debug(tasks[0].getName());
 	
 											jBoxCompletion.stopWorking();
 											jBoxCompletion
@@ -501,7 +480,6 @@ public class MainJFrame extends javax.swing.JFrame {
 									String exeCmd = new String();
 									
 									logger.debug("*********************enter");
-									//logger.debug(prevTasks[0].getName());
 									
 									if(curState != STATE.EDIT)
 										edit = false;
@@ -580,7 +558,10 @@ public class MainJFrame extends javax.swing.JFrame {
 									}
 									
 									if(UIController.getOperationFeedback() == OperationFeedback.VALID && !edit) {
+										
+										jBoxCompletion.setStandardModel();
 										editorcomp.setText("");
+										curState = STATE.NULL;
 										UIController.refresh();
 									}
 									else {
@@ -617,6 +598,7 @@ public class MainJFrame extends javax.swing.JFrame {
 									for(int i=0; i<tasks.length; i++)
 										strings[i]= curState.toString() + " " 
 												+ tasks[i];
+									
 									
 									logger.debug("str[0]: "+strings[0]);
 									return strings;
@@ -672,7 +654,6 @@ public class MainJFrame extends javax.swing.JFrame {
 
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-				// TODO Auto-generated method stub
 				editorcomp.selectAll();
 			}
 
@@ -690,7 +671,6 @@ public class MainJFrame extends javax.swing.JFrame {
 
 			@Override
 			public void mouseReleased(MouseEvent e) {
-				// TODO Auto-generated method stub
 				currentLocation = MainJFrame.this.getLocation();
 			}
 		});
@@ -737,7 +717,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
 			@Override
 			public void run() {
-				// TODO Auto-generated method stub
+				TopPopUp.hideBox();
 				MainJFrame.this.setVisible(false);
 				UIController.showTrayMsg("Jot It Down!", "is hiding!");
 			}
@@ -746,14 +726,10 @@ public class MainJFrame extends javax.swing.JFrame {
 	}
 
 	public void setInputText(final String string) {
-		// TODO Auto-generated method stub
-
 		SwingUtilities.invokeLater(new Runnable() {
 
 			@Override
 			public void run() {
-				// TODO Auto-generated method stub
-
 				jComboBox1.setSelectedItem(string);
 				jComboBox1.getEditor().getEditorComponent()
 						.requestFocusInWindow();

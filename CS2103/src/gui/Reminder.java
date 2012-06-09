@@ -22,9 +22,11 @@ public class Reminder {
 	
 	private static Logger logger=Logger.getLogger(Reminder.class);
 	
+	private final static long MIN_TO_MILLISEC = 1000*60;
+	
 	SystemTray tray;
 	static long timeLeft;
-	static long delay = 0;
+	static long delay = 5 * MIN_TO_MILLISEC;
 	static Task task;
 	static Timer timer;
 	static ActionListener reminderPerformer;
@@ -44,13 +46,14 @@ public class Reminder {
 				logger.debug("reminderPerformer starts");
 				
 				if(task.getImportant()) {
+					UIController.mainJFrame.showFrame();
 					new AlarmFrame(task);
 				}
 				else {
 					UIController.showTrayMsg("Jot It Down!", task.getName() + " is starting at " 
 							+ task.getStartDateTime().formattedToString());
 				}
-				
+
 				task = null;
 				runReminder();
 			}

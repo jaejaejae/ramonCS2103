@@ -39,7 +39,7 @@ public class LogInDialog extends javax.swing.JDialog {
         this.initComponents();
         this.addEvent();
         this.setTabSequence();
-        //this.setMovable();
+        this.setMovable();
         this.setBackground(new Color(0,0,0,0));
         this.setVisible(true);
     }
@@ -49,9 +49,10 @@ public class LogInDialog extends javax.swing.JDialog {
         this.initComponents();
         this.addEvent();
         this.setTabSequence();
-        //this.setMovable();
         this.setBackground(new Color(0,0,0,0));
         this.setLocation(x, y);
+        this.setMovable();
+        //this.setLocationRelativeTo(parent);
         this.setVisible(true);
     }
     
@@ -103,7 +104,7 @@ public class LogInDialog extends javax.swing.JDialog {
                 loginButtonActionPerformed(evt);
             }
         });
-        loginButton.setBounds(217, 40, 67, 26);
+        loginButton.setBounds(217, 40, 64, 26);
         jLayeredPane2.add(loginButton, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         cancelButton.setText("Cancel");
@@ -114,7 +115,7 @@ public class LogInDialog extends javax.swing.JDialog {
 
 
         });
-        cancelButton.setBounds(217, 70, 67, 26);
+        cancelButton.setBounds(217, 70, 64, 26);
         jLayeredPane2.add(cancelButton, javax.swing.JLayeredPane.DEFAULT_LAYER);
         
         background.setIcon(Resource.loginBG);
@@ -152,16 +153,12 @@ public class LogInDialog extends javax.swing.JDialog {
 		try {
 			UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (InstantiationException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IllegalAccessException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (UnsupportedLookAndFeelException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 //        try {
