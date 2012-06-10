@@ -4,6 +4,19 @@
   <void property="description">
    <null/>
   </void>
+  <void property="end">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1328986800000</long>
+    </void>
+   </object>
+  </void>
   <void property="important">
    <boolean>true</boolean>
   </void>
@@ -11,20 +24,23 @@
    <object class="java.util.ArrayList"/>
   </void>
   <void property="name">
-   <string>abc</string>
+   <string>meeting</string>
   </void>
   <void property="start">
    <object class="data.TaskDateTime">
     <void property="hasDate">
      <boolean>true</boolean>
     </void>
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
     <void property="timeMilli">
-     <long>1433952000000</long>
+     <long>1328979600000</long>
     </void>
    </object>
   </void>
   <void property="taskId">
-   <string>$$__11-06-2015000000I__$$</string>
+   <string>$$__12-02-2012030000W__$$</string>
   </void>
  </object>
 </java>
