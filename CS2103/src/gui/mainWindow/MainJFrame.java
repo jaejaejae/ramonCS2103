@@ -482,6 +482,7 @@ public class MainJFrame extends javax.swing.JFrame {
 								
 								if(curState == STATE.NULL && curState!=prevState) {
 									jBoxCompletion.setStandardModel();
+									id = null;
 									editorcomp.setText(curText);
 									jComboBox1.setSelectedIndex(-1);
 								}
@@ -546,6 +547,7 @@ public class MainJFrame extends javax.swing.JFrame {
 
 								if(curState != STATE.NULL &&
 										(e.getKeyCode()==KeyEvent.VK_UP || e.getKeyCode()==KeyEvent.VK_DOWN)) {
+										
 										curText = prevText;
 										
 										logger.debug("********exeCmd: "
