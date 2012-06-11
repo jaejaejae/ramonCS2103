@@ -180,7 +180,7 @@ public class ExpandComponent{
     }
     
     private static void minimizeColumn() {
-        jTable1.getColumnModel().getColumn(0).setPreferredWidth(323);
+        jTable1.getColumnModel().getColumn(0).setPreferredWidth(326);
         jTable1.getColumnModel().getColumn(1).setPreferredWidth(25);
     	
     }

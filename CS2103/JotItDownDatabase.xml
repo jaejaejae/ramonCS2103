@@ -4,6 +4,78 @@
   <void property="description">
    <null/>
   </void>
+  <void property="labels">
+   <object class="java.util.ArrayList"/>
+  </void>
+  <void property="name">
+   <string>abc</string>
+  </void>
+  <void property="start">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1339430400000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__12-06-2012000000I__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="description">
+   <null/>
+  </void>
+  <void property="labels">
+   <object class="java.util.ArrayList"/>
+  </void>
+  <void property="name">
+   <string>abc</string>
+  </void>
+  <void property="start">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1339430400000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__12-06-2012000000S__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="description">
+   <null/>
+  </void>
+  <void property="labels">
+   <object class="java.util.ArrayList"/>
+  </void>
+  <void property="name">
+   <string>abc</string>
+  </void>
+  <void property="start">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1339430400000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__12-06-2012000000W__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="description">
+   <null/>
+  </void>
   <void property="end">
    <object class="data.TaskDateTime">
     <void property="hasDate">
