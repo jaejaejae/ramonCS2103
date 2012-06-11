@@ -495,7 +495,7 @@ public class MainJFrame extends javax.swing.JFrame {
 										curText = lastCmd;
 									}
 								}
-								
+									
 								if(((curState == STATE.EDIT && !edit)
 									|| curState == STATE.DELETE
 									|| curState == STATE.SEARCH
@@ -551,7 +551,11 @@ public class MainJFrame extends javax.swing.JFrame {
 										logger.debug("********exeCmd: "
 												+ curText);
 										tasks = JIDLogic.executeCommand(curText);
-										id = tasks[jComboBox1.getSelectedIndex()].getTaskId();
+										
+										int selectedIndex = jComboBox1.getSelectedIndex();
+										
+										if(selectedIndex >= 0 && tasks!= null)
+											id = tasks[jComboBox1.getSelectedIndex()].getTaskId();
 										editorcomp.setText(curText);
 										return;
 									}
@@ -669,8 +673,8 @@ public class MainJFrame extends javax.swing.JFrame {
 									}
 									else {
 										UIController.showInvalidDisplay();
-										UIController.sendOperationFeedback(OperationFeedback.VALID);
 									}
+									UIController.sendOperationFeedback(OperationFeedback.VALID);
 								}
 								
 								prevState = curState;
