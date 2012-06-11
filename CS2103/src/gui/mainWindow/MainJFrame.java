@@ -112,6 +112,9 @@ public class MainJFrame extends javax.swing.JFrame {
 		this.setDefaultCloseOperation(this.DO_NOTHING_ON_CLOSE);
 		this.setLocationRelativeTo(null);
 		this.currentLocation = new Point(this.getLocation());
+		
+		addBindings();
+		
 		/*
 		 * Create and display the form
 		 */
@@ -121,8 +124,6 @@ public class MainJFrame extends javax.swing.JFrame {
 				showFrame();
 			}
 		});
-		
-		addBindings();
 	}
 
 	/**
@@ -570,16 +571,19 @@ public class MainJFrame extends javax.swing.JFrame {
 									case COMPLETED:
 									case COMPLETEDALL:
 									case IMPORTANT:
-										exeCmd = curState.toString().toLowerCase() + " "
-												+ id + " ";
+										if(id!=null)
+											exeCmd = curState.toString().toLowerCase() + " "
+													+ id + " ";
+										id = null;
 										break;
 									case EDIT:
-										if(!edit) {
+										if(!edit && id!=null) {
 											exeCmd = curState.toString().toLowerCase() + " "
 													+ id;
 											editorcomp.setText(
-													curState.toString().toLowerCase() + " " 
+													command + " " 
 													+ storagecontroller.StorageManager.getTaskById(id));
+											id = null;
 											edit = true;
 										}
 										else {
@@ -731,9 +735,9 @@ public class MainJFrame extends javax.swing.JFrame {
 									return STATE.IMPORTANT;
 								if(firstWord.equalsIgnoreCase("login"))
 									return STATE.LOGIN;
-								if(firstWord.equalsIgnoreCase("deleteall"))
+								if(firstWord.equalsIgnoreCase("delete.all"))
 									return STATE.DELETEALL;
-								if(firstWord.equalsIgnoreCase("completedall"))
+								if(firstWord.equalsIgnoreCase("completed.all"))
 									return STATE.COMPLETEDALL;
 								if(firstWord.equalsIgnoreCase("archive"))
 									return STATE.ARCHIVE;
