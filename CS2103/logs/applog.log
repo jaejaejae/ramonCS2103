@@ -2649,3 +2649,876 @@
 2012-06-12 00:43:49,520 - operation.Search - DEBUG - after sorting
 2012-06-12 00:43:49,520 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
 2012-06-12 00:43:51,566 - storagecontroller.FileHandler - DEBUG - 3
+2012-06-12 00:52:32,749 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-12 00:52:33,410 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-12 00:52:33,412 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-12 00:52:33,423 - operation.Operation - DEBUG - find
+2012-06-12 00:52:33,424 - operation.Search - DEBUG - finding objects
+2012-06-12 00:52:33,425 - operation.Search - DEBUG - returning all objects
+2012-06-12 00:52:33,427 - operation.Search - DEBUG - before sorting
+2012-06-12 00:52:33,427 - operation.Search - DEBUG - after sorting
+2012-06-12 00:52:33,427 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-12 00:52:34,067 - gui.reminder.Reminder - DEBUG - true
+2012-06-12 00:52:34,070 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-12 00:52:34,071 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-12 00:52:34,071 - operation.Operation - DEBUG - find
+2012-06-12 00:52:34,072 - operation.Search - DEBUG - finding objects
+2012-06-12 00:52:34,072 - operation.Search - DEBUG - returning all objects
+2012-06-12 00:52:34,073 - operation.Search - DEBUG - before sorting
+2012-06-12 00:52:34,078 - operation.Search - DEBUG - after sorting
+2012-06-12 00:52:34,079 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-12 00:52:34,080 - gui.reminder.Reminder - DEBUG - 1339516800000
+2012-06-12 00:52:34,080 - gui.reminder.Reminder - DEBUG - 1339433554070
+2012-06-12 00:52:34,081 - gui.reminder.Reminder - DEBUG - timediff: 82945930
+2012-06-12 00:52:34,082 - gui.reminder.Reminder - DEBUG - latestTask: abc on 13 Jun 2012 labels: []
+2012-06-12 00:52:34,083 - gui.reminder.Reminder - DEBUG - 1339516800000
+2012-06-12 00:52:34,083 - gui.reminder.Reminder - DEBUG - 1339433554070
+2012-06-12 00:52:34,084 - gui.reminder.Reminder - DEBUG - timediff: 82945930
+2012-06-12 00:52:34,084 - gui.reminder.Reminder - DEBUG - setTimer: 82945930
+2012-06-12 00:52:35,995 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:52:35,996 - gui.mainWindow.MainJFrame - DEBUG - curText:e
+2012-06-12 00:52:35,996 - gui.mainWindow.MainJFrame - DEBUG - prevText: null
+2012-06-12 00:52:35,997 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:52:35,997 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:52:35,998 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:52:36,217 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:52:36,218 - gui.mainWindow.MainJFrame - DEBUG - curText:ex
+2012-06-12 00:52:36,218 - gui.mainWindow.MainJFrame - DEBUG - prevText: e
+2012-06-12 00:52:36,218 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:52:36,219 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:52:36,219 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:52:36,447 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:52:36,448 - gui.mainWindow.MainJFrame - DEBUG - curText:exp
+2012-06-12 00:52:36,448 - gui.mainWindow.MainJFrame - DEBUG - prevText: ex
+2012-06-12 00:52:36,449 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:52:36,449 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:52:36,450 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:52:36,546 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:52:36,547 - gui.mainWindow.MainJFrame - DEBUG - curText:expa
+2012-06-12 00:52:36,547 - gui.mainWindow.MainJFrame - DEBUG - prevText: exp
+2012-06-12 00:52:36,548 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:52:36,548 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:52:36,549 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:52:36,689 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:52:36,690 - gui.mainWindow.MainJFrame - DEBUG - curText:expan
+2012-06-12 00:52:36,690 - gui.mainWindow.MainJFrame - DEBUG - prevText: expa
+2012-06-12 00:52:36,691 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:52:36,691 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:52:36,692 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:52:36,784 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:52:36,785 - gui.mainWindow.MainJFrame - DEBUG - curText:expand
+2012-06-12 00:52:36,785 - gui.mainWindow.MainJFrame - DEBUG - prevText: expan
+2012-06-12 00:52:36,785 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:52:36,786 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:52:36,786 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:52:36,907 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:52:36,907 - gui.mainWindow.MainJFrame - DEBUG - curText:expand
+2012-06-12 00:52:36,908 - gui.mainWindow.MainJFrame - DEBUG - prevText: expand
+2012-06-12 00:52:36,908 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:52:36,909 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:52:36,909 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:52:37,642 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:52:37,643 - gui.mainWindow.MainJFrame - DEBUG - curText:
+2012-06-12 00:52:37,643 - gui.mainWindow.MainJFrame - DEBUG - prevText: expand
+2012-06-12 00:52:37,644 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:52:37,644 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:52:37,645 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:52:39,000 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:52:39,000 - gui.mainWindow.MainJFrame - DEBUG - curText:d
+2012-06-12 00:52:39,001 - gui.mainWindow.MainJFrame - DEBUG - prevText: 
+2012-06-12 00:52:39,001 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:52:39,001 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:52:39,002 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:52:39,236 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:52:39,237 - gui.mainWindow.MainJFrame - DEBUG - curText:de
+2012-06-12 00:52:39,237 - gui.mainWindow.MainJFrame - DEBUG - prevText: d
+2012-06-12 00:52:39,237 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:52:39,238 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:52:39,238 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:52:39,354 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:52:39,354 - gui.mainWindow.MainJFrame - DEBUG - curText:del
+2012-06-12 00:52:39,355 - gui.mainWindow.MainJFrame - DEBUG - prevText: de
+2012-06-12 00:52:39,355 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:52:39,356 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:52:39,356 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:52:39,516 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:52:39,517 - gui.mainWindow.MainJFrame - DEBUG - curText:dele
+2012-06-12 00:52:39,517 - gui.mainWindow.MainJFrame - DEBUG - prevText: del
+2012-06-12 00:52:39,518 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:52:39,524 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:52:39,525 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:52:39,617 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:52:39,618 - gui.mainWindow.MainJFrame - DEBUG - curText:delet
+2012-06-12 00:52:39,619 - gui.mainWindow.MainJFrame - DEBUG - prevText: dele
+2012-06-12 00:52:39,619 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:52:39,619 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:52:39,620 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:52:39,727 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:52:39,727 - gui.mainWindow.MainJFrame - DEBUG - curText:delete
+2012-06-12 00:52:39,727 - gui.mainWindow.MainJFrame - DEBUG - prevText: delet
+2012-06-12 00:52:39,728 - gui.mainWindow.MainJFrame - DEBUG - state: DELETE
+2012-06-12 00:52:39,728 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:52:39,729 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:52:39,817 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:52:39,817 - gui.mainWindow.MainJFrame - DEBUG - curText:delete 
+2012-06-12 00:52:39,818 - gui.mainWindow.MainJFrame - DEBUG - prevText: delete
+2012-06-12 00:52:39,818 - gui.mainWindow.MainJFrame - DEBUG - state: DELETE
+2012-06-12 00:52:39,818 - gui.mainWindow.MainJFrame - DEBUG - prev: DELETE
+2012-06-12 00:52:39,819 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:52:40,019 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:52:40,020 - gui.mainWindow.MainJFrame - DEBUG - curText:delete a
+2012-06-12 00:52:40,020 - gui.mainWindow.MainJFrame - DEBUG - prevText: delete 
+2012-06-12 00:52:40,020 - gui.mainWindow.MainJFrame - DEBUG - state: DELETE
+2012-06-12 00:52:40,021 - gui.mainWindow.MainJFrame - DEBUG - prev: DELETE
+2012-06-12 00:52:40,021 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:52:40,027 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: delete
+2012-06-12 00:52:40,027 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: delete a
+2012-06-12 00:52:40,028 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-12 00:52:40,028 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-12 00:52:40,029 - operation.Operation - DEBUG - delete
+2012-06-12 00:52:40,030 - operation.BaseSearch - DEBUG - delete
+2012-06-12 00:52:40,030 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-12 00:52:40,037 - operation.BaseSearch - DEBUG - going for new search
+2012-06-12 00:52:40,045 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-12 00:52:40,045 - logic.JIDLogic - DEBUG - left over string after checking for recurring: a
+2012-06-12 00:52:40,134 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-12 00:52:40,135 - logic.JIDLogic - DEBUG - -------post extraction TESTING-------
+2012-06-12 00:52:40,135 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-12 00:52:40,135 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-12 00:52:40,136 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-12 00:52:40,136 - logic.JIDLogic - DEBUG - task details: a
+2012-06-12 00:52:40,137 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-12 00:52:40,137 - operation.BaseSearch - DEBUG - finished searching
+2012-06-12 00:52:40,138 - operation.Search - DEBUG - Matching task0
+2012-06-12 00:52:40,138 - operation.Search - DEBUG - allTasks[0] StartTime:946656000000
+2012-06-12 00:52:40,139 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:52:40,139 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:52:40,140 - operation.Search - DEBUG - Matching task1
+2012-06-12 00:52:40,140 - operation.Search - DEBUG - allTasks[1] StartTime:946656000000
+2012-06-12 00:52:40,141 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:52:40,141 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:52:40,142 - operation.Search - DEBUG - Matching task2
+2012-06-12 00:52:40,142 - operation.Search - DEBUG - allTasks[2] StartTime:946656000000
+2012-06-12 00:52:40,143 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:52:40,143 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:52:40,143 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-12 00:52:40,328 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:52:40,329 - gui.mainWindow.MainJFrame - DEBUG - curText:delete a
+2012-06-12 00:52:40,329 - gui.mainWindow.MainJFrame - DEBUG - prevText: delete a
+2012-06-12 00:52:40,330 - gui.mainWindow.MainJFrame - DEBUG - state: DELETE
+2012-06-12 00:52:40,330 - gui.mainWindow.MainJFrame - DEBUG - prev: DELETE
+2012-06-12 00:52:40,330 - gui.mainWindow.MainJFrame - DEBUG - index: 0
+2012-06-12 00:52:40,331 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: delete a
+2012-06-12 00:52:40,331 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-12 00:52:40,331 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-12 00:52:40,332 - operation.Operation - DEBUG - delete
+2012-06-12 00:52:40,332 - operation.BaseSearch - DEBUG - delete
+2012-06-12 00:52:40,333 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-12 00:52:40,333 - operation.BaseSearch - DEBUG - going for new search
+2012-06-12 00:52:40,334 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-12 00:52:40,334 - logic.JIDLogic - DEBUG - left over string after checking for recurring: a
+2012-06-12 00:52:40,373 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-12 00:52:40,373 - logic.JIDLogic - DEBUG - -------post extraction TESTING-------
+2012-06-12 00:52:40,374 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-12 00:52:40,374 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-12 00:52:40,374 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-12 00:52:40,375 - logic.JIDLogic - DEBUG - task details: a
+2012-06-12 00:52:40,375 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-12 00:52:40,375 - operation.BaseSearch - DEBUG - finished searching
+2012-06-12 00:52:40,376 - operation.Search - DEBUG - Matching task0
+2012-06-12 00:52:40,376 - operation.Search - DEBUG - allTasks[0] StartTime:946656000000
+2012-06-12 00:52:40,377 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:52:40,377 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:52:40,377 - operation.Search - DEBUG - Matching task1
+2012-06-12 00:52:40,378 - operation.Search - DEBUG - allTasks[1] StartTime:946656000000
+2012-06-12 00:52:40,379 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:52:40,379 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:52:40,379 - operation.Search - DEBUG - Matching task2
+2012-06-12 00:52:40,380 - operation.Search - DEBUG - allTasks[2] StartTime:946656000000
+2012-06-12 00:52:40,380 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:52:40,381 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:52:40,381 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-12 00:52:40,926 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:52:40,927 - gui.mainWindow.MainJFrame - DEBUG - curText:delete a
+2012-06-12 00:52:40,927 - gui.mainWindow.MainJFrame - DEBUG - prevText: delete a
+2012-06-12 00:52:40,927 - gui.mainWindow.MainJFrame - DEBUG - state: DELETE
+2012-06-12 00:52:40,928 - gui.mainWindow.MainJFrame - DEBUG - prev: DELETE
+2012-06-12 00:52:40,928 - gui.mainWindow.MainJFrame - DEBUG - index: 0
+2012-06-12 00:52:40,928 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: delete a
+2012-06-12 00:52:40,929 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-12 00:52:40,929 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-12 00:52:40,930 - operation.Operation - DEBUG - delete
+2012-06-12 00:52:40,930 - operation.BaseSearch - DEBUG - delete
+2012-06-12 00:52:40,930 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-12 00:52:40,931 - operation.BaseSearch - DEBUG - going for new search
+2012-06-12 00:52:40,932 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-12 00:52:40,932 - logic.JIDLogic - DEBUG - left over string after checking for recurring: a
+2012-06-12 00:52:40,976 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-12 00:52:40,977 - logic.JIDLogic - DEBUG - -------post extraction TESTING-------
+2012-06-12 00:52:40,977 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-12 00:52:40,977 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-12 00:52:40,978 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-12 00:52:40,978 - logic.JIDLogic - DEBUG - task details: a
+2012-06-12 00:52:40,978 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-12 00:52:40,979 - operation.BaseSearch - DEBUG - finished searching
+2012-06-12 00:52:40,979 - operation.Search - DEBUG - Matching task0
+2012-06-12 00:52:40,980 - operation.Search - DEBUG - allTasks[0] StartTime:946656000000
+2012-06-12 00:52:40,980 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:52:40,981 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:52:40,981 - operation.Search - DEBUG - Matching task1
+2012-06-12 00:52:40,982 - operation.Search - DEBUG - allTasks[1] StartTime:946656000000
+2012-06-12 00:52:40,982 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:52:40,983 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:52:40,983 - operation.Search - DEBUG - Matching task2
+2012-06-12 00:52:40,983 - operation.Search - DEBUG - allTasks[2] StartTime:946656000000
+2012-06-12 00:52:40,984 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:52:40,984 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:52:40,985 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-12 00:52:41,318 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:52:41,319 - gui.mainWindow.MainJFrame - DEBUG - curText:delete a
+2012-06-12 00:52:41,319 - gui.mainWindow.MainJFrame - DEBUG - prevText: delete a
+2012-06-12 00:52:41,320 - gui.mainWindow.MainJFrame - DEBUG - state: DELETE
+2012-06-12 00:52:41,320 - gui.mainWindow.MainJFrame - DEBUG - prev: DELETE
+2012-06-12 00:52:41,320 - gui.mainWindow.MainJFrame - DEBUG - index: 0
+2012-06-12 00:52:41,321 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: delete a
+2012-06-12 00:52:41,321 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-12 00:52:41,321 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-12 00:52:41,322 - operation.Operation - DEBUG - delete
+2012-06-12 00:52:41,322 - operation.BaseSearch - DEBUG - delete
+2012-06-12 00:52:41,323 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-12 00:52:41,323 - operation.BaseSearch - DEBUG - going for new search
+2012-06-12 00:52:41,324 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-12 00:52:41,324 - logic.JIDLogic - DEBUG - left over string after checking for recurring: a
+2012-06-12 00:52:41,347 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-12 00:52:41,347 - logic.JIDLogic - DEBUG - -------post extraction TESTING-------
+2012-06-12 00:52:41,348 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-12 00:52:41,348 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-12 00:52:41,348 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-12 00:52:41,349 - logic.JIDLogic - DEBUG - task details: a
+2012-06-12 00:52:41,349 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-12 00:52:41,350 - operation.BaseSearch - DEBUG - finished searching
+2012-06-12 00:52:41,350 - operation.Search - DEBUG - Matching task0
+2012-06-12 00:52:41,351 - operation.Search - DEBUG - allTasks[0] StartTime:946656000000
+2012-06-12 00:52:41,351 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:52:41,352 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:52:41,352 - operation.Search - DEBUG - Matching task1
+2012-06-12 00:52:41,353 - operation.Search - DEBUG - allTasks[1] StartTime:946656000000
+2012-06-12 00:52:41,353 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:52:41,354 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:52:41,354 - operation.Search - DEBUG - Matching task2
+2012-06-12 00:52:41,355 - operation.Search - DEBUG - allTasks[2] StartTime:946656000000
+2012-06-12 00:52:41,355 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:52:41,355 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:52:41,356 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-12 00:52:41,654 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:52:41,655 - gui.mainWindow.MainJFrame - DEBUG - curText:delete a
+2012-06-12 00:52:41,655 - gui.mainWindow.MainJFrame - DEBUG - prevText: delete a
+2012-06-12 00:52:41,655 - gui.mainWindow.MainJFrame - DEBUG - state: DELETE
+2012-06-12 00:52:41,656 - gui.mainWindow.MainJFrame - DEBUG - prev: DELETE
+2012-06-12 00:52:41,656 - gui.mainWindow.MainJFrame - DEBUG - index: 0
+2012-06-12 00:52:41,656 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: delete a
+2012-06-12 00:52:41,657 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-12 00:52:41,657 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-12 00:52:41,658 - operation.Operation - DEBUG - delete
+2012-06-12 00:52:41,658 - operation.BaseSearch - DEBUG - delete
+2012-06-12 00:52:41,658 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-12 00:52:41,659 - operation.BaseSearch - DEBUG - going for new search
+2012-06-12 00:52:41,675 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-12 00:52:41,676 - logic.JIDLogic - DEBUG - left over string after checking for recurring: a
+2012-06-12 00:52:41,733 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-12 00:52:41,734 - logic.JIDLogic - DEBUG - -------post extraction TESTING-------
+2012-06-12 00:52:41,734 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-12 00:52:41,735 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-12 00:52:41,735 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-12 00:52:41,735 - logic.JIDLogic - DEBUG - task details: a
+2012-06-12 00:52:41,736 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-12 00:52:41,736 - operation.BaseSearch - DEBUG - finished searching
+2012-06-12 00:52:41,736 - operation.Search - DEBUG - Matching task0
+2012-06-12 00:52:41,737 - operation.Search - DEBUG - allTasks[0] StartTime:946656000000
+2012-06-12 00:52:41,738 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:52:41,738 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:52:41,738 - operation.Search - DEBUG - Matching task1
+2012-06-12 00:52:41,739 - operation.Search - DEBUG - allTasks[1] StartTime:946656000000
+2012-06-12 00:52:41,739 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:52:41,739 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:52:41,740 - operation.Search - DEBUG - Matching task2
+2012-06-12 00:52:41,740 - operation.Search - DEBUG - allTasks[2] StartTime:946656000000
+2012-06-12 00:52:41,741 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:52:41,741 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:52:41,741 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-12 00:52:41,987 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:52:41,987 - gui.mainWindow.MainJFrame - DEBUG - curText:delete a
+2012-06-12 00:52:41,987 - gui.mainWindow.MainJFrame - DEBUG - prevText: delete a
+2012-06-12 00:52:41,988 - gui.mainWindow.MainJFrame - DEBUG - state: DELETE
+2012-06-12 00:52:41,988 - gui.mainWindow.MainJFrame - DEBUG - prev: DELETE
+2012-06-12 00:52:41,988 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:52:41,989 - gui.mainWindow.MainJFrame - DEBUG - *********************enter
+2012-06-12 00:52:41,989 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: DELETE
+2012-06-12 00:52:41,990 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: delete $$__13-06-2012000000H__$$ 
+2012-06-12 00:52:41,990 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-12 00:52:41,990 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-12 00:52:41,991 - operation.Operation - DEBUG - delete
+2012-06-12 00:52:41,991 - operation.BaseSearch - DEBUG - delete
+2012-06-12 00:52:41,991 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-12 00:52:41,992 - operation.BaseSearch - DEBUG - going to the id part
+2012-06-12 00:52:41,992 - operation.BaseSearch - DEBUG - $$__13-06-2012000000H__$$
+2012-06-12 00:52:41,993 - operation.Delete - DEBUG - isUndoAble value changed
+2012-06-12 00:52:41,993 - operation.Delete - DEBUG - deleted succesfully
+2012-06-12 00:52:41,993 - operation.BaseSearch - DEBUG - Result Added
+2012-06-12 00:52:41,994 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-06-12 00:52:41,994 - logic.JIDLogic - DEBUG - isundoable
+2012-06-12 00:52:41,995 - gui.mainWindow.MainJFrame - DEBUG - -----------------POPUP-----------------------
+2012-06-12 00:52:42,008 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-12 00:52:42,008 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-12 00:52:42,009 - operation.Operation - DEBUG - find
+2012-06-12 00:52:42,009 - operation.Search - DEBUG - finding objects
+2012-06-12 00:52:42,010 - operation.Search - DEBUG - returning all objects
+2012-06-12 00:52:42,010 - operation.Search - DEBUG - before sorting
+2012-06-12 00:52:42,011 - operation.Search - DEBUG - after sorting
+2012-06-12 00:52:42,011 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-12 00:52:42,011 - gui.reminder.Reminder - DEBUG - 1339516800000
+2012-06-12 00:52:42,012 - gui.reminder.Reminder - DEBUG - 1339433562008
+2012-06-12 00:52:42,012 - gui.reminder.Reminder - DEBUG - timediff: 82937992
+2012-06-12 00:52:42,013 - gui.reminder.Reminder - DEBUG - latestTask: abc on 13 Jun 2012 labels: []
+2012-06-12 00:52:42,013 - gui.reminder.Reminder - DEBUG - 1339516800000
+2012-06-12 00:52:42,013 - gui.reminder.Reminder - DEBUG - 1339433562008
+2012-06-12 00:52:42,014 - gui.reminder.Reminder - DEBUG - timediff: 82937992
+2012-06-12 00:52:42,014 - gui.reminder.Reminder - DEBUG - setTimer: 82937992
+2012-06-12 00:52:42,109 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-12 00:52:42,110 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-12 00:52:42,110 - operation.Operation - DEBUG - find
+2012-06-12 00:52:42,110 - operation.Search - DEBUG - finding objects
+2012-06-12 00:52:42,111 - operation.Search - DEBUG - returning all objects
+2012-06-12 00:52:42,111 - operation.Search - DEBUG - before sorting
+2012-06-12 00:52:42,111 - operation.Search - DEBUG - after sorting
+2012-06-12 00:52:42,112 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-12 00:52:56,020 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:52:56,021 - gui.mainWindow.MainJFrame - DEBUG - curText:d
+2012-06-12 00:52:56,021 - gui.mainWindow.MainJFrame - DEBUG - prevText: delete a
+2012-06-12 00:52:56,022 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:52:56,022 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:52:56,022 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:52:56,211 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:52:56,211 - gui.mainWindow.MainJFrame - DEBUG - curText:de
+2012-06-12 00:52:56,211 - gui.mainWindow.MainJFrame - DEBUG - prevText: d
+2012-06-12 00:52:56,212 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:52:56,212 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:52:56,212 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:52:56,342 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:52:56,343 - gui.mainWindow.MainJFrame - DEBUG - curText:del
+2012-06-12 00:52:56,343 - gui.mainWindow.MainJFrame - DEBUG - prevText: de
+2012-06-12 00:52:56,343 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:52:56,344 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:52:56,344 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:52:56,489 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:52:56,490 - gui.mainWindow.MainJFrame - DEBUG - curText:dele
+2012-06-12 00:52:56,490 - gui.mainWindow.MainJFrame - DEBUG - prevText: del
+2012-06-12 00:52:56,490 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:52:56,491 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:52:56,491 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:52:56,909 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:52:56,910 - gui.mainWindow.MainJFrame - DEBUG - curText:delet
+2012-06-12 00:52:56,910 - gui.mainWindow.MainJFrame - DEBUG - prevText: dele
+2012-06-12 00:52:56,911 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:52:56,911 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:52:56,911 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:52:57,004 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:52:57,004 - gui.mainWindow.MainJFrame - DEBUG - curText:delete
+2012-06-12 00:52:57,005 - gui.mainWindow.MainJFrame - DEBUG - prevText: delet
+2012-06-12 00:52:57,005 - gui.mainWindow.MainJFrame - DEBUG - state: DELETE
+2012-06-12 00:52:57,005 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:52:57,005 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:52:57,140 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:52:57,141 - gui.mainWindow.MainJFrame - DEBUG - curText:delete 
+2012-06-12 00:52:57,141 - gui.mainWindow.MainJFrame - DEBUG - prevText: delete
+2012-06-12 00:52:57,142 - gui.mainWindow.MainJFrame - DEBUG - state: DELETE
+2012-06-12 00:52:57,142 - gui.mainWindow.MainJFrame - DEBUG - prev: DELETE
+2012-06-12 00:52:57,142 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:52:57,282 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:52:57,282 - gui.mainWindow.MainJFrame - DEBUG - curText:delete a
+2012-06-12 00:52:57,283 - gui.mainWindow.MainJFrame - DEBUG - prevText: delete 
+2012-06-12 00:52:57,283 - gui.mainWindow.MainJFrame - DEBUG - state: DELETE
+2012-06-12 00:52:57,283 - gui.mainWindow.MainJFrame - DEBUG - prev: DELETE
+2012-06-12 00:52:57,284 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:52:57,287 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: delete
+2012-06-12 00:52:57,287 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: delete a
+2012-06-12 00:52:57,288 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-12 00:52:57,288 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-12 00:52:57,288 - operation.Operation - DEBUG - delete
+2012-06-12 00:52:57,289 - operation.BaseSearch - DEBUG - delete
+2012-06-12 00:52:57,289 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-12 00:52:57,290 - operation.BaseSearch - DEBUG - going for new search
+2012-06-12 00:52:57,290 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-12 00:52:57,291 - logic.JIDLogic - DEBUG - left over string after checking for recurring: a
+2012-06-12 00:52:57,296 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-12 00:52:57,296 - logic.JIDLogic - DEBUG - -------post extraction TESTING-------
+2012-06-12 00:52:57,296 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-12 00:52:57,297 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-12 00:52:57,297 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-12 00:52:57,297 - logic.JIDLogic - DEBUG - task details: a
+2012-06-12 00:52:57,298 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-12 00:52:57,298 - operation.BaseSearch - DEBUG - finished searching
+2012-06-12 00:52:57,299 - operation.Search - DEBUG - Matching task0
+2012-06-12 00:52:57,299 - operation.Search - DEBUG - allTasks[0] StartTime:946656000000
+2012-06-12 00:52:57,300 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:52:57,300 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:52:57,300 - operation.Search - DEBUG - Matching task1
+2012-06-12 00:52:57,301 - operation.Search - DEBUG - allTasks[1] StartTime:946656000000
+2012-06-12 00:52:57,301 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:52:57,301 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:52:57,302 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-12 00:52:57,894 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:52:57,894 - gui.mainWindow.MainJFrame - DEBUG - curText:delete a
+2012-06-12 00:52:57,894 - gui.mainWindow.MainJFrame - DEBUG - prevText: delete a
+2012-06-12 00:52:57,895 - gui.mainWindow.MainJFrame - DEBUG - state: DELETE
+2012-06-12 00:52:57,895 - gui.mainWindow.MainJFrame - DEBUG - prev: DELETE
+2012-06-12 00:52:57,895 - gui.mainWindow.MainJFrame - DEBUG - index: 0
+2012-06-12 00:52:57,895 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: delete a
+2012-06-12 00:52:57,896 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-12 00:52:57,896 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-12 00:52:57,896 - operation.Operation - DEBUG - delete
+2012-06-12 00:52:57,897 - operation.BaseSearch - DEBUG - delete
+2012-06-12 00:52:57,897 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-12 00:52:57,897 - operation.BaseSearch - DEBUG - going for new search
+2012-06-12 00:52:57,898 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-12 00:52:57,898 - logic.JIDLogic - DEBUG - left over string after checking for recurring: a
+2012-06-12 00:52:57,902 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-12 00:52:57,902 - logic.JIDLogic - DEBUG - -------post extraction TESTING-------
+2012-06-12 00:52:57,902 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-12 00:52:57,903 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-12 00:52:57,903 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-12 00:52:57,904 - logic.JIDLogic - DEBUG - task details: a
+2012-06-12 00:52:57,904 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-12 00:52:57,904 - operation.BaseSearch - DEBUG - finished searching
+2012-06-12 00:52:57,904 - operation.Search - DEBUG - Matching task0
+2012-06-12 00:52:57,905 - operation.Search - DEBUG - allTasks[0] StartTime:946656000000
+2012-06-12 00:52:57,905 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:52:57,906 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:52:57,906 - operation.Search - DEBUG - Matching task1
+2012-06-12 00:52:57,906 - operation.Search - DEBUG - allTasks[1] StartTime:946656000000
+2012-06-12 00:52:57,907 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:52:57,946 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:52:57,947 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-12 00:53:53,046 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:53:53,047 - gui.mainWindow.MainJFrame - DEBUG - curText:delete 
+2012-06-12 00:53:53,047 - gui.mainWindow.MainJFrame - DEBUG - prevText: delete a
+2012-06-12 00:53:53,047 - gui.mainWindow.MainJFrame - DEBUG - state: DELETE
+2012-06-12 00:53:53,048 - gui.mainWindow.MainJFrame - DEBUG - prev: DELETE
+2012-06-12 00:53:53,048 - gui.mainWindow.MainJFrame - DEBUG - index: 0
+2012-06-12 00:53:53,193 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:53:53,194 - gui.mainWindow.MainJFrame - DEBUG - curText:delete
+2012-06-12 00:53:53,194 - gui.mainWindow.MainJFrame - DEBUG - prevText: delete 
+2012-06-12 00:53:53,194 - gui.mainWindow.MainJFrame - DEBUG - state: DELETE
+2012-06-12 00:53:53,195 - gui.mainWindow.MainJFrame - DEBUG - prev: DELETE
+2012-06-12 00:53:53,195 - gui.mainWindow.MainJFrame - DEBUG - index: 0
+2012-06-12 00:53:53,714 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:53:53,714 - gui.mainWindow.MainJFrame - DEBUG - curText:delet
+2012-06-12 00:53:53,715 - gui.mainWindow.MainJFrame - DEBUG - prevText: delete
+2012-06-12 00:53:53,715 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:53:53,715 - gui.mainWindow.MainJFrame - DEBUG - prev: DELETE
+2012-06-12 00:53:53,716 - gui.mainWindow.MainJFrame - DEBUG - index: 0
+2012-06-12 00:53:53,751 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:53:53,751 - gui.mainWindow.MainJFrame - DEBUG - curText:dele
+2012-06-12 00:53:53,752 - gui.mainWindow.MainJFrame - DEBUG - prevText: delet
+2012-06-12 00:53:53,752 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:53:53,752 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:53:53,752 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:53:53,788 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:53:53,788 - gui.mainWindow.MainJFrame - DEBUG - curText:del
+2012-06-12 00:53:53,788 - gui.mainWindow.MainJFrame - DEBUG - prevText: dele
+2012-06-12 00:53:53,789 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:53:53,789 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:53:53,789 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:53:53,824 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:53:53,825 - gui.mainWindow.MainJFrame - DEBUG - curText:de
+2012-06-12 00:53:53,825 - gui.mainWindow.MainJFrame - DEBUG - prevText: del
+2012-06-12 00:53:53,825 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:53:53,826 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:53:53,826 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:53:53,861 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:53:53,861 - gui.mainWindow.MainJFrame - DEBUG - curText:d
+2012-06-12 00:53:53,862 - gui.mainWindow.MainJFrame - DEBUG - prevText: de
+2012-06-12 00:53:53,862 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:53:53,862 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:53:53,863 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:53:53,898 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:53:53,898 - gui.mainWindow.MainJFrame - DEBUG - curText:
+2012-06-12 00:53:53,899 - gui.mainWindow.MainJFrame - DEBUG - prevText: d
+2012-06-12 00:53:53,899 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:53:53,899 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:53:53,899 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:53:53,935 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:53:53,935 - gui.mainWindow.MainJFrame - DEBUG - curText:
+2012-06-12 00:53:53,935 - gui.mainWindow.MainJFrame - DEBUG - prevText: 
+2012-06-12 00:53:53,936 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:53:53,936 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:53:53,936 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:53:53,971 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:53:53,971 - gui.mainWindow.MainJFrame - DEBUG - curText:
+2012-06-12 00:53:53,972 - gui.mainWindow.MainJFrame - DEBUG - prevText: 
+2012-06-12 00:53:53,972 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:53:53,972 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:53:53,973 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:53:54,008 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:53:54,008 - gui.mainWindow.MainJFrame - DEBUG - curText:
+2012-06-12 00:53:54,009 - gui.mainWindow.MainJFrame - DEBUG - prevText: 
+2012-06-12 00:53:54,009 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:53:54,009 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:53:54,009 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:53:54,018 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:53:54,018 - gui.mainWindow.MainJFrame - DEBUG - curText:
+2012-06-12 00:53:54,019 - gui.mainWindow.MainJFrame - DEBUG - prevText: 
+2012-06-12 00:53:54,019 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:53:54,019 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:53:54,020 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:53:54,105 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:53:54,105 - gui.mainWindow.MainJFrame - DEBUG - curText:D
+2012-06-12 00:53:54,105 - gui.mainWindow.MainJFrame - DEBUG - prevText: 
+2012-06-12 00:53:54,106 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:53:54,106 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:53:54,106 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:53:54,283 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:53:54,283 - gui.mainWindow.MainJFrame - DEBUG - curText:DE
+2012-06-12 00:53:54,283 - gui.mainWindow.MainJFrame - DEBUG - prevText: D
+2012-06-12 00:53:54,284 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:53:54,284 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:53:54,284 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:53:54,451 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:53:54,452 - gui.mainWindow.MainJFrame - DEBUG - curText:DEL
+2012-06-12 00:53:54,452 - gui.mainWindow.MainJFrame - DEBUG - prevText: DE
+2012-06-12 00:53:54,452 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:53:54,453 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:53:54,453 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:53:54,618 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:53:54,619 - gui.mainWindow.MainJFrame - DEBUG - curText:DELE
+2012-06-12 00:53:54,619 - gui.mainWindow.MainJFrame - DEBUG - prevText: DEL
+2012-06-12 00:53:54,620 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:53:54,620 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:53:54,620 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:53:54,714 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:53:54,715 - gui.mainWindow.MainJFrame - DEBUG - curText:DELET
+2012-06-12 00:53:54,715 - gui.mainWindow.MainJFrame - DEBUG - prevText: DELE
+2012-06-12 00:53:54,715 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:53:54,716 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:53:54,716 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:53:54,818 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:53:54,819 - gui.mainWindow.MainJFrame - DEBUG - curText:DELETE
+2012-06-12 00:53:54,819 - gui.mainWindow.MainJFrame - DEBUG - prevText: DELET
+2012-06-12 00:53:54,819 - gui.mainWindow.MainJFrame - DEBUG - state: DELETE
+2012-06-12 00:53:54,820 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:53:54,820 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:53:55,069 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:53:55,070 - gui.mainWindow.MainJFrame - DEBUG - curText:DELETE 
+2012-06-12 00:53:55,070 - gui.mainWindow.MainJFrame - DEBUG - prevText: DELETE
+2012-06-12 00:53:55,071 - gui.mainWindow.MainJFrame - DEBUG - state: DELETE
+2012-06-12 00:53:55,071 - gui.mainWindow.MainJFrame - DEBUG - prev: DELETE
+2012-06-12 00:53:55,072 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:53:55,188 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:53:55,189 - gui.mainWindow.MainJFrame - DEBUG - curText:DELETE a
+2012-06-12 00:53:55,189 - gui.mainWindow.MainJFrame - DEBUG - prevText: DELETE 
+2012-06-12 00:53:55,189 - gui.mainWindow.MainJFrame - DEBUG - state: DELETE
+2012-06-12 00:53:55,190 - gui.mainWindow.MainJFrame - DEBUG - prev: DELETE
+2012-06-12 00:53:55,190 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:53:55,193 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: delete
+2012-06-12 00:53:55,194 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: DELETE a
+2012-06-12 00:53:55,194 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-12 00:53:55,194 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-12 00:53:55,195 - operation.Operation - DEBUG - delete
+2012-06-12 00:53:55,195 - operation.BaseSearch - DEBUG - delete
+2012-06-12 00:53:55,195 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-12 00:53:55,196 - operation.BaseSearch - DEBUG - going for new search
+2012-06-12 00:53:55,196 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-12 00:53:55,197 - logic.JIDLogic - DEBUG - left over string after checking for recurring: a
+2012-06-12 00:53:55,201 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-12 00:53:55,201 - logic.JIDLogic - DEBUG - -------post extraction TESTING-------
+2012-06-12 00:53:55,202 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-12 00:53:55,202 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-12 00:53:55,202 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-12 00:53:55,202 - logic.JIDLogic - DEBUG - task details: a
+2012-06-12 00:53:55,203 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-12 00:53:55,203 - operation.BaseSearch - DEBUG - finished searching
+2012-06-12 00:53:55,203 - operation.Search - DEBUG - Matching task0
+2012-06-12 00:53:55,204 - operation.Search - DEBUG - allTasks[0] StartTime:946656000000
+2012-06-12 00:53:55,204 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:53:55,205 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:53:55,205 - operation.Search - DEBUG - Matching task1
+2012-06-12 00:53:55,205 - operation.Search - DEBUG - allTasks[1] StartTime:946656000000
+2012-06-12 00:53:55,206 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:53:55,206 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:53:55,206 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-12 00:53:55,855 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:53:55,855 - gui.mainWindow.MainJFrame - DEBUG - curText:DELETE a
+2012-06-12 00:53:55,856 - gui.mainWindow.MainJFrame - DEBUG - prevText: DELETE a
+2012-06-12 00:53:55,856 - gui.mainWindow.MainJFrame - DEBUG - state: DELETE
+2012-06-12 00:53:55,856 - gui.mainWindow.MainJFrame - DEBUG - prev: DELETE
+2012-06-12 00:53:55,856 - gui.mainWindow.MainJFrame - DEBUG - index: 0
+2012-06-12 00:53:55,857 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: DELETE a
+2012-06-12 00:53:55,857 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-12 00:53:55,857 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-12 00:53:55,858 - operation.Operation - DEBUG - delete
+2012-06-12 00:53:55,858 - operation.BaseSearch - DEBUG - delete
+2012-06-12 00:53:55,858 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-12 00:53:55,859 - operation.BaseSearch - DEBUG - going for new search
+2012-06-12 00:53:55,859 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-12 00:53:55,859 - logic.JIDLogic - DEBUG - left over string after checking for recurring: a
+2012-06-12 00:53:55,864 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-12 00:53:55,864 - logic.JIDLogic - DEBUG - -------post extraction TESTING-------
+2012-06-12 00:53:55,864 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-12 00:53:55,865 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-12 00:53:55,865 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-12 00:53:55,865 - logic.JIDLogic - DEBUG - task details: a
+2012-06-12 00:53:55,866 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-12 00:53:55,866 - operation.BaseSearch - DEBUG - finished searching
+2012-06-12 00:53:55,866 - operation.Search - DEBUG - Matching task0
+2012-06-12 00:53:55,867 - operation.Search - DEBUG - allTasks[0] StartTime:946656000000
+2012-06-12 00:53:55,867 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:53:55,867 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:53:55,868 - operation.Search - DEBUG - Matching task1
+2012-06-12 00:53:55,868 - operation.Search - DEBUG - allTasks[1] StartTime:946656000000
+2012-06-12 00:53:55,869 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:53:55,869 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:53:55,869 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-12 00:53:56,600 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:53:56,600 - gui.mainWindow.MainJFrame - DEBUG - curText:DELETE a
+2012-06-12 00:53:56,601 - gui.mainWindow.MainJFrame - DEBUG - prevText: DELETE a
+2012-06-12 00:53:56,601 - gui.mainWindow.MainJFrame - DEBUG - state: DELETE
+2012-06-12 00:53:56,601 - gui.mainWindow.MainJFrame - DEBUG - prev: DELETE
+2012-06-12 00:53:56,601 - gui.mainWindow.MainJFrame - DEBUG - index: 0
+2012-06-12 00:53:56,602 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: DELETE a
+2012-06-12 00:53:56,602 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-12 00:53:56,602 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-12 00:53:56,603 - operation.Operation - DEBUG - delete
+2012-06-12 00:53:56,603 - operation.BaseSearch - DEBUG - delete
+2012-06-12 00:53:56,603 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-12 00:53:56,604 - operation.BaseSearch - DEBUG - going for new search
+2012-06-12 00:53:56,604 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-12 00:53:56,604 - logic.JIDLogic - DEBUG - left over string after checking for recurring: a
+2012-06-12 00:53:56,608 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-12 00:53:56,609 - logic.JIDLogic - DEBUG - -------post extraction TESTING-------
+2012-06-12 00:53:56,609 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-12 00:53:56,609 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-12 00:53:56,610 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-12 00:53:56,610 - logic.JIDLogic - DEBUG - task details: a
+2012-06-12 00:53:56,610 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-12 00:53:56,611 - operation.BaseSearch - DEBUG - finished searching
+2012-06-12 00:53:56,611 - operation.Search - DEBUG - Matching task0
+2012-06-12 00:53:56,611 - operation.Search - DEBUG - allTasks[0] StartTime:946656000000
+2012-06-12 00:53:56,612 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:53:56,612 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:53:56,612 - operation.Search - DEBUG - Matching task1
+2012-06-12 00:53:56,613 - operation.Search - DEBUG - allTasks[1] StartTime:946656000000
+2012-06-12 00:53:56,613 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:53:56,613 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:53:56,614 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-12 00:54:35,808 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:54:35,808 - gui.mainWindow.MainJFrame - DEBUG - curText:DELETE 
+2012-06-12 00:54:35,809 - gui.mainWindow.MainJFrame - DEBUG - prevText: DELETE a
+2012-06-12 00:54:35,809 - gui.mainWindow.MainJFrame - DEBUG - state: DELETE
+2012-06-12 00:54:35,809 - gui.mainWindow.MainJFrame - DEBUG - prev: DELETE
+2012-06-12 00:54:35,809 - gui.mainWindow.MainJFrame - DEBUG - index: 0
+2012-06-12 00:54:35,971 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:54:35,971 - gui.mainWindow.MainJFrame - DEBUG - curText:DELETE
+2012-06-12 00:54:35,972 - gui.mainWindow.MainJFrame - DEBUG - prevText: DELETE 
+2012-06-12 00:54:35,972 - gui.mainWindow.MainJFrame - DEBUG - state: DELETE
+2012-06-12 00:54:35,972 - gui.mainWindow.MainJFrame - DEBUG - prev: DELETE
+2012-06-12 00:54:35,973 - gui.mainWindow.MainJFrame - DEBUG - index: 0
+2012-06-12 00:54:36,348 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:54:36,349 - gui.mainWindow.MainJFrame - DEBUG - curText:DELET
+2012-06-12 00:54:36,349 - gui.mainWindow.MainJFrame - DEBUG - prevText: DELETE
+2012-06-12 00:54:36,349 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:54:36,350 - gui.mainWindow.MainJFrame - DEBUG - prev: DELETE
+2012-06-12 00:54:36,350 - gui.mainWindow.MainJFrame - DEBUG - index: 0
+2012-06-12 00:54:36,534 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:54:36,535 - gui.mainWindow.MainJFrame - DEBUG - curText:DELETe
+2012-06-12 00:54:36,535 - gui.mainWindow.MainJFrame - DEBUG - prevText: DELET
+2012-06-12 00:54:36,535 - gui.mainWindow.MainJFrame - DEBUG - state: DELETE
+2012-06-12 00:54:36,535 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:54:36,536 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:54:36,739 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:54:36,740 - gui.mainWindow.MainJFrame - DEBUG - curText:DELETe 
+2012-06-12 00:54:36,740 - gui.mainWindow.MainJFrame - DEBUG - prevText: DELETe
+2012-06-12 00:54:36,741 - gui.mainWindow.MainJFrame - DEBUG - state: DELETE
+2012-06-12 00:54:36,741 - gui.mainWindow.MainJFrame - DEBUG - prev: DELETE
+2012-06-12 00:54:36,741 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:54:36,933 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:54:36,934 - gui.mainWindow.MainJFrame - DEBUG - curText:DELETe a
+2012-06-12 00:54:36,934 - gui.mainWindow.MainJFrame - DEBUG - prevText: DELETe 
+2012-06-12 00:54:36,934 - gui.mainWindow.MainJFrame - DEBUG - state: DELETE
+2012-06-12 00:54:36,935 - gui.mainWindow.MainJFrame - DEBUG - prev: DELETE
+2012-06-12 00:54:36,935 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:54:36,938 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: delete
+2012-06-12 00:54:36,939 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: DELETe a
+2012-06-12 00:54:36,939 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-12 00:54:36,939 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-12 00:54:36,940 - operation.Operation - DEBUG - delete
+2012-06-12 00:54:36,940 - operation.BaseSearch - DEBUG - delete
+2012-06-12 00:54:36,940 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-12 00:54:36,941 - operation.BaseSearch - DEBUG - going for new search
+2012-06-12 00:54:36,941 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-12 00:54:36,942 - logic.JIDLogic - DEBUG - left over string after checking for recurring: a
+2012-06-12 00:54:36,946 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-12 00:54:36,946 - logic.JIDLogic - DEBUG - -------post extraction TESTING-------
+2012-06-12 00:54:36,946 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-12 00:54:36,946 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-12 00:54:36,947 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-12 00:54:36,947 - logic.JIDLogic - DEBUG - task details: a
+2012-06-12 00:54:36,947 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-12 00:54:36,948 - operation.BaseSearch - DEBUG - finished searching
+2012-06-12 00:54:36,948 - operation.Search - DEBUG - Matching task0
+2012-06-12 00:54:36,949 - operation.Search - DEBUG - allTasks[0] StartTime:946656000000
+2012-06-12 00:54:36,949 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:54:36,949 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:54:36,950 - operation.Search - DEBUG - Matching task1
+2012-06-12 00:54:36,950 - operation.Search - DEBUG - allTasks[1] StartTime:946656000000
+2012-06-12 00:54:36,951 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:54:36,951 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:54:36,951 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-12 00:54:37,676 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:54:37,676 - gui.mainWindow.MainJFrame - DEBUG - curText:DELETe a
+2012-06-12 00:54:37,677 - gui.mainWindow.MainJFrame - DEBUG - prevText: DELETe a
+2012-06-12 00:54:37,677 - gui.mainWindow.MainJFrame - DEBUG - state: DELETE
+2012-06-12 00:54:37,677 - gui.mainWindow.MainJFrame - DEBUG - prev: DELETE
+2012-06-12 00:54:37,677 - gui.mainWindow.MainJFrame - DEBUG - index: 0
+2012-06-12 00:54:37,678 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: DELETe a
+2012-06-12 00:54:37,678 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-12 00:54:37,678 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-12 00:54:37,679 - operation.Operation - DEBUG - delete
+2012-06-12 00:54:37,679 - operation.BaseSearch - DEBUG - delete
+2012-06-12 00:54:37,679 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-12 00:54:37,680 - operation.BaseSearch - DEBUG - going for new search
+2012-06-12 00:54:37,680 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-12 00:54:37,680 - logic.JIDLogic - DEBUG - left over string after checking for recurring: a
+2012-06-12 00:54:37,684 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-12 00:54:37,685 - logic.JIDLogic - DEBUG - -------post extraction TESTING-------
+2012-06-12 00:54:37,685 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-12 00:54:37,685 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-12 00:54:37,686 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-12 00:54:37,686 - logic.JIDLogic - DEBUG - task details: a
+2012-06-12 00:54:37,686 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-12 00:54:37,686 - operation.BaseSearch - DEBUG - finished searching
+2012-06-12 00:54:37,687 - operation.Search - DEBUG - Matching task0
+2012-06-12 00:54:37,687 - operation.Search - DEBUG - allTasks[0] StartTime:946656000000
+2012-06-12 00:54:37,688 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:54:37,688 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:54:37,688 - operation.Search - DEBUG - Matching task1
+2012-06-12 00:54:37,689 - operation.Search - DEBUG - allTasks[1] StartTime:946656000000
+2012-06-12 00:54:37,689 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:54:37,689 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:54:37,690 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-12 00:54:38,267 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:54:38,268 - gui.mainWindow.MainJFrame - DEBUG - curText:DELETe a
+2012-06-12 00:54:38,268 - gui.mainWindow.MainJFrame - DEBUG - prevText: DELETe a
+2012-06-12 00:54:38,268 - gui.mainWindow.MainJFrame - DEBUG - state: DELETE
+2012-06-12 00:54:38,269 - gui.mainWindow.MainJFrame - DEBUG - prev: DELETE
+2012-06-12 00:54:38,269 - gui.mainWindow.MainJFrame - DEBUG - index: 0
+2012-06-12 00:54:38,269 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: DELETe a
+2012-06-12 00:54:38,269 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-12 00:54:38,270 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-12 00:54:38,270 - operation.Operation - DEBUG - delete
+2012-06-12 00:54:38,271 - operation.BaseSearch - DEBUG - delete
+2012-06-12 00:54:38,271 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-12 00:54:38,271 - operation.BaseSearch - DEBUG - going for new search
+2012-06-12 00:54:38,272 - logic.JIDLogic - DEBUG - this task is not recurring
+2012-06-12 00:54:38,272 - logic.JIDLogic - DEBUG - left over string after checking for recurring: a
+2012-06-12 00:54:38,276 - logic.JIDLogic - DEBUG - time/date NOT extracted!
+2012-06-12 00:54:38,277 - logic.JIDLogic - DEBUG - -------post extraction TESTING-------
+2012-06-12 00:54:38,277 - logic.JIDLogic - DEBUG - this task does NOT have deadline!
+2012-06-12 00:54:38,277 - logic.JIDLogic - DEBUG - is NOT important!
+2012-06-12 00:54:38,278 - logic.JIDLogic - DEBUG - it is not recurring
+2012-06-12 00:54:38,278 - logic.JIDLogic - DEBUG - task details: a
+2012-06-12 00:54:38,278 - logic.JIDLogic - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-12 00:54:38,278 - operation.BaseSearch - DEBUG - finished searching
+2012-06-12 00:54:38,279 - operation.Search - DEBUG - Matching task0
+2012-06-12 00:54:38,279 - operation.Search - DEBUG - allTasks[0] StartTime:946656000000
+2012-06-12 00:54:38,280 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:54:38,280 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:54:38,280 - operation.Search - DEBUG - Matching task1
+2012-06-12 00:54:38,281 - operation.Search - DEBUG - allTasks[1] StartTime:946656000000
+2012-06-12 00:54:38,281 - operation.Search - DEBUG - First condition matches
+2012-06-12 00:54:38,281 - operation.Search - DEBUG - second condition matches
+2012-06-12 00:54:38,282 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-12 00:54:38,910 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:54:38,911 - gui.mainWindow.MainJFrame - DEBUG - curText:DELETe 
+2012-06-12 00:54:38,911 - gui.mainWindow.MainJFrame - DEBUG - prevText: DELETe a
+2012-06-12 00:54:38,911 - gui.mainWindow.MainJFrame - DEBUG - state: DELETE
+2012-06-12 00:54:38,911 - gui.mainWindow.MainJFrame - DEBUG - prev: DELETE
+2012-06-12 00:54:38,912 - gui.mainWindow.MainJFrame - DEBUG - index: 0
+2012-06-12 00:54:39,431 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:54:39,432 - gui.mainWindow.MainJFrame - DEBUG - curText:DELETe
+2012-06-12 00:54:39,432 - gui.mainWindow.MainJFrame - DEBUG - prevText: DELETe 
+2012-06-12 00:54:39,432 - gui.mainWindow.MainJFrame - DEBUG - state: DELETE
+2012-06-12 00:54:39,433 - gui.mainWindow.MainJFrame - DEBUG - prev: DELETE
+2012-06-12 00:54:39,433 - gui.mainWindow.MainJFrame - DEBUG - index: 0
+2012-06-12 00:54:39,468 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:54:39,468 - gui.mainWindow.MainJFrame - DEBUG - curText:DELET
+2012-06-12 00:54:39,469 - gui.mainWindow.MainJFrame - DEBUG - prevText: DELETe
+2012-06-12 00:54:39,469 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:54:39,469 - gui.mainWindow.MainJFrame - DEBUG - prev: DELETE
+2012-06-12 00:54:39,469 - gui.mainWindow.MainJFrame - DEBUG - index: 0
+2012-06-12 00:54:39,505 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:54:39,505 - gui.mainWindow.MainJFrame - DEBUG - curText:DELE
+2012-06-12 00:54:39,506 - gui.mainWindow.MainJFrame - DEBUG - prevText: DELET
+2012-06-12 00:54:39,506 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:54:39,506 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:54:39,506 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:54:39,542 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:54:39,542 - gui.mainWindow.MainJFrame - DEBUG - curText:DEL
+2012-06-12 00:54:39,542 - gui.mainWindow.MainJFrame - DEBUG - prevText: DELE
+2012-06-12 00:54:39,543 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:54:39,543 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:54:39,543 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:54:39,578 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:54:39,579 - gui.mainWindow.MainJFrame - DEBUG - curText:DE
+2012-06-12 00:54:39,579 - gui.mainWindow.MainJFrame - DEBUG - prevText: DEL
+2012-06-12 00:54:39,579 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:54:39,580 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:54:39,580 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:54:39,616 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:54:39,616 - gui.mainWindow.MainJFrame - DEBUG - curText:D
+2012-06-12 00:54:39,616 - gui.mainWindow.MainJFrame - DEBUG - prevText: DE
+2012-06-12 00:54:39,617 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:54:39,617 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:54:39,617 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:54:39,652 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:54:39,653 - gui.mainWindow.MainJFrame - DEBUG - curText:
+2012-06-12 00:54:39,653 - gui.mainWindow.MainJFrame - DEBUG - prevText: D
+2012-06-12 00:54:39,653 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:54:39,654 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:54:39,654 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:54:39,688 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:54:39,689 - gui.mainWindow.MainJFrame - DEBUG - curText:
+2012-06-12 00:54:39,689 - gui.mainWindow.MainJFrame - DEBUG - prevText: 
+2012-06-12 00:54:39,690 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:54:39,690 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:54:39,690 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:54:39,725 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:54:39,726 - gui.mainWindow.MainJFrame - DEBUG - curText:
+2012-06-12 00:54:39,726 - gui.mainWindow.MainJFrame - DEBUG - prevText: 
+2012-06-12 00:54:39,727 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:54:39,727 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:54:39,727 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:54:39,762 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:54:39,762 - gui.mainWindow.MainJFrame - DEBUG - curText:
+2012-06-12 00:54:39,763 - gui.mainWindow.MainJFrame - DEBUG - prevText: 
+2012-06-12 00:54:39,763 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:54:39,763 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:54:39,764 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:54:39,800 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:54:39,800 - gui.mainWindow.MainJFrame - DEBUG - curText:
+2012-06-12 00:54:39,800 - gui.mainWindow.MainJFrame - DEBUG - prevText: 
+2012-06-12 00:54:39,801 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:54:39,801 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:54:39,801 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:54:39,836 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:54:39,836 - gui.mainWindow.MainJFrame - DEBUG - curText:
+2012-06-12 00:54:39,836 - gui.mainWindow.MainJFrame - DEBUG - prevText: 
+2012-06-12 00:54:39,837 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:54:39,837 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:54:39,837 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:54:39,872 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
+2012-06-12 00:54:39,873 - gui.mainWindow.MainJFrame - DEBUG - curText:
+2012-06-12 00:54:39,873 - gui.mainWindow.MainJFrame - DEBUG - prevText: 
+2012-06-12 00:54:39,873 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
+2012-06-12 00:54:39,874 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
+2012-06-12 00:54:39,874 - gui.mainWindow.MainJFrame - DEBUG - index: -1
+2012-06-12 00:54:41,742 - storagecontroller.FileHandler - DEBUG - 2

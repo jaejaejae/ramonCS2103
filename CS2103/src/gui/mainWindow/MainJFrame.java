@@ -632,7 +632,7 @@ public class MainJFrame extends javax.swing.JFrame {
 									case EDIT:
 										if(!edit) {
 											if(tasks!=null) {
-												showPopup( curState.toString()+ " " 
+												showPopup( curState.toString().toLowerCase()+ " " 
 														+ tasks[0]);
 												UIController.refresh();
 											}
