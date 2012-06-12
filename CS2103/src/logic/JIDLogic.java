@@ -1,7 +1,7 @@
 package logic;
 
 //import java.io.FileNotFoundException;
-import gui.UIController;
+
 
 import java.util.Stack;
 
@@ -10,27 +10,119 @@ import operation.*;
 import data.Task;
 //import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
-//import gui.UIController;
+import gui.UIController;
 import storagecontroller.StorageManager;
 
-public class JIDLogic {
+public class JIDLogic implements Runnable {
 	
 		private static Logger logger=Logger.getLogger(JIDLogic.class);
 		//private static String command;
 		public static void main(String[] args) {
 	        //logger.info("hi");
-		/*
-			logger.debug(StorageManager.loadFile());
+		
+			JIDLogic_init();
 			command="search";
 			Task[] def=executeCommand("find *.*");
+			logger.debug(def.length);
 	    	if (def!=null)
 	    	{
 	    		for (int i=0;i<def.length;i++)
 	    		{
-	    			logger.debug(def[i].toString2());
+	    			logger.debug(def[i].toString()+" "+def[i].getTaskId());
 	    		}
 	    	}
-	    	def=executeCommand("login jid.troubleshoot@gmail.com jotitdown");
+	    	command="delete";
+	    	Task[] xyz=executeCommand("exportarchive");
+	    	if (xyz!=null)
+	    	logger.debug("printing search"+ xyz.length);
+	    	else
+	    		logger.debug("No Search results");
+	    	if (xyz!=null)
+	    	{
+	    		for (int i=0;i<xyz.length;i++)
+	    		{
+	    			logger.debug(xyz[i].toString());
+	    		}
+	    	}
+	    	
+	    	Task[] abc=executeCommand("find *.*" );
+	    	//abc=executeCommand("starall "+xyz[4].getTaskId());
+	    	if (abc!=null)
+	    	logger.debug("printing search"+ abc.length);
+	    	else
+	    		logger.debug("No Search results");
+	    	if (abc!=null)
+	    	{
+	    		for (int i=0;i<abc.length;i++)
+	    		{
+	    			logger.debug(abc[i].toString()+" "+abc[i].getImportant());
+	    		}
+	    	}
+/*
+	    	logger.debug(StorageManager.getAllArchivedTasks().length);
+	    	logger.debug(StorageManager.getAllTasks().length);
+	    	for(int i= 0;i<StorageManager.getAllArchivedTasks().length;i++){
+	    		logger.debug(StorageManager.getAllArchivedTasks()[i].getName()+StorageManager.getAllArchivedTasks()[i].getCompleted());
+	    	}
+	    	
+	    	xyz=executeCommand("cleararchive");
+	    	if (xyz!=null)
+	    	logger.debug("printing search"+ xyz.length);
+	    	else
+	    		logger.debug("No Search results");
+	    	if (xyz!=null)
+	    	{
+	    		for (int i=0;i<xyz.length;i++)
+	    		{
+	    			logger.debug(xyz[i]);
+	    		}
+	    	}
+	    	logger.debug(StorageManager.getAllArchivedTasks().length);
+	    	logger.debug(StorageManager.getAllTasks().length);
+	    	/*
+	    	abc=executeCommand("find *.*" );
+	    	//abc=executeCommand("starall "+xyz[4].getTaskId());
+	    	if (abc!=null)
+	    	logger.debug("printing search"+ abc.length);
+	    	else
+	    		logger.debug("No Search results");
+	    	if (abc!=null)
+	    	{
+	    		for (int i=0;i<abc.length;i++)
+	    		{
+	    			logger.debug(abc[i].toString()+" "+abc[i].getImportant());
+	    		}
+	    	}
+	    	abc=executeCommand("undo" );
+	    	//abc=executeCommand("starall "+xyz[4].getTaskId());
+	    	if (abc!=null)
+	    	logger.debug("printing search"+ abc.length);
+	    	else
+	    		logger.debug("No Search results");
+	    	if (abc!=null)
+	    	{
+	    		for (int i=0;i<abc.length;i++)
+	    		{
+	    			logger.debug(abc[i].toString()+" "+abc[i].getImportant());
+	    		}
+	    	}
+	    	logger.debug(StorageManager.getAllArchivedTasks().length);
+	    	logger.debug(StorageManager.getAllTasks().length);
+	    	/*abc=executeCommand("find *.*" );
+	    	//abc=executeCommand("starall "+xyz[4].getTaskId());
+	    	if (abc!=null)
+	    	logger.debug("printing search"+ abc.length);
+	    	else
+	    		logger.debug("No Search results");
+	    	if (abc!=null)
+	    	{
+	    		for (int i=0;i<abc.length;i++)
+	    		{
+	    			logger.debug(abc[i].toString()+" "+abc[i].getImportant());
+	    		}
+	    	}*/
+	    	JIDLogic_close();
+	    	/*def=executeCommand("login jid.troubleshoot@gmail.com jotitdown");
 	    	logger.debug("executed gcal sync");
 	    	def=executeCommand("find *.*");
 	    	if (def!=null)
@@ -40,6 +132,7 @@ public class JIDLogic {
 	    			logger.debug(def[i].toString());
 	    		}
 	    	}
+	    	logger.debug(StorageManager.saveFile());
 	    	/*Add adder=new Add();
 	    	
 	    	Task[] abc=adder.execute("add *go to meet bhairav weekly by 3.45pm 3/5/2013  @work @home");
@@ -172,14 +265,14 @@ public class JIDLogic {
 	    	
 	    	*/
 	    	//logger.debug(StorageManager.saveFile());
-			
+			/*
 			JIDLogic_init();
 			
 			
 		UIController ui=new UIController();
 		JIDLogic_close();
 			//logger.debug(StorageManager.loadFile());
-			
+			*/
 			
 		
 	}
@@ -199,6 +292,7 @@ public class JIDLogic {
 	}
 	public static Task[] executeCommand (String commandFromUser) {
 		Operation op = null;
+		
 		logger.debug("inside execute command");
 		//logger.debug(commandFromUser);
 		if (command == null || command.equals("")) {
@@ -232,12 +326,14 @@ public class JIDLogic {
 			op = Operation.getOperationObj(commandFromUser);
 						
 			Task[] result=  op.execute(commandFromUser);
-			
+			UIController.sendOperationFeedback(op.getOpFeedback());
+			logger.debug("Operation feedback:"+op.getOpFeedback());
 			logger.debug("THE OPERATION IS UNDOABLE:"+op.isUndoAble());
 			if (op.isUndoAble()) {
 				undoStack.push(op);
 				logger.debug("isundoable");
 			}
+			//UIController.sendOperationFeedback(op.getOpFeedback());
 			//UIController.showTopPopUpMsg(op.getErrorMessage());
 			return result;
 			
@@ -250,6 +346,7 @@ public class JIDLogic {
 	{
 		
 		StorageManager.loadFile();
+		StorageManager.loadArchive();
 		
 	}
 	
@@ -257,6 +354,7 @@ public class JIDLogic {
 	{
 		
 		StorageManager.saveFile();
+		StorageManager.saveArchive();
 		
 	}
 

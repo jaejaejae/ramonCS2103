@@ -1,5 +1,5 @@
 package gcal;
-
+/*
 import com.google.gdata.data.extensions.Reminder.Method;
 
 import data.Task;
@@ -8,7 +8,7 @@ public class GoogleCalendarTest {
 	public static void main(String args[])
 	{
 		GoogleCalendar test=new GoogleCalendar();
-		
+		test.login("ngandhi1993@gmail.com", "ndms1993");
 		Task[] array=new Task[test.calendarEventListToTaskArray(test.getAllEntries()).length];
 		array=test.calendarEventListToTaskArray(test.getAllEntries());
 		for(int i=0;i<array.length;i++)
@@ -18,4 +18,4 @@ public class GoogleCalendarTest {
 		Task one=new Task("Go to CS2103 lecture",null,start1,end1,null,"weekly",false,false);
 		test.addTask(one, 0, Method.NONE);
 	}
-}
+}*/

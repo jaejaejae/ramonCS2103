@@ -1,5 +1,7 @@
 package operation;
 import org.apache.log4j.Logger;
+
+import constant.OperationFeedback;
 import parser.Parser;
 import data.Task;
 import storagecontroller.StorageManager;
@@ -13,13 +15,18 @@ public class Modify extends BaseSearch{
 	public Modify(){
 		commandName="modify";
 	}
-	
+	public Task[] executeAll(Task t) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	public Modify(String intendedOperation) {
 		// TODO Auto-generated constructor stub
 		commandName=intendedOperation;
-		if (commandName=="canceledit"){
+		if (commandName=="canceledit")
+		{
 			taskBeingEdited=null;
 		}
+		
 	}
 
 	
@@ -45,6 +52,7 @@ public class Modify extends BaseSearch{
 				return new Task[]{taskToBeEdited};
 				
 			}
+			feedback=OperationFeedback.EDIT_FAILED;
 			return null;	
 		}
 	}
@@ -78,11 +86,14 @@ public class Modify extends BaseSearch{
 		return false;
 	}
 
-	@Override
-	public String getErrorMessage() {
+	public OperationFeedback getOpFeedback() {
 		// TODO Auto-generated method stub
-		return "Task could not be edited.";
-	}
+		return null;
+	}      
+               
+    
+	
+		
 
 	@Override
 	public String getOperationName() {
@@ -93,6 +104,15 @@ public class Modify extends BaseSearch{
 	@Override
 	public Task[] execute(String userCommand) {
 		// TODO Auto-generated method stub
+		Task[] def=StorageManager.getAllTasks();
+    	if (def!=null)
+    	{
+    		for (int i=0;i<def.length;i++)
+    		{
+    			logger.debug(def[i].toString()+" "+def[i].getTaskId());
+    		}
+    	}
+		
 		if (taskBeingEdited==null)
 		{
 			return super.execute(userCommand);

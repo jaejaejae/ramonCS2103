@@ -1,3 +1,6 @@
+/**
+ * @author Shubhendra Agrawal
+ */
 package operation;
 import parser.Parser;
 import data.Task;
@@ -6,12 +9,16 @@ import operation.Search;
 import java.util.Collections;
 import storagecontroller.StorageManager;
 import org.apache.log4j.Logger;
+
+import constant.OperationFeedback;
 public class BaseSearch extends Operation{
 	
 	
 	protected String commandName;
 	private static Logger logger=Logger.getLogger(BaseSearch.class);
-	
+	/**
+	 * 
+	 */
 	public Task[] execute(String userCommand)
 	{
 		String params = userCommand.toLowerCase().replaceFirst(this.commandName+" ","");
@@ -30,8 +37,15 @@ public class BaseSearch extends Operation{
 			for(int i=0;i<extractedTaskIds.length;i++)
 			{
 				Task t=StorageManager.getTaskById(extractedTaskIds[i]);
-				
-				Task[] result=execute(t);
+				//logger.debug(t.getTaskId());
+				Task[] result;
+				if (!commandName.contains("all")){
+					result=execute(t);
+				}
+				else{
+					result=executeAll(t);
+				}
+					
 				
 				if (result!=null)
 				{
@@ -59,13 +73,27 @@ public class BaseSearch extends Operation{
 		
 	}
 
+	protected Task[] executeAll(Task t) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	/**
+	 * 
+	 * @param userCommand
+	 * @return
+	 */
 	private Task parseEvent(String userCommand) {
 		// TODO Auto-generated method stub
 		Parser newparser= new Parser();
 		return newparser.parseForSearch(userCommand);
 		
 	}
-
+	/**
+	 * 
+	 * @param params
+	 * @return
+	 */
 	private String[] extractTaskIds(String params) {
 		// TODO Auto-generated method stub
 		
@@ -81,37 +109,57 @@ public class BaseSearch extends Operation{
 	}
 
 	@Override
+	/**
+	 * 
+	 */
 	public Task[] undo() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
+	/**
+	 * 
+	 */
 	public boolean isUndoAble() {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
 	@Override
+	/**
+	 * 
+	 */
 	public boolean isInputCorrect(String command) {
 		// TODO Auto-generated method stub
 		return false;
 	}
 
-	@Override
-	public String getErrorMessage() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+	
 
 	@Override
+	/**
+	 * 
+	 */
 	public String getOperationName() {
 		// TODO Auto-generated method stub
 		return "baseSearch";
 	}
 
 	@Override
+	/**
+	 * 
+	 */
 	public Task[] redo() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	/**
+	 * 
+	 */
+	public OperationFeedback getOpFeedback() {
 		// TODO Auto-generated method stub
 		return null;
 	}

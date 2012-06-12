@@ -164,7 +164,7 @@ public class UIController {
 		UIController.refresh();
 		if(operationFeedback == OperationFeedback.VALID)
 			UIController.showTopPopUpMsg("Log in successfully!");
-		UIController.showInvalidDisplay();
+		UIController.showFeedbackDisplay();
 	}
 	
 	/**
@@ -188,29 +188,29 @@ public class UIController {
 	/**
 	 * show display when there is an invalid feedback from the operation
 	 */
-	public static void showInvalidDisplay() {
+	public static void showFeedbackDisplay() {
 		if(mainJFrame.isVisible())
 			switch(operationFeedback) {
 			case INVALID_DATE:
-				mainJFrame.showPopup("incorrect date input");
+				MainJFrame.showPopup("incorrect date input");
 				break;
 			case INVALID_TIME:
-				mainJFrame.showPopup("incorret time input");
+				MainJFrame.showPopup("incorret time input");
 				break;
 			case INVALID_TASK_DETAILS:
-				mainJFrame.showPopup("incorrect task details");
+				MainJFrame.showPopup("incorrect task details");
 				break;
 			case INVALID_LABEL:
-				mainJFrame.showPopup("incorrect label");
+				MainJFrame.showPopup("incorrect label");
 				break;
-			case INVALID_INCORRECTLOGIN:
-				mainJFrame.showPopup("wrong username or password");
-				break;
+			//case INVALID_INCORRECTLOGIN:
+			//	MainJFrame.showPopup("wrong username or password");
+			//	break;
 			case INVALID_NOINTERNET:
-				mainJFrame.showPopup("no internet connection");
+				MainJFrame.showPopup("please check you are connected to the internet");
 				break;
 			case NOT_FOUND:
-				mainJFrame.showPopup("search not found!");
+				MainJFrame.showPopup("search not found!");
 				break;
 			}
 		else {
@@ -227,11 +227,11 @@ public class UIController {
 			case INVALID_LABEL:
 				JIDtray.showText("Jot It Down!", "incorrect label");
 				break;
-			case INVALID_INCORRECTLOGIN:
-				JIDtray.showText("Jot It Down!", "wrong username or password");
-				break;
+			//case INVALID_INCORRECTLOGIN:
+			//	JIDtray.showText("Jot It Down!", "wrong username or password");
+			//	break;
 			case INVALID_NOINTERNET:
-				JIDtray.showText("Jot It Down!", "no internet connection");
+				JIDtray.showText("Jot It Down!", "please check you are connected to the internet");
 				break;
 			case NOT_FOUND:
 				JIDtray.showText("Jot It Down!", "search not found!");
@@ -254,12 +254,5 @@ public class UIController {
 	 */
 	public static void setLoginOn(boolean status) {
 		loginOn = status;
-	}
-	
-	/**
-	 * 
-	 */
-	public static void requestFocusForCommandLine() {
-		
 	}
 }

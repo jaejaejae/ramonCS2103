@@ -7,11 +7,11 @@ import java.util.Set;
 
 import org.apache.log4j.Logger;
 
-import storagecontroller.StorageManager;
+
 public class TaskHashMap
 {
 	private Map<String,Task> taskList;
-	private static Logger logger = Logger.getLogger(StorageManager.class);
+	private static Logger logger = Logger.getLogger(TaskHashMap.class);
 	/** constructor*/
 	public TaskHashMap()
 	{
@@ -66,9 +66,13 @@ public class TaskHashMap
 	 */
 	public boolean deleteTask(Task taskToRemove)
 	{
-		if(taskToRemove == null)
+		if(taskToRemove == null){
+			logger.debug("task is null");
 			return false;
+		}
+			
 		taskList.remove(taskToRemove.getTaskId());
+		
 		return true;
 	}
 	/** Member function to remove the task by id

@@ -2,6 +2,8 @@ package operation;
 
 import org.apache.log4j.Logger;
 
+import constant.OperationFeedback;
+
 import data.Task;
 import storagecontroller.StorageManager;
 import gcal.GoogleCalendar;
@@ -10,18 +12,116 @@ public class GoogleCalendarOp extends Operation {
 	private static Logger logger=Logger.getLogger(GoogleCalendarOp.class);
 	@Override
 	public Task[] execute(String userCommand) {
-		
+		isUndoAble=false;
+		logger.debug(userCommand);
 		// TODO Auto-generated method stub
 		if(userCommand.startsWith("logout")){
-			if (StorageManager.getGCalObject().logout()){
-				StorageManager.setGCalObject(null);
-				return new Task[1];
-			}
-			else {
+			if (StorageManager.getGCalObject().isLoggedIn())
+				return logout();
+			else{
+				feedback=OperationFeedback.USER_NOT_LOGGEDIN;
 				return null;
 			}
+			
+			
+		}
+		else if (userCommand.startsWith("login"))
+		{
+			return login(userCommand);
+			
+		
+		}
+		else if (userCommand.startsWith("sync"))
+		{
+			return sync();
+			
+		}
+		else if (userCommand.startsWith("import"))
+		{
+			return importTasks();
+			
+		}
+		else if (userCommand.startsWith("export"))
+		{
+			return exportTasks();
+			
 		}
 		
+		return null;
+		
+		
+	}
+
+	private Task[] exportTasks() {
+		// TODO Auto-generated method stub
+		GoogleCalendar obj=StorageManager.getGCalObject();
+		
+		if (obj.isLoggedIn()){
+			
+			if (StorageManager.getGCalObject().exportToGcal()){
+				logger.debug("logged and exported successfully");
+				return new Task[1];
+			}
+			else{
+				feedback=OperationFeedback.INVALID_NOINTERNET;
+				return null;
+				
+				
+			}
+		}
+		else
+		{
+			feedback=OperationFeedback.USER_NOT_LOGGEDIN;
+			return null;
+		}
+	}
+
+	private Task[] importTasks() {
+		// TODO Auto-generated method stub
+		GoogleCalendar obj=StorageManager.getGCalObject();
+		
+		if (obj.isLoggedIn()){
+			
+			if (StorageManager.getGCalObject().importFromGcal()){
+				logger.debug("logged and imported successfully");
+				return new Task[1];
+			}
+			else{
+				feedback=OperationFeedback.INVALID_NOINTERNET;
+				return null;
+				
+			}
+		}
+		else {
+			feedback=OperationFeedback.USER_NOT_LOGGEDIN;
+			return null;
+		}
+	}
+
+	private Task[] sync() {
+		// TODO Auto-generated method stub
+		GoogleCalendar obj=StorageManager.getGCalObject();
+		
+		if (obj.isLoggedIn()){
+		
+			if (StorageManager.getGCalObject().sync()){
+				logger.debug("logged and synced successfully");
+				return new Task[1];
+			}
+			else{
+				feedback=OperationFeedback.INVALID_NOINTERNET;
+				return null;
+				
+			}
+		}
+		else{
+			feedback=OperationFeedback.USER_NOT_LOGGEDIN;
+			return null;
+		}
+	}
+
+	private Task[] login(String userCommand) {
+		// TODO Auto-generated method stub
 		userCommand.trim().replaceAll("login","");
 		logger.debug(userCommand);
 		String params[]=userCommand.split("\\s+");
@@ -33,19 +133,29 @@ public class GoogleCalendarOp extends Operation {
 		obj.login(username, password);
 		if (obj.isLoggedIn()){
 			StorageManager.setGCalObject(obj);
-			if (StorageManager.getGCalObject().sync()){
-				logger.debug("logged and synced successfully");
-				return new Task[1];
-			}
-			else{
-				return null;
-				
-			}
+			Thread t= new Thread(StorageManager.getGCalObject());
+			t.start();
+			return new Task[1];
+			
 		}
-		
-		return null;
-		
-		
+		else{
+			feedback=OperationFeedback.INVALID_INCORRECT_LOGIN_INTERNET_CONNECTION;
+			return null;
+		}
+	
+	}
+
+	private Task[] logout() {
+		// TODO Auto-generated method stub
+		if (StorageManager.getGCalObject().logout()){
+			StorageManager.setGCalObject(null);
+			feedback=OperationFeedback.LOGGED_OUT_SUCCESSFULLY;
+			return new Task[1];
+		}
+		else {
+			feedback=OperationFeedback.LOGOUT_FAILED;
+			return null;
+		}
 	}
 
 	@Override
@@ -63,7 +173,7 @@ public class GoogleCalendarOp extends Operation {
 	@Override
 	public boolean isUndoAble() {
 		// TODO Auto-generated method stub
-		return false;
+		return isUndoAble;
 	}
 
 	@Override
@@ -72,12 +182,14 @@ public class GoogleCalendarOp extends Operation {
 		return true;
 	}
 
-	@Override
-	public String getErrorMessage() {
+	public OperationFeedback getOpFeedback() {
 		// TODO Auto-generated method stub
-		return "Could not login into Google Calendar services.";
-	}
-
+		return feedback;
+	}      
+               
+    
+	
+	
 	@Override
 	public String getOperationName() {
 		// TODO Auto-generated method stub

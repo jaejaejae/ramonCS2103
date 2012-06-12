@@ -9,6 +9,7 @@ import org.apache.log4j.*;
 
 import data.Task;
 import gui.Resource;
+import gui.STATE;
 import gui.UIController;
 import gui.mainWindow.extended.AutoCompletion;
 import gui.mainWindow.extended.ExpandComponent;
@@ -16,13 +17,10 @@ import gui.mainWindow.extended.HelpFrame;
 import gui.mainWindow.extended.TopPopUp;
 import logic.JIDLogic;
 
-//import com.seaglasslookandfeel.*;
-
 import javax.swing.ActionMap;
 import javax.swing.InputMap;
 import javax.swing.JButton;
 import javax.swing.JComponent;
-import javax.swing.JLabel;
 import javax.swing.JLayeredPane;
 import javax.swing.SwingUtilities;
 import javax.swing.Timer;
@@ -66,15 +64,10 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JComboBox jComboBox1;
     private javax.swing.JLayeredPane jLayeredPane1;
 	private javax.swing.JLabel logo;
-	private JLabel bg;
 	private MouseListener curdownButton;
-	private javax.swing.JPanel jPanel1;
-	private	JLayeredPane lp;
+	public static Point currentLocation;
 	// End of variables declaration
 
-	private static Point point = new Point();
-	public static Point currentLocation;
-	private final boolean TEST = true;
 
 	// End of variables declaration
 
@@ -417,13 +410,6 @@ public class MainJFrame extends javax.swing.JFrame {
 	 */
 	private void setlogoAction() {
 	}
-
-	enum STATE {
-		ADD, DELETE, EDIT, SEARCH, COMPLETED, ARCHIVE
-		, OVERDUE, NULL, LIST, UNDO, EXIT, HELP, REDO
-		, IMPORTANT, LOGIN, LOGOUT, DELETEALL, COMPLETEDALL
-		, CLEARARCHIVE, EXPORTARCHIVE
-	};
 	
 	boolean edit = false;
 	STATE curState;
@@ -431,7 +417,6 @@ public class MainJFrame extends javax.swing.JFrame {
 	Task[] tasks;
 	String prevText;
 	String id;
-	int prevIndex;
 	String lastCmd = null;
 	String command;
 	
@@ -533,13 +518,11 @@ public class MainJFrame extends javax.swing.JFrame {
 											editorcomp.setText(curText);
 											editorcomp.setSelectionStart(curLocation);
 											editorcomp.setSelectionEnd(curLocation);
-											//editorcomp.setText(curState.toString() + tasks[0]);
-	
+											
 											if (tasks != null)
 												id = tasks[0].getTaskId();
 											else
 												id = null;
-												//id = "dummyString!@#$";
 										}
 	
 									});
@@ -657,7 +640,6 @@ public class MainJFrame extends javax.swing.JFrame {
 										new Action.OverdueAction().actionPerformed(null);
 										break;
 									case LOGIN:
-										System.out.println("case LOGIN");
 										new Action.GCalendarAction().actionPerformed(null);
 										break;
 									case LOGOUT:
@@ -674,13 +656,12 @@ public class MainJFrame extends javax.swing.JFrame {
 										curState = STATE.NULL;
 									}
 									else {
-										UIController.showInvalidDisplay();
+										UIController.showFeedbackDisplay();
 									}
 									UIController.sendOperationFeedback(OperationFeedback.VALID);
 								}
 								
 								prevState = curState;
-								prevIndex = curIndex;
 								prevText = curText;
 							}
 							
@@ -773,6 +754,9 @@ public class MainJFrame extends javax.swing.JFrame {
 
 	}
 
+	
+
+	private static Point point = new Point();
 	
 	/**
 	 * add Frame actions :

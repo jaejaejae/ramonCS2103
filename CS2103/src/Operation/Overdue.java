@@ -10,6 +10,8 @@ import data.CompareByDate;
 
 import org.apache.log4j.Logger;
 
+import constant.OperationFeedback;
+
 import storagecontroller.StorageManager;
 public class Overdue extends Operation {
 	
@@ -43,11 +45,14 @@ public class Overdue extends Operation {
 		return false;
 	}
 
-	@Override
-	public String getErrorMessage() {
+	public OperationFeedback getOpFeedback() {
 		// TODO Auto-generated method stub
-		return "Overdue Tasks cannot be displayed";
-	}
+		return null;
+	}      
+               
+    
+	
+	
 
 	@Override
 	public String getOperationName() {
@@ -70,7 +75,7 @@ public class Overdue extends Operation {
 					&& curTask.getStart().getTimeMilli()
 					!= defaultDateTime.getTimeMilli())
 			{
-				if (curTask.getStart().compareTo(currDateTime)==-1)
+				if (curTask.getStart().compareTo(currDateTime)==-1 && !curTask.getCompleted())
 				{
 					overdueTasks.add(curTask);
 				}
@@ -78,7 +83,7 @@ public class Overdue extends Operation {
 			else if (curTask.getEnd()!=null 
 						&& curTask.getEnd().getTimeMilli()!= defaultDateTime.getTimeMilli())
 			{
-				if (curTask.getEnd().compareTo(currDateTime)==-1)
+				if (curTask.getEnd().compareTo(currDateTime)==-1 && !curTask.getCompleted())
 				{
 					overdueTasks.add(curTask);
 				}
@@ -87,6 +92,7 @@ public class Overdue extends Operation {
 			{}
 		}
 		if (overdueTasks.size()==0)	{
+			feedback=OperationFeedback.NO_TASK_OVERDUE;
 			return null;
 		} else {
 			Collections.sort(overdueTasks,compareByDate);

@@ -1,6 +1,10 @@
 package operation;
 
+import java.util.ArrayList;
+
 import org.apache.log4j.Logger;
+
+import constant.OperationFeedback;
 
 import storagecontroller.StorageManager;
 import data.Task;
@@ -8,7 +12,7 @@ import data.Task;
 public class ToggleCompleted extends BaseSearch{
 	
 	private static Logger logger=Logger.getLogger(BaseSearch.class);
-	private Task taskCompleted;
+	private ArrayList<Task> taskCompleted=new ArrayList<Task>();
 	public ToggleCompleted(){
 		commandName="completed";
 	}
@@ -16,7 +20,34 @@ public class ToggleCompleted extends BaseSearch{
 		// TODO Auto-generated constructor stub
 		commandName=intendedOperation;
 	}
-
+	public Task[] executeAll(Task taskToComplete) {
+		// TODO Auto-generated method stub
+		if (taskToComplete.getRecurringId()=="")
+			return execute(taskToComplete);
+		Task[] taskToBeCompleted = StorageManager
+				.getTaskByRecurrenceID(taskToComplete.getRecurringId());
+		logger.debug(taskToBeCompleted.length);
+		for (int i=0;i<taskToBeCompleted.length;i++)
+		{
+			boolean completed = toggleComplete(taskToBeCompleted[i]);
+			if (completed) {
+				isUndoAble = true;
+				taskCompleted.add(taskToBeCompleted[i]);
+			
+				logger.debug("completed succesfully");
+				//return resultOfComplete;
+			}
+			else{
+				feedback=OperationFeedback.COMPLETE_FAILED;
+			}
+		}
+		if (taskCompleted.size()!=0)
+			return (Task[]) taskCompleted.toArray(new Task[taskCompleted.size()]);
+		else {
+			feedback=OperationFeedback.NO_TASK_COMPLETED;
+			return null;
+		}
+	}
 	public Task[] execute(Task taskToBeCompleted){
 		Task taskToComplete = StorageManager
 				.getTaskById(taskToBeCompleted.getTaskId());
@@ -24,13 +55,13 @@ public class ToggleCompleted extends BaseSearch{
 		boolean completed = toggleComplete(taskToComplete);
 		if (completed) {
 			isUndoAble = true;
-			taskCompleted = taskToComplete;
+			taskCompleted.add(taskToComplete);
 			Task[] resultOfComplete = new Task[1];
 			resultOfComplete[0] = taskToComplete;
 			logger.debug("completed succesfully");
 			return resultOfComplete;
 		}
-
+		feedback=OperationFeedback.COMPLETE_FAILED;
 		return null;
 		
 	}
@@ -50,17 +81,20 @@ public class ToggleCompleted extends BaseSearch{
 	}
 	@Override
 	public Task[] undo() {
-		
-		Task completeTask=StorageManager.getTaskById(taskCompleted.getTaskId());
-		if (completeTask!=null){
-			completeTask.toggleCompleted();
-			logger.debug("Can undo");
-			return new Task[]{completeTask};
+		ArrayList<Task> undoneTasks=new ArrayList<Task>();
+		for (int i=0;i<taskCompleted.size();i++){
+			Task completeTask=StorageManager.getTaskById(taskCompleted.get(i).getTaskId());
+			if (completeTask!=null){
+				completeTask.toggleCompleted();
+				logger.debug("Can undo");
+				undoneTasks.add(completeTask);
+			}
+			
 		}
-		else {
+		if (undoneTasks.size()!=0)
+			return undoneTasks.toArray(new Task[undoneTasks.size()]);
+		else 
 			return null;
-		}
-		
 	}
 
 	@Override
@@ -75,11 +109,14 @@ public class ToggleCompleted extends BaseSearch{
 		return false;
 	}
 
-	@Override
-	public String getErrorMessage() {
+	public OperationFeedback getOpFeedback() {
 		// TODO Auto-generated method stub
-		return "Task could not be marked as completed/incomplete";
-	}
+		return feedback;
+	}      
+               
+    
+	
+	
 
 	@Override
 	public String getOperationName() {
@@ -90,15 +127,20 @@ public class ToggleCompleted extends BaseSearch{
 	@Override
 	public Task[] redo() {
 		// TODO Auto-generated method stub
-		Task completeTask=StorageManager.getTaskById(taskCompleted.getTaskId());
-		if (completeTask!=null){
-			completeTask.toggleCompleted();
-			logger.debug("Can redo");
-			return new Task[]{completeTask};
+		ArrayList<Task> redoneTasks=new ArrayList<Task>();
+		for (int i=0;i<taskCompleted.size();i++){
+			Task completeTask=StorageManager.getTaskById(taskCompleted.get(i).getTaskId());
+			if (completeTask!=null){
+				completeTask.toggleCompleted();
+				logger.debug("Can undo");
+				redoneTasks.add(completeTask);
+			}
+			
 		}
-		else {
+		if (redoneTasks.size()!=0)
+			return redoneTasks.toArray(new Task[redoneTasks.size()]);
+		else 
 			return null;
-		}
 	}
 
 	

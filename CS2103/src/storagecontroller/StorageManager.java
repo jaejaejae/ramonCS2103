@@ -12,6 +12,7 @@ import org.apache.log4j.Logger;
 public class StorageManager 
 {
 	private static TaskHashMap liveStorage=new TaskHashMap();
+	private static TaskHashMap liveArchives=new TaskHashMap();
 	private static Logger logger = Logger.getLogger(StorageManager.class);
 	private static GoogleCalendar gCal;
 	/** default constructor
@@ -19,6 +20,14 @@ public class StorageManager
 	 */
 	public StorageManager()
 	{}
+	public static boolean addArchivedTask(Task taskToBeAdded)
+	{
+		return liveArchives.addTask(taskToBeAdded);
+	}
+	public static boolean deleteArchivedTask(Task taskToBeRemoved)
+	{
+		return liveArchives.deleteTask(taskToBeRemoved);
+	}
 	/** adds the task to liveStorage
 	 * 
 	 * @param taskToBeAdded the task to be added
@@ -45,11 +54,19 @@ public class StorageManager
 	{
 		ArrayList<Task> tasks=new ArrayList<Task>();
 		for(String key: liveStorage.getKeySet())
-		tasks.add(liveStorage.getTaskById(key));
+			tasks.add(liveStorage.getTaskById(key));
 		Task[] taskArray=new Task[tasks.size()];
 		tasks.toArray(taskArray);
 		return taskArray;
 	}	
+	public static Task[] getAllArchivedTasks(){
+		ArrayList<Task> tasks=new ArrayList<Task>();
+		for(String key: liveArchives.getKeySet())
+			tasks.add(liveArchives.getTaskById(key));
+		Task[] taskArray=new Task[tasks.size()];
+		tasks.toArray(taskArray);
+		return taskArray;
+	}
 	/** 
 	 * 
 	 * @param id id of the task to be returned
@@ -57,7 +74,7 @@ public class StorageManager
 	 */
 	public static Task getTaskById(String id)
 	{
-		return liveStorage.getTaskById(id);
+		return liveStorage.getTaskById(id.trim());
 	}
 	/** loads to the liveStorage from the file 
 	 * 
@@ -100,8 +117,8 @@ public class StorageManager
 			return false;
 		System.out.println(getAllTasks().length);
 		liveStorage.deleteTask(taskToBeReplaced);
-		liveStorage.addTask(taskToReplaceBy);
 		taskToReplaceBy.setTaskId(taskToBeReplaced.getTaskId());
+		liveStorage.addTask(taskToReplaceBy);
 		taskToReplaceBy.setDescription(taskToBeReplaced.getDescription());
 		return true;
 	}
@@ -125,17 +142,46 @@ public class StorageManager
 	}
 	public static boolean saveArchive()
 	{
-		return false;
+		FileHandler handler=new FileHandler("JotItDownArchives.xml");
+		if(handler.writeToFile(liveArchives))
+			return true;
+		else 
+			return false;
 	}
-	public static boolean clearArchive()
+	public static void clearArchive()
 	{
-		return false;
+		liveArchives.clearHashMap();
+		
+		
+	}
+	public static boolean loadArchive(){
+		FileHandler handler=new FileHandler("JotItDownArchives.xml");
+		if(liveArchives.getKeySet().size()!=0)
+		{
+			logger.debug("Clearing Archived HashMap");
+			liveArchives.clearHashMap();
+		}
+		return handler.readFromFile(liveArchives);
+		
 	}
 	public static GoogleCalendar getGCalObject(){
 		return gCal;
 	}
 	public static void setGCalObject(GoogleCalendar obj){
 		gCal=obj;
+	}
+	public static Task[] getTaskByRecurrenceID(String Id){
+		ArrayList<Task> tasks=new ArrayList<Task>();
+		for(String key: liveStorage.getKeySet()){
+			if (liveStorage.getTaskById(key).getRecurringId().contains(Id))
+			{
+				tasks.add(liveStorage.getTaskById(key));
+			}
+		}
+		Task[] taskArray=new Task[tasks.size()];
+		tasks.toArray(taskArray);
+		return taskArray;
+		
 	}
 }
 

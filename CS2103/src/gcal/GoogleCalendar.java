@@ -4,6 +4,7 @@ import org.apache.log4j.Logger;
 /*import com.google.gdata.client.Query;
 import com.google.gdata.client.calendar.CalendarQuery;*/
 import com.google.gdata.client.calendar.CalendarService;
+//import com.google.gdata.data.Content;
 import com.google.gdata.data.DateTime;
 import com.google.gdata.data.PlainTextConstruct;
 import com.google.gdata.data.calendar.CalendarEventEntry;
@@ -22,8 +23,8 @@ import java.util.ArrayList;
 import java.util.List;
 import data.Task;
 import data.TaskDateTime;
-import parser.Parser;
-public class GoogleCalendar
+//import parser.Parser;
+public class GoogleCalendar implements Runnable
 {
 	private Logger logger = Logger.getLogger(GoogleCalendar.class.getName());
 	private static final String USER_CALENDAR_URL = "https://www.google.com/calendar/feeds/default/private/full";
@@ -34,7 +35,7 @@ public class GoogleCalendar
 	private String password;
 	private static boolean loggedIn;
 	private static URL userCalendarUrl;
-	Parser testParser=new Parser();
+	//Parser testParser=new Parser();
 	/*private Task task1=testParser.parseForAdd("Go to Airport on 10 june 2012 at 4 pm");
 	private Task task2=testParser.parseForAdd("Go for a movie on 8 june 2012 at 9 pm");
 	private Task task3=testParser.parseForAdd("Go buy shoes at Vivo on 9 june 2012 at 10 am");*/
@@ -61,7 +62,7 @@ public class GoogleCalendar
 	public boolean logout(){
 		calenService=new CalendarService(APPLICATION_NAME);
 		this.username=null;
-		this.username=null;
+		this.password=null;
 		loggedIn=false;
 		return true;
 	}
@@ -76,11 +77,11 @@ public class GoogleCalendar
 		}
 		catch(IOException e)
 		{
-			
+			System.out.println("IO Exception");
 		}
 		catch(ServiceException e)
 		{
-			
+			System.out.println("Service Exception");
 		}
 			List<CalendarEventEntry> entries=resultFeed.getEntries();
 			return entries;
@@ -94,16 +95,37 @@ public class GoogleCalendar
 	}
 	public Task calendarEntryToTask(CalendarEventEntry entry){
 		Task googleCalTask=new Task();
+		ArrayList<String> labelList=new ArrayList<String>();
 		googleCalTask.setName(entry.getTitle().getPlainText());
+		String labels=entry.getContent().getLang();
+		if(labels!=null)
+		{
+		String[] arr = labels.split("\\s+");
+		for(int i=0;i<arr.length;i++)
+		{
+			labelList.add(arr[i]);
+		}
+		googleCalTask.setLabels(labelList);
+		}
 		String desc=entry.getId().replaceAll("http://www.google.com/calendar/feeds/default/events/", "");
 		googleCalTask.setDescription(desc);
 		List<When> eventTime=entry.getTimes();
 		googleCalTask.setStart(getTaskDateTime(eventTime.get(0).getStartTime()));
 		googleCalTask.getStart().setHasDate(true);
 		googleCalTask.getStart().setHasTime(!eventTime.get(0).getStartTime().isDateOnly());
+		logger.debug(getTaskDateTime(eventTime.get(0).getStartTime()).toString());
+		logger.debug(getTaskDateTime(eventTime.get(0).getEndTime()).toString());
+		logger.debug(googleCalTask.getName());
+		if(getTaskDateTime(eventTime.get(0).getStartTime()).toString().equals(getTaskDateTime(eventTime.get(0).getEndTime()).toString())){
+			logger.debug("Start end date time is same");
+			googleCalTask.setEnd(null);
+		}
+		else{
 		googleCalTask.setEnd(getTaskDateTime(eventTime.get(0).getEndTime()));
 		googleCalTask.getEnd().setHasDate(true);
 		googleCalTask.getEnd().setHasTime(!eventTime.get(0).getEndTime().isDateOnly());
+		}
+		//googleCalTask.setLabels(labelList);
 		return googleCalTask;
 	}
 	
@@ -114,8 +136,17 @@ public class GoogleCalendar
 	public CalendarEventEntry addTask(Task task,int reminderMins,Method reminderMethod)
 	{
 		logger.debug("In addTask");
+		String labels=new String();
 		CalendarEventEntry newEntry = new CalendarEventEntry();
 		newEntry.setTitle(new PlainTextConstruct(task.getName()));
+		if(task.getLabels()!=null)
+		{
+		for(int i=0;i<task.getLabels().size();i++)
+		{
+			labels += task.getLabels().get(i) + " ";
+		}
+		newEntry.setContent(new PlainTextConstruct(labels));
+		}
 		DateTime start=getDateTime(task.getStart());
 		DateTime end=getDateTime(task.getEnd());
 		if(start==null)
@@ -150,7 +181,6 @@ public class GoogleCalendar
 		}
 		
 	}
-	
 	public boolean deleteEvent(Task taskToBeDeleted)
 	{
 		List<CalendarEventEntry> entriesList=getAllEntries();
@@ -203,15 +233,16 @@ public class GoogleCalendar
 		else
 			return DateTime.parseDate(taskDateTime.dateToXml());
 	}
-	public boolean sync()
+	public boolean importFromGcal()
 	{
 		boolean isPresent = false;
-		boolean isPresent2=false;
 		Task[] taskArray=calendarEventListToTaskArray(getAllEntries());
 		System.out.println(taskArray.length);
 		
 		for(int i=0;i<taskArray.length;i++)
 		{
+			isPresent=false;
+			logger.debug("isPresent resetted to false");
 			if(StorageManager.getAllTasks().length==0)
 			{
 				logger.debug("Length 0" + taskArray[0].getDescription());
@@ -229,26 +260,47 @@ public class GoogleCalendar
 						break;
 					}
 				}
-				if(!isPresent){System.out.println("In sync");
+				if(!isPresent){
+					logger.debug("Checking if in Archives");
+					for(int k=0;k<StorageManager.getAllArchivedTasks().length;k++){
+						if(taskArray[i].getDescription().equals(StorageManager.getAllArchivedTasks()[k].getDescription()))
+						{
+							logger.debug("Is present in archives");
+							isPresent=true;
+							break;
+						}
+					}
+				}
+				if(!isPresent){
 					StorageManager.addTask(taskArray[i]);System.out.println(taskArray[i].getTaskId());}
 		}
 		}
+		return true;
+	}
+	public boolean exportToGcal()
+	{
+		boolean isPresent2=false;
+		Task[] taskArray=calendarEventListToTaskArray(getAllEntries());
 		logger.debug("In export");
 		for(int i=0;i<StorageManager.getAllTasks().length;i++)
 		{
+			isPresent2=false;
+			logger.debug("Again!!!!!!!!!");
 			if(taskArray.length==0)
 			{
 				logger.debug("Length of entries is 0");
-				addTask(StorageManager.getAllTasks()[0],0,Method.NONE);
+				addTask(StorageManager.getAllTasks()[i],0,Method.NONE);
 			}
 			else
 			{
 				for(int j=0;j<taskArray.length;j++)
 				{
-					logger.debug(StorageManager.getAllTasks()[i].getDescription() + " " + taskArray[j].getDescription() + StorageManager.getAllTasks()[i].toString() + taskArray[j].toString());
+					logger.debug(StorageManager.getAllTasks()[i].getDescription() + " " + taskArray[j].getDescription());
+					logger.debug(StorageManager.getAllTasks()[i].toString());
 					if(StorageManager.getAllTasks()[i].getDescription().equals(taskArray[j].getDescription()))
 					{
 						isPresent2=true;
+						logger.debug("the desc id of google cal task is same as live storage" );
 						if(!(StorageManager.getAllTasks()[i].isEqual(taskArray[j])))
 						{
 							logger.debug(StorageManager.getAllTasks()[i].toString());
@@ -259,14 +311,46 @@ public class GoogleCalendar
 						break;
 					}
 				}
-					if(!isPresent2){logger.debug("Adding the task to gcal.");
-						addTask(StorageManager.getAllTasks()[i], 0, Method.NONE);}
+					if(!isPresent2){
+						addTask(StorageManager.getAllTasks()[i], 0, Method.NONE);
+					}
 			}
 		}
+		
 		return true;
+	}
+	public boolean sync()
+	{
+		Task[] taskArray=calendarEventListToTaskArray(getAllEntries());
+		for(int i=0;i<taskArray.length;i++)
+		{
+			boolean isPresent3=false;
+			for(int k=0;k<StorageManager.getAllTasks().length;k++)
+			{
+				if(taskArray[i].getDescription().equalsIgnoreCase(StorageManager.getAllTasks()[k].getDescription()))
+				{
+					isPresent3=true;
+					break;
+				}
+			}
+			if(!isPresent3)
+			{
+				deleteEvent(taskArray[i]);
+			}
+		}
+		if(importFromGcal() && exportToGcal())
+			return true;
+		else
+			return false;
+		
 	}
 	public boolean isLoggedIn(){
 		return loggedIn;
+	}
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		sync();
 	}
 }
 

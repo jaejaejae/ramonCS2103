@@ -2,7 +2,6 @@ package data;
 
 import java.util.ArrayList;
 import java.util.GregorianCalendar;
-import java.util.List;
 
 public class Task {
 
@@ -17,6 +16,7 @@ public class Task {
 	private boolean deadline;
 	private ArrayList<String> labels;
 	private String recurring;
+	private String recurringId;
 /** Default constructor
  * 
  */
@@ -32,6 +32,7 @@ public Task()
 	deadline = false;
 	labels = null;
 	recurring = null;
+	recurringId="";
 }
 /**Task Constructor 1*/
 public Task(String Name, String desc, TaskDateTime startDateTime, TaskDateTime endDateTime, String recurring)
@@ -42,6 +43,7 @@ public Task(String Name, String desc, TaskDateTime startDateTime, TaskDateTime e
 	start = startDateTime;
 	end = endDateTime;
 	this.recurring = recurring;
+	recurringId="";
 }
 /** Task Constructor 2
  *
@@ -57,6 +59,7 @@ public Task(String Name, String desc, TaskDateTime startDateTime, TaskDateTime e
 	this.recurring = recurring;
 	deadline = Deadline;
 	important = Important;
+	recurringId="";
 }
 /** Task Constructor 3
  * 
@@ -70,6 +73,7 @@ public Task(String Name,String desc,TaskDateTime startDateTime,TaskDateTime endD
 	end = endDateTime;
 	labels = Labels;
 	this.recurring = recurring;
+	recurringId="";
 }
 /** Task Constructor 3
  * 
@@ -216,6 +220,12 @@ public void setDeadline(boolean value)
 {
 	this.deadline = value;
 }
+public String getRecurringId(){
+	return recurringId;
+}
+public void setRecurringId(String ID){
+	recurringId=ID;
+}
 /** 
  * 
  * @return the attribute recurring 
@@ -292,37 +302,58 @@ public void toggleDeadline()
  */
 public String toString()
 {
+	String imp="";
 	TaskDateTime temp=new TaskDateTime();
+	if (this.getImportant())
+	{
+		imp="*";
+	}
 	if((start!=null && end!=null && start.compareTo(temp)!=0 && (end.compareTo(temp)!=0)))
 	{
 		if(start.getDate().getTimeMilli()==end.getDate().getTimeMilli())
 		{
-			return name + " from " + start.getTime().formattedToString() + " to " + end.getTime().formattedToString() + " on " + start.getDate().formattedToString() + " labels: " + getLabels(); 
+			return imp+name + " from " + start.getTime().formattedToString() + " to " + end.getTime().formattedToString() + " on " + start.getDate().formattedToString() + " "+toStringLabels(); 
 		}
 			else
 		{
-			return name + " from " + start.formattedToString() + " to " + end.formattedToString() + " labels: " + getLabels(); 
+			return imp+name + " from " + start.formattedToString() + " to " + end.formattedToString()  + " "+toStringLabels(); 
 		}
+	}
+	else if (start==null && end ==null){
+		return " ";
 	}
 	else if((end==null ||( start!=null && start.compareTo(temp)!=0 && end.compareTo(temp)==0)))
 	{
 		if(start.getHasTime())
-			return name + " at " + start.getTime().formattedToString() + " on " + start.getDate().formattedToString() + " labels: " + getLabels(); 
+			return imp+name + " at " + start.getTime().formattedToString() + " on " + start.getDate().formattedToString()  + " "+toStringLabels(); 
 		else
-			return name + " on " +start.getDate().formattedToString() + " labels: " + getLabels();  
+			return imp+name + " on " +start.getDate().formattedToString() +" "+ toStringLabels();  
 	}
 	else if((start ==null || ( end!=null && start.compareTo(temp)==0) && !(end.compareTo(temp)==0)) )
 	{
 		if(end.getHasTime())
-			return name + " by "+ end.getTime().formattedToString()+" on " + end.getDate().formattedToString() + " labels: "+getLabels(); 
+			return imp+name + " by "+ end.getTime().formattedToString()+" on " + end.getDate().formattedToString() +" "+ toStringLabels(); 
 		else
-			return name + " by " + end.formattedToString() + " labels: " + getLabels(); 
+			return imp+name + " by " + end.formattedToString() + " "+ toStringLabels(); 
 	}
 	else
 	{
 		return " ";
 	}
 			
+}
+public String toStringLabels()
+{
+	String stringLabels="";
+	if (labels!=null)
+	{
+	if (labels.size()!=0){
+		for(int i=0;i<labels.size();i++){
+			stringLabels+="@"+labels.get(i)+" ";
+		}	
+	}
+	}
+	return stringLabels;
 }
 /**
  * 
