@@ -248,7 +248,18 @@ public class UIController {
 		return loginOn;
 	}
 	
+	/**
+	 * 
+	 * @param status of log in dialog
+	 */
 	public static void setLoginOn(boolean status) {
 		loginOn = status;
+	}
+	
+	/**
+	 * 
+	 */
+	public static void requestFocusForCommandLine() {
+		
 	}
 }

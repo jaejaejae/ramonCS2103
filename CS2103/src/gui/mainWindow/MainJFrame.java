@@ -949,6 +949,5 @@ public class MainJFrame extends javax.swing.JFrame {
         ActionMap actionMap = this.getRootPane().getActionMap();
         
         new Binding(this, inputMap, actionMap);
-    }
-    
+    }    
 }
