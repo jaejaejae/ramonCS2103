@@ -550,6 +550,8 @@ public class MainJFrame extends javax.swing.JFrame {
 									}
 								}
 									
+								STATE.setState(curState);
+								
 								if(e.getKeyCode() == KeyEvent.VK_ENTER && curState!=STATE.NULL) {
 									String exeCmd = new String();
 									
@@ -619,8 +621,9 @@ public class MainJFrame extends javax.swing.JFrame {
 									case EDIT:
 										if(!edit) {
 											if(tasks!=null) {
-												showPopup( curState.toString().toLowerCase()+ " " 
-														+ tasks[0]);
+												UIController.showFeedbackDisplay(tasks);
+												//showPopup( curState.toString().toLowerCase()+ " " 
+												//		+ tasks[0]);
 												UIController.refresh();
 											}
 										}
@@ -653,7 +656,7 @@ public class MainJFrame extends javax.swing.JFrame {
 									case CLEARARCHIVE:
 									case EXPORTARCHIVE:
 									}
-									
+														
 									if(UIController.getOperationFeedback() == OperationFeedback.VALID && !edit) {
 										jBoxCompletion.setStandardModel();
 										editorcomp.setText("");
@@ -772,6 +775,17 @@ public class MainJFrame extends javax.swing.JFrame {
 		TopPopUp.jFrame.setFocusable(true);
 	}
 
+	/**Show pop up on the top
+	 * 
+	 * @param name will get cut if it is too long
+	 * @param detail that must be shown and will appear after the first String
+	 */
+	public static void showPopup(String name, String detail) {
+		String str = name + " " + detail;
+		if(str.length() > 50)
+			str = name.substring(0, 50-detail.length()-3) + "... " + detail;
+		showPopup(str);
+	}
 	/**
 	 * show the current window
 	 */

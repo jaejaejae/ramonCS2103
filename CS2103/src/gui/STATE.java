@@ -35,9 +35,9 @@ public enum STATE {
 		return state;
 	}
 	
-	public static String getEndedString(STATE s, boolean isOneTask) {
+	public static String getEndedString(boolean isOneTask) {
 		if(isOneTask)
-			switch(s){
+			switch(state){
 			case ADD: return "is added.";
 			case DELETEALL:
 			case DELETE: return "is deleted.";
@@ -50,7 +50,7 @@ public enum STATE {
 				logger.warn(state + " getEndedString");
 			}
 		else
-			switch(s) {
+			switch(state) {
 			case COMPLETEDALL: return "are completed.";
 			case DELETEALL: return "are deleted.";
 			case OVERDUE: return "are overdue.";

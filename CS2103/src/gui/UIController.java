@@ -200,50 +200,21 @@ public class UIController {
 	public static void showFeedbackDisplay(Task[] tasks) {
 		if(mainJFrame.isVisible())
 			switch(operationFeedback) {
-			case INVALID_DATE:
-				MainJFrame.showPopup("incorrect date input");
+			case VALID:
+				MainJFrame.showPopup(tasks[0].getName(), STATE.getEndedString(true));
 				break;
-			case INVALID_TIME:
-				MainJFrame.showPopup("incorret time input");
+			default:
+				MainJFrame.showPopup(OperationFeedback.getString(getOperationFeedback()));
 				break;
-			case INVALID_TASK_DETAILS:
-				MainJFrame.showPopup("incorrect task details");
-				break;
-			case INVALID_LABEL:
-				MainJFrame.showPopup("incorrect label");
-				break;
-			//case INVALID_INCORRECTLOGIN:
-			//	MainJFrame.showPopup("wrong username or password");
-			//	break;
-			case INVALID_NOINTERNET:
-				MainJFrame.showPopup("please check you are connected to the internet");
-				break;
-			case NOT_FOUND:
-				MainJFrame.showPopup("search not found!");
-				break;
+			
 			}
 		else {
 			switch(operationFeedback) {
-			case INVALID_DATE:
-				JIDtray.showText("Jot It Down!", "incorrect date input");
+			case VALID:
+				MainJFrame.showPopup(tasks[0].getName(), STATE.getEndedString(true));
 				break;
-			case INVALID_TIME:
-				JIDtray.showText("Jot It Down!", "incorret time input");
-				break;
-			case INVALID_TASK_DETAILS:
-				JIDtray.showText("Jot It Down!", "incorrect task details");
-				break;
-			case INVALID_LABEL:
-				JIDtray.showText("Jot It Down!", "incorrect label");
-				break;
-			//case INVALID_INCORRECTLOGIN:
-			//	JIDtray.showText("Jot It Down!", "wrong username or password");
-			//	break;
-			case INVALID_NOINTERNET:
-				JIDtray.showText("Jot It Down!", "please check you are connected to the internet");
-				break;
-			case NOT_FOUND:
-				JIDtray.showText("Jot It Down!", "search not found!");
+			default:
+				MainJFrame.showPopup(OperationFeedback.getString(getOperationFeedback()));
 				break;
 			}
 		}

@@ -5,10 +5,10 @@
    <object class="java.util.ArrayList"/>
   </void>
   <void property="name">
-   <string>abc</string>
+   <string>aaaaaaa</string>
   </void>
   <void property="recurringId">
-   <string>$$__13-06-2012235959B__$$</string>
+   <string>$$__13-06-2012235959X__$$</string>
   </void>
   <void property="start">
    <object class="data.TaskDateTime">
@@ -21,7 +21,7 @@
    </object>
   </void>
   <void property="taskId">
-   <string>$$__13-06-2012235959B__$$</string>
+   <string>$$__13-06-2012235959A__$$</string>
   </void>
  </object>
 </java>
