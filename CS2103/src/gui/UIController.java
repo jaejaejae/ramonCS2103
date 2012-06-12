@@ -17,6 +17,7 @@ import java.io.IOException;
 import javax.swing.Timer;
 
 import constant.OperationFeedback;
+import data.Task;
 
 import logic.JIDLogic;
 
@@ -185,10 +186,18 @@ public class UIController {
 		return operationFeedback;
 	}
 	
+
 	/**
-	 * show display when there is an invalid feedback from the operation
+	 * show display when there is a feedback from the operation
 	 */
 	public static void showFeedbackDisplay() {
+		showFeedbackDisplay(null);
+	}
+	
+	/**
+	 * show display when there is a feedback from the operation
+	 */
+	public static void showFeedbackDisplay(Task[] tasks) {
 		if(mainJFrame.isVisible())
 			switch(operationFeedback) {
 			case INVALID_DATE:

@@ -211,7 +211,7 @@ public class MainJFrame extends javax.swing.JFrame {
 	 * set action of the 2nd button to minimize frame when clicked
 	 */
 	private void setbutton2Action() {
-		button2.setToolTipText("minimize");
+		button2.setToolTipText("Minimize");
 		
 		button2.addMouseListener(new MouseAdapter() {
 
@@ -238,7 +238,7 @@ public class MainJFrame extends javax.swing.JFrame {
 	 * set action of the first button to toggle help window
 	 */
 	private void setbutton1Action() {
-		button1.setToolTipText("help");
+		button1.setToolTipText("Help");
 		
 		button1.addMouseListener(new MouseAdapter() {
 
@@ -446,7 +446,8 @@ public class MainJFrame extends javax.swing.JFrame {
 								
 								curLocation = editorcomp.getSelectionStart();
 						    	curText = editorcomp.getText();
-								curState= checkCommand(curText);
+								curState= STATE.checkCommand(curText);
+								command = STATE.getCommand();
 								curIndex= jComboBox1.getSelectedIndex();
 								
 								
@@ -477,7 +478,8 @@ public class MainJFrame extends javax.swing.JFrame {
 									jComboBox1.setPopupVisible(false);
 									if(e.getKeyCode() == KeyEvent.VK_UP && lastCmd != null) {
 										editorcomp.setText(lastCmd);
-										curState = checkCommand(lastCmd);
+										curState = STATE.checkCommand(lastCmd);
+										command = STATE.getCommand();
 										curText = lastCmd;
 									}
 								}
@@ -512,9 +514,11 @@ public class MainJFrame extends javax.swing.JFrame {
 	
 											jBoxCompletion
 													.setNewModel(taskArrayToString(tasks));
+										
 											
 											jComboBox1.setPopupVisible(true);
-	
+											jComboBox1.setSelectedIndex(-1);
+											
 											editorcomp.setText(curText);
 											editorcomp.setSelectionStart(curLocation);
 											editorcomp.setSelectionEnd(curLocation);
@@ -680,62 +684,6 @@ public class MainJFrame extends javax.swing.JFrame {
 								}
 							}
 							
-							private STATE checkCommand(String curText) {
-								if(curText.equals(""))
-									return STATE.NULL;
-								
-								String delims = "[ ]+";
-								String firstWord = curText.trim().split(delims)[0];
-								command = firstWord;
-								
-								if(firstWord.equalsIgnoreCase("add") 
-										|| firstWord.equalsIgnoreCase("insert"))
-									return STATE.ADD;
-								if(firstWord.equalsIgnoreCase("delete")
-										|| firstWord.equalsIgnoreCase("remove"))
-									return STATE.DELETE;
-								if(firstWord.equalsIgnoreCase("modify")
-										|| firstWord.equalsIgnoreCase("edit")
-										|| firstWord.equalsIgnoreCase("update"))
-									return STATE.EDIT;
-								if(firstWord.equalsIgnoreCase("search")
-										|| firstWord.equalsIgnoreCase("find"))
-									return STATE.SEARCH;
-								if(firstWord.equalsIgnoreCase("completed")
-										|| firstWord.equalsIgnoreCase("done"))
-									return STATE.COMPLETED;
-								if(firstWord.equalsIgnoreCase("archive"))
-									return STATE.ARCHIVE;
-								if(firstWord.equalsIgnoreCase("overdue"))
-									return STATE.OVERDUE;
-								if(firstWord.equalsIgnoreCase("list"))
-									return STATE.LIST;
-								if(firstWord.equalsIgnoreCase("undo"))
-									return STATE.UNDO;
-								if(firstWord.equalsIgnoreCase("exit"))
-									return STATE.EXIT;
-								if(firstWord.equalsIgnoreCase("help"))
-									return STATE.HELP;
-								if(firstWord.equalsIgnoreCase("redo"))
-									return STATE.REDO;
-								if(firstWord.equalsIgnoreCase("important"))
-									return STATE.IMPORTANT;
-								if(firstWord.equalsIgnoreCase("login"))
-									return STATE.LOGIN;
-								if(firstWord.equalsIgnoreCase("delete.all"))
-									return STATE.DELETEALL;
-								if(firstWord.equalsIgnoreCase("completed.all"))
-									return STATE.COMPLETEDALL;
-								if(firstWord.equalsIgnoreCase("archive"))
-									return STATE.ARCHIVE;
-								if(firstWord.equalsIgnoreCase("cleararchive"))
-									return STATE.CLEARARCHIVE;
-								if(firstWord.equalsIgnoreCase("exportarchive"))
-									return STATE.EXPORTARCHIVE;
-								
-								command = null;
-								return STATE.NULL;
-							} 
 
 				      } );
 				}

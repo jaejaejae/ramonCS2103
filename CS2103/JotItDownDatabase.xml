@@ -8,7 +8,7 @@
    <string>abc</string>
   </void>
   <void property="recurringId">
-   <string>$$__13-06-2012235959A__$$</string>
+   <string>$$__13-06-2012235959B__$$</string>
   </void>
   <void property="start">
    <object class="data.TaskDateTime">
@@ -21,7 +21,7 @@
    </object>
   </void>
   <void property="taskId">
-   <string>$$__13-06-2012235959A__$$</string>
+   <string>$$__13-06-2012235959B__$$</string>
   </void>
  </object>
 </java>
