@@ -24,6 +24,11 @@ import data.Task;
 
 import logic.JIDLogic;
 
+/**
+ * for controlling UI and initializing the program.
+ * @author Ramon
+ *
+ */
 public class UIController {
 
 	private static Logger logger=Logger.getLogger(UIController.class);
@@ -260,6 +265,9 @@ public class UIController {
 		new MailDialog(mainJFrame, true);
 	}
 	
+	/** clear the command line
+	 * 
+	 */
 	public static void clearCommandLine() {
 		MainJFrame.clearCommandLine();
 	}

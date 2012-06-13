@@ -48,7 +48,7 @@ import javax.swing.JTextField;
 import constant.OperationFeedback;
 
 /**
- * Main Window
+ * Main Window that interacts with users.
  * @author Ramon
  */
 public class MainJFrame extends javax.swing.JFrame {

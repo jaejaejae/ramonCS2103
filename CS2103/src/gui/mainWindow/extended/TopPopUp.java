@@ -172,8 +172,14 @@ public class TopPopUp extends JFrame {
     	return SHOW;
     }
     
+    /**
+     * make the first letter capital
+     * @param str
+     * @return string after modifying the first letter
+     */
     private static String makeFirstLetterCapital(String str) {
-    	if(str == null) return null;
+    	if(str == null)
+    		return null;
     	else if(str.length()==1)
     		return str.toUpperCase();
     	else

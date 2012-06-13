@@ -1,6 +1,7 @@
 package gui.mainWindow.extended;
 
 import gui.Resource;
+import gui.mainWindow.MainJFrame;
 
 import java.awt.Component;
 import java.awt.Point;
@@ -15,6 +16,8 @@ import javax.swing.Timer;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.DefaultTableModel;
 
+import org.apache.log4j.Logger;
+
 import logic.JIDLogic;
 
 import data.Task;
@@ -25,6 +28,8 @@ import data.Task;
  *
  */
 public class AutoUpdateJTable {
+	private static Logger logger=Logger.getLogger(AutoUpdateJTable.class);
+	
 	private JTable jTable;
 	private DefaultTableModel model;
     private Vector<String> listLabel = new Vector<String>();
@@ -42,6 +47,9 @@ public class AutoUpdateJTable {
 	}
 
 	int row=-1, col=-1;
+	/**
+	 * add listener on the table
+	 */
 	private void addListener() {
 		
 		jTable.addMouseListener(new MouseAdapter()
@@ -121,7 +129,16 @@ public class AutoUpdateJTable {
     	listLabel.add(str);
     }
     
+    /**
+     * make the first letter of the string become capital
+     * @param str input string
+     * @return
+     */
     private String makeFirstLetterCapital(String str) {
+    	if(str == null) {
+    		logger.warn("string is null.");
+    		return null;
+    	}
     	String newStr = new String();
     	
     	newStr += str.toUpperCase().charAt(0);

@@ -6,7 +6,7 @@ import javax.swing.text.*;
 
 /**
  * auto completion textbox
- * (Still incomplete)
+ * (will implement autocompletion in V0.3)
  * @author Ramon
  *
  */
