@@ -208,7 +208,7 @@ public class UIController {
 		if(operationFeedback == null)
 			return;
 		
-		switch(operationFeedback) {
+		switch(	operationFeedback) {
 		case VALID:
 			if(tasks == null) {
 				displayText = STATE.getFeedbackText();
@@ -258,5 +258,9 @@ public class UIController {
 	 */
 	public static void promptEmailInput() {
 		new MailDialog(mainJFrame, true);
+	}
+	
+	public static void clearCommandLine() {
+		MainJFrame.clearCommandLine();
 	}
 }

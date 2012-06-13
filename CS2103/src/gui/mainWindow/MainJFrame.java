@@ -8,6 +8,7 @@ package gui.mainWindow;
 import org.apache.log4j.*;
 
 import data.Task;
+import gui.Action;
 import gui.Resource;
 import gui.STATE;
 import gui.UIController;
@@ -64,6 +65,7 @@ public class MainJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel downButton;
     private javax.swing.JComboBox jComboBox1;
     private javax.swing.JLayeredPane jLayeredPane1;
+    private static javax.swing.JTextField editorcomp;
 	private javax.swing.JLabel logo;
 	private MouseListener curdownButton;
 	public static Point currentLocation;
@@ -425,7 +427,7 @@ public class MainJFrame extends javax.swing.JFrame {
 	private void setJComboBox1Action() {
 		this.getButtonSubComponent(jComboBox1).setVisible(false);
 		final AutoCompletion jBoxCompletion = new AutoCompletion(jComboBox1);
-		final JTextField editorcomp = (JTextField) jComboBox1.getEditor()
+		editorcomp = (JTextField) jComboBox1.getEditor()
 				.getEditorComponent();
 		editorcomp.setText("");
 		
@@ -591,6 +593,7 @@ public class MainJFrame extends javax.swing.JFrame {
 									case SEARCH:
 										ExpandComponent.updateJTable(tasks);
 										expandFrame();
+										UIController.showFeedbackDisplay(tasks);
 										return;
 									case LIST:
 										new Action.ListAction().actionPerformed(null);
@@ -607,13 +610,14 @@ public class MainJFrame extends javax.swing.JFrame {
 									case LOGIN:
 										new Action.GCalendarAction().actionPerformed(null);
 										return;
+									case EXPAND:
+										new Action.ExpandAction().actionPerformed(null);
 									default:
 										logger.warn("default execmd: " + curText);
 										exeCmd = curText;
 										break;
 									}
 
-									logger.warn("execute in default + exeCmd");
 									logger.debug("******setCmd: " + STATE.getState().toString());
 									logger.debug("********exeCmd: " + exeCmd);
 									
@@ -850,4 +854,11 @@ public class MainJFrame extends javax.swing.JFrame {
         
         new Binding(this, inputMap, actionMap);
     }    
+    
+    /**
+     * remove text from jCOmboBox
+     */
+    public static void clearCommandLine() {
+    	editorcomp.setText("");
+    }
 }
