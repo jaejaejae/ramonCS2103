@@ -16,12 +16,15 @@ import java.awt.event.MouseEvent;
 import javax.swing.Timer;
 import javax.swing.JFrame;
 
+import org.apache.log4j.Logger;
+
 
 /**
  * pop up on top of the MainJFrame
  * @author Ramon
  */
 public class TopPopUp extends JFrame {
+	private static Logger logger=Logger.getLogger(TopPopUp.class);
 
     /**
      * Creates new form TopPopUp
@@ -31,7 +34,6 @@ public class TopPopUp extends JFrame {
     	jFrame.setUndecorated(true);
     	initComponents();
     	jFrame.setFocusableWindowState(false);
-    	//showBox();
     }
 
     /**
@@ -178,8 +180,10 @@ public class TopPopUp extends JFrame {
      * @return string after modifying the first letter
      */
     private static String makeFirstLetterCapital(String str) {
-    	if(str == null)
+    	if(str == null) {
+    		logger.warn("str in makeFirstLetterCapital is null");
     		return null;
+    	}
     	else if(str.length()==1)
     		return str.toUpperCase();
     	else

@@ -1,7 +1,6 @@
 package gui.mainWindow.extended;
 
 import gui.Resource;
-import gui.mainWindow.MainJFrame;
 
 import java.awt.Component;
 import java.awt.Point;
@@ -60,7 +59,6 @@ public class AutoUpdateJTable {
 			       row = jTable.rowAtPoint(pnt);
 			       col = jTable.columnAtPoint(pnt);
 
-			       	System.out.println("r: "+row + " C: " + col);
 			       	
 			       	if(col == 0)
 			       		jTable.changeSelection(row, 1, true, true);
@@ -159,7 +157,6 @@ public class AutoUpdateJTable {
 	    		str += "<FONT style=\"BACKGROUND-COLOR: #FFFFCC\">"
 	    			+ task.getLabels().get(i)
 	    			+ "</FONT> ";
-	    		System.out.println(i + task.getLabels().get(i));
 	    	}
 		return str;
 	}
