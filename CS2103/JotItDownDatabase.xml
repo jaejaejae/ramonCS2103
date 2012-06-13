@@ -2,6 +2,96 @@
 <java version="1.7.0_03" class="java.beans.XMLDecoder">
  <object class="data.Task">
   <void property="name">
+   <string>bbbbbbb</string>
+  </void>
+  <void property="recurring">
+   <null/>
+  </void>
+  <void property="start">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1339689599000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__14-06-2012235959Q__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="name">
+   <string>ccc</string>
+  </void>
+  <void property="recurring">
+   <null/>
+  </void>
+  <void property="start">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1339689599000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__14-06-2012235959L__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="name">
+   <string>bbb</string>
+  </void>
+  <void property="recurring">
+   <null/>
+  </void>
+  <void property="start">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1339689599000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__14-06-2012235959U__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="important">
+   <boolean>true</boolean>
+  </void>
+  <void property="name">
+   <string>ddd</string>
+  </void>
+  <void property="recurring">
+   <null/>
+  </void>
+  <void property="start">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1339581780000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__13-06-2012180300A__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="name">
    <string>abc 1300</string>
   </void>
   <void property="recurring">
@@ -18,7 +108,7 @@
    </object>
   </void>
   <void property="taskId">
-   <string>$$__14-06-2012235959R__$$</string>
+   <string>$$__14-06-2012235959Z__$$</string>
   </void>
  </object>
 </java>

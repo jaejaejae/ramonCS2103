@@ -107,7 +107,9 @@ public class UIController {
 	 * updating GUI
 	 */
 	public static void refresh() {
-		ExpandComponent.updateJTable();
+		if(STATE.getState() != STATE.SEARCH
+				&&STATE.getState() != STATE.OVERDUE)
+			ExpandComponent.updateJTable();
 		Reminder.update();
 	}
 	
@@ -167,8 +169,6 @@ public class UIController {
 			execmd += password[i];
 		System.out.println(execmd);
 		JIDLogic.executeCommand(execmd);
-		if(operationFeedback == OperationFeedback.VALID)
-			UIController.showTopPopUpMsg("Log in successfully!");
 		UIController.showFeedbackDisplay();
 	}
 	
@@ -210,8 +210,9 @@ public class UIController {
 		
 		switch(operationFeedback) {
 		case VALID:
-			if(tasks == null)
-				displayText = OperationFeedback.getString(getOperationFeedback());
+			if(tasks == null) {
+				displayText = STATE.getFeedbackText();
+			}
 			else if(tasks.length == 1) {
 				displayText = tasks[0].getName() + " " 
 							  +	STATE.getEndedString(true);
@@ -232,8 +233,8 @@ public class UIController {
 		else 
 			showTrayMsg("Jot It Down", displayText);
 		
-
 		UIController.refresh();
+		UIController.sendOperationFeedback(null);
 	}
 	
 	/**
@@ -255,7 +256,7 @@ public class UIController {
 	/** promt email input box
 	 * 
 	 */
-	public static void promtEmailInput() {
+	public static void promptEmailInput() {
 		new MailDialog(mainJFrame, true);
 	}
 }

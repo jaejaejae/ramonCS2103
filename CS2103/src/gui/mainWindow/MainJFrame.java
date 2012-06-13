@@ -412,8 +412,6 @@ public class MainJFrame extends javax.swing.JFrame {
 	}
 	
 	boolean edit = false;
-	STATE curState;
-	STATE prevState = STATE.NULL;
 	Task[] tasks;
 	String prevText;
 	String id;
@@ -455,18 +453,18 @@ public class MainJFrame extends javax.swing.JFrame {
 								logger.debug("curText:" + curText);
 								logger.debug("prevText: " + prevText);
 								logger.debug("state: " +STATE.getState());
-								logger.debug("prev: " +prevState);
+								logger.debug("prev: " +STATE.getPrevState());
 								logger.debug("index: "+ curIndex);
 								
 								
 								
-								if(prevState == STATE.EDIT && STATE.getState()!=prevState && edit == true) {
+								if(STATE.getPrevState() == STATE.EDIT && STATE.getState()!=STATE.getPrevState() && edit == true) {
 									logger.debug("canceledit");
 									JIDLogic.executeCommand("canceledit");
 									edit = false;
 								}
 								
-								if(STATE.getState() == STATE.NULL && STATE.getState()!=prevState) {
+								if(STATE.getState() == STATE.NULL && STATE.getState()!=STATE.getPrevState()) {
 									jBoxCompletion.setStandardModel();
 									id = null;
 									editorcomp.setText(curText);
@@ -549,8 +547,8 @@ public class MainJFrame extends javax.swing.JFrame {
 										return;
 									}
 								}
-									
-								STATE.setState(STATE.getState());
+								
+								prevText = curText;						
 								
 								if(e.getKeyCode() == KeyEvent.VK_ENTER && STATE.getState()!=STATE.NULL) {
 									String exeCmd = new String();
@@ -591,17 +589,19 @@ public class MainJFrame extends javax.swing.JFrame {
 										lastCmd = curText;
 										break;
 									default:
-										exeCmd = STATE.getCommand();
+										logger.warn("default execmd: " + curText);
+										exeCmd = curText;
 									break;
 									}
-									
-									
+
+									logger.warn("execute in default + exeCmd");
 									logger.debug("******setCmd: " + STATE.getState().toString());
 									logger.debug("********exeCmd: " + exeCmd);
 									
 									JIDLogic.setCommand(STATE.getState().toString());
 									tasks = JIDLogic.executeCommand(exeCmd);
 									
+									//after setting exeCmd
 									switch(STATE.getState()) {
 									case SEARCH:
 										ExpandComponent.updateJTable(tasks);
@@ -622,22 +622,18 @@ public class MainJFrame extends javax.swing.JFrame {
 									case LOGIN:
 										new Action.GCalendarAction().actionPerformed(null);
 										break;
-									case LOGOUT:
-										new Action.GCalendarOutAction().actionPerformed(null);
+									default:
 										break;
 									}
 									
 									if(!edit) {
-										UIController.showFeedbackDisplay(tasks);
 										if(UIController.getOperationFeedback() == OperationFeedback.VALID) {
 											jBoxCompletion.setStandardModel();
 											editorcomp.setText("");
-											STATE.setState(STATE.NULL);
 										}
+										UIController.showFeedbackDisplay(tasks);
 									}
 								}
-								prevState = STATE.getState();
-								prevText = curText;
 							}
 							
 
