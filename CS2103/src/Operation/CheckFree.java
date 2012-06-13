@@ -5,8 +5,7 @@ import java.util.ArrayList;
 import org.apache.log4j.Logger;
 
 import parser.Parser;
- 
-import storagecontroller.StorageManager;
+
 import constant.OperationFeedback;
 
 import data.Task;
@@ -16,7 +15,7 @@ public class CheckFree extends Operation{
 	private String commandName;
 	private final static long MILLISECONDS_IN_A_DAY=3600*24*1000;
 	public CheckFree (){
-		commandName="checkfree";
+		commandName="check.free";
 	}
 	public CheckFree(String userInput){
 		commandName=userInput;
@@ -30,7 +29,7 @@ public class CheckFree extends Operation{
 		Search SearchObj=new Search();
 	
 		Task parsedTask=parseCommand(userCommand);
-		if (parsedTask.getStart()==null && parsedTask.getEnd()==null){
+		if (parsedTask.getStart()==null || parsedTask.getEnd()==null){
 			feedback=OperationFeedback.TASK_SPECIFIED_DOES_NOT_HAVE_BOTH_START_END_DATE_TIME;
 			return null;
 		}
@@ -52,7 +51,7 @@ public class CheckFree extends Operation{
 			}
 			
 			for (long i= )*/
-			return new Task[1];
+			return null;
 		}
 		else {
 			feedback = OperationFeedback.NOT_FREE;

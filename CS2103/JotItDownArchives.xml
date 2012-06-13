@@ -16,12 +16,12 @@
      <boolean>true</boolean>
     </void>
     <void property="timeMilli">
-     <long>1339689599000</long>
+     <long>1371225599000</long>
     </void>
    </object>
   </void>
   <void property="taskId">
-   <string>$$__14-06-2012235959J__$$</string>
+   <string>$$__14-06-2013235959Z__$$</string>
   </void>
  </object>
  <object class="data.Task">
@@ -31,8 +31,8 @@
   <void property="name">
    <string>abc</string>
   </void>
-  <void property="recurringId">
-   <string>$$__14-06-2012235959V__$$</string>
+  <void property="recurring">
+   <null/>
   </void>
   <void property="start">
    <object class="data.TaskDateTime">
@@ -45,11 +45,7 @@
    </object>
   </void>
   <void property="taskId">
-<<<<<<< HEAD
-   <string>$$__14-06-2012235959F__$$</string>
-=======
-   <string>$$__14-06-2012235959S__$$</string>
->>>>>>> 29c8316b44224269b5527cae2aa4c3ea77b6e9e1
+   <string>$$__14-06-2012235959R__$$</string>
   </void>
  </object>
 </java>

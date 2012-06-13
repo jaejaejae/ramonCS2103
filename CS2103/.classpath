@@ -10,5 +10,6 @@
 	<classpathentry kind="lib" path="D:/JAVAworkspace2/ramonCS2103/CS2103/lib/gdata/google-collect-1.0-rc1.jar"/>
 	<classpathentry kind="lib" path="D:/JAVAworkspace2/ramonCS2103/CS2103/lib/gdata/jsr305.jar"/>
 	<classpathentry kind="lib" path="D:/JAVAworkspace2/ramonCS2103/CS2103/lib/java mail/mail.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

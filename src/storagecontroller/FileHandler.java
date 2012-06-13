@@ -1,25 +1,44 @@
 package storagecontroller;
 
 import data.Task;
+
 import data.TaskHashMap;
 import java.beans.XMLDecoder;
 import java.beans.XMLEncoder;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
-import org.apache.log4j.Level;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+
 import org.apache.log4j.Logger;
 public class FileHandler 
 {
 	
-	private Logger logger=Logger.getLogger("Abc");
+	private static Logger logger = Logger.getLogger(FileHandler.class);
 	private static String fileName;
+	private BufferedWriter writer;
+	private BufferedReader reader;
+	/** Constructor to set the filename 
+	 * 
+	 * @param name name of the file to which xml encoder writes and from which xml decoder reads
+	 */
 	public FileHandler(String name)
 	{
 		fileName=name;
+		
 	}
+	/** function to write to the file with name as fileName 
+	 * 
+	 * @param instance the TaskHashMap instance. Is also the live storage.
+	 * @return true if written to the file without any errors, otherwise false
+	 */
 	public boolean writeToFile(TaskHashMap instance) 
 	{
 		try
@@ -40,24 +59,23 @@ public class FileHandler
 			return false;
 		}
 	}
-	
-	
-	
+	/** function to write to the file with name as fileName 
+	 * 
+	 * @param instance the TaskHashMap instance. Is also the live storage.
+	 * @return true if read from the file without any errors, otherwise false.
+	 */
 	public boolean readFromFile(TaskHashMap instance) 
 	{
 		try
 		{
 		BufferedInputStream xmlIn=new BufferedInputStream(new FileInputStream(fileName));
 		XMLDecoder readFromXml=new XMLDecoder(xmlIn);
-		
-			Task obj;
-			while((obj = (Task) readFromXml.readObject())!=null)
+			while(true)
 			{
-				instance.addTaskById(obj);
+				Task newTask=(Task)readFromXml.readObject();
+				instance.addTask(newTask);
 			}
-			readFromXml.close();
-			logger.debug(instance.getKeySet().size());
-			logger.debug("abc");
+			
 		}
 		catch(FileNotFoundException e)
 		{
@@ -74,6 +92,74 @@ public class FileHandler
 			logger.debug("null pointer exception");
 			return false;
 		}
+	}
+	public String readDate()
+	{
+		String buffer,result="";
+		try
+		{
+			reader=new BufferedReader(new FileReader(fileName));
+			while ((buffer = reader.readLine()) != null)
+			{
+				System.out.println(buffer);
+				result+=buffer;
+			}
+			reader.close();
+		}
+		catch(IOException e)
+		{
+			logger.debug("IOException");
+		}
+	return result;
+	}
+	public boolean writeEmailId(String emailId)
+	{
+		try
+		{
+		writer=new BufferedWriter(new FileWriter("JotItDownEMail.txt"));
+		writer.write(emailId);
+		writer.close();
 		return true;
+		}
+		catch(IOException e)
+		{
+			logger.debug("IOException");
+			return false;
+		}
+	}
+	public boolean writeDate(String toWrite)
+	{
+		try
+		{
+			writer=new BufferedWriter(new FileWriter(fileName));
+			writer.write(toWrite);
+			writer.close();
+			return true;
+		}
+		catch(IOException e)
+		{
+			logger.debug("IOException");
+			return false;
+		}
+	}
+	public String readEmailId()
+	{
+		String buffer,result="";
+		try
+		{
+		reader=new BufferedReader(new FileReader("JotItDownEMail.txt"));
+		while ((buffer = reader.readLine()) != null)
+		{ 
+			System.out.println(buffer);
+			result+=buffer;
+		}
+		reader.close();
+		return result;
+		}
+		catch(IOException e)
+		{
+			logger.debug("IOException");
+		}
+		return "";
 	}
 }

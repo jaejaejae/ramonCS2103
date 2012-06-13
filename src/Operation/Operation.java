@@ -1,6 +1,10 @@
+/**
+ * @author Shubhendra Agrawal
+ */
+
 package operation;
 
-import java.util.Scanner;
+import constant.OperationFeedback;
 
 import org.apache.log4j.Logger;
 
@@ -11,9 +15,14 @@ public abstract class Operation {
 
 	
 	
-	
+	protected OperationFeedback feedback=OperationFeedback.VALID;
 	protected boolean isUndoAble=false;
 	private static Logger logger=Logger.getLogger(Operation.class);
+	/**
+	 * used to instantiate the operation class that needs to be executed
+	 * @param userCommand
+	 * @return Operation that the user wants to carry out
+	 */
 	public static Operation getOperationObj(String userCommand)
 	{
 		Operation object;
@@ -27,27 +36,42 @@ public abstract class Operation {
 		if (intendedOperation.equals("add") || intendedOperation.equals("insert")){
 			object = new Add(intendedOperation);
 			}
-		else if (intendedOperation.equals("delete") || intendedOperation.equals("remove")){
+		else if (intendedOperation.equals("delete") || intendedOperation.equals("remove") || 
+				intendedOperation.equals("delete.all")){
 			object = new Delete(intendedOperation);
 		}
 		else if (intendedOperation.equals("modify") || intendedOperation.equals("update") || 
-				intendedOperation.equals("edit")) {
+				intendedOperation.equals("edit") || intendedOperation.equals("canceledit")) {
 			object =new Modify(intendedOperation);
 		}
 		else if (intendedOperation.equals("search") || intendedOperation.equals("find")){
 			object = new Search(intendedOperation);
 		}
-		else if (intendedOperation.equals("completed") || intendedOperation.equals("done")){
+		else if (intendedOperation.equals("completed") || intendedOperation.equals("done") ||
+				intendedOperation.equals("completed.all")){
 			object = new ToggleCompleted(intendedOperation);
 		}
-		else if(intendedOperation.equals("star") || intendedOperation.equals("important")){
+		else if(intendedOperation.equals("star") || intendedOperation.equals("important") ||
+				intendedOperation.equals("star.all")){ 
 			object = new ToggleImportant(intendedOperation);
 		}
-		else if (intendedOperation.equals("archive")){
+		else if (intendedOperation.equals("archive") || intendedOperation.equals("clear.archive") ||
+				intendedOperation.equals("import.archive")){
 			object = new Archive(intendedOperation);
 		}
 		else if (intendedOperation.equals("overdue")){
 			object= new Overdue(intendedOperation);
+		}
+		else if (intendedOperation.equals("check.free")){
+			object= new CheckFree(intendedOperation);
+		}
+		else if (intendedOperation.equals("agendaemail")){
+			object= new AgendaEmail();
+		}
+		else if (intendedOperation.equals("login") || intendedOperation.equals("logout") ||
+				intendedOperation.equals("sync.gcal") || intendedOperation.equals("import.gcal") ||
+				intendedOperation.equals("export.gcal")) {
+			object= new GoogleCalendarOp();
 		}
 		else
 		{
@@ -59,28 +83,48 @@ public abstract class Operation {
 		return object; 
 	}
 	
-	
+	/**
+	 * 
+	 * @param userCommand
+	 * @return
+	 */
 	public abstract Task[] execute(String userCommand);
-	
+	/**
+	 * Function for undoing previous operation
+	 * @return Task that was undone
+	 */
 	public abstract Task[] undo();
-	
+	/**
+	 * Function for redoing previous operation
+	 * @return Task that was redone
+	 */
 	public abstract Task[] redo();
-	
+	/**
+	 * to carry out operation on individual task
+	 * @param taskToBeExecuted
+	 * @return Task that was successfully executed else null
+	 */
 	protected Task[] execute(Task taskToBeExecuted)
 	{
 		return null;
 		
 	}		
+	/**
+	 * 
+	 * @return Whether the operation in undoable
+	 */
 	public abstract boolean isUndoAble();
-	
-	public abstract boolean isInputCorrect(String command);
-	public abstract String getErrorMessage();
-	
+/**
+	 * Used to return the status of execution in operation
+	 * @return Status of operation
+	 */
+	public abstract OperationFeedback getOpFeedback();
+	/**
+	 * 
+	 * @return Operation name
+	 */
 	public abstract String getOperationName();
 	
-	/**
-	 * @param args
-	 */
-
+	
 
 }

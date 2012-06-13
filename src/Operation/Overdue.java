@@ -4,11 +4,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 
-import data.DateTime;
+import data.TaskDateTime;
 import data.Task;
 import data.CompareByDate;
 
 import org.apache.log4j.Logger;
+
+import constant.OperationFeedback;
 
 import storagecontroller.StorageManager;
 public class Overdue extends Operation {
@@ -37,17 +39,14 @@ public class Overdue extends Operation {
 		return isUndoAble;
 	}
 
-	@Override
-	public boolean isInputCorrect(String command) {
+	public OperationFeedback getOpFeedback() {
 		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public String getErrorMessage() {
-		// TODO Auto-generated method stub
-		return "Overdue Tasks cannot be displayed";
-	}
+		return feedback;
+	}      
+               
+    
+	
+	
 
 	@Override
 	public String getOperationName() {
@@ -58,27 +57,27 @@ public class Overdue extends Operation {
 	@Override
 	public Task[] execute(String userCommand) {
 		// TODO Auto-generated method stub
-		DateTime currDateTime =	DateTime.getCurrentDateTime();
+		TaskDateTime currDateTime =	TaskDateTime.getCurrentDateTime();
 		Comparator<Task> compareByDate=new CompareByDate();
-		DateTime defaultDateTime = new DateTime();
+		TaskDateTime defaultDateTime = new TaskDateTime();
 		logger.debug(currDateTime.formattedToString());
 		Task[] allTasks=StorageManager.getAllTasks();
 		ArrayList<Task> overdueTasks=new ArrayList<Task>();
 		for (Task curTask : allTasks)
 		{
-			if (curTask.getStartDateTime() != null
-					&& curTask.getStartDateTime().getTimeMilli()
+			if (curTask.getStart() != null
+					&& curTask.getStart().getTimeMilli()
 					!= defaultDateTime.getTimeMilli())
 			{
-				if (curTask.getStartDateTime().compareTo(currDateTime)==-1)
+				if (curTask.getStart().compareTo(currDateTime)==-1 && !curTask.getCompleted())
 				{
 					overdueTasks.add(curTask);
 				}
 			}
-			else if (curTask.getEndDateTime()!=null 
-						&& curTask.getEndDateTime().getTimeMilli()!= defaultDateTime.getTimeMilli())
+			else if (curTask.getEnd()!=null 
+						&& curTask.getEnd().getTimeMilli()!= defaultDateTime.getTimeMilli())
 			{
-				if (curTask.getEndDateTime().compareTo(currDateTime)==-1)
+				if (curTask.getEnd().compareTo(currDateTime)==-1 && !curTask.getCompleted())
 				{
 					overdueTasks.add(curTask);
 				}
@@ -87,6 +86,7 @@ public class Overdue extends Operation {
 			{}
 		}
 		if (overdueTasks.size()==0)	{
+			feedback=OperationFeedback.NO_TASK_OVERDUE;
 			return null;
 		} else {
 			Collections.sort(overdueTasks,compareByDate);

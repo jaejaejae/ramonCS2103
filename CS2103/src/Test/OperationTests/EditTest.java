@@ -35,7 +35,7 @@ public class EditTest {
 
 	@Test
 	public void test() {
-		StorageManager.loadFile();
+		//StorageManager.loadFile();
 		Add newadd=new Add();
 		String toBeAddedOld = "add go to party on $date$ at 5pm";
 		String toBeEditedNew = "add go to party on $date$ at 5pm";

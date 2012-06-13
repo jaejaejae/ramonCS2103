@@ -12,7 +12,6 @@ import java.awt.Color;
 import java.awt.Container;
 import java.awt.FocusTraversalPolicy;
 import java.awt.Point;
-import java.awt.event.ActionEvent;
 import java.awt.event.FocusAdapter;
 import java.awt.event.FocusEvent;
 import java.awt.event.MouseAdapter;
@@ -41,6 +40,7 @@ public class MailDialog extends javax.swing.JDialog {
         this.setTabSequence();
         this.setMovable();
         this.setBackground(new Color(0,0,0,0));
+        this.setLocationRelativeTo(null);
         this.setVisible(true);
     }
 

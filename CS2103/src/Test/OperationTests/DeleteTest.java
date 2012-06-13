@@ -26,7 +26,7 @@ public class DeleteTest {
 	}
 	@Test
 	public void test() {
-		StorageManager.loadFile();
+		
 
 		Add newadd=new Add();
 		Task[] result = newadd.execute("add go to party on 3 July at 5pm");

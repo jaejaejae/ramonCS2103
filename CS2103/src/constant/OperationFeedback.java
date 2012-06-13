@@ -1,8 +1,14 @@
 package constant;
 
+/**
+ * get feedback from the operation
+ * @author Ramon
+ *
+ */
 public enum OperationFeedback {
 	
 	VALID,
+	NO_EMAIL_SPECIFIED,
 	START_DATE_TIME_LESS_THAN_CURRENT_DATE_TIME,
 	END_DATE_TIME_LESS_THAN_CURRENT_DATE_TIME,
 	START_DATE_TIME_MORE_THAN_END_DATE_TIME,
@@ -45,12 +51,16 @@ public enum OperationFeedback {
 	DURATION_LONGER_THAN_A_DAY,
 	NO_MATCHING_ARCHIVE_FUNCTION,
 	USER_NOT_LOGGEDIN,
-	GOOGLE_CALENDAR_FAILED;
+	GOOGLE_CALENDAR_FAILED,
+	USER_ALREADY_LOGGED_IN;
+	
 	
 	public static String getString(OperationFeedback op) {
 		switch(op) {
 		case	VALID:
 			return null;
+		case USER_ALREADY_LOGGED_IN:
+			return "You are already logged in. Please log out first";
 		case START_DATE_TIME_LESS_THAN_CURRENT_DATE_TIME:
 			return "Error: Start date time is before the current date time.";
 		case END_DATE_TIME_LESS_THAN_CURRENT_DATE_TIME:
@@ -88,7 +98,7 @@ public enum OperationFeedback {
 		case LOGOUT_FAILED:
 			return "Error: Logged out failed.";
 		case INVALID_INCORRECT_LOGIN_INTERNET_CONNECTION:
-			return "Error: no internet/ check your username or password.";
+			return "Error: check your username or password and your internet connection.";
 		case INVALID_NOINTERNET:
 			return "Error: please connect to the internet.";
 		case INVALID_INCORRECTLOGIN:

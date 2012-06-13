@@ -5,7 +5,6 @@ import gui.mainWindow.extended.HelpFrame;
 import gui.mainWindow.extended.LogInDialog;
 
 import java.awt.event.ActionEvent;
-import java.beans.PropertyChangeListener;
 
 import javax.swing.AbstractAction;
 
@@ -341,6 +340,12 @@ public class Action {
     		STATE.setState(STATE.NULL);
     	}
     }
+    
+    /**
+     * move completed tasks to archive
+     * @author Ramon
+     *
+     */
     public static class ArchiveAction extends AbstractAction {
     	@Override
     	public void actionPerformed(ActionEvent e) {
@@ -354,7 +359,11 @@ public class Action {
     		STATE.setState(STATE.NULL);
     	}
     }
-    
+    /**
+     * import tasks from archive
+     * @author Ramon
+     *
+     */
     public static class ImportArchiveAction extends AbstractAction {
     	@Override
     	public void actionPerformed(ActionEvent e) {
@@ -369,6 +378,11 @@ public class Action {
     	}
     }
     
+    /**
+     * clear archive
+     * @author Ramon
+     *
+     */
     public static class ClearArchiveAction extends AbstractAction {
     	@Override
     	public void actionPerformed(ActionEvent e) {
