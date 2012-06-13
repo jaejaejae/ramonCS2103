@@ -1,3 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <java version="1.7.0_03" class="java.beans.XMLDecoder">
+ <object class="data.Task">
+  <void property="name">
+   <string>abc 1300</string>
+  </void>
+  <void property="recurring">
+   <null/>
+  </void>
+  <void property="start">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1339689599000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__14-06-2012235959R__$$</string>
+  </void>
+ </object>
 </java>

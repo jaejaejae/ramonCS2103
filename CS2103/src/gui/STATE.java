@@ -25,6 +25,10 @@ public enum STATE {
 	private static STATE prevState;
 	private static String command;
 	
+	public static void setState(String str) {
+		setState(checkCommand(str));
+	}
+	
 	public static void setState(STATE newState) {
 		prevState = curState;
 		curState = newState;

@@ -446,7 +446,7 @@ public class MainJFrame extends javax.swing.JFrame {
 								
 								curLocation = editorcomp.getSelectionStart();
 						    	curText = editorcomp.getText();
-								curState= STATE.checkCommand(curText);
+								STATE.setState(curText);
 								command = STATE.getCommand();
 								curIndex= jComboBox1.getSelectedIndex();
 								
@@ -454,43 +454,43 @@ public class MainJFrame extends javax.swing.JFrame {
 								logger.debug("------------------------------");
 								logger.debug("curText:" + curText);
 								logger.debug("prevText: " + prevText);
-								logger.debug("state: " +curState);
+								logger.debug("state: " +STATE.getState());
 								logger.debug("prev: " +prevState);
 								logger.debug("index: "+ curIndex);
 								
 								
 								
-								if(prevState == STATE.EDIT && curState!=prevState && edit == true) {
+								if(prevState == STATE.EDIT && STATE.getState()!=prevState && edit == true) {
 									logger.debug("canceledit");
 									JIDLogic.executeCommand("canceledit");
 									edit = false;
 								}
 								
-								if(curState == STATE.NULL && curState!=prevState) {
+								if(STATE.getState() == STATE.NULL && STATE.getState()!=prevState) {
 									jBoxCompletion.setStandardModel();
 									id = null;
 									editorcomp.setText(curText);
 									jComboBox1.setSelectedIndex(-1);
 								}
 								
-								if(curState == STATE.NULL && (e.getKeyCode() == KeyEvent.VK_UP
+								if(STATE.getState() == STATE.NULL && (e.getKeyCode() == KeyEvent.VK_UP
 										|| e.getKeyCode() == KeyEvent.VK_DOWN)) {
 									jComboBox1.setPopupVisible(false);
 									if(e.getKeyCode() == KeyEvent.VK_UP && lastCmd != null) {
 										editorcomp.setText(lastCmd);
-										curState = STATE.checkCommand(lastCmd);
+										STATE.setState(lastCmd);
 										command = STATE.getCommand();
 										curText = lastCmd;
 									}
 								}
 									
-								if(((curState == STATE.EDIT && !edit)
-									|| curState == STATE.DELETE
-									|| curState == STATE.SEARCH
-									|| curState == STATE.COMPLETED
-									|| curState == STATE.IMPORTANT
-									|| curState == STATE.DELETEALL
-									|| curState == STATE.COMPLETEDALL)
+								if(((STATE.getState() == STATE.EDIT && !edit)
+									|| STATE.getState() == STATE.DELETE
+									|| STATE.getState() == STATE.SEARCH
+									|| STATE.getState() == STATE.COMPLETED
+									|| STATE.getState() == STATE.IMPORTANT
+									|| STATE.getState() == STATE.DELETEALL
+									|| STATE.getState() == STATE.COMPLETEDALL)
 									&& curText.length() > command.length()+1) {
 									if((e.getKeyCode() == KeyEvent.VK_BACK_SPACE || !e.isActionKey())
 									&& e.getKeyCode() != KeyEvent.VK_ENTER
@@ -504,8 +504,8 @@ public class MainJFrame extends javax.swing.JFrame {
 										public void run() {
 											System.out.println("***enter interstate: ");
 	
-											logger.debug("******setCmd: "+curState.toString().toLowerCase());
-											JIDLogic.setCommand(curState.toString().toLowerCase());
+											logger.debug("******setCmd: "+STATE.getState().toString().toLowerCase());
+											JIDLogic.setCommand(STATE.getState().toString().toLowerCase());
 	
 											logger.debug("********exeCmd: "
 													+ curText);
@@ -532,7 +532,7 @@ public class MainJFrame extends javax.swing.JFrame {
 									});
 								}
 
-								if(curState != STATE.NULL &&
+								if(STATE.getState() != STATE.NULL &&
 										(e.getKeyCode()==KeyEvent.VK_UP || e.getKeyCode()==KeyEvent.VK_DOWN)) {
 										
 										curText = prevText;
@@ -550,30 +550,30 @@ public class MainJFrame extends javax.swing.JFrame {
 									}
 								}
 									
-								STATE.setState(curState);
+								STATE.setState(STATE.getState());
 								
-								if(e.getKeyCode() == KeyEvent.VK_ENTER && curState!=STATE.NULL) {
+								if(e.getKeyCode() == KeyEvent.VK_ENTER && STATE.getState()!=STATE.NULL) {
 									String exeCmd = new String();
 									
 									logger.debug("*********************enter");
 									
-									if(curState != STATE.EDIT)
+									if(STATE.getState() != STATE.EDIT)
 										edit = false;
 									
-									switch (curState ){
+									switch (STATE.getState() ){
 									case DELETE:
 									case DELETEALL:
 									case COMPLETED:
 									case COMPLETEDALL:
 									case IMPORTANT:
 										if(id!=null)
-											exeCmd = curState.toString().toLowerCase() + " "
+											exeCmd = STATE.getCommand() + " "
 													+ id + " ";
 										id = null;
 										break;
 									case EDIT:
 										if(!edit && id!=null) {
-											exeCmd = curState.toString().toLowerCase() + " "
+											exeCmd = STATE.getCommand() + " "
 													+ id;
 											editorcomp.setText(
 													command + " " 
@@ -603,13 +603,13 @@ public class MainJFrame extends javax.swing.JFrame {
 									}
 									
 									
-									logger.debug("******setCmd: " + curState.toString());
+									logger.debug("******setCmd: " + STATE.getState().toString());
 									logger.debug("********exeCmd: " + exeCmd);
 									
-									JIDLogic.setCommand(curState.toString());
+									JIDLogic.setCommand(STATE.getState().toString());
 									tasks = JIDLogic.executeCommand(exeCmd);
 									
-									switch(curState) {
+									switch(STATE.getState()) {
 									case SEARCH:
 										ExpandComponent.updateJTable(tasks);
 										expandFrame();
@@ -639,11 +639,11 @@ public class MainJFrame extends javax.swing.JFrame {
 										if(UIController.getOperationFeedback() == OperationFeedback.VALID) {
 											jBoxCompletion.setStandardModel();
 											editorcomp.setText("");
-											curState = STATE.NULL;
+											STATE.setState(STATE.NULL);
 										}
 									}
 								}
-								prevState = curState;
+								prevState = STATE.getState();
 								prevText = curText;
 							}
 							
