@@ -1,276 +1,1311 @@
-2012-06-13 18:39:05,223 - storagecontroller.FileHandler - DEBUG - array out of bounds!
-2012-06-13 18:39:05,262 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-13 18:39:05,263 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-13 18:39:05,274 - operation.Operation - DEBUG - find
-2012-06-13 18:39:05,275 - operation.Search - DEBUG - finding objects
-2012-06-13 18:39:05,276 - operation.Search - DEBUG - returning all objects
-2012-06-13 18:39:05,277 - operation.Search - DEBUG - before sorting
-2012-06-13 18:39:05,277 - operation.Search - DEBUG - after sorting
-2012-06-13 18:39:05,277 - logic.JIDLogic - DEBUG - Operation feedback:VALID
-2012-06-13 18:39:05,277 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-13 18:39:05,323 - gui.reminder.Reminder - DEBUG - true
-2012-06-13 18:39:05,324 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-13 18:39:05,324 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-13 18:39:05,324 - operation.Operation - DEBUG - find
-2012-06-13 18:39:05,324 - operation.Search - DEBUG - finding objects
-2012-06-13 18:39:05,326 - operation.Search - DEBUG - returning all objects
-2012-06-13 18:39:05,326 - operation.Search - DEBUG - before sorting
-2012-06-13 18:39:05,326 - operation.Search - DEBUG - after sorting
-2012-06-13 18:39:05,327 - logic.JIDLogic - DEBUG - Operation feedback:VALID
-2012-06-13 18:39:05,327 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-13 18:39:05,327 - gui.reminder.Reminder - DEBUG - 1339581780000
-2012-06-13 18:39:05,327 - gui.reminder.Reminder - DEBUG - 1339583945324
-2012-06-13 18:39:05,327 - gui.reminder.Reminder - DEBUG - timediff: -2465324
-2012-06-13 18:39:05,327 - gui.reminder.Reminder - DEBUG - 1339689599000
-2012-06-13 18:39:05,327 - gui.reminder.Reminder - DEBUG - 1339583945324
-2012-06-13 18:39:05,328 - gui.reminder.Reminder - DEBUG - timediff: 105353676
-2012-06-13 18:39:05,328 - gui.reminder.Reminder - DEBUG - latestTask: ccc on 14 Jun 2012 
-2012-06-13 18:39:05,328 - gui.reminder.Reminder - DEBUG - 1339689599000
-2012-06-13 18:39:05,328 - gui.reminder.Reminder - DEBUG - 1339583945324
-2012-06-13 18:39:05,328 - gui.reminder.Reminder - DEBUG - timediff: 105353676
-2012-06-13 18:39:05,329 - gui.reminder.Reminder - DEBUG - setTimer: 105353676
-2012-06-13 18:39:08,947 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
-2012-06-13 18:39:08,947 - gui.mainWindow.MainJFrame - DEBUG - curText:a
-2012-06-13 18:39:08,947 - gui.mainWindow.MainJFrame - DEBUG - prevText: null
-2012-06-13 18:39:08,947 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
-2012-06-13 18:39:08,947 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
-2012-06-13 18:39:08,947 - gui.mainWindow.MainJFrame - DEBUG - index: -1
-2012-06-13 18:39:09,099 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
-2012-06-13 18:39:09,100 - gui.mainWindow.MainJFrame - DEBUG - curText:ad
-2012-06-13 18:39:09,100 - gui.mainWindow.MainJFrame - DEBUG - prevText: a
-2012-06-13 18:39:09,100 - gui.mainWindow.MainJFrame - DEBUG - state: NULL
-2012-06-13 18:39:09,100 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
-2012-06-13 18:39:09,100 - gui.mainWindow.MainJFrame - DEBUG - index: -1
-2012-06-13 18:39:09,276 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
-2012-06-13 18:39:09,276 - gui.mainWindow.MainJFrame - DEBUG - curText:add
-2012-06-13 18:39:09,276 - gui.mainWindow.MainJFrame - DEBUG - prevText: ad
-2012-06-13 18:39:09,276 - gui.mainWindow.MainJFrame - DEBUG - state: ADD
-2012-06-13 18:39:09,277 - gui.mainWindow.MainJFrame - DEBUG - prev: NULL
-2012-06-13 18:39:09,277 - gui.mainWindow.MainJFrame - DEBUG - index: -1
-2012-06-13 18:39:09,484 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
-2012-06-13 18:39:09,485 - gui.mainWindow.MainJFrame - DEBUG - curText:add 
-2012-06-13 18:39:09,485 - gui.mainWindow.MainJFrame - DEBUG - prevText: add
-2012-06-13 18:39:09,485 - gui.mainWindow.MainJFrame - DEBUG - state: ADD
-2012-06-13 18:39:09,485 - gui.mainWindow.MainJFrame - DEBUG - prev: ADD
-2012-06-13 18:39:09,485 - gui.mainWindow.MainJFrame - DEBUG - index: -1
-2012-06-13 18:39:09,600 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
-2012-06-13 18:39:09,601 - gui.mainWindow.MainJFrame - DEBUG - curText:add b
-2012-06-13 18:39:09,601 - gui.mainWindow.MainJFrame - DEBUG - prevText: add 
-2012-06-13 18:39:09,601 - gui.mainWindow.MainJFrame - DEBUG - state: ADD
-2012-06-13 18:39:09,601 - gui.mainWindow.MainJFrame - DEBUG - prev: ADD
-2012-06-13 18:39:09,601 - gui.mainWindow.MainJFrame - DEBUG - index: -1
-2012-06-13 18:39:10,121 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
-2012-06-13 18:39:10,121 - gui.mainWindow.MainJFrame - DEBUG - curText:add bb
-2012-06-13 18:39:10,121 - gui.mainWindow.MainJFrame - DEBUG - prevText: add b
-2012-06-13 18:39:10,122 - gui.mainWindow.MainJFrame - DEBUG - state: ADD
-2012-06-13 18:39:10,122 - gui.mainWindow.MainJFrame - DEBUG - prev: ADD
-2012-06-13 18:39:10,122 - gui.mainWindow.MainJFrame - DEBUG - index: -1
-2012-06-13 18:39:10,157 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
-2012-06-13 18:39:10,158 - gui.mainWindow.MainJFrame - DEBUG - curText:add bbb
-2012-06-13 18:39:10,158 - gui.mainWindow.MainJFrame - DEBUG - prevText: add bb
-2012-06-13 18:39:10,158 - gui.mainWindow.MainJFrame - DEBUG - state: ADD
-2012-06-13 18:39:10,158 - gui.mainWindow.MainJFrame - DEBUG - prev: ADD
-2012-06-13 18:39:10,158 - gui.mainWindow.MainJFrame - DEBUG - index: -1
-2012-06-13 18:39:10,194 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
-2012-06-13 18:39:10,194 - gui.mainWindow.MainJFrame - DEBUG - curText:add bbbb
-2012-06-13 18:39:10,194 - gui.mainWindow.MainJFrame - DEBUG - prevText: add bbb
-2012-06-13 18:39:10,194 - gui.mainWindow.MainJFrame - DEBUG - state: ADD
-2012-06-13 18:39:10,194 - gui.mainWindow.MainJFrame - DEBUG - prev: ADD
-2012-06-13 18:39:10,194 - gui.mainWindow.MainJFrame - DEBUG - index: -1
-2012-06-13 18:39:10,231 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
-2012-06-13 18:39:10,231 - gui.mainWindow.MainJFrame - DEBUG - curText:add bbbbb
-2012-06-13 18:39:10,231 - gui.mainWindow.MainJFrame - DEBUG - prevText: add bbbb
-2012-06-13 18:39:10,231 - gui.mainWindow.MainJFrame - DEBUG - state: ADD
-2012-06-13 18:39:10,231 - gui.mainWindow.MainJFrame - DEBUG - prev: ADD
-2012-06-13 18:39:10,231 - gui.mainWindow.MainJFrame - DEBUG - index: -1
-2012-06-13 18:39:10,267 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
-2012-06-13 18:39:10,268 - gui.mainWindow.MainJFrame - DEBUG - curText:add bbbbbb
-2012-06-13 18:39:10,268 - gui.mainWindow.MainJFrame - DEBUG - prevText: add bbbbb
-2012-06-13 18:39:10,268 - gui.mainWindow.MainJFrame - DEBUG - state: ADD
-2012-06-13 18:39:10,268 - gui.mainWindow.MainJFrame - DEBUG - prev: ADD
-2012-06-13 18:39:10,268 - gui.mainWindow.MainJFrame - DEBUG - index: -1
-2012-06-13 18:39:10,304 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
-2012-06-13 18:39:10,305 - gui.mainWindow.MainJFrame - DEBUG - curText:add bbbbbbb
-2012-06-13 18:39:10,305 - gui.mainWindow.MainJFrame - DEBUG - prevText: add bbbbbb
-2012-06-13 18:39:10,305 - gui.mainWindow.MainJFrame - DEBUG - state: ADD
-2012-06-13 18:39:10,305 - gui.mainWindow.MainJFrame - DEBUG - prev: ADD
-2012-06-13 18:39:10,305 - gui.mainWindow.MainJFrame - DEBUG - index: -1
-2012-06-13 18:39:10,401 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
-2012-06-13 18:39:10,401 - gui.mainWindow.MainJFrame - DEBUG - curText:add bbbbbbb 
-2012-06-13 18:39:10,402 - gui.mainWindow.MainJFrame - DEBUG - prevText: add bbbbbbb
-2012-06-13 18:39:10,402 - gui.mainWindow.MainJFrame - DEBUG - state: ADD
-2012-06-13 18:39:10,402 - gui.mainWindow.MainJFrame - DEBUG - prev: ADD
-2012-06-13 18:39:10,402 - gui.mainWindow.MainJFrame - DEBUG - index: -1
-2012-06-13 18:39:10,507 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
-2012-06-13 18:39:10,507 - gui.mainWindow.MainJFrame - DEBUG - curText:add bbbbbbb t
-2012-06-13 18:39:10,507 - gui.mainWindow.MainJFrame - DEBUG - prevText: add bbbbbbb 
-2012-06-13 18:39:10,508 - gui.mainWindow.MainJFrame - DEBUG - state: ADD
-2012-06-13 18:39:10,508 - gui.mainWindow.MainJFrame - DEBUG - prev: ADD
-2012-06-13 18:39:10,508 - gui.mainWindow.MainJFrame - DEBUG - index: -1
-2012-06-13 18:39:10,575 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
-2012-06-13 18:39:10,575 - gui.mainWindow.MainJFrame - DEBUG - curText:add bbbbbbb tm
-2012-06-13 18:39:10,575 - gui.mainWindow.MainJFrame - DEBUG - prevText: add bbbbbbb t
-2012-06-13 18:39:10,576 - gui.mainWindow.MainJFrame - DEBUG - state: ADD
-2012-06-13 18:39:10,576 - gui.mainWindow.MainJFrame - DEBUG - prev: ADD
-2012-06-13 18:39:10,576 - gui.mainWindow.MainJFrame - DEBUG - index: -1
-2012-06-13 18:39:10,685 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
-2012-06-13 18:39:10,686 - gui.mainWindow.MainJFrame - DEBUG - curText:add bbbbbbb tmr
-2012-06-13 18:39:10,686 - gui.mainWindow.MainJFrame - DEBUG - prevText: add bbbbbbb tm
-2012-06-13 18:39:10,686 - gui.mainWindow.MainJFrame - DEBUG - state: ADD
-2012-06-13 18:39:10,686 - gui.mainWindow.MainJFrame - DEBUG - prev: ADD
-2012-06-13 18:39:10,686 - gui.mainWindow.MainJFrame - DEBUG - index: -1
-2012-06-13 18:39:10,797 - gui.mainWindow.MainJFrame - DEBUG - ------------------------------
-2012-06-13 18:39:10,797 - gui.mainWindow.MainJFrame - DEBUG - curText:add bbbbbbb tmr
-2012-06-13 18:39:10,797 - gui.mainWindow.MainJFrame - DEBUG - prevText: add bbbbbbb tmr
-2012-06-13 18:39:10,797 - gui.mainWindow.MainJFrame - DEBUG - state: ADD
-2012-06-13 18:39:10,797 - gui.mainWindow.MainJFrame - DEBUG - prev: ADD
-2012-06-13 18:39:10,797 - gui.mainWindow.MainJFrame - DEBUG - index: -1
-2012-06-13 18:39:10,798 - gui.mainWindow.MainJFrame - DEBUG - *********************enter
-2012-06-13 18:39:10,798 - gui.mainWindow.MainJFrame - WARN - execute in default + exeCmd
-2012-06-13 18:39:10,798 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: ADD
-2012-06-13 18:39:10,798 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: add bbbbbbb tmr
-2012-06-13 18:39:10,798 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-13 18:39:10,799 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-13 18:39:10,799 - operation.Operation - DEBUG - add
-2012-06-13 18:39:10,805 - parser.Parser - DEBUG - this task is not recurring
-2012-06-13 18:39:10,806 - parser.Parser - DEBUG - left over string after checking for recurring: bbbbbbb tmr
-2012-06-13 18:39:10,837 - parser.Parser - DEBUG - -----date only format-------
-2012-06-13 18:39:10,838 - parser.Parser - DEBUG - group 0:  tmr
-2012-06-13 18:39:10,838 - parser.Parser - DEBUG - group 1: tmr
-2012-06-13 18:39:10,838 - parser.Parser - DEBUG - group 2: null
-2012-06-13 18:39:10,838 - parser.Parser - DEBUG - group 3: null
-2012-06-13 18:39:10,838 - parser.Parser - DEBUG - group 4: null
-2012-06-13 18:39:10,838 - parser.Parser - DEBUG - group 5: tmr
-2012-06-13 18:39:10,838 - parser.Parser - DEBUG - group 6: null
-2012-06-13 18:39:10,838 - parser.Parser - DEBUG - group 7: null
-2012-06-13 18:39:10,838 - parser.Parser - DEBUG - group 8: null
-2012-06-13 18:39:10,839 - parser.Parser - DEBUG - group 9: null
-2012-06-13 18:39:10,839 - parser.Parser - DEBUG - group 10: null
-2012-06-13 18:39:10,839 - parser.Parser - DEBUG - group 11: null
-2012-06-13 18:39:10,839 - parser.Parser - DEBUG - group 12: null
-2012-06-13 18:39:10,839 - parser.Parser - DEBUG - group 13: null
-2012-06-13 18:39:10,839 - parser.Parser - DEBUG - group 14: null
-2012-06-13 18:39:10,839 - parser.Parser - DEBUG - group 15: null
-2012-06-13 18:39:10,839 - parser.Parser - DEBUG - group 16: null
-2012-06-13 18:39:10,839 - parser.Parser - DEBUG - group 17: null
-2012-06-13 18:39:10,840 - parser.Parser - DEBUG - group 18: null
-2012-06-13 18:39:10,840 - parser.Parser - DEBUG - group 19: null
-2012-06-13 18:39:10,840 - parser.Parser - DEBUG - group 20: null
-2012-06-13 18:39:10,840 - parser.Parser - DEBUG - group 21: null
-2012-06-13 18:39:10,840 - parser.Parser - DEBUG - group 22: null
-2012-06-13 18:39:10,840 - parser.Parser - DEBUG - group 23: null
-2012-06-13 18:39:10,840 - parser.Parser - DEBUG - group 24: null
-2012-06-13 18:39:10,840 - parser.Parser - DEBUG - group 25: null
-2012-06-13 18:39:10,841 - parser.Parser - DEBUG - group 26: null
-2012-06-13 18:39:10,841 - parser.Parser - DEBUG - group 27: null
-2012-06-13 18:39:10,841 - parser.Parser - DEBUG - group 28: null
-2012-06-13 18:39:10,841 - parser.Parser - DEBUG - group 29: null
-2012-06-13 18:39:10,841 - parser.Parser - DEBUG - group 30: null
-2012-06-13 18:39:10,841 - parser.Parser - DEBUG - group 31: null
-2012-06-13 18:39:10,841 - parser.Parser - DEBUG - group 32: null
-2012-06-13 18:39:10,841 - parser.Parser - DEBUG - group 33: null
-2012-06-13 18:39:10,841 - parser.Parser - DEBUG - group 34: null
-2012-06-13 18:39:10,842 - parser.Parser - DEBUG - group 35: null
-2012-06-13 18:39:10,842 - parser.Parser - DEBUG - group 36: null
-2012-06-13 18:39:10,842 - parser.Parser - DEBUG - group 37: null
-2012-06-13 18:39:10,842 - parser.Parser - DEBUG - group 38: null
-2012-06-13 18:39:10,842 - parser.Parser - DEBUG - group 39: null
-2012-06-13 18:39:10,842 - parser.Parser - DEBUG - group 40: null
-2012-06-13 18:39:10,842 - parser.Parser - DEBUG - group 41: null
-2012-06-13 18:39:10,842 - parser.Parser - DEBUG - group 42: null
-2012-06-13 18:39:10,842 - parser.Parser - DEBUG - group 43: null
-2012-06-13 18:39:10,843 - parser.Parser - DEBUG - group 44: null
-2012-06-13 18:39:10,843 - parser.Parser - DEBUG - group 45: null
-2012-06-13 18:39:10,843 - parser.Parser - DEBUG - group 46: null
-2012-06-13 18:39:10,843 - parser.Parser - DEBUG - group 47: null
-2012-06-13 18:39:10,843 - parser.Parser - DEBUG - group 48: null
-2012-06-13 18:39:10,843 - parser.Parser - DEBUG - group 49: null
-2012-06-13 18:39:10,843 - parser.Parser - DEBUG - group 50: null
-2012-06-13 18:39:10,843 - parser.Parser - DEBUG - group 51: null
-2012-06-13 18:39:10,844 - parser.Parser - DEBUG - group 52: null
-2012-06-13 18:39:10,844 - parser.Parser - DEBUG - group 53: null
-2012-06-13 18:39:10,844 - parser.Parser - DEBUG - group 54: null
-2012-06-13 18:39:10,844 - parser.Parser - DEBUG - group 55: null
-2012-06-13 18:39:10,844 - parser.Parser - DEBUG - group 56: null
-2012-06-13 18:39:10,844 - parser.Parser - DEBUG - group 57: null
-2012-06-13 18:39:10,844 - parser.Parser - DEBUG - group 58: null
-2012-06-13 18:39:10,844 - parser.Parser - DEBUG - group 59: null
-2012-06-13 18:39:10,845 - parser.Parser - DEBUG - group 60: null
-2012-06-13 18:39:10,845 - parser.Parser - DEBUG - group 61: null
-2012-06-13 18:39:10,845 - parser.Parser - DEBUG - group 62: null
-2012-06-13 18:39:10,845 - parser.Parser - DEBUG - group 63: null
-2012-06-13 18:39:10,845 - parser.Parser - DEBUG - group 64: null
-2012-06-13 18:39:10,845 - parser.Parser - DEBUG - group 65: null
-2012-06-13 18:39:10,845 - parser.Parser - DEBUG - group 66: null
-2012-06-13 18:39:10,857 - parser.Parser - DEBUG - group 67: null
-2012-06-13 18:39:10,857 - parser.Parser - DEBUG - group 68: null
-2012-06-13 18:39:10,857 - parser.Parser - DEBUG - group 69: null
-2012-06-13 18:39:10,857 - parser.Parser - DEBUG - group 70: null
-2012-06-13 18:39:10,858 - parser.Parser - DEBUG - group 71: null
-2012-06-13 18:39:10,858 - parser.Parser - DEBUG - group 72: null
-2012-06-13 18:39:10,858 - parser.Parser - DEBUG - group 73: null
-2012-06-13 18:39:10,858 - parser.Parser - DEBUG - group 74: tmr
-2012-06-13 18:39:10,858 - parser.Parser - DEBUG - group 75: null
-2012-06-13 18:39:10,858 - parser.Parser - DEBUG - group 76: null
-2012-06-13 18:39:10,859 - parser.Parser - DEBUG - group 77: tmr
-2012-06-13 18:39:10,859 - parser.Parser - DEBUG - group 78: tmr
-2012-06-13 18:39:10,859 - parser.Parser - DEBUG - group 79: null
-2012-06-13 18:39:10,859 - parser.Parser - DEBUG - group 80: null
-2012-06-13 18:39:10,859 - parser.Parser - DEBUG - group 81: null
-2012-06-13 18:39:10,859 - parser.Parser - DEBUG - group 82: null
-2012-06-13 18:39:10,860 - parser.Parser - DEBUG - start date string: tmr
-2012-06-13 18:39:10,860 - parser.Parser - DEBUG - Start time could NOT be set!
-2012-06-13 18:39:10,860 - parser.Parser - DEBUG - End time could NOT be set!
-2012-06-13 18:39:10,861 - parser.DateParser - DEBUG - dummyDay:14
-2012-06-13 18:39:10,861 - parser.DateParser - DEBUG - dummyMonth:6
-2012-06-13 18:39:10,861 - parser.DateParser - DEBUG - dummyYear:2012
-2012-06-13 18:39:10,861 - parser.Parser - DEBUG - Start date is set!
-2012-06-13 18:39:10,861 - parser.Parser - DEBUG - End date could NOT be set!
-2012-06-13 18:39:10,862 - parser.Parser - DEBUG - time/date extracted!
-2012-06-13 18:39:10,862 - parser.Parser - DEBUG - start date time: 14 Jun 2012
-2012-06-13 18:39:10,862 - parser.Parser - DEBUG - -------post extraction TESTING-------
-2012-06-13 18:39:10,862 - parser.Parser - DEBUG - this task does NOT have deadline!
-2012-06-13 18:39:10,863 - parser.Parser - DEBUG - is NOT important!
-2012-06-13 18:39:10,863 - parser.Parser - DEBUG - it is not recurring
-2012-06-13 18:39:10,863 - parser.Parser - DEBUG - task details: bbbbbbb
-2012-06-13 18:39:10,863 - parser.Parser - DEBUG - this is parse for ADD before initializing task[]
-2012-06-13 18:39:10,863 - parser.Parser - DEBUG - -----------fetchTaskArray() is called!-------------
-2012-06-13 18:39:10,864 - parser.Parser - DEBUG - any error?: VALID
-2012-06-13 18:39:10,864 - parser.Parser - DEBUG - recurring: null
-2012-06-13 18:39:10,864 - parser.Parser - DEBUG - recurring times: -1
-2012-06-13 18:39:10,864 - parser.Parser - DEBUG - task number 1: bbbbbbb on 14 Jun 2012 
-2012-06-13 18:39:10,865 - logic.JIDLogic - DEBUG - Operation feedback:VALID
-2012-06-13 18:39:10,865 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
-2012-06-13 18:39:10,865 - logic.JIDLogic - DEBUG - isundoable
-2012-06-13 18:39:10,866 - gui.mainWindow.MainJFrame - DEBUG - -----------------POPUP-----------------------
-2012-06-13 18:39:10,905 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-13 18:39:10,906 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-13 18:39:10,906 - operation.Operation - DEBUG - find
-2012-06-13 18:39:10,906 - operation.Search - DEBUG - finding objects
-2012-06-13 18:39:10,906 - operation.Search - DEBUG - returning all objects
-2012-06-13 18:39:10,907 - operation.Search - DEBUG - before sorting
-2012-06-13 18:39:10,908 - operation.Search - DEBUG - after sorting
-2012-06-13 18:39:10,908 - logic.JIDLogic - DEBUG - Operation feedback:VALID
-2012-06-13 18:39:10,908 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-13 18:39:10,909 - gui.reminder.Reminder - DEBUG - 1339581780000
-2012-06-13 18:39:10,909 - gui.reminder.Reminder - DEBUG - 1339583950905
-2012-06-13 18:39:10,909 - gui.reminder.Reminder - DEBUG - timediff: -2470905
-2012-06-13 18:39:10,909 - gui.reminder.Reminder - DEBUG - 1339689599000
-2012-06-13 18:39:10,909 - gui.reminder.Reminder - DEBUG - 1339583950905
-2012-06-13 18:39:10,910 - gui.reminder.Reminder - DEBUG - timediff: 105348095
-2012-06-13 18:39:10,910 - gui.reminder.Reminder - DEBUG - latestTask: bbbbbbb on 14 Jun 2012 
-2012-06-13 18:39:10,910 - gui.reminder.Reminder - DEBUG - 1339689599000
-2012-06-13 18:39:10,910 - gui.reminder.Reminder - DEBUG - 1339583950905
-2012-06-13 18:39:10,911 - gui.reminder.Reminder - DEBUG - timediff: 105348095
-2012-06-13 18:39:10,911 - gui.reminder.Reminder - DEBUG - setTimer: 105348095
-2012-06-13 18:39:11,006 - logic.JIDLogic - DEBUG - inside execute command
-2012-06-13 18:39:11,006 - logic.JIDLogic - DEBUG - inside fourth cond
-2012-06-13 18:39:11,006 - operation.Operation - DEBUG - find
-2012-06-13 18:39:11,007 - operation.Search - DEBUG - finding objects
-2012-06-13 18:39:11,007 - operation.Search - DEBUG - returning all objects
-2012-06-13 18:39:11,007 - operation.Search - DEBUG - before sorting
-2012-06-13 18:39:11,007 - operation.Search - DEBUG - after sorting
-2012-06-13 18:39:11,007 - logic.JIDLogic - DEBUG - Operation feedback:VALID
-2012-06-13 18:39:11,007 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
-2012-06-13 18:39:14,460 - storagecontroller.FileHandler - DEBUG - 5
-2012-06-13 18:39:14,509 - storagecontroller.FileHandler - DEBUG - 2
+2012-06-13 19:38:08,029 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,029 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,029 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,029 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,029 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,029 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,030 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,030 - operation.Search - DEBUG - Matching task12
+2012-06-13 19:38:08,030 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,030 - operation.Search - DEBUG - allTasks[12] StartTime:946742399000
+2012-06-13 19:38:08,030 - operation.Search - DEBUG - allTasks[12] StartDate:1339689599000
+2012-06-13 19:38:08,030 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,030 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,030 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,030 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,031 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,031 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,031 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,031 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,031 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,031 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,031 - operation.Search - DEBUG - Matching task13
+2012-06-13 19:38:08,031 - operation.Search - DEBUG - bbbbbbb on 14 Jun 2012 
+2012-06-13 19:38:08,031 - operation.Search - DEBUG - allTasks[13] StartTime:946742399000
+2012-06-13 19:38:08,031 - operation.Search - DEBUG - allTasks[13] StartDate:1339689599000
+2012-06-13 19:38:08,032 - operation.Search - DEBUG - bbbbbbb
+2012-06-13 19:38:08,032 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,032 - operation.Search - DEBUG - Matching task14
+2012-06-13 19:38:08,032 - operation.Search - DEBUG - aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbccccccccccccccccccccccccccccccccccc on 14 Jun 2012 
+2012-06-13 19:38:08,032 - operation.Search - DEBUG - allTasks[14] StartTime:946742399000
+2012-06-13 19:38:08,032 - operation.Search - DEBUG - allTasks[14] StartDate:1339689599000
+2012-06-13 19:38:08,032 - operation.Search - DEBUG - aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbccccccccccccccccccccccccccccccccccc
+2012-06-13 19:38:08,032 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,032 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,032 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,032 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,033 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,033 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,033 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,033 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,033 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,033 - operation.Search - DEBUG - Matching task15
+2012-06-13 19:38:08,033 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,033 - operation.Search - DEBUG - allTasks[15] StartTime:946742399000
+2012-06-13 19:38:08,033 - operation.Search - DEBUG - allTasks[15] StartDate:1339689599000
+2012-06-13 19:38:08,033 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,034 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,034 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,034 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,034 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,034 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,034 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,034 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,034 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,034 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,034 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-13 19:38:08,034 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-13 19:38:08,041 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: delete a
+2012-06-13 19:38:08,041 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-13 19:38:08,041 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-13 19:38:08,041 - operation.Operation - DEBUG - delete
+2012-06-13 19:38:08,041 - operation.BaseSearch - DEBUG - delete
+2012-06-13 19:38:08,041 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-13 19:38:08,041 - operation.BaseSearch - DEBUG - going for new search
+2012-06-13 19:38:08,041 - parser.Parser - DEBUG - this task is not recurring
+2012-06-13 19:38:08,042 - parser.Parser - DEBUG - left over string after checking for recurring: a
+2012-06-13 19:38:08,043 - parser.Parser - DEBUG - time/date NOT extracted!
+2012-06-13 19:38:08,043 - parser.Parser - DEBUG - -------post extraction TESTING-------
+2012-06-13 19:38:08,043 - parser.Parser - DEBUG - this task does NOT have deadline!
+2012-06-13 19:38:08,043 - parser.Parser - DEBUG - is NOT important!
+2012-06-13 19:38:08,043 - parser.Parser - DEBUG - it is not recurring
+2012-06-13 19:38:08,043 - parser.Parser - DEBUG - task details: a
+2012-06-13 19:38:08,043 - parser.Parser - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-13 19:38:08,043 - parser.Parser - DEBUG - task before returning:  
+2012-06-13 19:38:08,043 - operation.BaseSearch - DEBUG - finished searching
+2012-06-13 19:38:08,043 - operation.Search - DEBUG - Default date:946742399000
+2012-06-13 19:38:08,044 - operation.Search - DEBUG - Default Time:946742399000
+2012-06-13 19:38:08,044 - operation.Search - DEBUG - Matching task0
+2012-06-13 19:38:08,044 - operation.Search - DEBUG - cccc on 14 Jun 2012 
+2012-06-13 19:38:08,044 - operation.Search - DEBUG - allTasks[0] StartTime:946742399000
+2012-06-13 19:38:08,044 - operation.Search - DEBUG - allTasks[0] StartDate:1339689599000
+2012-06-13 19:38:08,044 - operation.Search - DEBUG - cccc
+2012-06-13 19:38:08,044 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,044 - operation.Search - DEBUG - Matching task1
+2012-06-13 19:38:08,044 - operation.Search - DEBUG - ccc on 14 Jun 2012 
+2012-06-13 19:38:08,045 - operation.Search - DEBUG - allTasks[1] StartTime:946742399000
+2012-06-13 19:38:08,045 - operation.Search - DEBUG - allTasks[1] StartDate:1339689599000
+2012-06-13 19:38:08,045 - operation.Search - DEBUG - ccc
+2012-06-13 19:38:08,045 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,045 - operation.Search - DEBUG - Matching task2
+2012-06-13 19:38:08,045 - operation.Search - DEBUG - *ddd at 6:03 PM on 13 Jun 2012 
+2012-06-13 19:38:08,045 - operation.Search - DEBUG - allTasks[2] StartTime:946721039000
+2012-06-13 19:38:08,045 - operation.Search - DEBUG - allTasks[2] StartDate:1339603199000
+2012-06-13 19:38:08,046 - operation.Search - DEBUG - ddd
+2012-06-13 19:38:08,046 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,046 - operation.Search - DEBUG - Matching task3
+2012-06-13 19:38:08,046 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,046 - operation.Search - DEBUG - allTasks[3] StartTime:946742399000
+2012-06-13 19:38:08,046 - operation.Search - DEBUG - allTasks[3] StartDate:1339689599000
+2012-06-13 19:38:08,046 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,046 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,046 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,047 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,047 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,047 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,047 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,047 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,047 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,047 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,047 - operation.Search - DEBUG - Matching task4
+2012-06-13 19:38:08,047 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,047 - operation.Search - DEBUG - allTasks[4] StartTime:946742399000
+2012-06-13 19:38:08,048 - operation.Search - DEBUG - allTasks[4] StartDate:1339689599000
+2012-06-13 19:38:08,048 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,048 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,048 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,048 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,048 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,048 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,048 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,048 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,048 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,048 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,048 - operation.Search - DEBUG - Matching task5
+2012-06-13 19:38:08,049 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,049 - operation.Search - DEBUG - allTasks[5] StartTime:946742399000
+2012-06-13 19:38:08,049 - operation.Search - DEBUG - allTasks[5] StartDate:1339689599000
+2012-06-13 19:38:08,049 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,049 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,049 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,049 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,049 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,049 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,049 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,049 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,049 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,050 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,050 - operation.Search - DEBUG - Matching task6
+2012-06-13 19:38:08,050 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,050 - operation.Search - DEBUG - allTasks[6] StartTime:946742399000
+2012-06-13 19:38:08,050 - operation.Search - DEBUG - allTasks[6] StartDate:1339689599000
+2012-06-13 19:38:08,050 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,050 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,050 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,050 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,050 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,051 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,051 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,051 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,051 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,051 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,051 - operation.Search - DEBUG - Matching task7
+2012-06-13 19:38:08,051 - operation.Search - DEBUG - cccd on 14 Jun 2012 
+2012-06-13 19:38:08,051 - operation.Search - DEBUG - allTasks[7] StartTime:946742399000
+2012-06-13 19:38:08,051 - operation.Search - DEBUG - allTasks[7] StartDate:1339689599000
+2012-06-13 19:38:08,051 - operation.Search - DEBUG - cccd
+2012-06-13 19:38:08,051 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,052 - operation.Search - DEBUG - Matching task8
+2012-06-13 19:38:08,052 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,052 - operation.Search - DEBUG - allTasks[8] StartTime:946742399000
+2012-06-13 19:38:08,052 - operation.Search - DEBUG - allTasks[8] StartDate:1339689599000
+2012-06-13 19:38:08,052 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,052 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,052 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,052 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,052 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,052 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,052 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,053 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,053 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,053 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,053 - operation.Search - DEBUG - Matching task9
+2012-06-13 19:38:08,053 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,053 - operation.Search - DEBUG - allTasks[9] StartTime:946742399000
+2012-06-13 19:38:08,053 - operation.Search - DEBUG - allTasks[9] StartDate:1339689599000
+2012-06-13 19:38:08,053 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,053 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,053 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,054 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,054 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,054 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,054 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,054 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,054 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,054 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,054 - operation.Search - DEBUG - Matching task10
+2012-06-13 19:38:08,054 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,054 - operation.Search - DEBUG - allTasks[10] StartTime:946742399000
+2012-06-13 19:38:08,054 - operation.Search - DEBUG - allTasks[10] StartDate:1339689599000
+2012-06-13 19:38:08,055 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,055 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,055 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,055 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,055 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,055 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,055 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,055 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,055 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,055 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,055 - operation.Search - DEBUG - Matching task11
+2012-06-13 19:38:08,055 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,056 - operation.Search - DEBUG - allTasks[11] StartTime:946742399000
+2012-06-13 19:38:08,056 - operation.Search - DEBUG - allTasks[11] StartDate:1339689599000
+2012-06-13 19:38:08,056 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,056 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,056 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,056 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,056 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,056 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,056 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,056 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,056 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,056 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,057 - operation.Search - DEBUG - Matching task12
+2012-06-13 19:38:08,057 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,057 - operation.Search - DEBUG - allTasks[12] StartTime:946742399000
+2012-06-13 19:38:08,057 - operation.Search - DEBUG - allTasks[12] StartDate:1339689599000
+2012-06-13 19:38:08,057 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,057 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,057 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,057 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,057 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,057 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,058 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,058 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,058 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,058 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,058 - operation.Search - DEBUG - Matching task13
+2012-06-13 19:38:08,058 - operation.Search - DEBUG - bbbbbbb on 14 Jun 2012 
+2012-06-13 19:38:08,058 - operation.Search - DEBUG - allTasks[13] StartTime:946742399000
+2012-06-13 19:38:08,058 - operation.Search - DEBUG - allTasks[13] StartDate:1339689599000
+2012-06-13 19:38:08,058 - operation.Search - DEBUG - bbbbbbb
+2012-06-13 19:38:08,058 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,059 - operation.Search - DEBUG - Matching task14
+2012-06-13 19:38:08,059 - operation.Search - DEBUG - aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbccccccccccccccccccccccccccccccccccc on 14 Jun 2012 
+2012-06-13 19:38:08,059 - operation.Search - DEBUG - allTasks[14] StartTime:946742399000
+2012-06-13 19:38:08,059 - operation.Search - DEBUG - allTasks[14] StartDate:1339689599000
+2012-06-13 19:38:08,059 - operation.Search - DEBUG - aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbccccccccccccccccccccccccccccccccccc
+2012-06-13 19:38:08,059 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,059 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,059 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,059 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,059 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,059 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,060 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,060 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,060 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,060 - operation.Search - DEBUG - Matching task15
+2012-06-13 19:38:08,060 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,060 - operation.Search - DEBUG - allTasks[15] StartTime:946742399000
+2012-06-13 19:38:08,060 - operation.Search - DEBUG - allTasks[15] StartDate:1339689599000
+2012-06-13 19:38:08,060 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,060 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,060 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,060 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,061 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,061 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,061 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,061 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,061 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,061 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,061 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-13 19:38:08,061 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-13 19:38:08,077 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: delete a
+2012-06-13 19:38:08,077 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-13 19:38:08,077 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-13 19:38:08,077 - operation.Operation - DEBUG - delete
+2012-06-13 19:38:08,077 - operation.BaseSearch - DEBUG - delete
+2012-06-13 19:38:08,078 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-13 19:38:08,078 - operation.BaseSearch - DEBUG - going for new search
+2012-06-13 19:38:08,078 - parser.Parser - DEBUG - this task is not recurring
+2012-06-13 19:38:08,078 - parser.Parser - DEBUG - left over string after checking for recurring: a
+2012-06-13 19:38:08,079 - parser.Parser - DEBUG - time/date NOT extracted!
+2012-06-13 19:38:08,079 - parser.Parser - DEBUG - -------post extraction TESTING-------
+2012-06-13 19:38:08,079 - parser.Parser - DEBUG - this task does NOT have deadline!
+2012-06-13 19:38:08,079 - parser.Parser - DEBUG - is NOT important!
+2012-06-13 19:38:08,079 - parser.Parser - DEBUG - it is not recurring
+2012-06-13 19:38:08,080 - parser.Parser - DEBUG - task details: a
+2012-06-13 19:38:08,080 - parser.Parser - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-13 19:38:08,080 - parser.Parser - DEBUG - task before returning:  
+2012-06-13 19:38:08,080 - operation.BaseSearch - DEBUG - finished searching
+2012-06-13 19:38:08,080 - operation.Search - DEBUG - Default date:946742399000
+2012-06-13 19:38:08,080 - operation.Search - DEBUG - Default Time:946742399000
+2012-06-13 19:38:08,080 - operation.Search - DEBUG - Matching task0
+2012-06-13 19:38:08,080 - operation.Search - DEBUG - cccc on 14 Jun 2012 
+2012-06-13 19:38:08,080 - operation.Search - DEBUG - allTasks[0] StartTime:946742399000
+2012-06-13 19:38:08,081 - operation.Search - DEBUG - allTasks[0] StartDate:1339689599000
+2012-06-13 19:38:08,081 - operation.Search - DEBUG - cccc
+2012-06-13 19:38:08,081 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,081 - operation.Search - DEBUG - Matching task1
+2012-06-13 19:38:08,081 - operation.Search - DEBUG - ccc on 14 Jun 2012 
+2012-06-13 19:38:08,081 - operation.Search - DEBUG - allTasks[1] StartTime:946742399000
+2012-06-13 19:38:08,081 - operation.Search - DEBUG - allTasks[1] StartDate:1339689599000
+2012-06-13 19:38:08,081 - operation.Search - DEBUG - ccc
+2012-06-13 19:38:08,081 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,081 - operation.Search - DEBUG - Matching task2
+2012-06-13 19:38:08,082 - operation.Search - DEBUG - *ddd at 6:03 PM on 13 Jun 2012 
+2012-06-13 19:38:08,082 - operation.Search - DEBUG - allTasks[2] StartTime:946721039000
+2012-06-13 19:38:08,082 - operation.Search - DEBUG - allTasks[2] StartDate:1339603199000
+2012-06-13 19:38:08,082 - operation.Search - DEBUG - ddd
+2012-06-13 19:38:08,082 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,082 - operation.Search - DEBUG - Matching task3
+2012-06-13 19:38:08,082 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,083 - operation.Search - DEBUG - allTasks[3] StartTime:946742399000
+2012-06-13 19:38:08,083 - operation.Search - DEBUG - allTasks[3] StartDate:1339689599000
+2012-06-13 19:38:08,083 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,083 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,083 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,083 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,083 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,083 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,083 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,083 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,083 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,083 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,083 - operation.Search - DEBUG - Matching task4
+2012-06-13 19:38:08,084 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,084 - operation.Search - DEBUG - allTasks[4] StartTime:946742399000
+2012-06-13 19:38:08,084 - operation.Search - DEBUG - allTasks[4] StartDate:1339689599000
+2012-06-13 19:38:08,084 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,084 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,084 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,084 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,084 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,084 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,084 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,085 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,085 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,085 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,085 - operation.Search - DEBUG - Matching task5
+2012-06-13 19:38:08,085 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,085 - operation.Search - DEBUG - allTasks[5] StartTime:946742399000
+2012-06-13 19:38:08,085 - operation.Search - DEBUG - allTasks[5] StartDate:1339689599000
+2012-06-13 19:38:08,085 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,085 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,085 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,085 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,086 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,086 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,086 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,086 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,086 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,086 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,086 - operation.Search - DEBUG - Matching task6
+2012-06-13 19:38:08,086 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,086 - operation.Search - DEBUG - allTasks[6] StartTime:946742399000
+2012-06-13 19:38:08,086 - operation.Search - DEBUG - allTasks[6] StartDate:1339689599000
+2012-06-13 19:38:08,086 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,087 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,087 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,087 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,087 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,087 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,087 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,087 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,087 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,087 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,087 - operation.Search - DEBUG - Matching task7
+2012-06-13 19:38:08,087 - operation.Search - DEBUG - cccd on 14 Jun 2012 
+2012-06-13 19:38:08,088 - operation.Search - DEBUG - allTasks[7] StartTime:946742399000
+2012-06-13 19:38:08,088 - operation.Search - DEBUG - allTasks[7] StartDate:1339689599000
+2012-06-13 19:38:08,088 - operation.Search - DEBUG - cccd
+2012-06-13 19:38:08,088 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,088 - operation.Search - DEBUG - Matching task8
+2012-06-13 19:38:08,088 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,088 - operation.Search - DEBUG - allTasks[8] StartTime:946742399000
+2012-06-13 19:38:08,088 - operation.Search - DEBUG - allTasks[8] StartDate:1339689599000
+2012-06-13 19:38:08,088 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,088 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,089 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,089 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,089 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,089 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,089 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,089 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,089 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,089 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,089 - operation.Search - DEBUG - Matching task9
+2012-06-13 19:38:08,089 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,090 - operation.Search - DEBUG - allTasks[9] StartTime:946742399000
+2012-06-13 19:38:08,090 - operation.Search - DEBUG - allTasks[9] StartDate:1339689599000
+2012-06-13 19:38:08,090 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,090 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,090 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,090 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,090 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,090 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,090 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,090 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,090 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,090 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,090 - operation.Search - DEBUG - Matching task10
+2012-06-13 19:38:08,091 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,091 - operation.Search - DEBUG - allTasks[10] StartTime:946742399000
+2012-06-13 19:38:08,091 - operation.Search - DEBUG - allTasks[10] StartDate:1339689599000
+2012-06-13 19:38:08,091 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,091 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,091 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,091 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,091 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,091 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,091 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,092 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,092 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,092 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,092 - operation.Search - DEBUG - Matching task11
+2012-06-13 19:38:08,092 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,092 - operation.Search - DEBUG - allTasks[11] StartTime:946742399000
+2012-06-13 19:38:08,092 - operation.Search - DEBUG - allTasks[11] StartDate:1339689599000
+2012-06-13 19:38:08,092 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,092 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,092 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,092 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,093 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,093 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,093 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,093 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,093 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,093 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,093 - operation.Search - DEBUG - Matching task12
+2012-06-13 19:38:08,093 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,093 - operation.Search - DEBUG - allTasks[12] StartTime:946742399000
+2012-06-13 19:38:08,093 - operation.Search - DEBUG - allTasks[12] StartDate:1339689599000
+2012-06-13 19:38:08,093 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,094 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,094 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,094 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,094 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,094 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,094 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,094 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,094 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,094 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,094 - operation.Search - DEBUG - Matching task13
+2012-06-13 19:38:08,095 - operation.Search - DEBUG - bbbbbbb on 14 Jun 2012 
+2012-06-13 19:38:08,095 - operation.Search - DEBUG - allTasks[13] StartTime:946742399000
+2012-06-13 19:38:08,095 - operation.Search - DEBUG - allTasks[13] StartDate:1339689599000
+2012-06-13 19:38:08,095 - operation.Search - DEBUG - bbbbbbb
+2012-06-13 19:38:08,095 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,095 - operation.Search - DEBUG - Matching task14
+2012-06-13 19:38:08,095 - operation.Search - DEBUG - aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbccccccccccccccccccccccccccccccccccc on 14 Jun 2012 
+2012-06-13 19:38:08,095 - operation.Search - DEBUG - allTasks[14] StartTime:946742399000
+2012-06-13 19:38:08,095 - operation.Search - DEBUG - allTasks[14] StartDate:1339689599000
+2012-06-13 19:38:08,095 - operation.Search - DEBUG - aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbccccccccccccccccccccccccccccccccccc
+2012-06-13 19:38:08,096 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,096 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,096 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,096 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,096 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,096 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,096 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,096 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,096 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,096 - operation.Search - DEBUG - Matching task15
+2012-06-13 19:38:08,096 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,097 - operation.Search - DEBUG - allTasks[15] StartTime:946742399000
+2012-06-13 19:38:08,097 - operation.Search - DEBUG - allTasks[15] StartDate:1339689599000
+2012-06-13 19:38:08,097 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,097 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,097 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,097 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,097 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,097 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,097 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,097 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,097 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,097 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,098 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-13 19:38:08,098 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-13 19:38:08,586 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: delete a
+2012-06-13 19:38:08,587 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-13 19:38:08,587 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-13 19:38:08,587 - operation.Operation - DEBUG - delete
+2012-06-13 19:38:08,587 - operation.BaseSearch - DEBUG - delete
+2012-06-13 19:38:08,587 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-13 19:38:08,587 - operation.BaseSearch - DEBUG - going for new search
+2012-06-13 19:38:08,587 - parser.Parser - DEBUG - this task is not recurring
+2012-06-13 19:38:08,587 - parser.Parser - DEBUG - left over string after checking for recurring: a
+2012-06-13 19:38:08,589 - parser.Parser - DEBUG - time/date NOT extracted!
+2012-06-13 19:38:08,589 - parser.Parser - DEBUG - -------post extraction TESTING-------
+2012-06-13 19:38:08,589 - parser.Parser - DEBUG - this task does NOT have deadline!
+2012-06-13 19:38:08,589 - parser.Parser - DEBUG - is NOT important!
+2012-06-13 19:38:08,589 - parser.Parser - DEBUG - it is not recurring
+2012-06-13 19:38:08,589 - parser.Parser - DEBUG - task details: a
+2012-06-13 19:38:08,589 - parser.Parser - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-13 19:38:08,589 - parser.Parser - DEBUG - task before returning:  
+2012-06-13 19:38:08,589 - operation.BaseSearch - DEBUG - finished searching
+2012-06-13 19:38:08,589 - operation.Search - DEBUG - Default date:946742399000
+2012-06-13 19:38:08,590 - operation.Search - DEBUG - Default Time:946742399000
+2012-06-13 19:38:08,590 - operation.Search - DEBUG - Matching task0
+2012-06-13 19:38:08,590 - operation.Search - DEBUG - cccc on 14 Jun 2012 
+2012-06-13 19:38:08,590 - operation.Search - DEBUG - allTasks[0] StartTime:946742399000
+2012-06-13 19:38:08,590 - operation.Search - DEBUG - allTasks[0] StartDate:1339689599000
+2012-06-13 19:38:08,590 - operation.Search - DEBUG - cccc
+2012-06-13 19:38:08,590 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,590 - operation.Search - DEBUG - Matching task1
+2012-06-13 19:38:08,590 - operation.Search - DEBUG - ccc on 14 Jun 2012 
+2012-06-13 19:38:08,591 - operation.Search - DEBUG - allTasks[1] StartTime:946742399000
+2012-06-13 19:38:08,591 - operation.Search - DEBUG - allTasks[1] StartDate:1339689599000
+2012-06-13 19:38:08,591 - operation.Search - DEBUG - ccc
+2012-06-13 19:38:08,591 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,591 - operation.Search - DEBUG - Matching task2
+2012-06-13 19:38:08,591 - operation.Search - DEBUG - *ddd at 6:03 PM on 13 Jun 2012 
+2012-06-13 19:38:08,591 - operation.Search - DEBUG - allTasks[2] StartTime:946721039000
+2012-06-13 19:38:08,591 - operation.Search - DEBUG - allTasks[2] StartDate:1339603199000
+2012-06-13 19:38:08,591 - operation.Search - DEBUG - ddd
+2012-06-13 19:38:08,592 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,592 - operation.Search - DEBUG - Matching task3
+2012-06-13 19:38:08,592 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,592 - operation.Search - DEBUG - allTasks[3] StartTime:946742399000
+2012-06-13 19:38:08,592 - operation.Search - DEBUG - allTasks[3] StartDate:1339689599000
+2012-06-13 19:38:08,592 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,592 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,592 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,592 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,592 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,592 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,593 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,593 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,593 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,593 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,593 - operation.Search - DEBUG - Matching task4
+2012-06-13 19:38:08,593 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,593 - operation.Search - DEBUG - allTasks[4] StartTime:946742399000
+2012-06-13 19:38:08,593 - operation.Search - DEBUG - allTasks[4] StartDate:1339689599000
+2012-06-13 19:38:08,593 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,593 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,594 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,594 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,594 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,594 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,594 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,594 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,594 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,594 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,594 - operation.Search - DEBUG - Matching task5
+2012-06-13 19:38:08,594 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,594 - operation.Search - DEBUG - allTasks[5] StartTime:946742399000
+2012-06-13 19:38:08,595 - operation.Search - DEBUG - allTasks[5] StartDate:1339689599000
+2012-06-13 19:38:08,595 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,595 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,595 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,595 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,595 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,595 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,595 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,595 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,595 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,595 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,595 - operation.Search - DEBUG - Matching task6
+2012-06-13 19:38:08,596 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,596 - operation.Search - DEBUG - allTasks[6] StartTime:946742399000
+2012-06-13 19:38:08,596 - operation.Search - DEBUG - allTasks[6] StartDate:1339689599000
+2012-06-13 19:38:08,596 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,596 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,596 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,596 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,596 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,596 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,596 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,596 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,597 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,597 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,597 - operation.Search - DEBUG - Matching task7
+2012-06-13 19:38:08,597 - operation.Search - DEBUG - cccd on 14 Jun 2012 
+2012-06-13 19:38:08,597 - operation.Search - DEBUG - allTasks[7] StartTime:946742399000
+2012-06-13 19:38:08,597 - operation.Search - DEBUG - allTasks[7] StartDate:1339689599000
+2012-06-13 19:38:08,597 - operation.Search - DEBUG - cccd
+2012-06-13 19:38:08,597 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,597 - operation.Search - DEBUG - Matching task8
+2012-06-13 19:38:08,597 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,598 - operation.Search - DEBUG - allTasks[8] StartTime:946742399000
+2012-06-13 19:38:08,598 - operation.Search - DEBUG - allTasks[8] StartDate:1339689599000
+2012-06-13 19:38:08,598 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,598 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,598 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,598 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,598 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,598 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,598 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,598 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,598 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,599 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,599 - operation.Search - DEBUG - Matching task9
+2012-06-13 19:38:08,599 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,599 - operation.Search - DEBUG - allTasks[9] StartTime:946742399000
+2012-06-13 19:38:08,599 - operation.Search - DEBUG - allTasks[9] StartDate:1339689599000
+2012-06-13 19:38:08,599 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,599 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,599 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,599 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,599 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,599 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,600 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,600 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,600 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,600 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,600 - operation.Search - DEBUG - Matching task10
+2012-06-13 19:38:08,600 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,600 - operation.Search - DEBUG - allTasks[10] StartTime:946742399000
+2012-06-13 19:38:08,600 - operation.Search - DEBUG - allTasks[10] StartDate:1339689599000
+2012-06-13 19:38:08,600 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,600 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,600 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,601 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,601 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,601 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,601 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,601 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,601 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,601 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,601 - operation.Search - DEBUG - Matching task11
+2012-06-13 19:38:08,601 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,601 - operation.Search - DEBUG - allTasks[11] StartTime:946742399000
+2012-06-13 19:38:08,601 - operation.Search - DEBUG - allTasks[11] StartDate:1339689599000
+2012-06-13 19:38:08,602 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,602 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,602 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,602 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,602 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,602 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,602 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,602 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,602 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,602 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,602 - operation.Search - DEBUG - Matching task12
+2012-06-13 19:38:08,602 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,603 - operation.Search - DEBUG - allTasks[12] StartTime:946742399000
+2012-06-13 19:38:08,603 - operation.Search - DEBUG - allTasks[12] StartDate:1339689599000
+2012-06-13 19:38:08,603 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,603 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,603 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,603 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,603 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,603 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,603 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,603 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,603 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,604 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,604 - operation.Search - DEBUG - Matching task13
+2012-06-13 19:38:08,604 - operation.Search - DEBUG - bbbbbbb on 14 Jun 2012 
+2012-06-13 19:38:08,604 - operation.Search - DEBUG - allTasks[13] StartTime:946742399000
+2012-06-13 19:38:08,604 - operation.Search - DEBUG - allTasks[13] StartDate:1339689599000
+2012-06-13 19:38:08,604 - operation.Search - DEBUG - bbbbbbb
+2012-06-13 19:38:08,604 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,604 - operation.Search - DEBUG - Matching task14
+2012-06-13 19:38:08,604 - operation.Search - DEBUG - aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbccccccccccccccccccccccccccccccccccc on 14 Jun 2012 
+2012-06-13 19:38:08,605 - operation.Search - DEBUG - allTasks[14] StartTime:946742399000
+2012-06-13 19:38:08,605 - operation.Search - DEBUG - allTasks[14] StartDate:1339689599000
+2012-06-13 19:38:08,605 - operation.Search - DEBUG - aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbccccccccccccccccccccccccccccccccccc
+2012-06-13 19:38:08,605 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,605 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,605 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,605 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,605 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,605 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,605 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,605 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,606 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,606 - operation.Search - DEBUG - Matching task15
+2012-06-13 19:38:08,606 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,606 - operation.Search - DEBUG - allTasks[15] StartTime:946742399000
+2012-06-13 19:38:08,606 - operation.Search - DEBUG - allTasks[15] StartDate:1339689599000
+2012-06-13 19:38:08,606 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,606 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,606 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,606 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,606 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,606 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,607 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,607 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,607 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,607 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,607 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-13 19:38:08,607 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-13 19:38:08,757 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: delete a
+2012-06-13 19:38:08,757 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-13 19:38:08,757 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-13 19:38:08,757 - operation.Operation - DEBUG - delete
+2012-06-13 19:38:08,757 - operation.BaseSearch - DEBUG - delete
+2012-06-13 19:38:08,757 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-13 19:38:08,758 - operation.BaseSearch - DEBUG - going for new search
+2012-06-13 19:38:08,758 - parser.Parser - DEBUG - this task is not recurring
+2012-06-13 19:38:08,758 - parser.Parser - DEBUG - left over string after checking for recurring: a
+2012-06-13 19:38:08,759 - parser.Parser - DEBUG - time/date NOT extracted!
+2012-06-13 19:38:08,759 - parser.Parser - DEBUG - -------post extraction TESTING-------
+2012-06-13 19:38:08,759 - parser.Parser - DEBUG - this task does NOT have deadline!
+2012-06-13 19:38:08,759 - parser.Parser - DEBUG - is NOT important!
+2012-06-13 19:38:08,759 - parser.Parser - DEBUG - it is not recurring
+2012-06-13 19:38:08,759 - parser.Parser - DEBUG - task details: a
+2012-06-13 19:38:08,760 - parser.Parser - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-13 19:38:08,760 - parser.Parser - DEBUG - task before returning:  
+2012-06-13 19:38:08,760 - operation.BaseSearch - DEBUG - finished searching
+2012-06-13 19:38:08,760 - operation.Search - DEBUG - Default date:946742399000
+2012-06-13 19:38:08,760 - operation.Search - DEBUG - Default Time:946742399000
+2012-06-13 19:38:08,760 - operation.Search - DEBUG - Matching task0
+2012-06-13 19:38:08,760 - operation.Search - DEBUG - cccc on 14 Jun 2012 
+2012-06-13 19:38:08,760 - operation.Search - DEBUG - allTasks[0] StartTime:946742399000
+2012-06-13 19:38:08,761 - operation.Search - DEBUG - allTasks[0] StartDate:1339689599000
+2012-06-13 19:38:08,761 - operation.Search - DEBUG - cccc
+2012-06-13 19:38:08,761 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,761 - operation.Search - DEBUG - Matching task1
+2012-06-13 19:38:08,761 - operation.Search - DEBUG - ccc on 14 Jun 2012 
+2012-06-13 19:38:08,761 - operation.Search - DEBUG - allTasks[1] StartTime:946742399000
+2012-06-13 19:38:08,761 - operation.Search - DEBUG - allTasks[1] StartDate:1339689599000
+2012-06-13 19:38:08,761 - operation.Search - DEBUG - ccc
+2012-06-13 19:38:08,761 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,761 - operation.Search - DEBUG - Matching task2
+2012-06-13 19:38:08,762 - operation.Search - DEBUG - *ddd at 6:03 PM on 13 Jun 2012 
+2012-06-13 19:38:08,762 - operation.Search - DEBUG - allTasks[2] StartTime:946721039000
+2012-06-13 19:38:08,762 - operation.Search - DEBUG - allTasks[2] StartDate:1339603199000
+2012-06-13 19:38:08,762 - operation.Search - DEBUG - ddd
+2012-06-13 19:38:08,762 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,762 - operation.Search - DEBUG - Matching task3
+2012-06-13 19:38:08,762 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,762 - operation.Search - DEBUG - allTasks[3] StartTime:946742399000
+2012-06-13 19:38:08,763 - operation.Search - DEBUG - allTasks[3] StartDate:1339689599000
+2012-06-13 19:38:08,763 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,763 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,763 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,763 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,763 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,763 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,763 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,763 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,763 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,763 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,763 - operation.Search - DEBUG - Matching task4
+2012-06-13 19:38:08,764 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,764 - operation.Search - DEBUG - allTasks[4] StartTime:946742399000
+2012-06-13 19:38:08,764 - operation.Search - DEBUG - allTasks[4] StartDate:1339689599000
+2012-06-13 19:38:08,764 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,764 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,764 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,764 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,764 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,764 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,764 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,764 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,765 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,765 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,765 - operation.Search - DEBUG - Matching task5
+2012-06-13 19:38:08,765 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,765 - operation.Search - DEBUG - allTasks[5] StartTime:946742399000
+2012-06-13 19:38:08,765 - operation.Search - DEBUG - allTasks[5] StartDate:1339689599000
+2012-06-13 19:38:08,765 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,765 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,766 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,766 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,766 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,766 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,766 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,766 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,766 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,766 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,766 - operation.Search - DEBUG - Matching task6
+2012-06-13 19:38:08,766 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,767 - operation.Search - DEBUG - allTasks[6] StartTime:946742399000
+2012-06-13 19:38:08,767 - operation.Search - DEBUG - allTasks[6] StartDate:1339689599000
+2012-06-13 19:38:08,767 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,767 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,767 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,767 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,767 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,767 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,767 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,767 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,767 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,767 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,767 - operation.Search - DEBUG - Matching task7
+2012-06-13 19:38:08,768 - operation.Search - DEBUG - cccd on 14 Jun 2012 
+2012-06-13 19:38:08,768 - operation.Search - DEBUG - allTasks[7] StartTime:946742399000
+2012-06-13 19:38:08,768 - operation.Search - DEBUG - allTasks[7] StartDate:1339689599000
+2012-06-13 19:38:08,768 - operation.Search - DEBUG - cccd
+2012-06-13 19:38:08,768 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,768 - operation.Search - DEBUG - Matching task8
+2012-06-13 19:38:08,768 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,768 - operation.Search - DEBUG - allTasks[8] StartTime:946742399000
+2012-06-13 19:38:08,769 - operation.Search - DEBUG - allTasks[8] StartDate:1339689599000
+2012-06-13 19:38:08,769 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,769 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,769 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,769 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,769 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,769 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,769 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,769 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,769 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,769 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,769 - operation.Search - DEBUG - Matching task9
+2012-06-13 19:38:08,770 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,770 - operation.Search - DEBUG - allTasks[9] StartTime:946742399000
+2012-06-13 19:38:08,770 - operation.Search - DEBUG - allTasks[9] StartDate:1339689599000
+2012-06-13 19:38:08,770 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,770 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,770 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,770 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,770 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,770 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,770 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,771 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,771 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,771 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,771 - operation.Search - DEBUG - Matching task10
+2012-06-13 19:38:08,771 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,771 - operation.Search - DEBUG - allTasks[10] StartTime:946742399000
+2012-06-13 19:38:08,771 - operation.Search - DEBUG - allTasks[10] StartDate:1339689599000
+2012-06-13 19:38:08,771 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,771 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,771 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,772 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,772 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,772 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,772 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,772 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,772 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,772 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,772 - operation.Search - DEBUG - Matching task11
+2012-06-13 19:38:08,772 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,772 - operation.Search - DEBUG - allTasks[11] StartTime:946742399000
+2012-06-13 19:38:08,772 - operation.Search - DEBUG - allTasks[11] StartDate:1339689599000
+2012-06-13 19:38:08,772 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,773 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,773 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,773 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,773 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,773 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,773 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,773 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,773 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,773 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,773 - operation.Search - DEBUG - Matching task12
+2012-06-13 19:38:08,773 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,774 - operation.Search - DEBUG - allTasks[12] StartTime:946742399000
+2012-06-13 19:38:08,774 - operation.Search - DEBUG - allTasks[12] StartDate:1339689599000
+2012-06-13 19:38:08,774 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,774 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,774 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,774 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,774 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,774 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,774 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,774 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,774 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,774 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,775 - operation.Search - DEBUG - Matching task13
+2012-06-13 19:38:08,775 - operation.Search - DEBUG - bbbbbbb on 14 Jun 2012 
+2012-06-13 19:38:08,775 - operation.Search - DEBUG - allTasks[13] StartTime:946742399000
+2012-06-13 19:38:08,775 - operation.Search - DEBUG - allTasks[13] StartDate:1339689599000
+2012-06-13 19:38:08,775 - operation.Search - DEBUG - bbbbbbb
+2012-06-13 19:38:08,775 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,775 - operation.Search - DEBUG - Matching task14
+2012-06-13 19:38:08,775 - operation.Search - DEBUG - aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbccccccccccccccccccccccccccccccccccc on 14 Jun 2012 
+2012-06-13 19:38:08,775 - operation.Search - DEBUG - allTasks[14] StartTime:946742399000
+2012-06-13 19:38:08,776 - operation.Search - DEBUG - allTasks[14] StartDate:1339689599000
+2012-06-13 19:38:08,776 - operation.Search - DEBUG - aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbccccccccccccccccccccccccccccccccccc
+2012-06-13 19:38:08,776 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,776 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,776 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,776 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,776 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,776 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,776 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,776 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,777 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,777 - operation.Search - DEBUG - Matching task15
+2012-06-13 19:38:08,777 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,777 - operation.Search - DEBUG - allTasks[15] StartTime:946742399000
+2012-06-13 19:38:08,777 - operation.Search - DEBUG - allTasks[15] StartDate:1339689599000
+2012-06-13 19:38:08,777 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,777 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,777 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,777 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,777 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,777 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,778 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,778 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,778 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,778 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,778 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-13 19:38:08,778 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-13 19:38:08,947 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: delete
+2012-06-13 19:38:08,947 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: delete aa
+2012-06-13 19:38:08,947 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-13 19:38:08,947 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-13 19:38:08,947 - operation.Operation - DEBUG - delete
+2012-06-13 19:38:08,947 - operation.BaseSearch - DEBUG - delete
+2012-06-13 19:38:08,947 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-13 19:38:08,947 - operation.BaseSearch - DEBUG - going for new search
+2012-06-13 19:38:08,947 - parser.Parser - DEBUG - this task is not recurring
+2012-06-13 19:38:08,948 - parser.Parser - DEBUG - left over string after checking for recurring: aa
+2012-06-13 19:38:08,949 - parser.Parser - DEBUG - time/date NOT extracted!
+2012-06-13 19:38:08,949 - parser.Parser - DEBUG - -------post extraction TESTING-------
+2012-06-13 19:38:08,949 - parser.Parser - DEBUG - this task does NOT have deadline!
+2012-06-13 19:38:08,949 - parser.Parser - DEBUG - is NOT important!
+2012-06-13 19:38:08,949 - parser.Parser - DEBUG - it is not recurring
+2012-06-13 19:38:08,949 - parser.Parser - DEBUG - task details: aa
+2012-06-13 19:38:08,949 - parser.Parser - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-13 19:38:08,949 - parser.Parser - DEBUG - task before returning:  
+2012-06-13 19:38:08,949 - operation.BaseSearch - DEBUG - finished searching
+2012-06-13 19:38:08,949 - operation.Search - DEBUG - Default date:946742399000
+2012-06-13 19:38:08,950 - operation.Search - DEBUG - Default Time:946742399000
+2012-06-13 19:38:08,950 - operation.Search - DEBUG - Matching task0
+2012-06-13 19:38:08,950 - operation.Search - DEBUG - cccc on 14 Jun 2012 
+2012-06-13 19:38:08,950 - operation.Search - DEBUG - allTasks[0] StartTime:946742399000
+2012-06-13 19:38:08,950 - operation.Search - DEBUG - allTasks[0] StartDate:1339689599000
+2012-06-13 19:38:08,950 - operation.Search - DEBUG - cccc
+2012-06-13 19:38:08,950 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,950 - operation.Search - DEBUG - Matching task1
+2012-06-13 19:38:08,951 - operation.Search - DEBUG - ccc on 14 Jun 2012 
+2012-06-13 19:38:08,951 - operation.Search - DEBUG - allTasks[1] StartTime:946742399000
+2012-06-13 19:38:08,951 - operation.Search - DEBUG - allTasks[1] StartDate:1339689599000
+2012-06-13 19:38:08,951 - operation.Search - DEBUG - ccc
+2012-06-13 19:38:08,951 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,951 - operation.Search - DEBUG - Matching task2
+2012-06-13 19:38:08,951 - operation.Search - DEBUG - *ddd at 6:03 PM on 13 Jun 2012 
+2012-06-13 19:38:08,951 - operation.Search - DEBUG - allTasks[2] StartTime:946721039000
+2012-06-13 19:38:08,951 - operation.Search - DEBUG - allTasks[2] StartDate:1339603199000
+2012-06-13 19:38:08,952 - operation.Search - DEBUG - ddd
+2012-06-13 19:38:08,952 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,952 - operation.Search - DEBUG - Matching task3
+2012-06-13 19:38:08,952 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,952 - operation.Search - DEBUG - allTasks[3] StartTime:946742399000
+2012-06-13 19:38:08,952 - operation.Search - DEBUG - allTasks[3] StartDate:1339689599000
+2012-06-13 19:38:08,952 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,952 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,952 - operation.Search - DEBUG - Matching task4
+2012-06-13 19:38:08,952 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,953 - operation.Search - DEBUG - allTasks[4] StartTime:946742399000
+2012-06-13 19:38:08,953 - operation.Search - DEBUG - allTasks[4] StartDate:1339689599000
+2012-06-13 19:38:08,953 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,953 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,953 - operation.Search - DEBUG - Matching task5
+2012-06-13 19:38:08,953 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,953 - operation.Search - DEBUG - allTasks[5] StartTime:946742399000
+2012-06-13 19:38:08,953 - operation.Search - DEBUG - allTasks[5] StartDate:1339689599000
+2012-06-13 19:38:08,953 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,953 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,954 - operation.Search - DEBUG - Matching task6
+2012-06-13 19:38:08,954 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,954 - operation.Search - DEBUG - allTasks[6] StartTime:946742399000
+2012-06-13 19:38:08,954 - operation.Search - DEBUG - allTasks[6] StartDate:1339689599000
+2012-06-13 19:38:08,954 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,954 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,954 - operation.Search - DEBUG - Matching task7
+2012-06-13 19:38:08,954 - operation.Search - DEBUG - cccd on 14 Jun 2012 
+2012-06-13 19:38:08,955 - operation.Search - DEBUG - allTasks[7] StartTime:946742399000
+2012-06-13 19:38:08,955 - operation.Search - DEBUG - allTasks[7] StartDate:1339689599000
+2012-06-13 19:38:08,955 - operation.Search - DEBUG - cccd
+2012-06-13 19:38:08,955 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,955 - operation.Search - DEBUG - Matching task8
+2012-06-13 19:38:08,955 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,955 - operation.Search - DEBUG - allTasks[8] StartTime:946742399000
+2012-06-13 19:38:08,955 - operation.Search - DEBUG - allTasks[8] StartDate:1339689599000
+2012-06-13 19:38:08,955 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,956 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,956 - operation.Search - DEBUG - Matching task9
+2012-06-13 19:38:08,956 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,956 - operation.Search - DEBUG - allTasks[9] StartTime:946742399000
+2012-06-13 19:38:08,956 - operation.Search - DEBUG - allTasks[9] StartDate:1339689599000
+2012-06-13 19:38:08,956 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,956 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,956 - operation.Search - DEBUG - Matching task10
+2012-06-13 19:38:08,956 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,956 - operation.Search - DEBUG - allTasks[10] StartTime:946742399000
+2012-06-13 19:38:08,957 - operation.Search - DEBUG - allTasks[10] StartDate:1339689599000
+2012-06-13 19:38:08,957 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,957 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,957 - operation.Search - DEBUG - Matching task11
+2012-06-13 19:38:08,957 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,957 - operation.Search - DEBUG - allTasks[11] StartTime:946742399000
+2012-06-13 19:38:08,957 - operation.Search - DEBUG - allTasks[11] StartDate:1339689599000
+2012-06-13 19:38:08,957 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,957 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,957 - operation.Search - DEBUG - Matching task12
+2012-06-13 19:38:08,958 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,958 - operation.Search - DEBUG - allTasks[12] StartTime:946742399000
+2012-06-13 19:38:08,973 - operation.Search - DEBUG - allTasks[12] StartDate:1339689599000
+2012-06-13 19:38:08,973 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,974 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,974 - operation.Search - DEBUG - Matching task13
+2012-06-13 19:38:08,974 - operation.Search - DEBUG - bbbbbbb on 14 Jun 2012 
+2012-06-13 19:38:08,974 - operation.Search - DEBUG - allTasks[13] StartTime:946742399000
+2012-06-13 19:38:08,974 - operation.Search - DEBUG - allTasks[13] StartDate:1339689599000
+2012-06-13 19:38:08,974 - operation.Search - DEBUG - bbbbbbb
+2012-06-13 19:38:08,974 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,974 - operation.Search - DEBUG - Matching task14
+2012-06-13 19:38:08,975 - operation.Search - DEBUG - aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbccccccccccccccccccccccccccccccccccc on 14 Jun 2012 
+2012-06-13 19:38:08,975 - operation.Search - DEBUG - allTasks[14] StartTime:946742399000
+2012-06-13 19:38:08,975 - operation.Search - DEBUG - allTasks[14] StartDate:1339689599000
+2012-06-13 19:38:08,975 - operation.Search - DEBUG - aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbccccccccccccccccccccccccccccccccccc
+2012-06-13 19:38:08,975 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:08,975 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:08,975 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:08,975 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:08,975 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:08,975 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:08,975 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:08,975 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:08,976 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:08,976 - operation.Search - DEBUG - Matching task15
+2012-06-13 19:38:08,976 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:08,976 - operation.Search - DEBUG - allTasks[15] StartTime:946742399000
+2012-06-13 19:38:08,976 - operation.Search - DEBUG - allTasks[15] StartDate:1339689599000
+2012-06-13 19:38:08,976 - operation.Search - DEBUG - abc
+2012-06-13 19:38:08,976 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:08,976 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-13 19:38:08,976 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-13 19:38:09,194 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: delete
+2012-06-13 19:38:09,194 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: delete aaa
+2012-06-13 19:38:09,194 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-13 19:38:09,194 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-13 19:38:09,194 - operation.Operation - DEBUG - delete
+2012-06-13 19:38:09,194 - operation.BaseSearch - DEBUG - delete
+2012-06-13 19:38:09,194 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-13 19:38:09,194 - operation.BaseSearch - DEBUG - going for new search
+2012-06-13 19:38:09,194 - parser.Parser - DEBUG - this task is not recurring
+2012-06-13 19:38:09,194 - parser.Parser - DEBUG - left over string after checking for recurring: aaa
+2012-06-13 19:38:09,196 - parser.Parser - DEBUG - time/date NOT extracted!
+2012-06-13 19:38:09,196 - parser.Parser - DEBUG - -------post extraction TESTING-------
+2012-06-13 19:38:09,196 - parser.Parser - DEBUG - this task does NOT have deadline!
+2012-06-13 19:38:09,196 - parser.Parser - DEBUG - is NOT important!
+2012-06-13 19:38:09,196 - parser.Parser - DEBUG - it is not recurring
+2012-06-13 19:38:09,196 - parser.Parser - DEBUG - task details: aaa
+2012-06-13 19:38:09,196 - parser.Parser - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-13 19:38:09,196 - parser.Parser - DEBUG - task before returning:  
+2012-06-13 19:38:09,196 - operation.BaseSearch - DEBUG - finished searching
+2012-06-13 19:38:09,196 - operation.Search - DEBUG - Default date:946742399000
+2012-06-13 19:38:09,197 - operation.Search - DEBUG - Default Time:946742399000
+2012-06-13 19:38:09,197 - operation.Search - DEBUG - Matching task0
+2012-06-13 19:38:09,197 - operation.Search - DEBUG - cccc on 14 Jun 2012 
+2012-06-13 19:38:09,197 - operation.Search - DEBUG - allTasks[0] StartTime:946742399000
+2012-06-13 19:38:09,197 - operation.Search - DEBUG - allTasks[0] StartDate:1339689599000
+2012-06-13 19:38:09,197 - operation.Search - DEBUG - cccc
+2012-06-13 19:38:09,197 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:09,197 - operation.Search - DEBUG - Matching task1
+2012-06-13 19:38:09,197 - operation.Search - DEBUG - ccc on 14 Jun 2012 
+2012-06-13 19:38:09,198 - operation.Search - DEBUG - allTasks[1] StartTime:946742399000
+2012-06-13 19:38:09,198 - operation.Search - DEBUG - allTasks[1] StartDate:1339689599000
+2012-06-13 19:38:09,198 - operation.Search - DEBUG - ccc
+2012-06-13 19:38:09,198 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:09,198 - operation.Search - DEBUG - Matching task2
+2012-06-13 19:38:09,198 - operation.Search - DEBUG - *ddd at 6:03 PM on 13 Jun 2012 
+2012-06-13 19:38:09,198 - operation.Search - DEBUG - allTasks[2] StartTime:946721039000
+2012-06-13 19:38:09,198 - operation.Search - DEBUG - allTasks[2] StartDate:1339603199000
+2012-06-13 19:38:09,198 - operation.Search - DEBUG - ddd
+2012-06-13 19:38:09,199 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:09,199 - operation.Search - DEBUG - Matching task3
+2012-06-13 19:38:09,199 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:09,199 - operation.Search - DEBUG - allTasks[3] StartTime:946742399000
+2012-06-13 19:38:09,199 - operation.Search - DEBUG - allTasks[3] StartDate:1339689599000
+2012-06-13 19:38:09,199 - operation.Search - DEBUG - abc
+2012-06-13 19:38:09,199 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:09,199 - operation.Search - DEBUG - Matching task4
+2012-06-13 19:38:09,199 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:09,199 - operation.Search - DEBUG - allTasks[4] StartTime:946742399000
+2012-06-13 19:38:09,200 - operation.Search - DEBUG - allTasks[4] StartDate:1339689599000
+2012-06-13 19:38:09,200 - operation.Search - DEBUG - abc
+2012-06-13 19:38:09,200 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:09,200 - operation.Search - DEBUG - Matching task5
+2012-06-13 19:38:09,200 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:09,200 - operation.Search - DEBUG - allTasks[5] StartTime:946742399000
+2012-06-13 19:38:09,200 - operation.Search - DEBUG - allTasks[5] StartDate:1339689599000
+2012-06-13 19:38:09,200 - operation.Search - DEBUG - abc
+2012-06-13 19:38:09,200 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:09,200 - operation.Search - DEBUG - Matching task6
+2012-06-13 19:38:09,201 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:09,201 - operation.Search - DEBUG - allTasks[6] StartTime:946742399000
+2012-06-13 19:38:09,201 - operation.Search - DEBUG - allTasks[6] StartDate:1339689599000
+2012-06-13 19:38:09,201 - operation.Search - DEBUG - abc
+2012-06-13 19:38:09,201 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:09,201 - operation.Search - DEBUG - Matching task7
+2012-06-13 19:38:09,201 - operation.Search - DEBUG - cccd on 14 Jun 2012 
+2012-06-13 19:38:09,201 - operation.Search - DEBUG - allTasks[7] StartTime:946742399000
+2012-06-13 19:38:09,201 - operation.Search - DEBUG - allTasks[7] StartDate:1339689599000
+2012-06-13 19:38:09,201 - operation.Search - DEBUG - cccd
+2012-06-13 19:38:09,202 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:09,202 - operation.Search - DEBUG - Matching task8
+2012-06-13 19:38:09,202 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:09,202 - operation.Search - DEBUG - allTasks[8] StartTime:946742399000
+2012-06-13 19:38:09,202 - operation.Search - DEBUG - allTasks[8] StartDate:1339689599000
+2012-06-13 19:38:09,202 - operation.Search - DEBUG - abc
+2012-06-13 19:38:09,202 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:09,202 - operation.Search - DEBUG - Matching task9
+2012-06-13 19:38:09,202 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:09,203 - operation.Search - DEBUG - allTasks[9] StartTime:946742399000
+2012-06-13 19:38:09,203 - operation.Search - DEBUG - allTasks[9] StartDate:1339689599000
+2012-06-13 19:38:09,203 - operation.Search - DEBUG - abc
+2012-06-13 19:38:09,203 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:09,203 - operation.Search - DEBUG - Matching task10
+2012-06-13 19:38:09,203 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:09,203 - operation.Search - DEBUG - allTasks[10] StartTime:946742399000
+2012-06-13 19:38:09,203 - operation.Search - DEBUG - allTasks[10] StartDate:1339689599000
+2012-06-13 19:38:09,203 - operation.Search - DEBUG - abc
+2012-06-13 19:38:09,204 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:09,204 - operation.Search - DEBUG - Matching task11
+2012-06-13 19:38:09,204 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:09,204 - operation.Search - DEBUG - allTasks[11] StartTime:946742399000
+2012-06-13 19:38:09,204 - operation.Search - DEBUG - allTasks[11] StartDate:1339689599000
+2012-06-13 19:38:09,204 - operation.Search - DEBUG - abc
+2012-06-13 19:38:09,204 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:09,204 - operation.Search - DEBUG - Matching task12
+2012-06-13 19:38:09,204 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:09,204 - operation.Search - DEBUG - allTasks[12] StartTime:946742399000
+2012-06-13 19:38:09,205 - operation.Search - DEBUG - allTasks[12] StartDate:1339689599000
+2012-06-13 19:38:09,205 - operation.Search - DEBUG - abc
+2012-06-13 19:38:09,205 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:09,205 - operation.Search - DEBUG - Matching task13
+2012-06-13 19:38:09,205 - operation.Search - DEBUG - bbbbbbb on 14 Jun 2012 
+2012-06-13 19:38:09,205 - operation.Search - DEBUG - allTasks[13] StartTime:946742399000
+2012-06-13 19:38:09,205 - operation.Search - DEBUG - allTasks[13] StartDate:1339689599000
+2012-06-13 19:38:09,205 - operation.Search - DEBUG - bbbbbbb
+2012-06-13 19:38:09,205 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:09,205 - operation.Search - DEBUG - Matching task14
+2012-06-13 19:38:09,206 - operation.Search - DEBUG - aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbccccccccccccccccccccccccccccccccccc on 14 Jun 2012 
+2012-06-13 19:38:09,206 - operation.Search - DEBUG - allTasks[14] StartTime:946742399000
+2012-06-13 19:38:09,206 - operation.Search - DEBUG - allTasks[14] StartDate:1339689599000
+2012-06-13 19:38:09,206 - operation.Search - DEBUG - aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbccccccccccccccccccccccccccccccccccc
+2012-06-13 19:38:09,206 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:09,206 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:09,206 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:09,206 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:09,206 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:09,206 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:09,206 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:09,206 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:09,207 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:09,207 - operation.Search - DEBUG - Matching task15
+2012-06-13 19:38:09,207 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:09,207 - operation.Search - DEBUG - allTasks[15] StartTime:946742399000
+2012-06-13 19:38:09,207 - operation.Search - DEBUG - allTasks[15] StartDate:1339689599000
+2012-06-13 19:38:09,207 - operation.Search - DEBUG - abc
+2012-06-13 19:38:09,207 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:09,207 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-13 19:38:09,207 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-13 19:38:09,406 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: delete
+2012-06-13 19:38:09,406 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: delete aaaa
+2012-06-13 19:38:09,406 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-13 19:38:09,406 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-13 19:38:09,406 - operation.Operation - DEBUG - delete
+2012-06-13 19:38:09,406 - operation.BaseSearch - DEBUG - delete
+2012-06-13 19:38:09,407 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-13 19:38:09,407 - operation.BaseSearch - DEBUG - going for new search
+2012-06-13 19:38:09,407 - parser.Parser - DEBUG - this task is not recurring
+2012-06-13 19:38:09,407 - parser.Parser - DEBUG - left over string after checking for recurring: aaaa
+2012-06-13 19:38:09,408 - parser.Parser - DEBUG - time/date NOT extracted!
+2012-06-13 19:38:09,408 - parser.Parser - DEBUG - -------post extraction TESTING-------
+2012-06-13 19:38:09,408 - parser.Parser - DEBUG - this task does NOT have deadline!
+2012-06-13 19:38:09,408 - parser.Parser - DEBUG - is NOT important!
+2012-06-13 19:38:09,408 - parser.Parser - DEBUG - it is not recurring
+2012-06-13 19:38:09,408 - parser.Parser - DEBUG - task details: aaaa
+2012-06-13 19:38:09,409 - parser.Parser - DEBUG - this is parse for SEARCH before initializing task obj
+2012-06-13 19:38:09,409 - parser.Parser - DEBUG - task before returning:  
+2012-06-13 19:38:09,409 - operation.BaseSearch - DEBUG - finished searching
+2012-06-13 19:38:09,409 - operation.Search - DEBUG - Default date:946742399000
+2012-06-13 19:38:09,409 - operation.Search - DEBUG - Default Time:946742399000
+2012-06-13 19:38:09,409 - operation.Search - DEBUG - Matching task0
+2012-06-13 19:38:09,409 - operation.Search - DEBUG - cccc on 14 Jun 2012 
+2012-06-13 19:38:09,409 - operation.Search - DEBUG - allTasks[0] StartTime:946742399000
+2012-06-13 19:38:09,409 - operation.Search - DEBUG - allTasks[0] StartDate:1339689599000
+2012-06-13 19:38:09,410 - operation.Search - DEBUG - cccc
+2012-06-13 19:38:09,410 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:09,410 - operation.Search - DEBUG - Matching task1
+2012-06-13 19:38:09,410 - operation.Search - DEBUG - ccc on 14 Jun 2012 
+2012-06-13 19:38:09,410 - operation.Search - DEBUG - allTasks[1] StartTime:946742399000
+2012-06-13 19:38:09,410 - operation.Search - DEBUG - allTasks[1] StartDate:1339689599000
+2012-06-13 19:38:09,410 - operation.Search - DEBUG - ccc
+2012-06-13 19:38:09,410 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:09,410 - operation.Search - DEBUG - Matching task2
+2012-06-13 19:38:09,411 - operation.Search - DEBUG - *ddd at 6:03 PM on 13 Jun 2012 
+2012-06-13 19:38:09,411 - operation.Search - DEBUG - allTasks[2] StartTime:946721039000
+2012-06-13 19:38:09,411 - operation.Search - DEBUG - allTasks[2] StartDate:1339603199000
+2012-06-13 19:38:09,411 - operation.Search - DEBUG - ddd
+2012-06-13 19:38:09,411 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:09,411 - operation.Search - DEBUG - Matching task3
+2012-06-13 19:38:09,411 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:09,411 - operation.Search - DEBUG - allTasks[3] StartTime:946742399000
+2012-06-13 19:38:09,411 - operation.Search - DEBUG - allTasks[3] StartDate:1339689599000
+2012-06-13 19:38:09,411 - operation.Search - DEBUG - abc
+2012-06-13 19:38:09,412 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:09,412 - operation.Search - DEBUG - Matching task4
+2012-06-13 19:38:09,412 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:09,412 - operation.Search - DEBUG - allTasks[4] StartTime:946742399000
+2012-06-13 19:38:09,412 - operation.Search - DEBUG - allTasks[4] StartDate:1339689599000
+2012-06-13 19:38:09,412 - operation.Search - DEBUG - abc
+2012-06-13 19:38:09,412 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:09,412 - operation.Search - DEBUG - Matching task5
+2012-06-13 19:38:09,412 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:09,412 - operation.Search - DEBUG - allTasks[5] StartTime:946742399000
+2012-06-13 19:38:09,413 - operation.Search - DEBUG - allTasks[5] StartDate:1339689599000
+2012-06-13 19:38:09,413 - operation.Search - DEBUG - abc
+2012-06-13 19:38:09,413 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:09,413 - operation.Search - DEBUG - Matching task6
+2012-06-13 19:38:09,413 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:09,413 - operation.Search - DEBUG - allTasks[6] StartTime:946742399000
+2012-06-13 19:38:09,413 - operation.Search - DEBUG - allTasks[6] StartDate:1339689599000
+2012-06-13 19:38:09,413 - operation.Search - DEBUG - abc
+2012-06-13 19:38:09,413 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:09,413 - operation.Search - DEBUG - Matching task7
+2012-06-13 19:38:09,413 - operation.Search - DEBUG - cccd on 14 Jun 2012 
+2012-06-13 19:38:09,414 - operation.Search - DEBUG - allTasks[7] StartTime:946742399000
+2012-06-13 19:38:09,414 - operation.Search - DEBUG - allTasks[7] StartDate:1339689599000
+2012-06-13 19:38:09,414 - operation.Search - DEBUG - cccd
+2012-06-13 19:38:09,414 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:09,414 - operation.Search - DEBUG - Matching task8
+2012-06-13 19:38:09,414 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:09,414 - operation.Search - DEBUG - allTasks[8] StartTime:946742399000
+2012-06-13 19:38:09,414 - operation.Search - DEBUG - allTasks[8] StartDate:1339689599000
+2012-06-13 19:38:09,414 - operation.Search - DEBUG - abc
+2012-06-13 19:38:09,414 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:09,415 - operation.Search - DEBUG - Matching task9
+2012-06-13 19:38:09,415 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:09,415 - operation.Search - DEBUG - allTasks[9] StartTime:946742399000
+2012-06-13 19:38:09,415 - operation.Search - DEBUG - allTasks[9] StartDate:1339689599000
+2012-06-13 19:38:09,415 - operation.Search - DEBUG - abc
+2012-06-13 19:38:09,415 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:09,415 - operation.Search - DEBUG - Matching task10
+2012-06-13 19:38:09,415 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:09,415 - operation.Search - DEBUG - allTasks[10] StartTime:946742399000
+2012-06-13 19:38:09,415 - operation.Search - DEBUG - allTasks[10] StartDate:1339689599000
+2012-06-13 19:38:09,416 - operation.Search - DEBUG - abc
+2012-06-13 19:38:09,416 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:09,416 - operation.Search - DEBUG - Matching task11
+2012-06-13 19:38:09,416 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:09,416 - operation.Search - DEBUG - allTasks[11] StartTime:946742399000
+2012-06-13 19:38:09,416 - operation.Search - DEBUG - allTasks[11] StartDate:1339689599000
+2012-06-13 19:38:09,416 - operation.Search - DEBUG - abc
+2012-06-13 19:38:09,416 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:09,416 - operation.Search - DEBUG - Matching task12
+2012-06-13 19:38:09,416 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:09,417 - operation.Search - DEBUG - allTasks[12] StartTime:946742399000
+2012-06-13 19:38:09,417 - operation.Search - DEBUG - allTasks[12] StartDate:1339689599000
+2012-06-13 19:38:09,417 - operation.Search - DEBUG - abc
+2012-06-13 19:38:09,417 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:09,417 - operation.Search - DEBUG - Matching task13
+2012-06-13 19:38:09,417 - operation.Search - DEBUG - bbbbbbb on 14 Jun 2012 
+2012-06-13 19:38:09,417 - operation.Search - DEBUG - allTasks[13] StartTime:946742399000
+2012-06-13 19:38:09,417 - operation.Search - DEBUG - allTasks[13] StartDate:1339689599000
+2012-06-13 19:38:09,417 - operation.Search - DEBUG - bbbbbbb
+2012-06-13 19:38:09,417 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:09,417 - operation.Search - DEBUG - Matching task14
+2012-06-13 19:38:09,418 - operation.Search - DEBUG - aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbccccccccccccccccccccccccccccccccccc on 14 Jun 2012 
+2012-06-13 19:38:09,418 - operation.Search - DEBUG - allTasks[14] StartTime:946742399000
+2012-06-13 19:38:09,418 - operation.Search - DEBUG - allTasks[14] StartDate:1339689599000
+2012-06-13 19:38:09,418 - operation.Search - DEBUG - aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbccccccccccccccccccccccccccccccccccc
+2012-06-13 19:38:09,418 - operation.Search - DEBUG - name matches
+2012-06-13 19:38:09,418 - operation.Search - DEBUG - start date matches
+2012-06-13 19:38:09,418 - operation.Search - DEBUG - start time matches
+2012-06-13 19:38:09,418 - operation.Search - DEBUG - end date matches
+2012-06-13 19:38:09,418 - operation.Search - DEBUG - end time matches
+2012-06-13 19:38:09,418 - operation.Search - DEBUG - task to search has no labels
+2012-06-13 19:38:09,418 - operation.Search - DEBUG - it matches
+2012-06-13 19:38:09,419 - operation.Search - DEBUG - all condition satisfied
+2012-06-13 19:38:09,419 - operation.Search - DEBUG - it matches one of the conds
+2012-06-13 19:38:09,419 - operation.Search - DEBUG - Matching task15
+2012-06-13 19:38:09,419 - operation.Search - DEBUG - abc on 14 Jun 2012 
+2012-06-13 19:38:09,419 - operation.Search - DEBUG - allTasks[15] StartTime:946742399000
+2012-06-13 19:38:09,419 - operation.Search - DEBUG - allTasks[15] StartDate:1339689599000
+2012-06-13 19:38:09,419 - operation.Search - DEBUG - abc
+2012-06-13 19:38:09,419 - operation.Search - DEBUG - inside isTaskbetween
+2012-06-13 19:38:09,419 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-13 19:38:09,419 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-13 19:38:09,701 - gui.mainWindow.MainJFrame - DEBUG - *********************enter
+2012-06-13 19:38:09,701 - gui.mainWindow.MainJFrame - WARN - execute in default + exeCmd
+2012-06-13 19:38:09,701 - gui.mainWindow.MainJFrame - DEBUG - ******setCmd: DELETE
+2012-06-13 19:38:09,701 - gui.mainWindow.MainJFrame - DEBUG - ********exeCmd: delete $$__14-06-2012235959F__$$ 
+2012-06-13 19:38:09,701 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-13 19:38:09,701 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-13 19:38:09,701 - operation.Operation - DEBUG - delete
+2012-06-13 19:38:09,701 - operation.BaseSearch - DEBUG - delete
+2012-06-13 19:38:09,701 - operation.BaseSearch - DEBUG - inside basesearch
+2012-06-13 19:38:09,702 - operation.BaseSearch - DEBUG - going to the id part
+2012-06-13 19:38:09,702 - operation.BaseSearch - DEBUG - $$__14-06-2012235959F__$$
+2012-06-13 19:38:09,702 - operation.Delete - DEBUG - isUndoAble value changed
+2012-06-13 19:38:09,702 - operation.Delete - DEBUG - deleted succesfully
+2012-06-13 19:38:09,702 - operation.BaseSearch - DEBUG - Result Added
+2012-06-13 19:38:09,702 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-13 19:38:09,702 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:true
+2012-06-13 19:38:09,702 - logic.JIDLogic - DEBUG - isundoable
+2012-06-13 19:38:09,703 - gui.mainWindow.MainJFrame - DEBUG - -----------------POPUP-----------------------
+2012-06-13 19:38:09,705 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-13 19:38:09,705 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-13 19:38:09,705 - operation.Operation - DEBUG - find
+2012-06-13 19:38:09,706 - operation.Search - DEBUG - finding objects
+2012-06-13 19:38:09,706 - operation.Search - DEBUG - returning all objects
+2012-06-13 19:38:09,706 - operation.Search - DEBUG - before sorting
+2012-06-13 19:38:09,706 - operation.Search - DEBUG - after sorting
+2012-06-13 19:38:09,706 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-13 19:38:09,706 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-13 19:38:09,706 - gui.reminder.Reminder - DEBUG - 1339581780000
+2012-06-13 19:38:09,706 - gui.reminder.Reminder - DEBUG - 1339587489705
+2012-06-13 19:38:09,706 - gui.reminder.Reminder - DEBUG - timediff: -6009705
+2012-06-13 19:38:09,706 - gui.reminder.Reminder - DEBUG - 1339689599000
+2012-06-13 19:38:09,706 - gui.reminder.Reminder - DEBUG - 1339587489705
+2012-06-13 19:38:09,707 - gui.reminder.Reminder - DEBUG - timediff: 101809295
+2012-06-13 19:38:09,707 - gui.reminder.Reminder - DEBUG - latestTask: cccc on 14 Jun 2012 
+2012-06-13 19:38:09,707 - gui.reminder.Reminder - DEBUG - 1339689599000
+2012-06-13 19:38:09,707 - gui.reminder.Reminder - DEBUG - 1339587489705
+2012-06-13 19:38:09,707 - gui.reminder.Reminder - DEBUG - timediff: 101809295
+2012-06-13 19:38:09,707 - gui.reminder.Reminder - DEBUG - setTimer: 101809295
+2012-06-13 19:38:09,806 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-13 19:38:09,806 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-13 19:38:09,806 - operation.Operation - DEBUG - find
+2012-06-13 19:38:09,806 - operation.Search - DEBUG - finding objects
+2012-06-13 19:38:09,806 - operation.Search - DEBUG - returning all objects
+2012-06-13 19:38:09,806 - operation.Search - DEBUG - before sorting
+2012-06-13 19:38:09,807 - operation.Search - DEBUG - after sorting
+2012-06-13 19:38:09,807 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-13 19:38:09,807 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-13 19:38:32,783 - storagecontroller.FileHandler - DEBUG - 15
+2012-06-13 19:38:32,839 - storagecontroller.FileHandler - DEBUG - 2

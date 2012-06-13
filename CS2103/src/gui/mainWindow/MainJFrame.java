@@ -29,6 +29,7 @@ import javax.swing.UIManager;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Container;
+import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -441,21 +442,20 @@ public class MainJFrame extends javax.swing.JFrame {
 							@Override
 							public void run() {
 								
-								
 								curLocation = editorcomp.getSelectionStart();
 						    	curText = editorcomp.getText();
 								STATE.setState(curText);
 								command = STATE.getCommand();
 								curIndex= jComboBox1.getSelectedIndex();
 								
-								
+								/*
 								logger.debug("------------------------------");
 								logger.debug("curText:" + curText);
 								logger.debug("prevText: " + prevText);
 								logger.debug("state: " +STATE.getState());
 								logger.debug("prev: " +STATE.getPrevState());
 								logger.debug("index: "+ curIndex);
-								
+								*/
 								
 								
 								if(STATE.getPrevState() == STATE.EDIT && STATE.getState()!=STATE.getPrevState() && edit == true) {
@@ -588,10 +588,29 @@ public class MainJFrame extends javax.swing.JFrame {
 										exeCmd = curText;
 										lastCmd = curText;
 										break;
+									case SEARCH:
+										ExpandComponent.updateJTable(tasks);
+										expandFrame();
+										return;
+									case LIST:
+										new Action.ListAction().actionPerformed(null);
+										return;
+									case EXIT:
+										new Action.ExitAction().actionPerformed(null);
+										return;
+									case HELP:
+										new Action.HelpAction().actionPerformed(null);
+										return;
+									case OVERDUE:
+										new Action.OverdueAction().actionPerformed(null);
+										return;
+									case LOGIN:
+										new Action.GCalendarAction().actionPerformed(null);
+										return;
 									default:
 										logger.warn("default execmd: " + curText);
 										exeCmd = curText;
-									break;
+										break;
 									}
 
 									logger.warn("execute in default + exeCmd");
@@ -600,31 +619,6 @@ public class MainJFrame extends javax.swing.JFrame {
 									
 									JIDLogic.setCommand(STATE.getState().toString());
 									tasks = JIDLogic.executeCommand(exeCmd);
-									
-									//after setting exeCmd
-									switch(STATE.getState()) {
-									case SEARCH:
-										ExpandComponent.updateJTable(tasks);
-										expandFrame();
-									break;
-									case LIST:
-										new Action.ListAction().actionPerformed(null);
-									break;
-									case EXIT:
-										new Action.ExitAction().actionPerformed(null);
-										break;
-									case HELP:
-										new Action.HelpAction().actionPerformed(null);
-										break;
-									case OVERDUE:
-										new Action.OverdueAction().actionPerformed(null);
-										break;
-									case LOGIN:
-										new Action.GCalendarAction().actionPerformed(null);
-										break;
-									default:
-										break;
-									}
 									
 									if(!edit) {
 										if(UIController.getOperationFeedback() == OperationFeedback.VALID) {
@@ -730,7 +724,7 @@ public class MainJFrame extends javax.swing.JFrame {
 	public static void showPopup(String str) {
 		logger.debug("-----------------POPUP-----------------------");
 		TopPopUp.setText(str);
-		TopPopUp.setPosition(currentLocation.x + 15, currentLocation.y - 30);
+		TopPopUp.setPosition(currentLocation.x, currentLocation.y - 30);
 		TopPopUp.showBox();
 		TopPopUp.jFrame.setFocusable(true);
 	}

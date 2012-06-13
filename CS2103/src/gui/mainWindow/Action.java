@@ -172,8 +172,9 @@ public class Action {
 
 	        UIController.showFeedbackDisplay(task);
 	        ExpandComponent.updateJTable(task);
-
-			STATE.setState(STATE.NULL);
+	        UIController.expandFrame();
+    		
+	        STATE.setState(STATE.NULL);
     	}
     }
     

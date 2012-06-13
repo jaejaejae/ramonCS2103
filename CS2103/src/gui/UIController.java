@@ -217,7 +217,7 @@ public class UIController {
 				displayText = tasks[0].getName() + " " 
 							  +	STATE.getEndedString(true);
 				if(displayText.length() > 50) {
-					displayText = tasks[0].getName().substring(0, 25) + "... " + STATE.getEndedString(true);
+					displayText = tasks[0].getName().substring(0, 40) + "... " + STATE.getEndedString(true);
 				}
 			}
 			else

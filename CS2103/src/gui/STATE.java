@@ -147,7 +147,7 @@ public enum STATE {
 			return STATE.IMPORTGCAL;
 		if(firstWord.equalsIgnoreCase("export.gcal"))
 			return STATE.EXPORTGCAL;
-		if(firstWord.equalsIgnoreCase("checkfree"))
+		if(firstWord.equalsIgnoreCase("check.free"))
 			return STATE.CHECKFREE;
 		if(firstWord.equalsIgnoreCase("logout"))
 			return STATE.LOGOUT;
