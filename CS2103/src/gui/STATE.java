@@ -54,6 +54,7 @@ public enum STATE {
 			case COMPLETED: return "is toggled completed.";
 			case IMPORTANT: return "is toggled important.";
 			case OVERDUE: return "is overdue.";
+			case ARCHIVE: return "is moved to archive.";
 			default:
 				logger.warn(curState + " getEndedString");
 			}
@@ -63,6 +64,7 @@ public enum STATE {
 			case DELETEALL: return "are deleted.";
 			case OVERDUE: return "are overdue.";
 			case IMPORTANT: return "are toggled important.";
+			case ARCHIVE: return "are moved to archive.";
 			}
 		
 		logger.warn("ended string message for " + curState + " is not implemented.");
