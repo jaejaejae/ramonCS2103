@@ -1,12 +1,11 @@
-package gui.mainWindow;
+package gui;
 
-import gui.STATE;
-import gui.UIController;
 import gui.mainWindow.extended.ExpandComponent;
 import gui.mainWindow.extended.HelpFrame;
 import gui.mainWindow.extended.LogInDialog;
 
 import java.awt.event.ActionEvent;
+import java.beans.PropertyChangeListener;
 
 import javax.swing.AbstractAction;
 
@@ -23,15 +22,18 @@ import data.Task;
  */
 public class Action {
 	
+
+
 	private static Logger logger=Logger.getLogger(JIDLogic.class);
 	
 	/**
 	 * exit the program
 	 * @author Ramon
 	 */
-	static class ExitAction extends AbstractAction {
+	public static class ExitAction extends AbstractAction {
 		@Override
 		public void actionPerformed(ActionEvent e) {
+    		logger.debug("HOTKEY: " + this.getClass().toString());
 			STATE.setState(STATE.EXIT);
 			JIDLogic.JIDLogic_close();
 			System.exit(0);
@@ -43,11 +45,11 @@ public class Action {
 	 * @author Ramon
 	 *
 	 */
-    static class UndoAction extends AbstractAction {
+    public static class UndoAction extends AbstractAction {
         @Override
         public void actionPerformed(ActionEvent e) {
+    		logger.debug("HOTKEY: " + this.getClass().toString());
 			STATE.setState(STATE.UNDO);
-        	logger.debug("*****EXECMD: UNDO*******");
         	JIDLogic.setCommand("UNDO");
         	Task[] task = JIDLogic.executeCommand("UNDO");
         	UIController.showFeedbackDisplay(task);
@@ -60,10 +62,11 @@ public class Action {
      * @author Ramon
      *
      */
-    static class DeleteAction extends AbstractAction {
+    public static class DeleteAction extends AbstractAction {
     	Task[] task;
         @Override
         public void actionPerformed(ActionEvent e) {     
+    		logger.debug("HOTKEY: " + this.getClass().toString());
 			STATE.setState(STATE.DELETE); 
         	
         	Task[] taskList = ExpandComponent.getSeletedTask();
@@ -83,6 +86,7 @@ public class Action {
 	        }
         	
 			STATE.setState(STATE.NULL);
+    		UIController.clearCommandLine();
         }
     }
     
@@ -91,10 +95,11 @@ public class Action {
      * @author Ramon
      *
      */
-    static class CompletedAction extends AbstractAction {
+    public static class CompletedAction extends AbstractAction {
     	Task[] task;
         @Override
         public void actionPerformed(ActionEvent e) {
+    		logger.debug("HOTKEY: " + this.getClass().toString());
 			STATE.setState(STATE.COMPLETED);
 			
         	Task[] taskList = ExpandComponent.getSeletedTask();
@@ -116,6 +121,7 @@ public class Action {
 	        }
 
 			STATE.setState(STATE.COMPLETED);
+    		UIController.clearCommandLine();
         }
     }
     
@@ -124,10 +130,11 @@ public class Action {
      * @author Ramon
      *
      */
-    static class ImportantAction extends AbstractAction {
+    public static class ImportantAction extends AbstractAction {
     	Task[] task;
         @Override
         public void actionPerformed(ActionEvent e) {
+    		logger.debug("HOTKEY: " + this.getClass().toString());
 			STATE.setState(STATE.IMPORTANT);
 			
         	Task[] taskList = ExpandComponent.getSeletedTask();
@@ -153,6 +160,7 @@ public class Action {
 	        }
         	
 			STATE.setState(STATE.NULL);
+    		UIController.clearCommandLine();
         }
     }
     
@@ -161,9 +169,10 @@ public class Action {
      * @author Ramon
      *
      */
-    static class OverdueAction extends AbstractAction {
+    public static class OverdueAction extends AbstractAction {
     	@Override
     	public void actionPerformed(ActionEvent e) {
+    		logger.debug("HOTKEY: " + this.getClass().toString());
 			STATE.setState(STATE.OVERDUE);
 			
     		JIDLogic.setCommand("overdue");
@@ -175,6 +184,7 @@ public class Action {
 	        UIController.expandFrame();
     		
 	        STATE.setState(STATE.NULL);
+    		UIController.clearCommandLine();
     	}
     }
     
@@ -183,9 +193,10 @@ public class Action {
      * @author Ramon
      *
      */
-    static class RedoAction extends AbstractAction {
+    public static class RedoAction extends AbstractAction {
     	@Override
     	public void actionPerformed(ActionEvent e) {
+    		logger.debug("HOTKEY: " + this.getClass().toString());
 			STATE.setState(STATE.REDO);
     		JIDLogic.setCommand("redo");
     		logger.debug("******exeCmd(inside Action: Redo");
@@ -201,15 +212,17 @@ public class Action {
      * @author Ramon
      *
      */
-    static class ListAction extends AbstractAction {
+    public static class ListAction extends AbstractAction {
     	@Override
     	public void actionPerformed(ActionEvent e) {
+    		logger.debug("HOTKEY: " + this.getClass().toString());
 			STATE.setState(STATE.LIST);
     		UIController.refresh();
     		UIController.expandFrame();
     		UIController.sendOperationFeedback(null);
 
 			STATE.setState(STATE.NULL);
+    		UIController.clearCommandLine();
     	}
     }
     
@@ -218,9 +231,10 @@ public class Action {
      * @author Ramon
      *
      */
-    static class ExpandAction extends AbstractAction {
+    public static class ExpandAction extends AbstractAction {
     	@Override
     	public void actionPerformed(ActionEvent e) {
+    		logger.debug("HOTKEY: " + this.getClass().toString());
 			//STATE.setState(STATE.EXPAND);
     		if(UIController.isFrameExpand())
     			UIController.contractFrame();
@@ -228,6 +242,7 @@ public class Action {
     			UIController.expandFrame();
     		UIController.sendOperationFeedback(null);
 			STATE.setState(STATE.NULL);
+    		UIController.clearCommandLine();
     	}
     }
     
@@ -236,12 +251,14 @@ public class Action {
      * @author Ramon
      *
      */
-    static class HelpAction extends AbstractAction {
+    public static class HelpAction extends AbstractAction {
     	public void actionPerformed(ActionEvent e) {
+    		logger.debug("HOTKEY: " + this.getClass().toString());
 			STATE.setState(STATE.HELP);
     		HelpFrame.toggleShown();
     		UIController.sendOperationFeedback(null);
 			STATE.setState(STATE.NULL);
+    		UIController.clearCommandLine();
     	}
     }
 
@@ -250,29 +267,119 @@ public class Action {
      * @author Ramon
      *
      */
-    static class GCalendarAction extends AbstractAction {
+    public static class GCalendarAction extends AbstractAction {
     	@Override
     	public void actionPerformed(ActionEvent e) {
+    		logger.debug("HOTKEY: " + this.getClass().toString());
 			STATE.setState(STATE.LOGIN);
     		new LogInDialog(UIController.mainJFrame
     				, UIController.mainJFrame.getLocation().x + 60
     				, UIController.mainJFrame.getLocation().y - 120
     				);
+    		UIController.clearCommandLine();
     	}
     }
     
     /**
      * logout from google calendar
      */
-    static class GCalendarOutAction extends AbstractAction {
+    public static class GCalendarOutAction extends AbstractAction {
     	@Override
     	public void actionPerformed(ActionEvent e) {
+    		logger.debug("HOTKEY: " + this.getClass().toString());
 			STATE.setState(STATE.LOGOUT);
     		JIDLogic.setCommand("logout");
     		Task[] task = JIDLogic.executeCommand("logout");
 
+    		UIController.clearCommandLine();
 	        UIController.showFeedbackDisplay(task);
 			STATE.setState(STATE.NULL);
+    	}
+    }	
+    
+    /**
+     * Sync data with google calendar
+     */
+    public static class GCalendarSyncAction extends AbstractAction {
+    	@Override
+    	public void actionPerformed(ActionEvent e) {
+    		logger.debug("HOTKEY: " + this.getClass().toString());
+    		STATE.setState(STATE.SYNCGCAL);
+    		JIDLogic.setCommand(STATE.getCommand());
+    		Task[] task = JIDLogic.executeCommand(STATE.getCommand());
+    		
+    		UIController.clearCommandLine();
+    		UIController.showFeedbackDisplay(task);
+    		STATE.setState(STATE.NULL);
+    	}
+    }
+    
+    public static class GCalendarImportAction extends AbstractAction {
+    	@Override
+    	public void actionPerformed(ActionEvent e) {
+    		logger.debug("HOTKEY: " + this.getClass().toString());
+    		STATE.setState(STATE.IMPORTGCAL);
+    		JIDLogic.setCommand(STATE.getCommand());
+    		Task[] task = JIDLogic.executeCommand(STATE.getCommand());
+    		
+    		UIController.clearCommandLine();
+    		UIController.showFeedbackDisplay(task);
+    		STATE.setState(STATE.NULL);
+    	}
+    }
+    
+    public static class GCalendarExportAction extends AbstractAction {
+    	@Override
+    	public void actionPerformed(ActionEvent e) {
+    		logger.debug("HOTKEY: " + this.getClass().toString());
+    		STATE.setState(STATE.EXPORTGCAL);
+    		JIDLogic.setCommand(STATE.getCommand());
+    		Task[] task = JIDLogic.executeCommand(STATE.getCommand());
+    		
+    		UIController.clearCommandLine();
+    		UIController.showFeedbackDisplay(task);
+    		STATE.setState(STATE.NULL);
+    	}
+    }
+    public static class ArchiveAction extends AbstractAction {
+    	@Override
+    	public void actionPerformed(ActionEvent e) {
+    		logger.debug("HOTKEY: " + this.getClass().toString());
+    		STATE.setState(STATE.ARCHIVE);
+    		JIDLogic.setCommand(STATE.getCommand());
+    		Task[] task = JIDLogic.executeCommand(STATE.getCommand());
+    		
+    		UIController.clearCommandLine();
+    		UIController.showFeedbackDisplay(task);
+    		STATE.setState(STATE.NULL);
+    	}
+    }
+    
+    public static class ImportArchiveAction extends AbstractAction {
+    	@Override
+    	public void actionPerformed(ActionEvent e) {
+    		logger.debug("HOTKEY: " + this.getClass().toString());
+    		STATE.setState(STATE.IMPORTARCHIVE);
+    		JIDLogic.setCommand(STATE.getCommand());
+    		Task[] task = JIDLogic.executeCommand(STATE.getCommand());
+    		
+    		UIController.clearCommandLine();
+    		UIController.showFeedbackDisplay(task);
+    		STATE.setState(STATE.NULL);
+    	}
+    }
+    
+    public static class ClearArchiveAction extends AbstractAction {
+    	@Override
+    	public void actionPerformed(ActionEvent e) {
+    		logger.debug("HOTKEY: " + this.getClass().toString());
+    		STATE.setState(STATE.CLEARARCHIVE);
+    		JIDLogic.setCommand(STATE.getCommand());
+    		Task[] task = JIDLogic.executeCommand(STATE.getCommand());
+    		
+    		UIController.clearCommandLine();
+    		UIController.showFeedbackDisplay(task);
+    		STATE.setState(STATE.NULL);
     	}
     }
 }
