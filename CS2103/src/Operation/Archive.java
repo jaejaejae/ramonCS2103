@@ -141,6 +141,7 @@ public class Archive extends Operation{
 		// TODO Auto-generated method stub
 		isUndoAble=false;
 		StorageManager.clearArchive();
+		feedback=OperationFeedback.VALID;
 		return new Task[1];
 		
 	}

@@ -643,8 +643,6 @@ public class MainJFrame extends javax.swing.JFrame {
 										}
 									}
 								}
-								
-								UIController.refresh();
 								prevState = curState;
 								prevText = curText;
 							}

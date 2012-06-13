@@ -63,9 +63,8 @@ public class UIController {
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		JIDLogic.JIDLogic_init();
-		
 		new UIController();
+		JIDLogic.JIDLogic_init();
 	}
 	
 	/**
@@ -211,9 +210,8 @@ public class UIController {
 		switch(operationFeedback) {
 		case VALID:
 			if(tasks == null)
-				logger.warn("UIController.showFeedbackDisplay : " +
-						"Valid feedback should not have null tasks");
-			if(tasks.length == 1) {
+				displayText = OperationFeedback.getString(getOperationFeedback());
+			else if(tasks.length == 1) {
 				displayText = tasks[0].getName() + " " 
 							  +	STATE.getEndedString(true);
 				if(displayText.length() > 50) {
