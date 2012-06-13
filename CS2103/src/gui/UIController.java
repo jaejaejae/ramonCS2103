@@ -3,6 +3,7 @@ package gui;
 import gui.mainWindow.MainJFrame;
 import gui.mainWindow.extended.ExpandComponent;
 import gui.mainWindow.extended.HelpFrame;
+import gui.mainWindow.extended.MailDialog;
 import gui.mainWindow.extended.TopPopUp;
 import gui.reminder.Reminder;
 
@@ -249,5 +250,12 @@ public class UIController {
 	 */
 	public static void setLoginOn(boolean status) {
 		loginOn = status;
+	}
+	
+	/** promt email input box
+	 * 
+	 */
+	public static void promtEmailInput() {
+		new MailDialog(mainJFrame, true);
 	}
 }

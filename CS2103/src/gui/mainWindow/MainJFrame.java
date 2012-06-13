@@ -590,15 +590,8 @@ public class MainJFrame extends javax.swing.JFrame {
 										exeCmd = curText;
 										lastCmd = curText;
 										break;
-									case SEARCH:
-									case LIST:
-									case UNDO:
-									case REDO:							
-									case OVERDUE:
-									case ARCHIVE:
-									case CLEARARCHIVE:
-									case IMPORTARCHIVE:
-										exeCmd = curText;
+									default:
+										exeCmd = STATE.getCommand();
 									break;
 									}
 									
