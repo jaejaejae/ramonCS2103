@@ -85,11 +85,11 @@ public class Binding {
 	        inputMap.put(key, "overdue");
 	        actionMap.put("overdue", new Action.OverdueAction());
 	        
-	        key = KeyStroke.getKeyStroke(KeyEvent.VK_G, Event.ALT_MASK);
+	        key = KeyStroke.getKeyStroke(KeyEvent.VK_G, Event.CTRL_MASK);
 	        inputMap.put(key, "login");
 	        actionMap.put("login", new Action.GCalendarAction());
 	        
-	        key = KeyStroke.getKeyStroke(KeyEvent.VK_H, Event.CTRL_MASK);
+	        key = KeyStroke.getKeyStroke(KeyEvent.VK_B, Event.CTRL_MASK);
 	        inputMap.put(key, "logout");
 	        actionMap.put("logout", new Action.GCalendarOutAction());
 	        
