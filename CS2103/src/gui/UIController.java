@@ -167,10 +167,10 @@ public class UIController {
 			execmd += password[i];
 		System.out.println(execmd);
 		JIDLogic.executeCommand(execmd);
-		UIController.refresh();
 		if(operationFeedback == OperationFeedback.VALID)
 			UIController.showTopPopUpMsg("Log in successfully!");
 		UIController.showFeedbackDisplay();
+		UIController.refresh();
 	}
 	
 	/**

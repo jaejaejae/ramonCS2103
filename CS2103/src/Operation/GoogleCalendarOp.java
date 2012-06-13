@@ -104,15 +104,10 @@ public class GoogleCalendarOp extends Operation {
 		
 		if (obj.isLoggedIn()){
 		
-			if (StorageManager.getGCalObject().sync()){
-				logger.debug("logged and synced successfully");
-				return new Task[1];
-			}
-			else{
-				feedback=OperationFeedback.INVALID_NOINTERNET;
-				return null;
-				
-			}
+			
+			Thread t= new Thread(StorageManager.getGCalObject());
+			t.start();
+			return new Task[1];
 		}
 		else{
 			feedback=OperationFeedback.USER_NOT_LOGGEDIN;
@@ -125,6 +120,11 @@ public class GoogleCalendarOp extends Operation {
 		userCommand.trim().replaceAll("login","");
 		logger.debug(userCommand);
 		String params[]=userCommand.split("\\s+");
+		if (params.length!=3)
+		{
+			feedback=OperationFeedback.INVALID_INCORRECTLOGIN;
+			return null;
+		}
 		String username=params[1];
 		String password=params[2];
 		logger.debug(username);
@@ -176,11 +176,6 @@ public class GoogleCalendarOp extends Operation {
 		return isUndoAble;
 	}
 
-	@Override
-	public boolean isInputCorrect(String command) {
-		// TODO Auto-generated method stub
-		return true;
-	}
 
 	public OperationFeedback getOpFeedback() {
 		// TODO Auto-generated method stub

@@ -187,6 +187,7 @@ public class Action {
     	public void actionPerformed(ActionEvent e) {
     		UIController.refresh();
     		UIController.expandFrame();
+    		UIController.sendOperationFeedback(null);
     	}
     }
     
@@ -202,6 +203,7 @@ public class Action {
     			UIController.contractFrame();
     		else
     			UIController.expandFrame();
+    		UIController.sendOperationFeedback(null);
     	}
     }
     
@@ -213,6 +215,7 @@ public class Action {
     static class HelpAction extends AbstractAction {
     	public void actionPerformed(ActionEvent e) {
     		HelpFrame.toggleShown();
+    		UIController.sendOperationFeedback(null);
     	}
     }
 

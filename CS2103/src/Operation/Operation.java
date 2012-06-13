@@ -37,7 +37,7 @@ public abstract class Operation {
 			object = new Add(intendedOperation);
 			}
 		else if (intendedOperation.equals("delete") || intendedOperation.equals("remove") || 
-				intendedOperation.equals("deleteall")){
+				intendedOperation.equals("delete.all")){
 			object = new Delete(intendedOperation);
 		}
 		else if (intendedOperation.equals("modify") || intendedOperation.equals("update") || 
@@ -48,11 +48,11 @@ public abstract class Operation {
 			object = new Search(intendedOperation);
 		}
 		else if (intendedOperation.equals("completed") || intendedOperation.equals("done") ||
-				intendedOperation.equals("completedall")){
+				intendedOperation.equals("completed.all")){
 			object = new ToggleCompleted(intendedOperation);
 		}
 		else if(intendedOperation.equals("star") || intendedOperation.equals("important") ||
-				intendedOperation.equals("starall")){
+				intendedOperation.equals("star.all")){
 			object = new ToggleImportant(intendedOperation);
 		}
 		else if (intendedOperation.equals("archive") || intendedOperation.equals("cleararchive") ||
@@ -106,13 +106,7 @@ public abstract class Operation {
 	 * @return Whether the operation in undoable
 	 */
 	public abstract boolean isUndoAble();
-	/**
-	 * 
-	 * @param command
-	 * @return Return whether the input String is correct
-	 */
-	public abstract boolean isInputCorrect(String command);
-	/**
+/**
 	 * Used to return the status of execution in operation
 	 * @return Status of operation
 	 */
@@ -122,11 +116,6 @@ public abstract class Operation {
 	 * @return Operation name
 	 */
 	public abstract String getOperationName();
-
-	public String getErrorMessage() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 	
 	
 

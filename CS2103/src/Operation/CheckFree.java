@@ -11,14 +11,14 @@ import constant.OperationFeedback;
 
 import data.Task;
 import data.TaskDateTime;
-public class Schedule extends Operation{
-	private static Logger logger=Logger.getLogger(Schedule.class);
+public class CheckFree extends Operation{
+	private static Logger logger=Logger.getLogger(CheckFree.class);
 	private String commandName;
 	private final static long MILLISECONDS_IN_A_DAY=3600*24*1000;
-	public Schedule (){
+	public CheckFree (){
 		commandName="checkfree";
 	}
-	public Schedule(String userInput){
+	public CheckFree(String userInput){
 		commandName=userInput;
 	}
 	
@@ -114,12 +114,6 @@ public class Schedule extends Operation{
 	public boolean isUndoAble() {
 		// TODO Auto-generated method stub
 		return isUndoAble;
-	}
-
-	@Override
-	public boolean isInputCorrect(String command) {
-		// TODO Auto-generated method stub
-		return false;
 	}
 
 	@Override

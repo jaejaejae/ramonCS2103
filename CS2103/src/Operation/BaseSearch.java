@@ -21,7 +21,7 @@ public class BaseSearch extends Operation{
 	 */
 	public Task[] execute(String userCommand)
 	{
-		String params = userCommand.toLowerCase().replaceFirst(this.commandName+" ","");
+		String params = userCommand.toLowerCase().replaceFirst(this.getOperationName()+" ","");
 		logger.debug(commandName);
 		logger.debug("inside basesearch");
 		ArrayList<Task> foundTasks=new ArrayList<Task>();
@@ -39,7 +39,7 @@ public class BaseSearch extends Operation{
 				Task t=StorageManager.getTaskById(extractedTaskIds[i]);
 				//logger.debug(t.getTaskId());
 				Task[] result;
-				if (!commandName.contains("all")){
+				if (!commandName.contains(".all")){
 					result=execute(t);
 				}
 				else{
@@ -126,14 +126,6 @@ public class BaseSearch extends Operation{
 		return false;
 	}
 
-	@Override
-	/**
-	 * 
-	 */
-	public boolean isInputCorrect(String command) {
-		// TODO Auto-generated method stub
-		return false;
-	}
 
 	
 
@@ -161,7 +153,7 @@ public class BaseSearch extends Operation{
 	 */
 	public OperationFeedback getOpFeedback() {
 		// TODO Auto-generated method stub
-		return null;
+		return feedback;
 	}
 
 }

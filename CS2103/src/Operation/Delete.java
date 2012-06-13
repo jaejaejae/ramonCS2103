@@ -84,14 +84,10 @@ public class Delete extends BaseSearch {
 		return isUndoAble;
 	}
 
-	@Override
-	public boolean isInputCorrect(String command) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+
 	public OperationFeedback getOpFeedback() {
 		// TODO Auto-generated method stub
-		return null;
+		return feedback;
 	}      
                
     
