@@ -5,27 +5,27 @@ import java.util.ArrayList;
 import org.apache.log4j.Logger;
 
 import parser.Parser;
- 
+
 import storagecontroller.StorageManager;
 import constant.OperationFeedback;
 
 import data.Task;
 import data.TaskDateTime;
-public class CheckFree extends Operation{
-	private static Logger logger=Logger.getLogger(CheckFree.class);
+public class Schedule extends Operation{
+	private static Logger logger=Logger.getLogger(Schedule.class);
 	private String commandName;
 	private final static long MILLISECONDS_IN_A_DAY=3600*24*1000;
-	public CheckFree (){
+	public Schedule (){
 		commandName="checkfree";
 	}
-	public CheckFree(String userInput){
+	public Schedule(String userInput){
 		commandName=userInput;
 	}
 	
 	@Override
 	public Task[] execute(String userCommand) {
 		// TODO Auto-generated method stub
-		userCommand.toLowerCase().trim().replaceFirst("check.free ", "");
+		userCommand.toLowerCase().trim().replaceFirst("checkfree ", "");
 		
 		Search SearchObj=new Search();
 	
@@ -52,7 +52,7 @@ public class CheckFree extends Operation{
 			}
 			
 			for (long i= )*/
-			return new Task[1];
+			return null;
 		}
 		else {
 			feedback = OperationFeedback.NOT_FREE;
@@ -114,6 +114,12 @@ public class CheckFree extends Operation{
 	public boolean isUndoAble() {
 		// TODO Auto-generated method stub
 		return isUndoAble;
+	}
+
+	@Override
+	public boolean isInputCorrect(String command) {
+		// TODO Auto-generated method stub
+		return false;
 	}
 
 	@Override

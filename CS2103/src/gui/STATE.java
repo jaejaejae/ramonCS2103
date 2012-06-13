@@ -64,6 +64,8 @@ public enum STATE {
 			case OVERDUE: return "are overdue.";
 			case IMPORTANT: return "are toggled important.";
 			}
+		
+		logger.warn("ended string message for " + curState + " is not implemented.");
 		return null;
 	}
 	

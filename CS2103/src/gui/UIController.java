@@ -170,7 +170,6 @@ public class UIController {
 		if(operationFeedback == OperationFeedback.VALID)
 			UIController.showTopPopUpMsg("Log in successfully!");
 		UIController.showFeedbackDisplay();
-		UIController.refresh();
 	}
 	
 	/**
@@ -233,6 +232,9 @@ public class UIController {
 			mainJFrame.showPopup(displayText);
 		else 
 			showTrayMsg("Jot It Down", displayText);
+		
+
+		UIController.refresh();
 	}
 	
 	/**
