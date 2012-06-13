@@ -1647,6 +1647,7 @@
 2012-06-13 21:05:40,162 - operation.Operation - DEBUG - importarchive
 2012-06-13 21:05:40,162 - logic.JIDLogic - DEBUG - Operation feedback:null
 2012-06-13 21:05:40,162 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+<<<<<<< HEAD
 2012-06-13 21:08:39,833 - storagecontroller.FileHandler - DEBUG - array out of bounds!
 2012-06-13 21:08:39,878 - storagecontroller.FileHandler - DEBUG - array out of bounds!
 2012-06-13 21:08:39,927 - logic.JIDLogic - DEBUG - inside execute command
@@ -1928,3 +1929,5 @@
 2012-06-13 21:11:15,188 - logic.JIDLogic - DEBUG - HOTKEY: class gui.Action$GCalendarAction
 2012-06-13 21:11:17,991 - storagecontroller.FileHandler - DEBUG - 3
 2012-06-13 21:11:18,029 - storagecontroller.FileHandler - DEBUG - 2
+=======
+>>>>>>> 29c8316b44224269b5527cae2aa4c3ea77b6e9e1
