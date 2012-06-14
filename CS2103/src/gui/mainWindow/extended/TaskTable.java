@@ -176,20 +176,20 @@ public class TaskTable {
      * show all tasks on the table
      */
     public void updateJTable() {
-
+    	/*
     	Timer timer = new Timer(100, new ActionListener(){
 
     	  		@Override
-			public void actionPerformed(ActionEvent arg0) {
+			public void actionPerformed(ActionEvent arg0) {*/
 		    	listLabel = new Vector<String>();
 		    	JIDLogic.setCommand("find");
 		    	tasks = JIDLogic.executeCommand("find *.*");
 		    	makeAllJLabel(tasks);
 		    	setAppearance();
-		    	}
+		/*    	}
 			});
     	timer.setRepeats(false);
-    	timer.start();
+    	timer.start();*/
     	
     }
     
@@ -198,10 +198,10 @@ public class TaskTable {
      * @param tasks tasks that will be displayed on the table
      */
     public void updateJTable(final Task[] tasks) {
-    	Timer timer = new Timer(1, new ActionListener(){
+    	/*Timer timer = new Timer(1, new ActionListener(){
 
 			@Override
-			public void actionPerformed(ActionEvent arg0) {
+			public void actionPerformed(ActionEvent arg0) {*/
 		    	if(tasks==null)
 		    		while(model.getRowCount()>0)
 		    			model.removeRow(0);
@@ -210,9 +210,9 @@ public class TaskTable {
 			    	makeAllJLabel(tasks);
 			    	setAppearance();
 		    	}
-			}});
-    	timer.setRepeats(false);
-    	timer.start();
+		//	}});
+    	/*timer.setRepeats(false);
+    	timer.start();*/
     }
     
     /**

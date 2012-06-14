@@ -30,7 +30,7 @@ import logic.JIDLogic;
  *
  */
 public class UIController {
-	private static Logger logger=Logger.getLogger(UIController.class);
+	private static Logger	 logger=Logger.getLogger(UIController.class);
 
 	public static MainJFrame mainJFrame;
 	Reminder reminder;
@@ -49,7 +49,7 @@ public class UIController {
 
 	/**
 	 * initialize main window components which consist of the pop up,
-	 * the table, and the help frame.
+	 * the table, and the help frame.	
 	 */
 	private void initializeMainWindowComponent() {
 		TopPopUp.createTopPopUp();
@@ -57,6 +57,7 @@ public class UIController {
 		HelpFrame.initialize();
 		mainJFrame = new MainJFrame();
 		HelpFrame.setPosition();
+		mainJFrame.showFrame();
 	}
 
 	/**
@@ -89,6 +90,7 @@ public class UIController {
 	public static void main(String[] args) {
 		new UIController();
 		JIDLogic.JIDLogic_init();
+		UIController.refresh();
 	}
 	
 

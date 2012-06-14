@@ -108,16 +108,6 @@ public class MainJFrame extends javax.swing.JFrame {
 		this.currentLocation = new Point(this.getLocation());
 		
 		addBindings();
-		
-		/*
-		 * Create and display the form
-		 */
-		java.awt.EventQueue.invokeLater(new Runnable() {
-
-			public void run() {
-				showFrame();
-			}
-		});
 	}
 
 	/**
