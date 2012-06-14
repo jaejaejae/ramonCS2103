@@ -1,65 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <java version="1.7.0_03" class="java.beans.XMLDecoder">
  <object class="data.Task">
-  <void property="description">
-   <string>pgf3d47s3a0m4paat3q65clsbc</string>
-  </void>
-  <void property="end">
-   <object class="data.TaskDateTime">
-    <void property="hasDate">
-     <boolean>true</boolean>
-    </void>
-    <void property="timeMilli">
-     <long>1339689600000</long>
-    </void>
-   </object>
-  </void>
   <void property="name">
-   <string>aaa</string>
+   <string>meeting</string>
+  </void>
+  <void property="recurring">
+   <null/>
   </void>
   <void property="start">
    <object class="data.TaskDateTime">
     <void property="hasDate">
      <boolean>true</boolean>
     </void>
+    <void property="hasTime">
+     <boolean>true</boolean>
+    </void>
     <void property="timeMilli">
-     <long>1339603200000</long>
+     <long>1339634700000</long>
     </void>
    </object>
   </void>
   <void property="taskId">
-   <string>$$__15-06-2012000000Z__$$</string>
-  </void>
- </object>
- <object class="data.Task">
-  <void property="description">
-   <string>usi0tvf31k825hnl7ojsopaod4</string>
-  </void>
-  <void property="end">
-   <object class="data.TaskDateTime">
-    <void property="hasDate">
-     <boolean>true</boolean>
-    </void>
-    <void property="timeMilli">
-     <long>1339689600000</long>
-    </void>
-   </object>
-  </void>
-  <void property="name">
-   <string>bbb</string>
-  </void>
-  <void property="start">
-   <object class="data.TaskDateTime">
-    <void property="hasDate">
-     <boolean>true</boolean>
-    </void>
-    <void property="timeMilli">
-     <long>1339603200000</long>
-    </void>
-   </object>
-  </void>
-  <void property="taskId">
-   <string>$$__15-06-2012000000K__$$</string>
+   <string>$$__14-06-2012084500K__$$</string>
   </void>
  </object>
 </java>

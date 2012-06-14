@@ -26,8 +26,8 @@ import data.Task;
  * @author Ramon
  *
  */
-public class AutoUpdateJTable {
-	private static Logger logger=Logger.getLogger(AutoUpdateJTable.class);
+public class TaskTable {
+	private static Logger logger=Logger.getLogger(TaskTable.class);
 	
 	private JTable jTable;
 	private DefaultTableModel model;
@@ -38,7 +38,7 @@ public class AutoUpdateJTable {
      * Constructor
      * @param jTable that needs to be updated
      */
-	AutoUpdateJTable(final JTable jTable){
+	TaskTable(final JTable jTable){
 		this.jTable = jTable;
 		addListener();
 		model = (DefaultTableModel) this.jTable.getModel();

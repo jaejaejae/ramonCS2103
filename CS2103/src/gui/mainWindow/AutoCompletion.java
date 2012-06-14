@@ -1,4 +1,4 @@
-package gui.mainWindow.extended;
+package gui.mainWindow;
 
 
 import java.awt.event.*;

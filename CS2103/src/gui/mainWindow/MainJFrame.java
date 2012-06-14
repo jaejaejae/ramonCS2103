@@ -12,7 +12,6 @@ import gui.Action;
 import gui.Resource;
 import gui.STATE;
 import gui.UIController;
-import gui.mainWindow.extended.AutoCompletion;
 import gui.mainWindow.extended.ExpandComponent;
 import gui.mainWindow.extended.HelpFrame;
 import gui.mainWindow.extended.TopPopUp;
