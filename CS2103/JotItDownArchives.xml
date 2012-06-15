@@ -16,30 +16,6 @@
      <boolean>true</boolean>
     </void>
     <void property="timeMilli">
-     <long>1339689599000</long>
-    </void>
-   </object>
-  </void>
-  <void property="taskId">
-   <string>$$__14-06-2012235959M__$$</string>
-  </void>
- </object>
- <object class="data.Task">
-  <void property="completed">
-   <boolean>true</boolean>
-  </void>
-  <void property="name">
-   <string>abc</string>
-  </void>
-  <void property="recurring">
-   <null/>
-  </void>
-  <void property="start">
-   <object class="data.TaskDateTime">
-    <void property="hasDate">
-     <boolean>true</boolean>
-    </void>
-    <void property="timeMilli">
      <long>1371225599000</long>
     </void>
    </object>
@@ -108,6 +84,30 @@
   </void>
   <void property="taskId">
    <string>$$__15-06-2012000000K__$$</string>
+  </void>
+ </object>
+ <object class="data.Task">
+  <void property="completed">
+   <boolean>true</boolean>
+  </void>
+  <void property="name">
+   <string>abc</string>
+  </void>
+  <void property="recurring">
+   <null/>
+  </void>
+  <void property="start">
+   <object class="data.TaskDateTime">
+    <void property="hasDate">
+     <boolean>true</boolean>
+    </void>
+    <void property="timeMilli">
+     <long>1339689599000</long>
+    </void>
+   </object>
+  </void>
+  <void property="taskId">
+   <string>$$__14-06-2012235959C__$$</string>
   </void>
  </object>
 </java>

@@ -254,7 +254,7 @@ public class UIController {
 	 * 
 	 */
 	public static void promptEmailInput() {
-		new Action.EmailAction().actionPerformed(null);
+		new MailDialog(null, true);
 	}
 	
 	/** clear the command line

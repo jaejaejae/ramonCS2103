@@ -401,19 +401,4 @@ public class Action {
     	}
     }
     
-    /**
-     * prompt an email dialog box for user to registration
-     * @author Ramon
-     *
-     */
-    public static class EmailAction extends AbstractAction {
-    	@Override
-    	public void actionPerformed(ActionEvent e) {
-    		do {
-    			new MailDialog(null, true);
-    			UIController.showFeedbackDisplay();
-    		}
-    		while(UIController.getOperationFeedback() == OperationFeedback.NO_EMAIL_SPECIFIED);
-    	}
-    }
 }
