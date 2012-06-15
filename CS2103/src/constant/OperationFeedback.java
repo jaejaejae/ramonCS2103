@@ -1,10 +1,11 @@
+/**
+ * Defines the various kinds of feedback messages for various operations
+ * 
+ * @author Shubhendra Agrawal
+ * @author Ramon
+ */
 package constant;
 
-/**
- * get feedback from the operation
- * @author Ramon
- *
- */
 public enum OperationFeedback {
 	
 	VALID,
@@ -54,11 +55,17 @@ public enum OperationFeedback {
 	GOOGLE_CALENDAR_FAILED,
 	USER_ALREADY_LOGGED_IN;
 	
-	
+	/**
+	 * returns the set message with each feedback
+	 * @param op
+	 * @return Message String
+	 */
 	public static String getString(OperationFeedback op) {
 		switch(op) {
 		case	VALID:
 			return null;
+		case NO_EMAIL_SPECIFIED:
+			return "No email was specified.";
 		case USER_ALREADY_LOGGED_IN:
 			return "You are already logged in. Please log out first";
 		case START_DATE_TIME_LESS_THAN_CURRENT_DATE_TIME:
@@ -98,7 +105,7 @@ public enum OperationFeedback {
 		case LOGOUT_FAILED:
 			return "Error: Logged out failed.";
 		case INVALID_INCORRECT_LOGIN_INTERNET_CONNECTION:
-			return "Error: check your username or password and your internet connection.";
+			return "Error: Invalid your username or password/ No internet";
 		case INVALID_NOINTERNET:
 			return "Error: please connect to the internet.";
 		case INVALID_INCORRECTLOGIN:
@@ -150,7 +157,11 @@ public enum OperationFeedback {
 		}
 		return null;
 	}
-	
+	/**
+	 * 
+	 * @param op
+	 * @return true if the operation is feedback is an error
+	 */
 	public static boolean isError(OperationFeedback op) {
 		switch(op) {
 		case VALID:

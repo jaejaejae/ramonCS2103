@@ -1,27 +1,48 @@
+/**
+ * extends Operation
+ * 
+ * This class is used to check whether a given time slot if free or not
+ * 
+ * @author Shubhendra Agrawal
+ */
 package operation;
 
 import java.util.ArrayList;
-
 import org.apache.log4j.Logger;
-
 import parser.Parser;
-
 import constant.OperationFeedback;
-
 import data.Task;
-import data.TaskDateTime;
+
+
 public class CheckFree extends Operation{
+	
 	private static Logger logger=Logger.getLogger(CheckFree.class);
 	private String commandName;
 	private final static long MILLISECONDS_IN_A_DAY=3600*24*1000;
+	
+	/**
+	 * Constructor 
+	 */
 	public CheckFree (){
 		commandName="check.free";
 	}
+	
+	/**
+	 * Constructor
+	 * @param userInput
+	 */
 	public CheckFree(String userInput){
 		commandName=userInput;
 	}
 	
 	@Override
+	/**
+	 * implements whether a given slot is free or not
+	 * 
+	 * @param userCommand
+	 * @return the tasks that class in the given schedule,
+	 * 			null if no tasks clash and te given slot os free
+	 */
 	public Task[] execute(String userCommand) {
 		// TODO Auto-generated method stub
 		userCommand.toLowerCase().trim().replaceFirst("check.free ", "");
@@ -43,14 +64,6 @@ public class CheckFree extends Operation{
 		
 		
 		if (betweenTasks.size()==0){
-		/*	long timeDuration= getTimeDuration(parsedTask);
-			if (timeDuration>MILLISECONDS_IN_A_DAY)
-			{
-				feedback=OperationFeedback.DURATION_LONGER_THAN_A_DAY;
-				return null;
-			}
-			
-			for (long i= )*/
 			return null;
 		}
 		else {
@@ -59,69 +72,59 @@ public class CheckFree extends Operation{
 		}
 	}
 
-	private long getTimeDuration(Task parsedTask) {
-		// TODO Auto-generated method stub
-		TaskDateTime defaultTime= new TaskDateTime();
-		long timeDuration=0;
-		if (parsedTask.getStart()!=null && parsedTask.getEnd()!=null){
-			if (parsedTask.getStart().getDate().getTimeMilli()!=defaultTime.getDate().getTimeMilli() &&
-					parsedTask.getEnd().getDate().getTimeMilli()!=defaultTime.getDate().getTimeMilli() &&
-					parsedTask.getStart().getTime().getTimeMilli()!=defaultTime.getTime().getTimeMilli() &&
-					parsedTask.getEnd().getTime().getTimeMilli()!=defaultTime.getTime().getTimeMilli()){
-				timeDuration = parsedTask.getStart().getTimeMilli()-parsedTask.getEnd().getTimeMilli();
-			}				
-				
-			else if (parsedTask.getStart().getDate().getTimeMilli()==defaultTime.getDate().getTimeMilli() &&
-					parsedTask.getEnd().getDate().getTimeMilli()==defaultTime.getDate().getTimeMilli() &&
-					parsedTask.getStart().getTime().getTimeMilli()!=defaultTime.getTime().getTimeMilli() &&
-					parsedTask.getEnd().getTime().getTimeMilli()!=defaultTime.getTime().getTimeMilli()){
-				timeDuration = parsedTask.getStart().getTime().getTimeMilli()-parsedTask.getEnd().getTime().getTimeMilli();
-			}
-			else if (parsedTask.getStart().getDate().getTimeMilli()!=defaultTime.getDate().getTimeMilli() &&
-					parsedTask.getEnd().getDate().getTimeMilli()!=defaultTime.getDate().getTimeMilli() &&
-					parsedTask.getStart().getTime().getTimeMilli()==defaultTime.getTime().getTimeMilli() &&
-					parsedTask.getEnd().getTime().getTimeMilli()==defaultTime.getTime().getTimeMilli()){
-				
-				timeDuration = parsedTask.getStart().getDate().getTimeMilli()-parsedTask.getEnd().getDate().getTimeMilli();
-			}
-		
-		
-		}
-		
-		
-		return timeDuration;
-	}
+	/**
+	 * parses the user Command into a task
+	 * 
+	 * @param userCommand
+	 * @return Task that was parsed on the basis of userCommand
+	 */
 	private Task parseCommand(String userCommand) {
 		// TODO Auto-generated method stub
 		Parser newParser=new Parser();
 		Task newTask=newParser.parseForSearch(userCommand);
 		return newTask;
 	}
+	
 	@Override
+	/**
+	 * undo is irrelevant here
+	 */
 	public Task[] undo() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
+	/**
+	 * redo is irrelevant here
+	 */
 	public Task[] redo() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
+	/**
+	 * @return whether this functionality is undo able or not
+	 */
 	public boolean isUndoAble() {
 		// TODO Auto-generated method stub
 		return isUndoAble;
 	}
 
 	@Override
+	/**
+	 * @return the operation feedback
+	 */
 	public OperationFeedback getOpFeedback() {
 		// TODO Auto-generated method stub
 		return feedback;
 	}
 
 	@Override
+	/**
+	 * @return the name of this operation
+	 */
 	public String getOperationName() {
 		// TODO Auto-generated method stub
 		return commandName;

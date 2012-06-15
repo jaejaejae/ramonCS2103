@@ -602,6 +602,10 @@ public class MainJFrame extends javax.swing.JFrame {
 										return;
 									case EXPAND:
 										new Action.ExpandAction().actionPerformed(null);
+										return;
+									case EMAIL:
+										new Action.EmailAction().actionPerformed(null);
+										return;
 									default:
 										logger.warn("default execmd: " + curText);
 										exeCmd = curText;
@@ -615,7 +619,8 @@ public class MainJFrame extends javax.swing.JFrame {
 									tasks = JIDLogic.executeCommand(exeCmd);
 									
 									if(!edit) {
-										if(UIController.getOperationFeedback() == OperationFeedback.VALID) {
+										if(UIController.getOperationFeedback() == OperationFeedback.VALID
+											|| OperationFeedback.isError(UIController.getOperationFeedback())) {
 											jBoxCompletion.setStandardModel();
 											editorcomp.setText("");
 										}
