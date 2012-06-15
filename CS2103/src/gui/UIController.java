@@ -7,13 +7,8 @@ import gui.mainWindow.extended.MailDialog;
 import gui.mainWindow.extended.TopPopUp;
 import gui.reminder.Reminder;
 
-import java.awt.Toolkit;
-import java.awt.datatransfer.DataFlavor;
-import java.awt.datatransfer.Transferable;
-import java.awt.datatransfer.UnsupportedFlavorException;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.io.IOException;
 
 import javax.swing.Timer;
 

@@ -5688,3 +5688,224 @@
 2012-06-15 14:07:09,407 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
 2012-06-15 14:07:09,407 - gui.reminder.Reminder - WARN - latestTask: null
 2012-06-15 14:07:09,408 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:21:46,143 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-15 15:21:46,146 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 15:21:46,158 - operation.Operation - DEBUG - find
+2012-06-15 15:21:46,161 - operation.Search - DEBUG - finding objects
+2012-06-15 15:21:46,161 - operation.Search - DEBUG - returning all objects
+2012-06-15 15:21:46,164 - operation.Search - DEBUG - before sorting
+2012-06-15 15:21:46,164 - operation.Search - DEBUG - after sorting
+2012-06-15 15:21:46,164 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-15 15:21:46,164 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-15 15:21:46,311 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-15 15:21:46,328 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-15 15:21:46,337 - gui.UIController - DEBUG - refresh: in NULL: update JTable
+2012-06-15 15:21:46,337 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-15 15:21:46,337 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 15:21:46,337 - operation.Operation - DEBUG - find
+2012-06-15 15:21:46,338 - operation.Search - DEBUG - finding objects
+2012-06-15 15:21:46,340 - operation.Search - DEBUG - returning all objects
+2012-06-15 15:21:46,340 - operation.Search - DEBUG - before sorting
+2012-06-15 15:21:46,340 - operation.Search - DEBUG - after sorting
+2012-06-15 15:21:46,340 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-15 15:21:46,340 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-15 15:21:46,342 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-15 15:21:46,342 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 15:21:46,342 - operation.Operation - DEBUG - find
+2012-06-15 15:21:46,342 - operation.Search - DEBUG - finding objects
+2012-06-15 15:21:46,343 - operation.Search - DEBUG - returning all objects
+2012-06-15 15:21:46,343 - operation.Search - DEBUG - before sorting
+2012-06-15 15:21:46,343 - operation.Search - DEBUG - after sorting
+2012-06-15 15:21:46,343 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-15 15:21:46,344 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-15 15:21:46,344 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:21:46,511 - gui.reminder.Reminder - DEBUG - true
+2012-06-15 15:21:46,512 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-15 15:21:46,513 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 15:21:46,513 - operation.Operation - DEBUG - find
+2012-06-15 15:21:46,513 - operation.Search - DEBUG - finding objects
+2012-06-15 15:21:46,513 - operation.Search - DEBUG - returning all objects
+2012-06-15 15:21:46,513 - operation.Search - DEBUG - before sorting
+2012-06-15 15:21:46,514 - operation.Search - DEBUG - after sorting
+2012-06-15 15:21:46,514 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-15 15:21:46,514 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-15 15:21:46,514 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:21:48,341 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:21:48,490 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:21:49,521 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:21:49,631 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:21:49,999 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:21:50,230 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:21:51,136 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:21:51,278 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:21:52,290 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:21:52,370 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:21:53,433 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:21:55,048 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:22:10,328 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-15 15:22:10,331 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 15:22:10,340 - operation.Operation - DEBUG - find
+2012-06-15 15:22:10,342 - operation.Search - DEBUG - finding objects
+2012-06-15 15:22:10,343 - operation.Search - DEBUG - returning all objects
+2012-06-15 15:22:10,345 - operation.Search - DEBUG - before sorting
+2012-06-15 15:22:10,345 - operation.Search - DEBUG - after sorting
+2012-06-15 15:22:10,345 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-15 15:22:10,346 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-15 15:22:10,469 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-15 15:22:10,485 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-15 15:22:10,494 - gui.UIController - DEBUG - refresh: in NULL: update JTable
+2012-06-15 15:22:10,494 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-15 15:22:10,494 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 15:22:10,494 - operation.Operation - DEBUG - find
+2012-06-15 15:22:10,494 - operation.Search - DEBUG - finding objects
+2012-06-15 15:22:10,497 - operation.Search - DEBUG - returning all objects
+2012-06-15 15:22:10,497 - operation.Search - DEBUG - before sorting
+2012-06-15 15:22:10,497 - operation.Search - DEBUG - after sorting
+2012-06-15 15:22:10,497 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-15 15:22:10,497 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-15 15:22:10,498 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-15 15:22:10,499 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 15:22:10,499 - operation.Operation - DEBUG - find
+2012-06-15 15:22:10,499 - operation.Search - DEBUG - finding objects
+2012-06-15 15:22:10,499 - operation.Search - DEBUG - returning all objects
+2012-06-15 15:22:10,499 - operation.Search - DEBUG - before sorting
+2012-06-15 15:22:10,499 - operation.Search - DEBUG - after sorting
+2012-06-15 15:22:10,500 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-15 15:22:10,500 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-15 15:22:10,500 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:22:10,661 - gui.reminder.Reminder - DEBUG - true
+2012-06-15 15:22:10,662 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-15 15:22:10,662 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 15:22:10,662 - operation.Operation - DEBUG - find
+2012-06-15 15:22:10,662 - operation.Search - DEBUG - finding objects
+2012-06-15 15:22:10,662 - operation.Search - DEBUG - returning all objects
+2012-06-15 15:22:10,663 - operation.Search - DEBUG - before sorting
+2012-06-15 15:22:10,663 - operation.Search - DEBUG - after sorting
+2012-06-15 15:22:10,663 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-15 15:22:10,663 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-15 15:22:10,663 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:22:11,123 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:22:11,639 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:22:11,675 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:22:11,712 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:22:11,739 - logic.JIDLogic - DEBUG - HOTKEY: class gui.Action$GCalendarAction
+2012-06-15 15:22:11,840 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:22:15,581 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-15 15:22:15,582 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 15:22:15,582 - operation.Operation - DEBUG - login
+2012-06-15 15:22:15,583 - operation.GoogleCalendarOp - DEBUG - login jid.troubleshoot jotitdown
+2012-06-15 15:22:15,583 - operation.GoogleCalendarOp - DEBUG - login jid.troubleshoot jotitdown
+2012-06-15 15:22:15,583 - operation.GoogleCalendarOp - DEBUG - jid.troubleshoot
+2012-06-15 15:22:15,584 - operation.GoogleCalendarOp - DEBUG - jotitdown
+2012-06-15 15:22:18,463 - operation.GoogleCalendarOp - DEBUG - Logged in
+2012-06-15 15:22:18,463 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-15 15:22:18,464 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-15 15:22:18,464 - gui.STATE - ERROR - NULLgetFeedbackText
+2012-06-15 15:22:18,464 - gui.mainWindow.MainJFrame - DEBUG - POPUP: Successfully
+2012-06-15 15:22:18,484 - gui.UIController - DEBUG - refresh: in NULL: update JTable
+2012-06-15 15:22:18,485 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-15 15:22:18,485 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 15:22:18,485 - operation.Operation - DEBUG - find
+2012-06-15 15:22:18,486 - operation.Search - DEBUG - finding objects
+2012-06-15 15:22:18,486 - operation.Search - DEBUG - returning all objects
+2012-06-15 15:22:18,486 - operation.Search - DEBUG - before sorting
+2012-06-15 15:22:18,487 - operation.Search - DEBUG - after sorting
+2012-06-15 15:22:18,487 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-15 15:22:18,487 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-15 15:22:18,488 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-15 15:22:18,488 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 15:22:18,489 - operation.Operation - DEBUG - find
+2012-06-15 15:22:18,489 - operation.Search - DEBUG - finding objects
+2012-06-15 15:22:18,490 - operation.Search - DEBUG - returning all objects
+2012-06-15 15:22:18,490 - operation.Search - DEBUG - before sorting
+2012-06-15 15:22:18,490 - operation.Search - DEBUG - after sorting
+2012-06-15 15:22:18,491 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-15 15:22:18,491 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-15 15:22:18,491 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:28:39,397 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-15 15:28:39,400 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 15:28:39,408 - operation.Operation - DEBUG - find
+2012-06-15 15:28:39,411 - operation.Search - DEBUG - finding objects
+2012-06-15 15:28:39,412 - operation.Search - DEBUG - returning all objects
+2012-06-15 15:28:39,414 - operation.Search - DEBUG - before sorting
+2012-06-15 15:28:39,414 - operation.Search - DEBUG - after sorting
+2012-06-15 15:28:39,414 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-15 15:28:39,414 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-15 15:28:39,538 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-15 15:28:39,553 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-15 15:28:39,562 - gui.UIController - DEBUG - refresh: in NULL: update JTable
+2012-06-15 15:28:39,562 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-15 15:28:39,562 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 15:28:39,562 - operation.Operation - DEBUG - find
+2012-06-15 15:28:39,563 - operation.Search - DEBUG - finding objects
+2012-06-15 15:28:39,565 - operation.Search - DEBUG - returning all objects
+2012-06-15 15:28:39,565 - operation.Search - DEBUG - before sorting
+2012-06-15 15:28:39,565 - operation.Search - DEBUG - after sorting
+2012-06-15 15:28:39,565 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-15 15:28:39,565 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-15 15:28:39,567 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-15 15:28:39,567 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 15:28:39,567 - operation.Operation - DEBUG - find
+2012-06-15 15:28:39,567 - operation.Search - DEBUG - finding objects
+2012-06-15 15:28:39,567 - operation.Search - DEBUG - returning all objects
+2012-06-15 15:28:39,567 - operation.Search - DEBUG - before sorting
+2012-06-15 15:28:39,568 - operation.Search - DEBUG - after sorting
+2012-06-15 15:28:39,568 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-15 15:28:39,568 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-15 15:28:39,568 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:28:39,729 - gui.reminder.Reminder - DEBUG - true
+2012-06-15 15:28:39,730 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-15 15:28:39,730 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 15:28:39,730 - operation.Operation - DEBUG - find
+2012-06-15 15:28:39,730 - operation.Search - DEBUG - finding objects
+2012-06-15 15:28:39,731 - operation.Search - DEBUG - returning all objects
+2012-06-15 15:28:39,731 - operation.Search - DEBUG - before sorting
+2012-06-15 15:28:39,731 - operation.Search - DEBUG - after sorting
+2012-06-15 15:28:39,731 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-15 15:28:39,731 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-15 15:28:39,732 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:28:40,651 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:28:41,036 - logic.JIDLogic - DEBUG - HOTKEY: class gui.Action$GCalendarAction
+2012-06-15 15:28:41,079 - gui.STATE - WARN - receive null string from the input
+2012-06-15 15:28:47,744 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-15 15:28:47,747 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 15:28:47,756 - operation.Operation - DEBUG - find
+2012-06-15 15:28:47,759 - operation.Search - DEBUG - finding objects
+2012-06-15 15:28:47,760 - operation.Search - DEBUG - returning all objects
+2012-06-15 15:28:47,762 - operation.Search - DEBUG - before sorting
+2012-06-15 15:28:47,762 - operation.Search - DEBUG - after sorting
+2012-06-15 15:28:47,762 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-15 15:28:47,762 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-15 15:28:57,742 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-15 15:28:57,759 - storagecontroller.FileHandler - DEBUG - array out of bounds!
+2012-06-15 15:28:57,768 - gui.UIController - DEBUG - refresh: in NULL: update JTable
+2012-06-15 15:28:57,768 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-15 15:28:57,768 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 15:28:57,768 - operation.Operation - DEBUG - find
+2012-06-15 15:28:57,768 - operation.Search - DEBUG - finding objects
+2012-06-15 15:28:57,771 - operation.Search - DEBUG - returning all objects
+2012-06-15 15:28:57,771 - operation.Search - DEBUG - before sorting
+2012-06-15 15:28:57,771 - operation.Search - DEBUG - after sorting
+2012-06-15 15:28:57,771 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-15 15:28:57,771 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-15 15:28:57,773 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-15 15:28:57,773 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 15:28:57,773 - operation.Operation - DEBUG - find
+2012-06-15 15:28:57,773 - operation.Search - DEBUG - finding objects
+2012-06-15 15:28:57,774 - operation.Search - DEBUG - returning all objects
+2012-06-15 15:28:57,774 - operation.Search - DEBUG - before sorting
+2012-06-15 15:28:57,774 - operation.Search - DEBUG - after sorting
+2012-06-15 15:28:57,774 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-15 15:28:57,774 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-15 15:28:57,775 - gui.reminder.Reminder - WARN - latestTask: null
+2012-06-15 15:28:57,975 - gui.reminder.Reminder - DEBUG - true
+2012-06-15 15:28:57,976 - logic.JIDLogic - DEBUG - inside execute command
+2012-06-15 15:28:57,977 - logic.JIDLogic - DEBUG - inside fourth cond
+2012-06-15 15:28:57,977 - operation.Operation - DEBUG - find
+2012-06-15 15:28:57,977 - operation.Search - DEBUG - finding objects
+2012-06-15 15:28:57,977 - operation.Search - DEBUG - returning all objects
+2012-06-15 15:28:57,978 - operation.Search - DEBUG - before sorting
+2012-06-15 15:28:57,978 - operation.Search - DEBUG - after sorting
+2012-06-15 15:28:57,978 - logic.JIDLogic - DEBUG - Operation feedback:VALID
+2012-06-15 15:28:57,978 - logic.JIDLogic - DEBUG - THE OPERATION IS UNDOABLE:false
+2012-06-15 15:28:57,978 - gui.reminder.Reminder - WARN - latestTask: null
