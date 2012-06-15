@@ -177,8 +177,6 @@ public class UIController {
 		operationFeedback = newOPFeedback;
 	}
 	
-	//UI.sendOperationFeedback(OperationFeedback.INVALID_);
-	
 	/**
 	 * get operation feedback
 	 * @return operation feedback
@@ -202,8 +200,11 @@ public class UIController {
 		String displayText;
 		
 		//some tasks does not need operation feedback. i.e. help
-		if(operationFeedback == null)
+		if(operationFeedback == null) {
+			logger.warn(STATE.getState() + ": no operationfeedback sent!");
+			UIController.refresh();
 			return;
+		}
 		
 		switch(	operationFeedback) {
 		case VALID:
