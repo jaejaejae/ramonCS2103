@@ -5,6 +5,7 @@
 package gui.mainWindow.extended;
 
 import gui.Resource;
+import gui.STATE;
 import gui.UIController;
 
 import java.awt.Component;
@@ -155,6 +156,7 @@ public class LogInDialog extends javax.swing.JDialog {
     	String username = userTextField.getText();
     	char password[] = passTextField.getPassword();
     	
+    	STATE.setState(STATE.LOGIN);
 		JIDLogic.setCommand("login");
 		String execmd = "login " + username + " ";
 		for(int i=0; i<password.length; i++)

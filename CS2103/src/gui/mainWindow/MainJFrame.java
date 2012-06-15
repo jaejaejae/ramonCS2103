@@ -483,7 +483,8 @@ public class MainJFrame extends javax.swing.JFrame {
 									|| STATE.getState() == STATE.COMPLETED
 									|| STATE.getState() == STATE.IMPORTANT
 									|| STATE.getState() == STATE.DELETEALL
-									|| STATE.getState() == STATE.COMPLETEDALL)
+									|| STATE.getState() == STATE.COMPLETEDALL
+									|| STATE.getState() == STATE.IMPORTANTALL)
 									&& curText.length() > command.length()+1) {
 									if((e.getKeyCode() == KeyEvent.VK_BACK_SPACE || !e.isActionKey())
 									&& e.getKeyCode() != KeyEvent.VK_ENTER
